@@ -1,0 +1,10 @@
+ani-cli
+mov-cli
+armcord-bin
+spotify
+spotify-adblock
+music-cube
+teams-for-linux
+whatsapp-for-linux
+signal-desktop
+wps-office

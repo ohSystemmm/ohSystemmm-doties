@@ -1,0 +1,10 @@
+hypridle
+hyprland
+hyprlock
+hyprpaper
+hyprshade
+waybar
+wlogout
+wps-office
+bibata-cursor-theme 
+waypaper
