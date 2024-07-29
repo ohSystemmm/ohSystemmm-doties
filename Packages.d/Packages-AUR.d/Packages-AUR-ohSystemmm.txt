@@ -8,3 +8,6 @@ teams-for-linux
 whatsapp-for-linux
 signal-desktop
 wps-office
+fcitx5
+fcitx5-configtool
+mozc

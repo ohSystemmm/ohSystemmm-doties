@@ -8,3 +8,4 @@ wlogout
 wps-office
 bibata-cursor-theme 
 waypaper
+aylurs-gtk-shell 

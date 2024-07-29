@@ -1,0 +1,12 @@
+ _   _       _                         _      _    
+| \ | | ___ | |_ ___  ___   __ _ _   _(_) ___| | __
+|  \| |/ _ \| __/ _ \/ __| / _` | | | | |/ __| |/ /
+| |\  | (_) | ||  __/\__ \| (_| | |_| | | (__|   < 
+|_| \_|\___/ \__\___||___(_)__, |\__,_|_|\___|_|\_\
+                              |_|    
+
+by ohSystemmm <3 - 2024
+
+Dotnet (C#)
+alias 'dotnet new console'='dotnet new console --use-program-main'
+alias 'dotnet new console force'='dotnet new console --use-program-main --force'

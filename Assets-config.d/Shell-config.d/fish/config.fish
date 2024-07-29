@@ -1,57 +1,43 @@
-#                   __ _          __ _     _     
-#   ___ ___  _ __  / _(_) __ _   / _(_)___| |__  
-#  / __/ _ \| '_ \| |_| |/ _` | | |_| / __| '_ \ 
+#                   __ _          __ _     _
+#   ___ ___  _ __  / _(_) __ _   / _(_)___| |__
+#  / __/ _ \| '_ \| |_| |/ _` | | |_| / __| '_ \
 # | (_| (_) | | | |  _| | (_| |_|  _| \__ \ | | |
 #  \___\___/|_| |_|_| |_|\__, (_)_| |_|___/_| |_|
-#                        |___/                   
+#                        |___/
+#
+# by ohSystemmm <3 - 2024
 
-# owofetch
-# pfetch
-# uwufetch
-sleep 0.1
+clear
+sleep 0.5
 fastfetch
+
+function fish_prompt
+    set_color purple
+    echo -n (whoami)
+    echo -n '@'
+    set_color normal
+    echo -n $hostname
+    set_color purple
+    echo -n '' (prompt_pwd)
+    set_color normal
+    echo -n '> '
+end
 
 set fish_greeting
 
-export EDITOR=helix
-export RUN=bash
+export -x EDITOR (cat ~/ohSystemmm-doties/Settings.d/Editor.sh)
 
+# Shortcuts
 alias shortcuts='$EDITOR ~/.config/fish/config.fish'
-alias key='$EDITOR ~/dotfiles/hypr/conf/keybindings/default.conf'
-alias Arch='echo I use Arch BTW.'
-alias shutdown='systemctl poweroff'
-alias wifi='nmtui'
+alias keybindings='$EDITOR ~/ohSystemmm-doties/Hyprland-config.d/hypr/Hypr-conf.d/9_Keybindings/Keybindings.conf'
 
-alias nf='neofetch'
-alias ff='fastfetch'
-alias pf='pfetch'
-alias owo='owofetch'
-alias uwu='uwufetch'
-alias nif='nitch'
-alias stfu='shutthefetchup'
-alias dnfetch='neofetch --ascii_distro'
-alias dffetch='fastfetch --logo'
-
-alias notes='$EDITOR ~/notes.md'
-alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
-alias ascii='~/dotfiles/scripts/figlet.sh'
+# Aliases
 alias hx='helix'
-alias nv='nvim'
-alias root='cd /'
-alias home='cd'
-alias nvidia-stats='nvidia-smi'
-alias nvidia='prime-run'
-alias remove='rm -rf'
-alias buildpkg='makepkg -si'
-alias graphics-card='lspci | grep -E "(VGA|3D)"'
-alias clock='tty-clock -s -c'
-alias train='sl'
+alias ff='fastfetch'
 alias kernel='uname -r'
-alias matrix='cmatrix'
-alias pipes='pipes.sh'
 alias img='wezterm imgcat'
-# alias suicide='sudo rm -rf /*'
+alias shutdown='systemctl poweroff --now'
+alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
-# Dotnet (C#)
-# alias 'dotnet new console'='dotnet new console --use-program-main'
-# alias 'dotnet new console force'='dotnet new console --use-program-main --force'
+# Fun
+alias Arch='echo I use Arch BTW.'

@@ -31,7 +31,8 @@ ttf-fira-sans
 ttf-firacode-nerd 
 ttf-hanazono 
 xdg-desktop-portal 
-xdg-desktop-portal-gtk 
+xdg-desktop-portal-gtk
+xdg-desktop-portal-wlr 
 xdg-desktop-portal-hyprland  
 xdg-user-dirs 
 libpulse
