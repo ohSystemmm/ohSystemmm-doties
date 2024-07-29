@@ -1,0 +1,10 @@
+@import "~/.config/rofi/master-config.rasi" 
+
+configuration {
+	font: "Cascadia Code SemiBold 12";
+}
+
+element-text {
+    font:	"Cascadia Code SemiBold 14";
+}
+

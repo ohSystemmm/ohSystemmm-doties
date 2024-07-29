@@ -1,0 +1,246 @@
+//                   __ _          _                      
+//   ___ ___  _ __  / _(_) __ _   (_)___  ___  _ __   ___ 
+//  / __/ _ \| '_ \| |_| |/ _` |  | / __|/ _ \| '_ \ / __|
+// | (_| (_) | | | |  _| | (_| |_ | \__ \ (_) | | | | (__ 
+//  \___\___/|_| |_|_| |_|\__, (_)/ |___/\___/|_| |_|\___|
+//                        |___/ |__/                   
+
+{
+  "position": "top",
+  "layer": "top",
+  "height": 50,
+  "margin": 0,
+  "modules-left": ["custom/rofi", "custom/exit", "group/hardware", "group/tools", "tray"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["custom/updates", "pulseaudio", "custom/microphone", "bluetooth", "network", "battery", "clock"],
+
+  // Rofi Launcher
+  "custom/rofi": {
+    "format": "  <big></big>  ",
+    "on-click": "rofi -show drun",
+    "on-click-right": "rofi -show run",
+    "tooltip-format": "Application Center"
+  },
+
+  // Exit (WLogout)
+  "custom/exit": {
+    "format": "     ",
+    "tooltip-format": "Exit?",
+    "on-click": "wlogout"
+  },
+
+  // Tool Group
+  "group/tools": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-right-to-left": true
+    },
+    "modules": ["custom/tool", "custom/hyprshade", "custom/hyprpicker", "custom/calculator", "custom/screenshot", "custom/cliphist", "custom/wallpaper", "custom/musicplayer"]
+  },
+
+  // Tool Thumbnail
+  "custom/tool": {
+    "format": "     ",
+    "tooltip": false
+  },
+
+  // Shader
+  "custom/hyprshade": {
+    "format": " 󱩌 ",
+    "tooltip-format": "Nightlight",
+    "on-click": "sleep 0.5; hyprshade toggle blue-light-filter"
+  },
+
+  // Colorpicker
+  "custom/hyprpicker": {
+    "format": "  ",
+    "tooltip-format": "Colorpicker",
+    "on-click": "hyprpicker -a"
+  },
+
+  // Calculator
+  "custom/calculator": {
+    "format": " 󰪚 ",
+    "tooltip-format": "Calculator",
+    "on-click": "qalculate-gtk"
+  },
+
+  // Screenshot
+  "custom/screenshot": {
+    "format": "  ",
+    "tooltip-format": "Screenshot",
+    "on-click": "wayland-screenshot"
+  },
+
+  // Cliphist
+  "custom/cliphist": {
+    "format": "  ",
+    "on-click": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh",
+    "on-click-right": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh w",
+    "tooltip-format": "Clipboard"
+  },
+
+  // Wallpaper
+  "custom/wallpaper": {
+    "format": " 󰋩 ",
+    "tooltip-format": "Change Wallpaper",
+    "on-click": "~/dotfiles/hypr/scripts/wallpaper.sh select"
+  },
+
+  // Musicplayer
+  "custom/musicplayer": {
+    "format": "  ",
+    "tooltip-format": "Coming Soon!",
+    "on-click": "exec spotify"
+  },
+
+  // Workspaces
+  "hyprland/workspaces": {
+    "active-only": false,
+    "all-outputs": true,
+    "disable-scroll": false,
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "1": "一",
+      "2": "二",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "8": "八",
+      "9": "九",
+      "10": "十"
+    },
+    "persistent-workspaces": {
+      "*": 10
+    }
+  },
+
+  // Updates manager
+  "custom/updates": {
+    "format": " <big></big> {} Updates ",
+    "tooltip-format": "{} Updates Available",
+    "escape": true,
+    "return-type": "json",
+    "exec": "~/dotfiles/scripts/updates.sh",
+    "restart-interval": 60,
+    "on-click": "wezterm -e ~/dotfiles/scripts/installupdates.sh"
+  },
+
+  // Pulseaudio
+  "pulseaudio": {
+    "format": " {icon} {volume}% ",
+    "format-muted": " 󰖁 {volume}% ",
+    "format-icons": {
+      "headphone": "",
+      "headset": "",
+      "default": ["󰕿", "󰖀", "󰕾"]
+    },
+    "on-click": "pavucontrol -t 1"
+    },
+
+  // Microphone
+  "custom/microphone": {
+    "exec": "pactl get-source-volume @DEFAULT_SOURCE@ | awk '/%/ {print ($5 == \"yes\" ? \"  0% \" : \"  \"int($5)\"% \")}'",
+    "interval": 5,
+    "on-click": "pavucontrol -t 4",
+    "tooltip-format": "Microphone percentage"
+  },
+
+  // Bluetooth
+  "bluetooth": {
+    "format": " <big>󰂯</big> on ",
+    "format-disabled": " 󰂲 off ",
+    "format-no-controller": "",
+    "tooltip-format": "Bluetooth on",
+    "tooltip-format-disabled": "Bluetooth off",
+    "interval": 30,
+    "on-click": "blueman-manager"
+  },
+
+  // Hardware Group
+  "group/hardware": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-right-to-left": false
+    },
+    "modules": ["custom/hardware", "cpu", "memory", "disk", "custom/language"]
+  },
+
+  // Hardware Thumbnail
+  "custom/hardware": {
+    "format": "    ",
+    "tooltip-format": "System Information"
+  },
+
+  // CPU
+  "cpu": {
+    "format": " <big>󰻠</big> {usage}% ",
+    "on-click": "wezterm -e btop"
+  },
+
+  // Memory
+  "memory": {
+    "format": "  {}% ",
+    "on-click": "wezterm -e btop"
+  },
+
+  // Disk
+  "disk": {
+    "interval": 30,
+    "format": "  {percentage_used}% ",
+    "path": "/home",
+    "on-click": "wezterm -e btop"
+  },
+
+  // Language
+  "custom/language": {
+    "format": "   AE ",
+    "tooltip-format": "<big>Language:</big>\nAmerican English",
+    "on-click": "font-manager"
+  },
+
+  // Battery
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": " {icon} {capacity}% ",
+    "format-charging": " 󰂄 {capacity}% ",
+    "format-plugged": " <big></big> {capacity}% ",
+    "format-alt": " {icon} {time} ",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁"],
+  },
+
+  // Network
+  "network": {
+    "format": " {ifname} ",
+    "format-wifi": " 󰤨 {signalStrength}% ",
+    "format-ethernet": "  {ifname} ",
+    "format-disconnected": " 󰤭 Disconnected ",
+    "tooltip-format": " {ifname} via {gwaddr}",
+    "tooltip-format-wifi": "<big>Network Information:</big>\n\nDevice:\t<big>󰤨</big> {ifname}\nSSID:\t{essid}\nIPv4:\t{ipaddr}\nSignal:\t{signalStrength}%\nFreq:\t{frequency}MHz\nUp:\t\t{bandwidthUpBits}\nDown:\t{bandwidthDownBits}",
+    "tooltip-format-ethernet": "<big>Network Information:</big>\n\nDevice:\t {ifname}\nIPv4:\t{ipaddr}\nUp:\t\t{bandwidthUpBits}\nDown:\t{bandwidthDownBits}",
+    "tooltip-format-disconnected": "<big>󰤭</big> Disconnected",
+    "max-length": 50
+  },
+
+  // Custom Tray
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10
+  },
+
+  // Clock
+  "clock": {
+    "format": " <big>󰥔</big> {:%H:%M} ",
+    "tooltip": true,
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": " <big></big>  {:%Y-%m-%d} "
+  }
+}

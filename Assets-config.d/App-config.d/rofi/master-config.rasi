@@ -1,0 +1,203 @@
+configuration {
+	modi:                       "drun,run";
+    show-icons:                 true;
+    display-drun:               "Apps";
+    display-run:                "Run";
+	hover-select:               true;
+	me-select-entry:            "MouseSecondary";
+    me-accept-entry:            "MousePrimary";
+	window-format:              "{w} · {c} · {t}";
+	dpi:						1;
+}
+
+
+* {
+    background-alt:              #5F4959; 
+    selected:                    #A67799;
+    active:                      #A67799;
+    urgent:                      #A67799;
+    text-selected:               #FFFFFF;
+    text-color:                  #FFFFFF;
+    border-color:                #E5A3A3;
+}
+
+window {
+    enabled:                    true;
+    fullscreen:                 false;
+    transparency:               "real";
+    cursor:                     "default";
+    spacing:                    0px;
+    border:                     2px;
+    border-radius:              30px;
+    location:                   center;
+    anchor:                     center;
+    width:                      50%;
+    background-color:           #5F4959;
+}
+
+mainbox {
+	padding:					 15px;
+    enabled:                     true;
+    orientation:                 vertical;
+    children:                    [ "inputbar", "listbox" ];
+    background-color:            #5F4959;
+}
+
+
+inputbar {
+    enabled:                     true;
+    padding:                     10px 10px 20px 10px;
+    margin:                      10px;
+    background-color:            transparent;
+    border-radius:               20px;
+    orientation:                 horizontal;
+    children:                    ["entry", "dummy", "mode-switcher" ];
+}
+
+entry {
+    enabled:                     true;
+    expand:                      false;
+    width:                       20%;
+    padding:                     10px;
+    border-radius:               12px;
+    background-color:            @selected;
+    text-color:                  @text-selected;
+    cursor:                      text;
+    placeholder:                 "Search";
+    placeholder-color:           inherit;
+}
+
+listbox {
+    spacing:                     10px;
+    padding:                     10px;
+    background-color:            transparent;
+    orientation:                 vertical;
+    children:                    [ "message", "listview" ];
+}
+
+listview {
+    enabled:                     true;
+    columns:                     2;
+    lines:                       6;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   true;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                false;
+    fixed-columns:               true;    
+    spacing:                     10px;
+    background-color:            transparent;
+
+    border:                      0px;
+}
+
+dummy {
+    expand:                      true;
+    background-color:            transparent;
+}
+
+mode-switcher{
+    enabled:                     true;
+    spacing:                     10px;
+    background-color:            transparent;
+}
+button {
+    width:                       5%;
+    padding:                     12px;
+    border-radius:               12px;
+    background-color:            #A67799;
+    text-color:                  #FFFFFF;
+    cursor:                      pointer;
+}
+button selected {
+    background-color:            @selected;
+    text-color:                  @text-selected;
+}
+
+scrollbar {
+    width:        20px ;
+    border:       0;
+    handle-color: #E5A3A3;
+    handle-width: 10px ;
+    padding:      0;
+}
+
+element {
+    enabled:                     true;
+    spacing:                     10px;
+    padding:                     10px;
+    border-radius:               12px;
+    background-color:            transparent;
+    cursor:                      pointer;
+}
+
+element normal.normal {
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+element normal.urgent {
+    background-color:            @urgent;
+    text-color:                  @foreground;
+}
+element normal.active {
+    background-color:            @active;
+    text-color:                  @foreground;
+}
+
+element selected.normal {
+    background-color:            @selected;
+    text-color:                  @text-selected;
+}
+element selected.urgent {
+    background-color:            @urgent;
+    text-color:                  @text-selected;
+}
+element selected.active {
+    background-color:            @urgent;
+    text-color:                  @text-selected;
+}
+element alternate.normal {
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+element alternate.urgent {
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+element alternate.active {
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        36px;
+    cursor:                      inherit;
+}
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+message {
+    background-color:            transparent;
+    border:                      0px;
+}
+textbox {
+    padding:                     12px;
+    border-radius:               10px;
+    background-color:            @background-alt;
+    text-color:                  @background;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+error-message {
+    padding:                     12px;
+    border-radius:               20px;
+    background-color:            @background-alt;
+    text-color:                  @background;
+}

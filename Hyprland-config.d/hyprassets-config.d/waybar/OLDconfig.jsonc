@@ -1,0 +1,221 @@
+//                   __ _          _                      
+//   ___ ___  _ __  / _(_) __ _   (_)___  ___  _ __   ___ 
+//  / __/ _ \| '_ \| |_| |/ _` |  | / __|/ _ \| '_ \ / __|
+// | (_| (_) | | | |  _| | (_| |_ | \__ \ (_) | | | | (__ 
+//  \___\___/|_| |_|_| |_|\__, (_)/ |___/\___/|_| |_|\___|
+//                        |___/ |__/                   
+
+{
+  "position": "top",
+  "layer": "top",
+  "height": 50,
+  "margin-top": 0,
+  "margin-bottom": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+  "modules-left": ["custom/launcher", "group/hardware", "group/settings"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["group/tools", "custom/exit", "clock"],
+
+
+  // Clock
+  "clock": {
+    "format": "    {:%H:%M}",
+    "tooltip": "true",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "    {:%d-%m-%Y}"
+  },
+
+
+  // Workspaces
+  "hyprland/workspaces": {
+    "active-only": false,
+    "all-outputs": true,
+    "disable-scroll": false,
+    "on-scroll-up": "hyprctl dispatch workspace -1",
+    "on-scroll-down": "hyprctl dispatch workspace +1",
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "1": "一",
+      "2": "二",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "8": "八",
+      "9": "九",
+      "10": "十"
+    },
+    "persistent-workspaces": {
+      "*": 10
+    }
+  },
+
+
+  // Rofi Launcher
+  "custom/launcher": {
+    "format": "  ",
+    "on-click": "rofi -show drun",
+    "on-click-right": "rofi -show run",
+    "tooltip-format": "Application Center"
+  },
+
+
+  // Hardware Group
+  "group/hardware": {
+  "orientation": "inherit",
+    "drawer": {
+        "transition-duration": 300,
+        "transition-right-to-left": false
+    },        
+    "modules": ["custom/system", "cpu", "memory", "disk", "hyprland/language"]
+    },
+    "custom/system": {
+        "format": "  ",  
+        "tooltip": false
+    },
+    "cpu": {
+        "format": "    {usage}% |",
+        "on-click": "wezterm -e btop"
+    },
+    "memory": {
+        "format": "  {}% |",
+        "on-click": "wezterm -e btop"
+    },
+    "disk": {
+        "interval": 30,
+        "format": "  {percentage_used}% |",
+        "path": "/",
+        "on-click": "wezterm -e btop"
+    }, 
+    "hyprland/language": {
+        "format": "  {short}",
+        "on-click": "font-manager"
+    },
+
+
+  // Tool Group
+  "group/tools": {
+  "orientation": "inherit",
+    "drawer": {
+        "transition-duration": 300,
+        "transition-left-to-right": false
+    },        
+    "modules": ["custom/tool", "custom/hyprshade", "custom/hyprpicker", "custom/calculator", "custom/screenshot", "custom/cliphist"]
+    },
+    "custom/tool": {
+        "format": "  ",
+        "tooltip": false
+    },
+    "custom/hyprshade": {
+        "format": "",
+        "tooltip-format": "Nightlight",
+        "on-click": "sleep 0.5; hyprshade toggle blue-light-filter"
+    },
+    "custom/hyprpicker": {
+        "format": "  ",
+        "tooltip-format": "Colorpicker",
+        "on-click": "hyprpicker -a"
+    },
+    "custom/calculator": {
+        "format": "  ",
+        "tooltip-format": "Calculator",
+        "on-click": "qalculate-gtk"
+    },
+    "custom/screenshot": {
+        "format": "  ",
+        "tooltip-format": "Screenshot",
+        "on-click": "wayland-screenshot"
+    },
+    "custom/cliphist": {
+        "format": "  ",
+        "on-click": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh",
+        "on-click-right": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh w",
+        "tooltip-format": "Clipboard"
+    },
+
+
+    // Setting Group
+    "group/settings": {
+    "orientation": "inherit",
+      "drawer": {
+        "transition-duration": 300,
+        "transition-right-to-left": false
+    },        
+    "modules": ["custom/settings", "network", "battery", "pulseaudio", "bluetooth", "custom/updates"]
+    },
+    "custom/settings": {
+        "format": "  ",
+        "tooltip": false     
+    },
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": "    {signalStrength}% ",
+        "format-ethernet": "   {ifname}",
+        "format-disconnected": "Disconnected",
+        "tooltip-format": " {ifname} via {gwaddri}",
+        "tooltip-format-wifi": "Networkinformations:\n   {ifname} @{essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+        "tooltip-format-ethernet": "Networkinformations:\n  {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50,
+        "on-click": "nm-applet"    
+    },
+    "battery": {
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "format": " {icon}   {capacity}% ",
+        "format-charging": "   {capacity}% ",
+        "format-plugged": "   {capacity}% ",
+        "format-alt": "{icon}  {time}",
+        "format-icons": [" ", " ", " ", " ", " "],
+        "tooltip-format": "Batterypercentage: {capacity}%"
+    },
+    "pulseaudio": {
+        "format": " {icon}   {volume}% ",
+        "format-bluetooth": " {volume}%  {icon} {format_source} ",
+        "format-bluetooth-muted": "  {icon} {format_source }",
+        "format-muted": "  {format_source} ",
+        "format-source": " {volume}%  ",
+        "format-source-muted": "  ",
+        "format-icons": {
+            "headphone": " ",
+            "hands-free": " ",
+            "headset": " ",
+            "phone": " ",
+            "portable": " ",
+            "car": " ",
+            "default": [" ", " ", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+    "bluetooth": {
+        "format": "  {status} ",
+        "format-disabled": "",
+        "format-off": "",
+        "interval": 30,
+        "on-click": "blueman-manager",
+        "format-no-controller": ""
+    },
+    "custom/updates": {
+        "format": "    {} ",
+        "tooltip-format": "Avilable Updates: {}",
+        "escape": true,
+        "return-type": "json",       
+        "exec": "~/dotfiles/scripts/updates.sh",
+        "restart-interval": 60,
+        "on-click": "wezterm -e ~/dotfiles/scripts/installupdates.sh"
+    },
+
+
+    // Wlogout
+    "custom/exit": {
+        "format": "  ",
+        "tooltip-format": "Leave?",
+        "on-click": "wlogout"
+    }
+  }
+
