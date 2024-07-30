@@ -5,3 +5,4 @@ parui
 wayland-screenshot
 imgcat 
 pacseek
+emote
