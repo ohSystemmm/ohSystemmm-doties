@@ -29,7 +29,8 @@ ttf-cascadia-code
 ttf-fira-code 
 ttf-fira-sans 
 ttf-firacode-nerd 
-ttf-hanazono 
+ttf-hanazono
+noto-fonts-emoji 
 xdg-desktop-portal 
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr 
