@@ -23,18 +23,18 @@ HOMEPATH=0
 USERPATH=0
 SYSTEMPATH=0
 
-0_Info=0
-1_SetUp=0
-2_Wallpapers=0
-3_Diashows=0
+Info=0
+SetUp=0
+Wallpapers=0
+Diashows=0
 
-0_MasterPath=0
-1_DotfileSettings=0
-2_HyprlandConfig=0
-3_PackageConfig=0
-4_CustomApps=0
-5_CustomScripts=0
-6_TempFiles=0
+MasterPath=0
+DotfileSettings=0
+HyprlandConfig=0
+PackageConfig=0
+CustomApps=0
+CustomScripts=0
+TempFiles=0
 
 
 # ----------------------------------------------------- 
