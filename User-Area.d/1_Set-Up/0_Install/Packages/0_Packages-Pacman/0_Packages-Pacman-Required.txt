@@ -53,3 +53,4 @@ tumbler
 grim 
 libadwaita
 chromium
+fd

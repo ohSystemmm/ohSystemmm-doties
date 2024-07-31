@@ -13,11 +13,28 @@ clear
 
 
 # ----------------------------------------------------- 
-# Colors
+# Variables
 Normal="\033[0m"
 Purple="\033[1;35m"
 Green="\033[1;32m"
 Red="\033[1;31m"
+
+HOMEPATH=0
+USERPATH=0
+SYSTEMPATH=0
+
+0_Info=0
+1_SetUp=0
+2_Wallpapers=0
+3_Diashows=0
+
+0_MasterPath=0
+1_DotfileSettings=0
+2_HyprlandConfig=0
+3_PackageConfig=0
+4_CustomApps=0
+5_CustomScripts=0
+6_TempFiles=0
 
 
 # ----------------------------------------------------- 
@@ -31,10 +48,11 @@ echo
 # ----------------------------------------------------- 
 # Confirm running Script
 if gum confirm "Do you want to regenerate all paths?" --affirmative "Confirm" --negative "Cancel"; then
-    notify-send "Regenerating all required dotfile paths..."
+    echo "Starting Service..."
+    echo
 else
-    notify-send "Regeneration of all required dotfile paths canceled."
     echo "Aborted..."
+    echo
     exit 1
 fi
 
