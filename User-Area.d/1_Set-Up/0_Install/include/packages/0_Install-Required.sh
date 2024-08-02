@@ -8,4 +8,4 @@
 # by ohSystemmm <3 - 2024
 
 cd package-list
-paru -S $(cat 0_Required.txt) --noconfirm
+paru -S --needed $(cat 0_Required.txt) --noconfirm

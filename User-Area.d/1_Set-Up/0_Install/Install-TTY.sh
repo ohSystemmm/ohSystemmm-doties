@@ -61,29 +61,59 @@ clear
 echo -e -n "\033[1;35m"
 cat include/headers/Set-Pacman.txt
 echo -e "\033[0m\n"
+echo -e "Setting Pacman Up."
+cd ../../../
+cd System-Area.d/0_Global-Config/
+sudo cp -f pacman.conf /etc/pacman.conf
+cd ../../
+cd User-Area.d/1_Set-Up/0_Install
+echo -e "Done\n"
 Next
-
 
 # Installing First Required Packages
 echo -e -n "\033[1;35m"
 cat include/headers/First-Packages.txt
 echo -e "\033[0m\n"
+echo -e "Now we'll be installing some Required packages"
+echo -e "which are important and heavily needed for the"
+echo -e "installation process."
+echo -e "\nThis contains:"
+echo -e "- fd"
+echo -e "- git"
+echo -e "- yay"
+echo -e "- paru"
+echo -e "- figlet\n"
+echo -e "Updating System."
+sudo pacman -Syyu --noconfirm
+echo -e "Installing Packages"
+# sudo pacman -S --needed base-devel git --noconfirm
+# sudo pacman -S --needed fd figlet --noconfirm
+# git clone https://aur.archlinux.org/yay.git
+# cd yay
+# makepkg -si --noconfirm
+# cd ..
+# rm -rf yay/
+# yay -S paru
+echo -e "Done."
 Next
 
 # Moving Dotfile Folder
+echo -e -n "\033[1;35m"
+figlet -w 100 Moving-Folder
+echo -e "by ohSystemmm <3 - 2024\033[0m\n\n"
+./include/location-check/Location-Check.sh
+Next
 
-# echo "Moving Folder To Home"
-# ./include/location-check/Location-Check.sh
 # Include Colors
-# source ~/ohSystemmm-doties/System-Area.d/0_Global-Config/Shell-Colors.sh
-
-# Installing 
-# echo $Red
-# Header
-
+source ~/ohSystemmm-doties/System-Area.d/0_Global-Config/Shell-Colors.sh
 
 # Install Packages
-# cd include/packages
-# ./0_Install-Required.sh
-# ./1_Install-Optional.sh
-# ./2_Install-ohSystemmm.sh
+echo -e -n "$BPurple"
+figlet -w 100 Install-Packages
+echo -e "by ohSystemmm <3 - 2024($Normal)\n"
+cd include/packages
+./0_Install-Required.sh
+./1_Install-Optional.sh
+./2_Install-ohSystemmm.sh
+cd ../..
+Next
