@@ -36,7 +36,7 @@ Next
 echo -e -n "\033[1;35m"
 cat include/headers/Checking-OS.txt
 echo -e "\033[0m\n"
-echo -e "These dotfiles are specifically designed for Arch Linux"
+echo -e "These dotfiles are specifically designed for Arch Linux &"
 echo -e "Hyprland.If you're using a different distribution, you're"
 echo -e "welcome to adapt and use these configurations as needed.\n"
 echo -e "Checking the operating system:"
@@ -74,10 +74,9 @@ Next
 echo -e -n "\033[1;35m"
 cat include/headers/First-Packages.txt
 echo -e "\033[0m\n"
-echo -e "Now we'll be installing some Required packages"
-echo -e "which are important and heavily needed for the"
-echo -e "installation process."
-echo -e "\nThis contains:"
+echo -e "We will now install some required packages"
+echo -e "that are essential for the installation process."
+echo -e "\nThis includes:"
 echo -e "- fd"
 echo -e "- git"
 echo -e "- yay"
@@ -86,14 +85,14 @@ echo -e "- figlet\n"
 echo -e "Updating System."
 sudo pacman -Syyu --noconfirm
 echo -e "Installing Packages"
-# sudo pacman -S --needed base-devel git --noconfirm
-# sudo pacman -S --needed fd figlet --noconfirm
-# git clone https://aur.archlinux.org/yay.git
-# cd yay
-# makepkg -si --noconfirm
-# cd ..
-# rm -rf yay/
-# yay -S paru
+sudo pacman -S --needed base-devel git --noconfirm
+sudo pacman -S --needed fd figlet --noconfirm
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si --noconfirm
+cd ..
+rm -rf yay/
+yay -S paru
 echo -e "Done."
 Next
 
@@ -117,3 +116,8 @@ cd include/packages
 ./2_Install-ohSystemmm.sh
 cd ../..
 Next
+
+# Setting up TLP
+# LINKING Configs
+# 
+# CLEANUP Clean Cache
