@@ -1,9 +1,15 @@
+krita
+prismlauncher
+blender
+wine
+syncplay
+steam
 ani-cli
 mov-cli
 armcord-bin
 spotify
 spotify-adblock
-music-cube
+musikcube-bin
 teams-for-linux
 whatsapp-for-linux
 signal-desktop

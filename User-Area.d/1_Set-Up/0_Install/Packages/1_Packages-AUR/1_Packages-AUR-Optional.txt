@@ -1,8 +1,0 @@
-cava
-firefox-nightly-bin
-paru
-parui
-wayland-screenshot
-imgcat 
-pacseek
-emote

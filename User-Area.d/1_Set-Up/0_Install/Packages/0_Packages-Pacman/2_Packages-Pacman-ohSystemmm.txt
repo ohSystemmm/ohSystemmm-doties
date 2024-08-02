@@ -1,6 +1,0 @@
-krita
-prismlauncher
-blender
-wine
-syncplay
-steam
