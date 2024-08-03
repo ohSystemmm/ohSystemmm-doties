@@ -138,7 +138,6 @@ InstallohSystemmm() {
     armcord-bin
     spotify
     spotify-adblock
-    musikcube-bin
     teams-for-linux
     whatsapp-for-linux
     signal-desktop
