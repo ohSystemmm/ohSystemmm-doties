@@ -17,13 +17,24 @@ SlideHeader() {
 
 NextSlide() {
   sleep 0.5
-  echo -e "\n"
-  if gum confirm "Would you like to proceed?" --affirmative "Continue" --negative "Abort"; then
-    continue
-  else
-    echo "Installation canceled."
-    exit 1
-  fi
+  # echo -e "\n"
+  # if gum confirm "Would you like to proceed?" --affirmative "Continue" --negative "Abort"; then
+  #   continue
+  # else
+  #   echo "Installation canceled."
+  #   exit 1
+  # fi
+  echo -e ""
+  choice=$(gum choose --cursor="> " --cursor-prefix="* " "Continue Installation" "Abort Installation")
+  case $choice in
+    "Continue Installation")
+      continue
+      ;;
+    "Abort Installation")
+      echo -e "\033[1;31mInstallation aborted by user.\033[0m\n"
+      exit 1
+      ;;
+  esac    
 }
 
 InstallRequired() {

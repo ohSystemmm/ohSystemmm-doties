@@ -8,6 +8,7 @@
 
 source include/Assets.sh
 source include/Colors.sh
+cd /
 
 # Pre-Warning
 # SlideHeader "Warning!"
@@ -25,7 +26,7 @@ source include/Colors.sh
 SlideHeader "Validating OS"
 echo -e "Checking compatibility: "
 echo -e "The ohSystemmm-doties are only made for Arch Linux & Hyprland"
-echo -e "and do not support any forks or versions of ArchLinux.\n"
+echo -e "and do not support any forks or versions of Arch Linux.\n"
 gum spin --spinner meter --title "Checking OS..." --show-output -- sleep 3
 if [ -f "/etc/os-release" ]; then
     source /etc/os-release
@@ -39,17 +40,39 @@ else
 fi
 NextSlide
 
+# Moving Folder to Home
+SlideHeader "Folder Location."
+DotiesPath="/$(fd --type d ohSystemmm-doties)"
+Destination="$HOME"
+if [ -n "$DotiesPath" ]; then
+  base_name=$(basename "$DotiesPath")
+  destination_path="$HOME/$base_name"
+  if [ "$DotiesPath" != "$destination_path" ] && [ ! -e "$destination_path" ]; then
+    mv "$DotiesPath" "$HOME/"
+    echo "Moved $DotiesPath to $HOME/"
+    cd ~/ohSystemmm-doties/
+  else
+    echo "Nothing to do."
+    cd ~/ohSystemmm-doties/
+  fi
+else
+  echo "Error Dotfile-Folder Not Found."
+  exit 1
+fi
+NextSlide
+
 # Licence
-# SlideHeader "Licence."
-# gum pager < /home/ohsystemmm/ohSystemmm-doties/User-Area.d/0_Info/0_Licence.txt
-# NextSlide
+SlideHeader "License."
+echo -e "Please review the License before proceeding.\n"
+if gum confirm "View License" --affirmative "Open" --negative "Skip"; then
+    gum pager < User-Area.d/0_Info/0_Licence.txt
+else
+    echo "Skipped."
+fi
+NextSlide
 
 # Terms of Service
 # SlideHeader "Terms of Service."
-# NextSlide
-
-# Moving Folder to Home
-# SlideHeader "Folder Location."
 # NextSlide
 
 # Setting up pacman
