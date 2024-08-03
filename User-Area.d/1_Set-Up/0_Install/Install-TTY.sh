@@ -20,7 +20,8 @@ NextSlide
 SlideHeader "Licence."
 NextSlide
 
-SlideHeader ""
+SlideHeader "Terms of Service."
+NextSlide
 
 SlideHeader "Verifying Compatibility."
 NextSlide
@@ -46,13 +47,22 @@ NextSlide
 SlideHeader "ohSystemmm Packages."
 NextSlide
 
-SlideHeader "Enabeling sddm."
+SlideHeader "Setting Shell."
+NextSlide
+
+SlideHeader "Enabeling sddm." 
 NextSlide
 
 SlideHeader "Enabeling tlp." # install tlp
 NextSlide
 
-SlideHeader "Customizing grub."
+SlideHeader "Customizing Bootloader."
+NextSlide
+
+SlideHeader "Setting Default Apps."
+NextSlide
+
+SlideHeader "Setting up Hyprland."
 NextSlide
 
 SlideHeader "Linking Apps."
