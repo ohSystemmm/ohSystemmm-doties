@@ -11,13 +11,19 @@ SlideHeader() {
   clear
   echo -e -n "\033[1;35m"
   figlet -w 200 "$Header"
-  echo -e "\nby ohSystemmm <3 - 2024\033[0m\n\n"
+  echo -e "\nohSystemmm-doties"
+  echo -e "by ohSystemmm <3 - 2024\033[0m\n\n"
 }
 
 NextSlide() {
-  sleep 1
-  echo -n -e "\nPress Enter to continue..."
-  read -r
+  sleep 0.5
+  echo -e "\n"
+  if gum confirm "Would you like to proceed?" --affirmative "Continue" --negative "Abort"; then
+    continue
+  else
+    echo "Installation canceled."
+    exit 1
+  fi
 }
 
 InstallRequired() {
