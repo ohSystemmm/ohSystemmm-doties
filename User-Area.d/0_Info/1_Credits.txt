@@ -2,20 +2,19 @@ Credits & Contributors
 
 Project Name: ohSystemmm-doties
 
-Lead Developer:
+Lead Developer
     ohSystemmm (GitHub)
 
-Contributors:
-I would like to thank the following contributors for their valuable input and contributions:
+Contributors
+    Y2kun (GitHub) – Code Optimizations, Ideas, and Reviewing, Bug fixing
+    Testers (Anonymous) – Testing and Feedback
 
-    Y2kun (GitHub) – Code Optimizations, Ideas, and Reviewing
-    bbynabokov (GitHub) – Testing and Feedback
-
-Special Thanks:
+Special Thanks
     ml4w-dotfiles (GitLab)
     end4_dotfiles (GitHub)
 
 Acknowledgements:
-I would like to acknowledge the open-source community for their continuous support and contributions to various projects that have helped shape this project.
+I would like to acknowledge the open-source community for their continuous support
+and contributions to various projects that have helped shape this project.
 
 Thank you to everyone who has contributed to making ohSystemmm-doties available!
