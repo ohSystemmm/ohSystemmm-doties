@@ -10,34 +10,56 @@ source include/Assets.sh
 source include/Colors.sh
 source include/Packages.sh
 cd /
+clear
+echo -e "\n${BYellow}Updating System before starting.${Normal}\n"
+sudo pacman -Syyu --noconfirm
+sudo pacman -S --needed figlet gum fd --noconfirm
 
 # Pre-Warning
-# SlideHeader "Warning!"
-# NextSlide
-
-# Installing essential Packages
-# SlideHeader "Prerequisite Packages."
-# NextSlide
+SlideHeader "Warning!"
+echo -e "Please ensure you back up your configurations and important files as some"
+echo -e "may be overwritten or deleted. The ohSystemmm-doties team is not responsible"
+echo -e "for any data loss. It is recommended to run this script on a fresh Arch Linux"
+echo -e "installation without any desktop environment installed. Carefully read the"
+echo -e "introductions to understand the processes being executed. If something fails,"
+echo -e "check the installation log at 'path/to/log.txt'. Please remain at your device"
+echo -e "until the installation is complete and ensure a stable internet connection."
+echo -e "\nLet's get started."
+NextSlide
 
 # Introduction
-# SlideHeader "Welcome!"
-# NextSlide
+SlideHeader "Welcome!"
+NextSlide
 
 # Verifying OS Compatibility
 SlideHeader "Validating OS"
 echo -e "Checking compatibility: "
-echo -e "The ohSystemmm-doties are only made for Arch Linux & Hyprland"
-echo -e "and do not support any forks or versions of Arch Linux.\n"
+echo -e "The ohSystemmm-doties are designed specifically for Arch Linux & Hyprland"
+echo -e "and do not support any forks or derivatives of Arch Linux.\n"
 gum spin --spinner meter --title "Checking OS..." --show-output -- sleep 2
-if [ -f "/etc/os-release" ]; then
-    source /etc/os-release
-    if [ "$ID" == "arch" ]; then
-        echo "OS is Arch Linux."
-    else
-        echo "Unsupported OS."
-    fi
+if [ -f /etc/os-release ]; then
+  . /etc/os-release
+  if grep -q "Arch Linux" /etc/os-release && [ "$ID" == "arch" ]; then
+    echo "This system is running Arch Linux."
+  else
+    echo "This system is not running Arch Linux. (ID: $ID)"
+    exit 1
+  fi
 else
-    echo "Could Not Determine OS Version."
+  echo "This system is not running Arch Linux."
+  exit 1
+fi
+if command -v pacman &>/dev/null; then
+  echo "The pacman package manager is present."
+  if pacman -Q archlinux-keyring &>/dev/null; then
+    echo "All checks passed: This system is running Arch Linux."
+  else
+    echo "This system is not running Arch Linux (archlinux-keyring not found)."
+    exit 1
+  fi
+else
+  echo "This system is not running Arch Linux (pacman not found)."
+  exit 1
 fi
 NextSlide
 
@@ -45,7 +67,7 @@ NextSlide
 SlideHeader "Folder Location."
 gum spin --spinner meter --title "Locating Folder..." --show-output -- sleep 1
 DotiesPath="/$(fd --type d ohSystemmm-doties)"
-echo -e "Dotfiles found."
+echo -e "Dotfiles detected."
 Destination="$HOME"
 if [ -n "$DotiesPath" ]; then
   base_name=$(basename "$DotiesPath")
@@ -55,11 +77,11 @@ if [ -n "$DotiesPath" ]; then
     echo -e "Moved $DotiesPath to $HOME/"
     cd ~/ohSystemmm-doties/
   else
-    echo -e "Nothing to do."
+    echo -e "No action needed."
     cd ~/ohSystemmm-doties/
   fi
 else
-  echo -e "\n${BRed}Error Dotfile-Folder Not Found.$Normal"
+  echo -e "\n${BRed}Error: Dotfile Folder Not Found.$Normal"
   exit 1
 fi
 NextSlide
@@ -71,8 +93,8 @@ echo -e "$BYellow\nBy continuing, you automatically accept the license agreement
 NextSlide
 
 # Terms of Service
-# SlideHeader "Terms of Service."
-# NextSlide
+SlideHeader "Terms of Service."
+NextSlide
 
 # Setting up pacman
 SlideHeader "pacman."
@@ -87,11 +109,11 @@ NextSlide
 # Setting up yay
 SlideHeader "yay."
 echo -e "Downloading the AUR-Packagemanager 'yay'.\n"
-# git clone https://aur.archlinux.org/yay.git
-# cd yay
-# makepkg -si --noconfirm
-# cd ..
-# rm -rf yay/
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si --noconfirm
+cd ..
+rm -rf yay/
 echo -e "\n${BGreen}Done.${Normal}"
 NextSlide
 
@@ -123,6 +145,7 @@ for option in "${selected_array[@]}"; do
   case "$option" in
     "Skip")
       break
+      echo -e "Skipped."
       ;;
     "Optional")
       gum spin --spinner meter --title "Reading Optional Packages..." --show-output -- sleep 1.5
@@ -180,28 +203,75 @@ echo -e "\n${BGreen}Done.${Normal}"
 NextSlide
 
 # Installing & Enabeling tlp
-# SlideHeader "Enabeling tlp."
-# NextSlide
+SlideHeader "Enabeling tlp."
+echo -e "You can choose between bash, fish and zsh. Each shell has its advantages"
+echo -e "and disadvantages. Bash, the default one is just basic, youre based if"
+echo -e "choose it. However fish, very userfriendly because of its autocompletion"
+echo -e "would be a great choice if you're new to Linux. Zsh, by most users seen"
+echo -e "as the only good shell is recommended for the more advanced users. Despite"
+echo -e "that, choose the one you prefer.\n"
+
+tlp=$(gum choose --cursor="> " --cursor-prefix="* " "Skip" "Laptop")
+case $tlp in
+  "Skip")
+    break    
+    echo -e "Skipped."
+    ;;
+  "Laptop")
+    echo -e "Installing tlp.\n"
+    sudo pacman -S --needed tlp --noconfirm
+    cd ~/ohSystemmm-doties/System-Area.d/0_Global-Config
+    echo -e "Setting Max Battery capacity to 80%."
+    sudo cp -f tlp.conf /etc/tlp.conf
+    cd ~/ohSystemmm-doties/
+    echo -e "\n${BGreen}Done.${Normal}"
+    ;;
+esac    
+NextSlide
 
 # Customizing Bootloader
 # SlideHeader "Customizing Bootloader."
-# NextSlide
+# gum spin --spinner meter --title "Checking Bootloader..." --show-output -- sleep 2
 
-# Setting up Timeshift
-# SlideHeader "Setting up Timeshift."
+# if [ -f /boot/grub/grub.cfg ]; then
+#   echo "GRUB configuration file found: /boot/grub/grub.cfg"
+#   echo "It appears that GRUB is being used as the bootloader."
+#   bootloader="grub"
+# elif pacman -Q grub &>/dev/null; then
+#   echo "GRUB package is installed."
+#   echo "It appears that GRUB is being used as the bootloader."
+#   bootloader="grub"
+# elif command -v bootctl &>/dev/null; then
+#   if bootctl status | grep -q "grub"; then
+#     echo "GRUB boot loader is found in bootctl status."
+#     echo "It appears that GRUB is being used as the bootloader."
+#     bootloader="grub"
+#   else
+#     echo "GRUB does not appear to be the bootloader on this system."
+#     bootloader="not_grub"
+#   fi
+# else
+#   echo "GRUB does not appear to be the bootloader on this system."
+#   bootloader="not_grub"
+# fi
+# if [ "$bootloader" = "grub" ]; then
+#   echo "\nPerforming GRUB-specific tasks..."
+# else
+#   echo "Skipping GRUB-specific tasks."
+# fi
 # NextSlide
 
 # Setting Default Apps
-# SlideHeader "Setting Default Apps."
-# NextSlide
+SlideHeader "Setting Default Apps."
+NextSlide
 
 # Setting up Hyprland DE
-# SlideHeader "Setting up Hyprland."
-# NextSlide
+SlideHeader "Setting up Hyprland."
+NextSlide
 
 # Linking customized Packages
-# SlideHeader "Linking Apps."
-# NextSlide
+SlideHeader "Linking Apps."
+NextSlide
 
 # Credits
 SlideHeader "Credits."
