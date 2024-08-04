@@ -86,10 +86,10 @@ else
 fi
 NextSlide
 
-# Licence
+# License
 SlideHeader "License."
 cat User-Area.d/0_Info/0_License.txt
-echo -e "$BYellow\nBy continuing, you automatically accept the license agreement.$Normal"
+echo -e "$BYellow\nBy proceeding, you accept the license agreement.$Normal"
 NextSlide
 
 # Terms of Service
@@ -97,47 +97,45 @@ SlideHeader "Terms of Service."
 NextSlide
 
 # Setting up pacman
-SlideHeader "pacman."
-echo -e "Setting up pacman, enabling multilib, setting multiple downloads to 10,"
-echo -e "enabling colors, activating easter egg.\n"
+SlideHeader "Configuring pacman."
+echo -e "Configuring pacman: enabling multilib, setting maximum downloads to 10,"
+echo -e "enabling colors, and activating the easter egg.\n"
 cd ~/ohSystemmm-doties/System-Area.d/0_Global-Config
 sudo cp -f pacman.conf /etc/pacman.conf
 cd ~/ohSystemmm-doties/
-echo -e "\n${BGreen}Done.${Normal}"
+echo -e "\n${BGreen}Configuration Complete.${Normal}"
 NextSlide
 
 # Setting up yay
-SlideHeader "yay."
-echo -e "Downloading the AUR-Packagemanager 'yay'.\n"
+SlideHeader "Installing yay."
+echo -e "Downloading and installing the AUR package manager 'yay'.\n"
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si --noconfirm
 cd ..
 rm -rf yay/
-echo -e "\n${BGreen}Done.${Normal}"
+echo -e "\n${BGreen}Installation Complete.${Normal}"
 NextSlide
 
 # Setting up paru
-SlideHeader "paru."
-echo -e "Installing Packagemanager 'paru'.\n"
+SlideHeader "Installing paru."
+echo -e "Installing the package manager 'paru'.\n"
 yay -S --needed paru parui --noconfirm
-echo -e "\n${BGreen}Done.${Normal}"
+echo -e "\n${BGreen}Installation Complete.${Normal}"
 NextSlide
 
 # Installing Required Packages
-SlideHeader "Required Packages."
-echo -e "Installing all Required Packages. This might take a while.\n"
-gum spin --spinner meter --title "Reading Required Packages..." --show-output -- sleep 3
+SlideHeader "Installing Required Packages."
+echo -e "Installing all necessary packages. This may take some time.\n"
+gum spin --spinner meter --title "Installing Required Packages..." --show-output -- sleep 3
 InstallRequired
 NextSlide
 
 # Installing Optional & ohSystemmm Packages
-SlideHeader "Other Packages."
-echo -e "Installing selected options. The optional packages provide you several"
-echo -e "packages which might improve your user experience. They aren't needed by"
-echo -e "the system itself but are still recommended to install. The ohSystemmm"
-echo -e "packages are packages like development tools and other utilities. They"
-echo -e "aren't needed, but they help to get a fully set up desktop.\n"
+SlideHeader "Installing Additional Packages."
+echo -e "Installing selected optional packages which enhance user experience. These"
+echo -e "are not required by the system but are recommended. The ohSystemmm packages"
+echo -e "include development tools and utilities that help set up a complete desktop.\n"
 options=("Skip" "Optional" "ohSystemmm")
 selected=$(gum choose --no-limit "${options[@]}")
 IFS=$'\n' read -r -d '' -a selected_array <<< "$selected"
@@ -148,58 +146,75 @@ for option in "${selected_array[@]}"; do
       echo -e "Skipped."
       ;;
     "Optional")
-      gum spin --spinner meter --title "Reading Optional Packages..." --show-output -- sleep 1.5
-      echo -e "\nDownloading & Installing Packages\n"
+      gum spin --spinner meter --title "Installing Optional Packages..." --show-output -- sleep 1.5
+      echo -e "\nDownloading & Installing Optional Packages\n"
       sleep 2
       InstallOptional
-      echo -e "\n${BGreen}Done.${Normal}"
+      echo -e "\n${BGreen}Installation Complete.${Normal}"
       ;;
     "ohSystemmm")
-      gum spin --spinner meter --title "Reading ohSystemmm Packages..." --show-output -- sleep 1.5
-      echo -e "\nDownloading & Installing Packages\n"
+      gum spin --spinner meter --title "Installing ohSystemmm Packages..." --show-output -- sleep 1.5
+      echo -e "\nDownloading & Installing ohSystemmm Packages\n"
       sleep 2
       InstallohSystemmm
-      echo -e "\n${BGreen}Done.${Normal}"
+      echo -e "\n${BGreen}Installation Complete.${Normal}"
       ;;
   esac
 done
 NextSlide
 
 # Changing Shell
-SlideHeader "Setting Shell."
-echo -e "You can choose between bash, fish and zsh. Each shell has its advantages"
-echo -e "and disadvantages. Bash, the default one is just basic, youre based if"
-echo -e "choose it. However fish, very userfriendly because of its autocompletion"
-echo -e "would be a great choice if you're new to Linux. Zsh, by most users seen"
-echo -e "as the only good shell is recommended for the more advanced users. Despite"
-echo -e "that, choose the one you prefer.\n"
+SlideHeader "Choosing Default Shell."
+echo -e "Select your preferred shell. Bash is the default and basic; Fish offers"
+echo -e "user-friendly autocompletion; Zsh is recommended for advanced users.\n"
 choice=$(gum choose --cursor="> " --cursor-prefix="* " "bash" "fish" "zsh")
 case $choice in
   "bash")
-    echo -e "Setting default Shell to bash."
+    echo -e "Setting default shell to bash."
     chsh -s /usr/bin/bash
-    echo -e "\n${BGreen}Done.${Normal}"
+    echo -e "\n${BGreen}Default Shell Set.${Normal}"
     ;;
   "fish")
-    echo -e "Setting default Shell to fish."
+    echo -e "Setting default shell to fish."
     chsh -s /usr/bin/fish
-    echo -e "\n${BGreen}Done.${Normal}"
+    echo -e "\n${BGreen}Default Shell Set.${Normal}"
     ;;
   "zsh")
-    echo -e "Setting default Shell to zsh."
+    echo -e "Setting default shell to zsh."
     chsh -s /usr/bin/zsh
-    echo -e "\n${BGreen}Done.${Normal}"
+    echo -e "\n${BGreen}Default Shell Set.${Normal}"
     ;;      
 esac    
 NextSlide
 
-# Installing & Enabeling SDDM
-SlideHeader "Enabeling sddm."
-echo -e "Installing sddm.\n"
+# Installing & Enabling SDDM
+SlideHeader "Installing and Enabling SDDM."
+echo -e "Installing and enabling the Simple Desktop Display Manager (SDDM).\n"
 sudo pacman -S --needed sddm --noconfirm
-echo -e "\nEnabeling sddm."
+echo -e "\nEnabling SDDM service."
 sudo systemctl enable sddm.service
-echo -e "\n${BGreen}Done.${Normal}"
+echo -e "\n${BGreen}SDDM Installed and Enabled.${Normal}"
+NextSlide
+
+# Installing & Enabling TLP
+SlideHeader "Installing and Configuring TLP."
+echo -e "You can choose to skip or install TLP for laptop power management.\n"
+tlp=$(gum choose --cursor="> " --cursor-prefix="* " "Skip" "Laptop")
+case $tlp in
+  "Skip")
+    break    
+    echo -e "Skipped."
+    ;;
+  "Laptop")
+    echo -e "Installing TLP for power management.\n"
+    sudo pacman -S --needed tlp --noconfirm
+    cd ~/ohSystemmm-doties/System-Area.d/0_Global-Config
+    echo -e "Configuring maximum battery capacity to 80%."
+    sudo cp -f tlp.conf /etc/tlp.conf
+    cd ~/ohSystemmm-doties/
+    echo -e "\n${BGreen}TLP Installed and Configured.${Normal}"
+    ;;
+esac    
 NextSlide
 
 # Installing & Enabeling tlp
@@ -262,15 +277,15 @@ NextSlide
 # NextSlide
 
 # Setting Default Apps
-SlideHeader "Setting Default Apps."
+SlideHeader "Configuring Default Apps."
 NextSlide
 
 # Setting up Hyprland DE
-SlideHeader "Setting up Hyprland."
+SlideHeader "Setting up Hyprland Desktop Environment."
 NextSlide
 
-# Linking customized Packages
-SlideHeader "Linking Apps."
+# Linking Customized Packages
+SlideHeader "Linking Customized Packages."
 NextSlide
 
 # Credits
@@ -278,20 +293,20 @@ SlideHeader "Credits."
 cat User-Area.d/0_Info/1_Credits.txt
 NextSlide
 
-# Cleaning cache, garbage collecting
-SlideHeader "Clean Up."
-echo -e "Clearing cache."
+# Cleaning Cache, Garbage Collecting
+SlideHeader "Cleanup."
+echo -e "Clearing package manager caches."
 sudo pacman -Scc --noconfirm
 yay -Scc --noconfirm
 paru -Scc --noconfirm
-echo -e "${BGreen}Done.${Normal}"
+echo -e "${BGreen}Cleanup Complete.${Normal}"
 NextSlide
 
 # Rebooting
-SlideHeader "Done!"
-echo -e "Installation process done! You may reboot your system.\n"
+SlideHeader "Installation Complete!"
+echo -e "The installation process is complete! You may now reboot your system.\n"
 if gum confirm "Reboot" --affirmative "Confirm" --negative "Exit"; then
-  echo -e "Rebooting System!"
+  echo -e "Rebooting the system!"
   reboot
 else
   echo -e "${BGreen}Installation finished.${Normal}\n"
