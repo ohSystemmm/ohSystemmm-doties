@@ -209,7 +209,7 @@ case $tlp in
     echo -e "Installing TLP for power management.\n"
     sudo pacman -S --needed tlp --noconfirm
     cd ~/ohSystemmm-doties/System-Area.d/0_Global-Config
-    echo -e "Configuring maximum battery capacity to 80%."
+    echo -e "\nConfiguring maximum battery capacity to 80%."
     sudo cp -f tlp.conf /etc/tlp.conf
     cd ~/ohSystemmm-doties/
     echo -e "\n${BGreen}TLP Installed and Configured.${Normal}"
@@ -217,71 +217,44 @@ case $tlp in
 esac    
 NextSlide
 
-# Installing & Enabeling tlp
-SlideHeader "Enabeling tlp."
-echo -e "You can choose between bash, fish and zsh. Each shell has its advantages"
-echo -e "and disadvantages. Bash, the default one is just basic, youre based if"
-echo -e "choose it. However fish, very userfriendly because of its autocompletion"
-echo -e "would be a great choice if you're new to Linux. Zsh, by most users seen"
-echo -e "as the only good shell is recommended for the more advanced users. Despite"
-echo -e "that, choose the one you prefer.\n"
-
-tlp=$(gum choose --cursor="> " --cursor-prefix="* " "Skip" "Laptop")
-case $tlp in
-  "Skip")
-    break    
-    echo -e "Skipped."
-    ;;
-  "Laptop")
-    echo -e "Installing tlp.\n"
-    sudo pacman -S --needed tlp --noconfirm
-    cd ~/ohSystemmm-doties/System-Area.d/0_Global-Config
-    echo -e "Setting Max Battery capacity to 80%."
-    sudo cp -f tlp.conf /etc/tlp.conf
-    cd ~/ohSystemmm-doties/
-    echo -e "\n${BGreen}Done.${Normal}"
-    ;;
-esac    
-NextSlide
-
 # Customizing Bootloader
-# SlideHeader "Customizing Bootloader."
-# gum spin --spinner meter --title "Checking Bootloader..." --show-output -- sleep 2
+SlideHeader "Customizing Bootloader."
+gum spin --spinner meter --title "Checking Bootloader..." --show-output -- sleep 2
 
-# if [ -f /boot/grub/grub.cfg ]; then
-#   echo "GRUB configuration file found: /boot/grub/grub.cfg"
-#   echo "It appears that GRUB is being used as the bootloader."
-#   bootloader="grub"
-# elif pacman -Q grub &>/dev/null; then
-#   echo "GRUB package is installed."
-#   echo "It appears that GRUB is being used as the bootloader."
-#   bootloader="grub"
-# elif command -v bootctl &>/dev/null; then
-#   if bootctl status | grep -q "grub"; then
-#     echo "GRUB boot loader is found in bootctl status."
-#     echo "It appears that GRUB is being used as the bootloader."
-#     bootloader="grub"
-#   else
-#     echo "GRUB does not appear to be the bootloader on this system."
-#     bootloader="not_grub"
-#   fi
-# else
-#   echo "GRUB does not appear to be the bootloader on this system."
-#   bootloader="not_grub"
-# fi
-# if [ "$bootloader" = "grub" ]; then
-#   echo "\nPerforming GRUB-specific tasks..."
-# else
-#   echo "Skipping GRUB-specific tasks."
-# fi
-# NextSlide
+if [ -f /boot/grub/grub.cfg ]; then
+  echo "GRUB configuration file found: /boot/grub/grub.cfg"
+  echo "It appears that GRUB is being used as the bootloader."
+  bootloader="grub"
+elif pacman -Q grub &>/dev/null; then
+  echo "GRUB package is installed."
+  echo "It appears that GRUB is being used as the bootloader."
+  bootloader="grub"
+elif command -v bootctl &>/dev/null; then
+  if bootctl status | grep -q "grub"; then
+    echo "GRUB boot loader is found in bootctl status."
+    echo "It appears that GRUB is being used as the bootloader."
+    bootloader="grub"
+  else
+    echo "GRUB does not appear to be the bootloader on this system."
+    bootloader="not_grub"
+  fi
+else
+  echo "GRUB does not appear to be the bootloader on this system."
+  bootloader="not_grub"
+fi
+if [ "$bootloader" = "grub" ]; then
+  echo -e "\nPerforming GRUB-specific tasks..."
+else
+  echo -e "\nSkipping GRUB-specific tasks."
+fi
+NextSlide
 
 # Setting Default Apps
 SlideHeader "Configuring Default Apps."
 NextSlide
 
 # Setting up Hyprland DE
-SlideHeader "Setting up Hyprland Desktop Environment."
+SlideHeader "Setting up Hyprland."
 NextSlide
 
 # Linking Customized Packages
