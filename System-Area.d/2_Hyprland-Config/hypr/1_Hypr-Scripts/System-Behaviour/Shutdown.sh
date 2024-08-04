@@ -7,4 +7,4 @@
 # by ohSystemmm <3
 
 sleep 0.5
-systemctl poweroff
+systemctl poweroff --now

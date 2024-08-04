@@ -7,4 +7,4 @@
 # by ohSystemmm <3 - 2024
 
 sleep 0.5
-killall -9 Hyprland sleep 2
+pkill Hyprland
