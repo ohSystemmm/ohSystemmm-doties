@@ -7,4 +7,4 @@
 # by ohSystemmm <3 - 2024
 
 # Outputs Monitors in json format
-hyprctl -j monitors
+Scan=$(hyprctl -j monitors)

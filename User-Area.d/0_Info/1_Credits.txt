@@ -12,6 +12,7 @@ Contributors
 Special Thanks
     ml4w-dotfiles (GitLab)
     end4_dotfiles (GitHub)
+    NvChad-Nvim Configs (GitHub)
 
 Acknowledgements:
 I would like to acknowledge the open-source community for their continuous support
