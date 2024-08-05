@@ -7,33 +7,50 @@
 #
 # by ohSystemmm <3 - 2024 
 
-# Wallpaper
+# Default images
+DirDefault=~/ohSystemmm-doties/System-Area.d/7_Defaults/
+MWallpaperDefault="${DirDefault}Wallpaper_Default.jpg"
+BWallpaperDefault="${DirDefault}Blurred-Wallpaper_Default.jpg"
+ProfileDefault="${DirDefault}Profile_Default.jpg"
+RofiDefault="${DirDefault}Rofi-Banner_Default.jpg"
 
-activeWallpaper="~/ohSystemmm-doties/Temp.d/Active-Wallpaper"
-blurredWallpaper="~/ohSystemmm-doties/Temp.d/Blurred-Wallpaper"
+# Interface Files
+DirInterface=~/ohSystemmm-doties/System-Area.d/6_Temp-Files/
+MWallpaperInterface="${DirInterface}Active-Wallpaper.sh"
+BWallpaperInterface="${DirInterface}Blurred-Wallpaper.sh"
+ProfileInterface="${DirInterface}Active-Profile.sh"
+RofiInterface="${DirInterface}Rofi-Banner.sh"
 
-# Profile
-squaredProfile="~/ohSystemmm-doties/Temp.d/User-Profile"
+if [ ! -e "$MWallpaperInterface" ]; then
+  touch "$MWallpaperInterface" && chmod +x "$MWallpaperInterface"
+fi 
 
-# Rofi
-rofiBanner="~/ohSystemmm-doties/Temp.d/Rofi-Banner.rasi"
+if [ ! -e "$BWallpaperInterface" ]; then
+  touch "$BWallpaperInterface" && chmod +x "$BWallpaperInterface"
+fi   
 
-# Set Default Current-Wallpaper if not exists
-if [ ! -f $currentWallpaper ] ;then
-    touch $currentWallpaper
-    echo "~/ohSystemmm-doties/Defaults.d/Default-Wallpaper.jpg" > "$currentWallpaper"
-fi
+if [ ! -e "$ProfileInterface" ]; then
+  touch "$ProfileInterface" && chmod +x "$ProfileInterface"
+fi   
 
-# Set Default Rofi-Banner if not exists
-if [ ! -f $rofiBanner ] ;then
-    touch $rofiBanner
-    echo "~/ohSystemmm-doties/Defaults.d/Default-Banner.jpg" > "$rofiBanner"
-fi
+if [ ! -e "$RofiInterface" ]; then
+  touch "$RofiInterface" && chmod +x "$RofiInterface"
+fi   
 
-# Set Current-Wallpaper
-currentWallpaper=$(cat "activeWallpaper")
+# Getting Wallpapers
+MWallpaperActive=$(cat "${MWallpaperInterface}")
+BWallpaperActive=$(cat "${BWallpaperInterface}")
+ProfileActive=$(cat "${ProfileInterface}")
+RofiActive=$(cat "${RofiInterface}")
 
-# Creating
+# Debug output to verify the variables
+echo "MWallpaperActive: ${MWallpaperActive}"
+echo "BWallpaperActive: ${BWallpaperActive}"
+echo "ProfileActive: ${ProfileActive}"
+echo "RofiActive: ${RofiActive}"
+
+
+
 # Set Wallpaper
 # Progress-Notification
 # Create Blurred-Wallpaper

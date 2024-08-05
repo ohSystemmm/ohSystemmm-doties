@@ -28,7 +28,7 @@ gsettings set "$gnome_schema" cursor-theme "$cursor_theme"
 gsettings set "$gnome_schema" font-name "$font_name"
 gsettings set "$gnome_schema" color-scheme "prefer-dark"
 
-if [ -f ~/ohSystemmm-doties/Hyprland-config.d/hypr/Hypr-conf.d/2_Cursor/Cursor.conf ] ;then
-    echo "exec-once = hyprctl setcursor $cursor_theme $cursor_size" > ~/ohSystemmm-doties/Hyprland-config.d/hypr/Hypr-conf.d/2_Cursor/Cursor.conf 
+if [ -f ~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/0_Hypr-Configs/2_Cursor/Cursor.conf ] ;then
+    echo "exec-once = hyprctl setcursor $cursor_theme $cursor_size" > ~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/0_Hypr-Configs/2_Cursor/Cursor.conf
     hyprctl setcursor $cursor_theme $cursor_size
 fi
