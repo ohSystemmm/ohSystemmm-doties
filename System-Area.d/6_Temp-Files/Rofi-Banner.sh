@@ -3,5 +3,7 @@
 # | |_) / _ \| |_| |_____|  _ \ / _` | '_ \| '_ \ / _ \ '__/ __| '_ \ 
 # |  _ < (_) |  _| |_____| |_) | (_| | | | | | | |  __/ | _\__ \ | | |
 # |_| \_\___/|_| |_|     |____/ \__,_|_| |_|_| |_|\___|_|(_)___/_| |_|
-#
+#                                                                     
 # by ohSystemmm <3 - 2024
+
+/home/ohsystemmm/ohSystemmm-doties/System-Area.d/7_Defaults/Rofi-Banner_Default.jpg
