@@ -88,12 +88,14 @@ NextSlide
 
 # License
 SlideHeader "License."
-cat User-Area.d/0_Info/0_License.txt
+cat ~/ohSystemmm-doties/User-Area.d/0_Info/0_License.txt
 echo -e "$BYellow\nBy proceeding, you accept the license agreement.$Normal"
 NextSlide
 
 # Terms of Service
 SlideHeader "Terms of Service."
+cat ~/ohSystemmm-doties/User-Area.d/0_Info/2_Terms-of-Service.txt
+echo -e "$BYellow\nBy proceeding, you accept the Terms of Service.$Normal"
 NextSlide
 
 # Setting up pacman
