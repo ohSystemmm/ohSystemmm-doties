@@ -14,7 +14,6 @@ InstallRequired() {
     noto-fonts
     pavucontrol
     sddm
-    kitty
     papirus-icon-theme
     pipewire
     pipewire-alsa
@@ -46,6 +45,7 @@ InstallRequired() {
     breeze-icons
     gum
     gtk4
+    gtk3
     gst-plugin-pipewire
     xarchiver
     wireplumber
@@ -68,14 +68,16 @@ InstallRequired() {
     aylurs-gtk-shell
     figlet
     tlp
+    zsh-syntax-highlighting 
+    autojump 
+    zsh-autosuggestions
+    oh-my-zsh
   )
   paru -S --needed "${Packages[@]}" --noconfirm
 }
 
 InstallOptional() {
   Packages=(
-    alacritty
-    helix
     man-pages
     neovim
     timeshift
@@ -85,7 +87,6 @@ InstallOptional() {
     vlc
     wget
     wezterm
-    xterm
     qalculate-gtk 
     pacman-contrib 
     guvcview 
