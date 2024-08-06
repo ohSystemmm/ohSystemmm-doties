@@ -7,5 +7,5 @@
 #
 # by ohSystemmm <3 - 2024
 
-# diashow / static
+# diashow / static / texture
 static

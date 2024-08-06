@@ -34,7 +34,7 @@ ProfileInterface="${DirInterface}Active-Profile.sh"
 RofiInterface="${DirInterface}Rofi-Banner.sh"
 
 if [ ! -e "$MWallpaperInterface" ]; then
-  touch "$MWallpaperInterface" && chmod +x "$MWallpaperInterface"
+touch "$MWallpaperInterface" && chmod +x "$MWallpaperInterface"
   Header "Active-Wallpaper.sh" "$MWallpaperInterface"
   echo -e "$MWallpaperDefault" >> "$MWallpaperInterface"
 fi 
@@ -69,6 +69,8 @@ echo "BWallpaperActive: ${BWallpaperActive}"
 echo "ProfileActive: ${ProfileActive}"
 echo "RofiActive: ${RofiActive}"
 
+WallpaperType=$(tail -n 1 ~/ohSystemmm-doties/System-Area.d/1_Dotfile-Settings/Wallpaper-Type.sh)
+echo -e $WallpaperType
 # Set Wallpaper
 # Progress-Notification
 # Create Blurred-Wallpaper
