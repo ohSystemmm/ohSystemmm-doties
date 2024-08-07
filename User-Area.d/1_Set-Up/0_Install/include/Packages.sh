@@ -59,7 +59,7 @@ InstallRequired() {
     hypridle
     hyprland
     hyprlock
-    hyprpaper
+    swww
     hyprshade
     waybar
     wlogout
