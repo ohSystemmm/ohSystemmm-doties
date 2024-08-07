@@ -174,16 +174,19 @@ case $choice in
   "bash")
     echo -e "Setting default shell to bash."
     chsh -s /usr/bin/bash
+    cp -f ~/ohSystemmm-doties/System-Area.d/3_Package-Config/2_Shell-Configs/bash/* ~
     echo -e "\n${BGreen}Default Shell Set.${Normal}"
     ;;
   "fish")
     echo -e "Setting default shell to fish."
     chsh -s /usr/bin/fish
+    cp -f ~/ohSystemmm-doties/System-Area.d/3_Package-Config/2_Shell-Configs/fish/* ~/.config/fish/config/fish/   
     echo -e "\n${BGreen}Default Shell Set.${Normal}"
     ;;
   "zsh")
     echo -e "Setting default shell to zsh."
     chsh -s /usr/bin/zsh
+    cp -f ~/ohSystemmm-doties/System-Area.d/3_Package-Config/2_Shell-Configs/zsh/* ~
     echo -e "\n${BGreen}Default Shell Set.${Normal}"
     ;;      
 esac    
@@ -222,7 +225,6 @@ NextSlide
 # Customizing Bootloader
 SlideHeader "Customizing Bootloader."
 gum spin --spinner meter --title "Checking Bootloader..." --show-output -- sleep 2
-
 if [ -f /boot/grub/grub.cfg ]; then
   echo "GRUB configuration file found: /boot/grub/grub.cfg"
   echo "It appears that GRUB is being used as the bootloader."
@@ -257,6 +259,8 @@ NextSlide
 
 # Setting up Hyprland DE
 SlideHeader "Setting up Hyprland."
+# Monitors
+# Input
 NextSlide
 
 # Linking Customized Packages

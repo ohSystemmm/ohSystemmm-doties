@@ -67,11 +67,12 @@ InstallRequired() {
     waypaper
     aylurs-gtk-shell
     figlet
-    tlp
     zsh-syntax-highlighting 
     autojump 
     zsh-autosuggestions
     oh-my-zsh
+    firefox-nightly-bin
+    wezterm
   )
   paru -S --needed "${Packages[@]}" --noconfirm
 }
@@ -86,19 +87,13 @@ InstallOptional() {
     vim
     vlc
     wget
-    wezterm
-    qalculate-gtk 
-    pacman-contrib 
-    guvcview 
     imagemagick
     tree
     cava
-    firefox-nightly-bin
     paru
     parui
     wayland-screenshot
     imgcat 
-    pacseek
     emote
   )
   paru -S --needed "${Packages[@]}" --noconfirm
@@ -106,6 +101,7 @@ InstallOptional() {
 
 InstallohSystemmm() {
   Packages=(
+    tlp
     krita
     prismlauncher
     blender
