@@ -38,40 +38,28 @@ Header() {
   echo -e -n "${Normal}\n"
 }
 
-showMainMenu() {
-  Header "Main Menu"
-  gum choose --cursor=" " \
-    "Cosmetic Settings" \
-    "Default Settings" \
-    "System Settings" \
-    "Exit"
-}
+Header "Main Menu"
+MainMenu=$(gum choose --cursor=" " \
+  "Appearance Configuration"        \
+  "Hypr Configuration"              \
+  "System Configuration"            \
+  "Dotfiles Management"             \
+  "Miscellaneous Settings"          \
+  "Exit"
+)
 
-showCosmeticMenu() {
-  Header "Cosmetic Menu"
-  gum choose --cursor=" " \
-    "Option 0" \
-    "Option 1" \
-    "Back" \
-    "Exit"
-}
+if [ "$MainMenu" == "Appearance Configuration" ]; then
+  Header "Appearance"
+elif [ "$MainMenu" == "Hypr Configuration" ]; then
+  Header "Hyprland"
+elif [ "$MainMenu" == "System Configuration" ]; then
+  Header "System"
+elif [ "$MainMenu" == "Dotfiles Management" ]; then
+  Header "Dotfiles"
+elif [ "$MainMenu" == "Miscellaneous Settings" ]; then
+  Header "Miscellaneous"
+elif [ "$MainMenu" == "Exit" ]; then
+  echo "Exiting..."
+  exit 0
+fi
 
-showDefaultMenu() {
-  Header "Defaults Menu"
-  gum choose --cursor=" " \
-    "Option 0" \
-    "Option 1" \
-    "Back" \
-    "Exit"
-}
-
-showSystemMenu() {
-  Header "System Menu"
-  gum choose --cursor=" " \
-    "Option 0" \
-    "Option 1" \
-    "Back" \
-    "Exit"
-}
-
-showMainMenu
