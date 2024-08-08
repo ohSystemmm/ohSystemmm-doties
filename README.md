@@ -1,2 +1,4 @@
 # ohSystemmm-doties
-Work in Progress
+Work in Progres
+
+Currently focusing on the logic - User friendliness will be added after
