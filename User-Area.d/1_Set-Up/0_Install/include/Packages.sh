@@ -110,6 +110,7 @@ InstallohSystemmm() {
     steam
     ani-cli
     mov-cli
+    manga-cli-git
     armcord-bin
     spotify
     spotify-adblock

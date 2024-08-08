@@ -7,7 +7,7 @@
 # by ohSystemmm <3 - 2024
 
 # Reset
-Normal='\033[0m'       # Text Reset
+Normal='\033[0m'          # Text Reset
 
 # Regular Colors
 Black='\033[0;30m'        # Black
