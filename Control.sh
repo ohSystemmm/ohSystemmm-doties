@@ -8,58 +8,110 @@
 
 # Source Colors
 source ~/ohSystemmm-doties/User-Area.d/1_Set-Up/0_Install/include/Colors.sh
+source .control-assets/Check.sh
+source .control-assets/Header.sh
+source .control-assets/Options.sh
 
-# Check if 'figlet' or 'gum' command is available
-if ! command -v figlet >/dev/null 2>&1 || ! command -v gum >/dev/null 2>&1; then
-  clear
-  echo -e -n "\nThe required packages '${BYellow}figlet${Normal}' and '${BYellow}gum${Normal}' are ${BRed}not${Normal} installed. Do you want to install them [${BGreen}y${Normal}/${BRed}n${Normal}]: "
-  read -r choice
-  choice=$(echo "$choice" | tr '[:upper:]' '[:lower:]')
-  if [ $choice == "y" ]; then
-    if sudo pacman -S --needed figlet gum --noconfirm > /dev/null 2>&1; then
-      echo -e "Packages '${BYellow}figlet${Normal}' and '${BYellow}gum${Normal}' have been ${BGreen}successfully${Normal} installed."
-      sleep 5
-    else
-      echo -e "${BRed}Error${BRed}: Failed to install '${BYellow}figlet${Normal}' and '${BYellow}gum${Normal}'.\n"
-      exit 1
-    fi
-  else
-    echo -e "The Control script requires '${BYellow}figlet${Normal}' and '${BYellow}gum${Normal}' to proceed. Exiting.\n"
-    exit 1
-  fi
-fi
+CheckPackages
 
-Header() {
-  clear
-  local Message=$1
-  echo -e -n "${BCyan}"
-  figlet -w 200 "$Message"
-  echo -e "\nby ohSystemmm <3 - 2024"
-  echo -e -n "${Normal}\n"
-}
-
+# Main Menu
 Header "Main Menu"
 MainMenu=$(gum choose --cursor=" " \
   "Appearance Configuration"        \
-  "Hypr Configuration"              \
+  "Hyprland Configuration"          \
   "System Configuration"            \
   "Dotfiles Management"             \
   "Miscellaneous Settings"          \
   "Exit"
 )
 
+# Appearance Configuration
 if [ "$MainMenu" == "Appearance Configuration" ]; then
-  Header "Appearance"
-elif [ "$MainMenu" == "Hypr Configuration" ]; then
-  Header "Hyprland"
+  Header "Appearance Configuration"
+  echo -e " ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ "
+  echo -e " ┃  [0] Profile Picture         ┃ "
+  echo -e " ┃  [1] Lock Screen             ┃ "
+  echo -e " ┃  [2] Wallpaper Style         ┃ "
+  echo -e " ┃  [3] Rofi Header             ┃ "
+  echo -e " ┃  [4] Theme Design            ┃ "
+  echo -e " ┃  [5] SDDM Background         ┃ "
+  echo -e " ┠──────────────────────────────┨ "
+  echo -e " ┃  [b] Go Back                 ┃ "
+  echo -e " ┃  [q] Quick Exit              ┃ "
+  echo -e " ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ "
+  echo -e 
+  read -n 1 -p "Select an option: " AppearanceConfiguration_Choice
+
+# Hyprland Configuration
+elif [ "$MainMenu" == "Hyprland Configuration" ]; then
+  Header "Hyprland Configuration"
+  echo -e " ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ "
+  echo -e " ┃  [0] Display Settings        ┃ "
+  echo -e " ┃  [1] Input Devices           ┃ "
+  echo -e " ┃  [2] Waybar Configuration    ┃ "
+  echo -e " ┃  [3] Language Preferences    ┃ "
+  echo -e " ┃  [4] Window Management       ┃ "
+  echo -e " ┠──────────────────────────────┨ "
+  echo -e " ┃  [b] Go Back                 ┃ "
+  echo -e " ┃  [q] Quick Exit              ┃ "
+  echo -e " ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ "
+  echo -e 
+  read -n 1 -p "Select an option: " HyprlandConfiguration_Choice
+
+# System Configuration
 elif [ "$MainMenu" == "System Configuration" ]; then
-  Header "System"
+  Header "System Configuration"
+  echo -e " ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ "
+  echo -e " ┃  [0] Unlock Database         ┃ "
+  echo -e " ┃  [1] System Cleanup          ┃ "
+  echo -e " ┃  [2] Configure Hostname      ┃ "
+  echo -e " ┃  [3] Update GRUB             ┃ "
+  echo -e " ┃  [4] Restart SDDM            ┃ "
+  echo -e " ┃  [5] System Diagnosis        ┃ "
+  echo -e " ┠──────────────────────────────┨ "
+  echo -e " ┃  [b] Go Back                 ┃ "
+  echo -e " ┃  [q] Quick Exit              ┃ "
+  echo -e " ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ "
+  echo -e 
+  read -n 1 -p "Select an option: " SystemConfiguration_Choice
+
+# Dotfiles Management
 elif [ "$MainMenu" == "Dotfiles Management" ]; then
-  Header "Dotfiles"
+  Header "Dotfiles Management"
+  echo -e " ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ "
+  echo -e " ┃  [0] Terminal Emulator       ┃ "
+  echo -e " ┃  [1] Shell Configuration     ┃ "
+  echo -e " ┃  [2] Web Browser             ┃ "
+  echo -e " ┃  [3] Messaging App           ┃ "
+  echo -e " ┃  [4] Music Player            ┃ "
+  echo -e " ┃  [5] File Manager            ┃ "
+  echo -e " ┃  [6] Text Editor             ┃ "
+  echo -e " ┃  [7] Screenshot Utility      ┃ "
+  echo -e " ┠──────────────────────────────┨ "
+  echo -e " ┃  [b] Go Back                 ┃ "
+  echo -e " ┃  [q] Quick Exit              ┃ " 
+  echo -e " ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ "
+  echo -e 
+  read -n 1 -p "Select an option: " DotfilesManagement_Choice
+
+# Miscellaneous Settings
 elif [ "$MainMenu" == "Miscellaneous Settings" ]; then
-  Header "Miscellaneous"
-elif [ "$MainMenu" == "Exit" ]; then
-  echo "Exiting..."
-  exit 0
+  Header "Miscellaneous Settings"
+  echo -e " ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ "
+  echo -e " ┃  [0] Force System Behavior   ┃ "
+  echo -e " ┃  [1] Reinstall Dotfiles      ┃ "
+  echo -e " ┃  [2] Update Dotfiles         ┃ "
+  echo -e " ┃  [3] Reset to Defaults       ┃ "
+  echo -e " ┃  [4] Remove Dotfiles         ┃ "
+  echo -e " ┠──────────────────────────────┨ "
+  echo -e " ┃  [b] Go Back                 ┃ "
+  echo -e " ┃  [q] Quick Exit              ┃ " 
+  echo -e " ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ "
+  echo -e 
+  read -n 1 -p -e "Select an option: " MiscellaneousSettings_Choice
+
+# Exit
+else
+  exit 1
 fi
 
