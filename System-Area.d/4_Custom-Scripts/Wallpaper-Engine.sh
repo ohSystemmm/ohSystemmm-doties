@@ -7,72 +7,50 @@
 #
 # by ohSystemmm <3 - 2024 
 
-Header() {
-  HeaderText=$1 
-  File=$2
-  Ascii=$(figlet -w 100 "$HeaderText") 
-  {
-  echo "$Ascii" | while IFS= read -r line; do
-    echo "# $line"
-  done
-  echo -e "# by ohSystemmm <3 - 2024\n"
-  } > "$File"
-}
+# Define Defaults
+Default_Directory="~/ohSystemmm-doties/System-Area.d/6_Defaults/"
+Default_Avatar="${Default_Directory}Avatar_Default.jpg"
+Default_Wallpaper="${Default_Directory}Wallpaper_Default.jpg"
+Default_RofiBanner="${Default_Directory}Rofi-Banner_Default.jpg"
+Default_BlurredWallpaper="${Default_Directory}Blurred-Wallpaper_Default.jpg"
 
-# Default images
-DirDefault=~/ohSystemmm-doties/System-Area.d/7_Defaults/
-MWallpaperDefault="${DirDefault}Wallpaper_Default.jpg"
-BWallpaperDefault="${DirDefault}Blurred-Wallpaper_Default.jpg"
-ProfileDefault="${DirDefault}Profile_Default.jpg"
-RofiDefault="${DirDefault}Rofi-Banner_Default.jpg"
+# Creating Wallpaper Type if not Exist
+WallpaperTypeDirectory=~/ohSystemmm-doties/System-Area.d/1_Dotfile-Settings/Wallpaper-Type.sh
+Default_WallpaperType="static"
+if [ ! -e "$WallpaperTypeDirectory" ]; then
+    touch "$WallpaperTypeDirectory" && chmod +x "$WallpaperTypeDirectory"
+    Header=$(figlet -w 100 "Wallpaper-Type.sh")
+    {
+        echo "$Header" | while IFS= read -r line; do
+            echo "# $line"
+        done
+        echo -e "#\n# by ohSystemmm <3 - 2024\n"
+        echo -e "# static / diashow / texture"
+        echo -e "${Default_WallpaperType}"
+    } > "$WallpaperTypeDirectory"
+fi
+    
+# Getting Wallpaper Type
+WallpaperType=$(tail -n 1 "$WallpaperTypeDirectory")
 
-# Interface Files
-DirInterface=~/ohSystemmm-doties/System-Area.d/6_Temp-Files/
-MWallpaperInterface="${DirInterface}Active-Wallpaper.sh"
-BWallpaperInterface="${DirInterface}Blurred-Wallpaper.sh"
-ProfileInterface="${DirInterface}Active-Profile.sh"
-RofiInterface="${DirInterface}Rofi-Banner.sh"
-
-if [ ! -e "$MWallpaperInterface" ]; then
-touch "$MWallpaperInterface" && chmod +x "$MWallpaperInterface"
-  Header "Active-Wallpaper.sh" "$MWallpaperInterface"
-  echo -e "$MWallpaperDefault" >> "$MWallpaperInterface"
-fi 
-
-if [ ! -e "$BWallpaperInterface" ]; then
-  touch "$BWallpaperInterface" && chmod +x "$BWallpaperInterface"
-  Header "Blurred-Wallpaper.sh" "$BWallpaperInterface"
-  echo -e "$BWallpaperDefault" >> "$BWallpaperInterface"
-fi   
-
-if [ ! -e "$ProfileInterface" ]; then
-  touch "$ProfileInterface" && chmod +x "$ProfileInterface"
-  Header "Active-Profile.sh" "$ProfileInterface"
-  echo -e "$ProfileDefault" >> "$ProfileInterface"
-fi   
-
-if [ ! -e "$RofiInterface" ]; then
-  touch "$RofiInterface" && chmod +x "$RofiInterface"
-  Header "Rofi-Banner.sh" "$RofiInterface"
-  echo -e "$RofiDefault" >> "$RofiInterface"
-fi   
-
-# Getting Wallpapers
-MWallpaperActive=$(tail -n 1 "${MWallpaperInterface}")
-BWallpaperActive=$(tail -n 1 "${BWallpaperInterface}")
-ProfileActive=$(tail -n 1 "${ProfileInterface}")
-RofiActive=$(tail -n 1  "${RofiInterface}")
+case $WallpaperType in 
+  "static")
+    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Select_Wallpaper.sh
+  ;;
+  "diashow")
+    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Select_Diashow-Folder.sh
+  ;;
+  "texture")
+    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Select_Texture-Folder.sh
+    
+  ;;
+  *)
+    notify-send -u critical -i dialog-error "Critical Warning!" "Unknown Wallpaper Type"
+  ;;
+esac
+#DefaultWallpaper=
+# WallpaperInterface=
+# NewWallpaper=
 
 # Debug
-echo "MWallpaperActive: ${MWallpaperActive}"
-echo "BWallpaperActive: ${BWallpaperActive}"
-echo "ProfileActive: ${ProfileActive}"
-echo "RofiActive: ${RofiActive}"
-
-WallpaperType=$(tail -n 1 ~/ohSystemmm-doties/System-Area.d/1_Dotfile-Settings/Wallpaper-Type.sh)
-echo -e $WallpaperType
-# Set Wallpaper
-# Progress-Notification
-# Create Blurred-Wallpaper
-# Refresh Active-Wallpaper + Blurred-Wallpaper + User-Profile + Rofi-Banner
-# End-Notification
+echo -e "Wallpaper Type:\t${WallpaperType}"
