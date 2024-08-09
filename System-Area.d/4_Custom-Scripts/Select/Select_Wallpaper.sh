@@ -9,17 +9,13 @@
 
 WallpaperDirectory=~/Downloads/ # Test
 Wallpapers=$(find "$WallpaperDirectory" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) | sort)
-
 if [ -z "$Wallpapers" ]; then
-    echo "empty"
+    notify-send "Warning!" "Empty Diashowfolder"
     exit 1
 fi
-
-SelectedWallpaper=$(echo "$Wallpapers" | rofi -dmenu -p "Select an image:" -theme-str 'listview { lines: 10; }')
-
+SelectedWallpaper=$(echo "$Wallpapers" | rofi -dmenu -p "Select new Wallpaper" -theme-str 'listview { lines: 10; }')
 if [ -n "$SelectedWallpaper" ]; then
    echo -e "$SelectedWallpaper" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Active-Wallpaper.sh 
 else
-    echo "canceled" >&2
     exit 1
 fi
