@@ -32,18 +32,20 @@ fi
     
 # Getting Wallpaper Type
 WallpaperType=$(tail -n 1 "$WallpaperTypeDirectory")
-
 SelectionDirectory=~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Select/
 
-case $WallpaperType in 
+case $WallpaperType in
   "static")
     source "${SelectionDirectory}Select_Wallpaper.sh"
     ActiveWallpaper=$(cat ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Active-Wallpaper.sh)
-    echo -e "$ActiveWallpaper"
+    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/pywal.sh
+    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Swww.sh
   ;;
   "diashow")
     source "${SelectionDirectory}Select_Diashow-Folder.sh"
     ActiveDiashow=$(cat ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Active-Wallpaper.sh)
+    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/pywal.sh
+    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Swww.sh
   ;;
   "texture")
     source "${SelectionDirectory}Select_Texture-Folder.sh"
@@ -53,8 +55,3 @@ case $WallpaperType in
     notify-send -u critical -i dialog-error "Critical Warning!" "Unknown Wallpaper Type '$WallpaperType'"
   ;;
 esac
-#DefaultWallpaper=
-# WallpaperInterface=
-# NewWallpaper=
-
-# Debug

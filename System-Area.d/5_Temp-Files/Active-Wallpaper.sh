@@ -1,1 +1,1 @@
-/home/ohsystemmm/Downloads/7d07081a395a10001db092717091933f.jpg
+/home/ohsystemmm/Downloads/nanahoshi_1.jpg

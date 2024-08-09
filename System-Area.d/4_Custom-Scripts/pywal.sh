@@ -11,7 +11,7 @@ cache=~/.cache/wal/
 PywalColors=~/ohSystemmm-doties/System-Area.d/6_Temp-Files/Pywall-Colors/
 Theme=$(tail -n 1 "~/ohSystemmm-doties/System-Area.d/1_Dotfile-Settings/Design.sh")
 
-wal -i $(cat "~/ohSystemmm-doties/System-Area.d/6_Temp-Files/Active-Wallpaper.sh")
+wal -i $(cat "~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Active-Wallpaper.sh")
 
 cp "${cache}colors" "${PywalColors}"
 cp "${cache}colors.css" "${PywalColors}"
