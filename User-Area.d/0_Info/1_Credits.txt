@@ -6,7 +6,7 @@ Lead Developer
     ohSystemmm (GitHub)
 
 Contributors
-    Y2kun (GitHub) – Code Optimizations, Ideas, and Reviewing, Bug fixing
+    Y2kun (GitHub) – Code Optimizations, Ideas, and Reviewing, Bug fixing, Wallpaper-Engine
     Testers (Anonymous) – Testing and Feedback
 
 Special Thanks

@@ -10,7 +10,7 @@
 WallpaperDirectory=~/Downloads/ # Test
 Wallpapers=$(find "$WallpaperDirectory" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) | sort)
 if [ -z "$Wallpapers" ]; then
-    notify-send "Warning!" "Empty Diashowfolder"
+    notify-send "Warning!" "Empty Wallpaperfolder"
     exit 1
 fi
 SelectedWallpaper=$(echo "$Wallpapers" | rofi -dmenu -p "Select new Wallpaper" -theme-str 'listview { lines: 10; }')

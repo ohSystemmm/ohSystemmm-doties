@@ -13,19 +13,19 @@ Theme=$(tail -n 1 "~/ohSystemmm-doties/System-Area.d/1_Dotfile-Settings/Design.s
 
 wal -i $(cat "~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Active-Wallpaper.sh")
 
-cp "${cache}colors" "${PywalColors}"
-cp "${cache}colors.css" "${PywalColors}"
-cp "${cache}colors.json" "${PywalColors}"
-cp "${cache}colors.sh" "${PywalColors}"
-cp "${cache}colors-waybar.css" "${PywalColors}"
+cp -f "${cache}colors" "${PywalColors}"
+cp -f "${cache}colors.css" "${PywalColors}"
+cp -f "${cache}colors.json" "${PywalColors}"
+cp -f "${cache}colors.sh" "${PywalColors}"
+cp -f "${cache}colors-waybar.css" "${PywalColors}"
 
 
 if [ "$Theme" == "Dark" ]; then
-  cp "${cache}colors-rofi-dark.rasi" "${PywalColors}"
+  cp -f "${cache}colors-rofi-dark.rasi" "${PywalColors}"
 fi
 
 if [ "$Theme" == "Light" ]; then
-  cp "${cache}colors-rofi-light.rasi" "${PywalColors}"
+  cp -f "${cache}colors-rofi-light.rasi" "${PywalColors}"
 fi 
 
 rm -rf "${cache}"
