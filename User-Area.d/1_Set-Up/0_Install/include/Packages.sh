@@ -120,6 +120,7 @@ InstallohSystemmm() {
     fcitx5
     fcitx5-configtool
     mozc
+    obs-studio
   )
   paru -S --needed "${Packages[@]}" --noconfirm
 }

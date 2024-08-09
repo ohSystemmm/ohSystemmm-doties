@@ -38,15 +38,19 @@ SelectionDirectory=~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Select/
 case $WallpaperType in 
   "static")
     source "${SelectionDirectory}Select_Wallpaper.sh"
+    ActiveWallpaper=$(cat ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Active-Wallpaper.sh)
+    echo -e "$ActiveWallpaper"
   ;;
   "diashow")
     source "${SelectionDirectory}Select_Diashow-Folder.sh"
+    ActiveDiashow=$(cat ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Active-Wallpaper.sh)
   ;;
   "texture")
     source "${SelectionDirectory}Select_Texture-Folder.sh"
+    ActiveTexture=$()
   ;;
   *)
-    notify-send -u critical -i dialog-error "Critical Warning!" "Unknown Wallpaper Type"
+    notify-send -u critical -i dialog-error "Critical Warning!" "Unknown Wallpaper Type '$WallpaperType'"
   ;;
 esac
 #DefaultWallpaper=
@@ -54,4 +58,3 @@ esac
 # NewWallpaper=
 
 # Debug
-echo -e "Wallpaper Type:\t${WallpaperType}"

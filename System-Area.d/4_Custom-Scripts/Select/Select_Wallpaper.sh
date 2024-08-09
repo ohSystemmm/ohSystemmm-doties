@@ -18,7 +18,7 @@ fi
 SelectedWallpaper=$(echo "$Wallpapers" | rofi -dmenu -p "Select an image:" -theme-str 'listview { lines: 10; }')
 
 if [ -n "$SelectedWallpaper" ]; then
-    echo "$SelectedWallpaper"
+   echo -e "$SelectedWallpaper" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Active-Wallpaper.sh 
 else
     echo "canceled" >&2
     exit 1
