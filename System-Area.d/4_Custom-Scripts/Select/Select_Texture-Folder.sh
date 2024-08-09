@@ -7,4 +7,19 @@
 #
 # by ohSystemmm <3 - 2024
 
+TextureDirectory=~/Downloads/ # Test
+Textures=$(find "$TextureDirectory" -type d | sort)
 
+if [ -z "$Textures" ]; then
+  echo "empty"
+  exit 1
+fi
+
+SelectedTexture=$(echo "$Textures" | rofi -dmenu -p "Select a folder:" -theme-str 'listview { lines: 10; }')
+
+if [ -n "$SelectedTexture" ]; then
+    echo "$SelectedTexture"
+else
+    echo "canceled" >&2
+    exit 1
+fi

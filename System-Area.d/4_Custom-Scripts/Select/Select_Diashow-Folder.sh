@@ -7,4 +7,19 @@
 # 
 # by ohSystemmm <3 - 2024
 
+DiashowDirectory=~/Downloads/ # Test
+Diashows=$(find "$DiashowDirectory" -type d | sort)
 
+if [ -z "$Diashows" ]; then
+  echo "empty"
+  exit 1
+fi
+
+SelectedDiashow=$(echo "$Diashows" | rofi -dmenu -p "Select a folder:" -theme-str 'listview { lines: 10; }')
+
+if [ -n "$SelectedDiashow" ]; then
+    echo "$SelectedDiashow"
+else
+    echo "canceled" >&2
+    exit 1
+fi

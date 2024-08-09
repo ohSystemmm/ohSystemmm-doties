@@ -7,7 +7,7 @@
 # 
 # by ohSystemmm <3 - 2024
 
-WallpaperDirectory=~/Downloads/
+WallpaperDirectory=~/Downloads/ # Test
 Wallpapers=$(find "$WallpaperDirectory" -type f \( -iname "*.jpg" -o -iname "*.png"  \) | sort)
 
 if [ -z "$Wallpapers" ]; then
