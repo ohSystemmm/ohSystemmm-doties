@@ -8,7 +8,7 @@
 # by ohSystemmm <3 - 2024
 
 WallpaperDirectory=~/Downloads/ # Test
-Wallpapers=$(find "$WallpaperDirectory" -type f \( -iname "*.jpg" -o -iname "*.png"  \) | sort)
+Wallpapers=$(find "$WallpaperDirectory" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) | sort)
 
 if [ -z "$Wallpapers" ]; then
     echo "empty"

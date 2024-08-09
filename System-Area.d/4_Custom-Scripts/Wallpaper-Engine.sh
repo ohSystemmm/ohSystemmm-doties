@@ -33,16 +33,17 @@ fi
 # Getting Wallpaper Type
 WallpaperType=$(tail -n 1 "$WallpaperTypeDirectory")
 
+SelectionDirectory=~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Select/
+
 case $WallpaperType in 
   "static")
-    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Select_Wallpaper.sh
+    source "${SelectionDirectory}Select_Wallpaper.sh"
   ;;
   "diashow")
-    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Select_Diashow-Folder.sh
+    source "${SelectionDirectory}Select_Diashow-Folder.sh"
   ;;
   "texture")
-    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Select_Texture-Folder.sh
-    
+    source "${SelectionDirectory}Select_Texture-Folder.sh"
   ;;
   *)
     notify-send -u critical -i dialog-error "Critical Warning!" "Unknown Wallpaper Type"
