@@ -122,6 +122,7 @@ InstallohSystemmm() {
     fcitx5-configtool
     mozc
     obs-studio
+    discord
   )
   paru -S --needed "${Packages[@]}" --noconfirm
 }

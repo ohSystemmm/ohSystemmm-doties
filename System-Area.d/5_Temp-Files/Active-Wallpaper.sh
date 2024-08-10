@@ -1,1 +1,1 @@
-/home/ohsystemmm/Images/Wallpapers/Red_City.jpg
+/home/ohsystemmm/Images/Wallpapers/wallhaven-9mpv6k.jpg
