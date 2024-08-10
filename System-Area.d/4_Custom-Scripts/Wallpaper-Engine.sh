@@ -9,10 +9,7 @@
 
 # Define Defaults
 Default_Directory="~/ohSystemmm-doties/System-Area.d/6_Defaults/"
-Default_Avatar="${Default_Directory}Avatar_Default.jpg"
 Default_Wallpaper="${Default_Directory}Wallpaper_Default.jpg"
-Default_RofiBanner="${Default_Directory}Rofi-Banner_Default.jpg"
-Default_BlurredWallpaper="${Default_Directory}Blurred-Wallpaper_Default.jpg"
 
 # Creating Wallpaper Type if not Exist
 WallpaperTypeDirectory=~/ohSystemmm-doties/System-Area.d/1_Dotfile-Settings/Wallpaper-Type.sh
@@ -31,27 +28,23 @@ if [ ! -e "$WallpaperTypeDirectory" ]; then
 fi
     
 # Getting Wallpaper Type
-WallpaperType=$(tail -n 1 "$WallpaperTypeDirectory")
-SelectionDirectory=~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Select/
+while true; do
+  WallpaperType=$(tail -n 1 "$WallpaperTypeDirectory")
 
-case $WallpaperType in
-  "static")
-    source "${SelectionDirectory}Select_Wallpaper.sh"
-    ActiveWallpaper=$(cat ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Active-Wallpaper.sh)
-    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/pywal.sh
-    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Swww.sh
-  ;;
-  "diashow")
-    source "${SelectionDirectory}Select_Diashow-Folder.sh"
-    ActiveDiashow=$(cat ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Active-Wallpaper.sh)
-    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/pywal.sh
-    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Swww.sh
-  ;;
-  "texture")
-    source "${SelectionDirectory}Select_Texture-Folder.sh"
-    ActiveTexture=$()
-  ;;
-  *)
-    notify-send -u critical -i dialog-error "Critical Warning!" "Unknown Wallpaper Type '$WallpaperType'"
-  ;;
-esac
+  case $WallpaperType in
+    "static")
+      source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/pywal.sh
+      exit 1
+      # source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Swww.sh
+    ;;
+    "diashow")
+      source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Rand-Img.sh
+      ;;
+    "texture")
+      notify-send "Wip"
+    ;;
+    *)
+      notify-send -u critical -i dialog-error "Critical Warning!" "Unknown Wallpaper Type '$WallpaperType'"
+    ;;
+  esac
+done

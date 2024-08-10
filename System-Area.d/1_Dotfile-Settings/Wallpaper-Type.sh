@@ -7,5 +7,6 @@
 #
 # by ohSystemmm <3 - 2024
 
+# If type = Diashow start engine
 # static / diashow / texture
 static

@@ -1,1 +1,1 @@
-/home/ohsystemmm/Downloads/nanahoshi_1.jpg
+/home/ohsystemmm/Images/Wallpapers/dark-star.jpg

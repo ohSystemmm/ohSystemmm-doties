@@ -7,7 +7,7 @@
 # 
 # by ohSystemmm <3 - 2024
 
-WallpaperDirectory=~/Downloads/ # Test
+WallpaperDirectory=~/Images/Wallpapers/ # Test
 Wallpapers=$(find "$WallpaperDirectory" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) | sort)
 if [ -z "$Wallpapers" ]; then
     notify-send "Warning!" "Empty Wallpaperfolder"
@@ -15,7 +15,9 @@ if [ -z "$Wallpapers" ]; then
 fi
 SelectedWallpaper=$(echo "$Wallpapers" | rofi -dmenu -p "Select new Wallpaper" -theme-str 'listview { lines: 10; }')
 if [ -n "$SelectedWallpaper" ]; then
-   echo -e "$SelectedWallpaper" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Active-Wallpaper.sh 
+   echo -e "$SelectedWallpaper" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Active-Wallpaper.sh
+   source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/pywal.sh
+   source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Swww.sh
 else
     exit 1
 fi

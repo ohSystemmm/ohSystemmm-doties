@@ -6,27 +6,18 @@
 #                           |_____| 
 # 
 # by ohSystemmm <3 - 2024
-
-DiashowDirectory=~/Downloads/ # Test
+DiashowDirectory=~/Images/ # Test
 Diashows=$(find "$DiashowDirectory" -type d | sort)
+
 if [ -z "$Diashows" ]; then
   notify-send "Warning!" "Empty Diashowfolder"
   exit 1 
 fi
+
 SelectedDiashow=$(echo "$Diashows" | rofi -dmenu -p "Select new Diashow" -theme-str 'listview { lines: 10; }')
 if [ -n "$SelectedDiashow" ]; then
-    SelectedDiashow="${SelectedDiashow%/}/"
-    shopt -s nullglob
-    Images=("$SelectedDiashow"*.jpg "$SelectedDiashow"*.png "$SelectedDiashow"*.jpeg)
-    shopt -u nullglob
-    if [ ${#Images[@]} -eq 0 ]; then
-      notify-send "Warning!" "Empty Diashowfolder"      
-      exit 1
-    fi
-    RandomImage=${Images[RANDOM % ${#Images[@]}]}
-    echo -e "$RandomImage" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Active-Wallpaper.sh
+  echo -e "$SelectedDiashow" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Diashow-Folder.sh
 else
     echo "canceled" >&2
     exit 1
 fi
-
