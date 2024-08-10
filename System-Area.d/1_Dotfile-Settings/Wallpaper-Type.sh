@@ -1,1 +1,1 @@
-diashow
+static
