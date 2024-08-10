@@ -1,1 +1,1 @@
-/home/ohsystemmm/Images/Wallpapers/dark-star.jpg
+/home/ohsystemmm/Images/Wallpapers/Under_Starlit_Sky.png

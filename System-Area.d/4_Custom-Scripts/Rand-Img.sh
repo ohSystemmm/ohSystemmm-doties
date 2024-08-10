@@ -20,5 +20,5 @@ fi
     echo -e "$RandomImage" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Active-Wallpaper.sh
     source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/pywal.sh
     source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Swww.sh
-    sleep 10
+    sleep 7
 
