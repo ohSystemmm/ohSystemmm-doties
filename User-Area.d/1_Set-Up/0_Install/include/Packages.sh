@@ -95,6 +95,7 @@ InstallOptional() {
     wayland-screenshot
     imgcat 
     emote
+    gparted
   )
   paru -S --needed "${Packages[@]}" --noconfirm
 }
