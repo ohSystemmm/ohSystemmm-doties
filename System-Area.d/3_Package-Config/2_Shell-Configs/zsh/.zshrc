@@ -6,6 +6,7 @@
 #
 # by ohSystemmm <3 - 2024
 
+sleep 0.2
 fastfetch
 alias shortcuts='nvim ~/.zshrc'
 alias key='nvim ~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/0_Hypr-Configs/9_Keybindings/Keybindings.conf'
@@ -25,7 +26,7 @@ alias img='wezterm imgcat'
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH=~/ohSystemmm-doties/System-Area.d/3_Package-Config/2_Shell-Configs/zsh/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -96,6 +97,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
+(cat ~/.cache/wal/sequences &)
 
 # User configuration
 
