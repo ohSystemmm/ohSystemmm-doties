@@ -114,7 +114,6 @@ InstallohSystemmm() {
     manga-cli-git
     armcord-bin
     spotify
-    spotify-adblock
     whatsapp-for-linux
     signal-desktop
     wps-office

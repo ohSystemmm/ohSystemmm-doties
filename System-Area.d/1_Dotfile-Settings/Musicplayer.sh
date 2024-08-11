@@ -7,4 +7,4 @@
 #
 # by ohSystemmm <3 - 2024
 
-LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify
+spotify
