@@ -15,7 +15,7 @@ if [ -z "$Wallpapers" ]; then
 fi
 SelectedWallpaper=$(echo "$Wallpapers" | rofi -dmenu -p "Select new Wallpaper" -theme-str 'listview { lines: 10; }')
 if [ -n "$SelectedWallpaper" ]; then
-   echo -e "$SelectedWallpaper" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Active-Wallpaper.sh
+   echo -e "$SelectedWallpaper" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Active-Wallpaper.sh
    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/pywal.sh
    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Swww.sh
 else

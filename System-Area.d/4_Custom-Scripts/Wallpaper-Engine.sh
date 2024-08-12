@@ -8,7 +8,7 @@
 # by ohSystemmm <3 - 2024 
 
 # Creating Wallpaper Type if not Exist
-WallpaperTypeDirectory=~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Wallpaper-Type.sh
+WallpaperTypeDirectory=~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Wallpaper-Type.sh
 Default_WallpaperType="static"
 if [ ! -e "$WallpaperTypeDirectory" ]; then
     touch "$WallpaperTypeDirectory" && chmod +x "$WallpaperTypeDirectory"
@@ -26,9 +26,6 @@ while true; do
     "diashow")
       source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Rand-Img.sh
       ;;
-    "texture")
-      notify-send "Wip"
-    ;;
     *)
       notify-send -u critical -i dialog-error "Critical Warning!" "Unknown Wallpaper Type '$WallpaperType'"
     ;;

@@ -16,7 +16,7 @@ fi
 
 SelectedDiashow=$(echo "$Diashows" | rofi -dmenu -p "Select new Diashow" -theme-str 'listview { lines: 10; }')
 if [ -n "$SelectedDiashow" ]; then
-  echo -e "$SelectedDiashow" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Diashow-Folder.sh
+  echo -e "$SelectedDiashow" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Diashow-Folder.sh
 else
     echo "canceled" >&2
     exit 1

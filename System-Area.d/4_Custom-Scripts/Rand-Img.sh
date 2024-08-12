@@ -6,7 +6,7 @@
 #                                            |___/
 # 
 # by ohSystemmm <3 - 2024
-ImageFolder=$(cat ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Diashow-Folder.sh)
+ImageFolder=$(cat ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Diashow-Folder.sh)
 ImageFolder="${ImageFolder%/}/"
 shopt -s nullglob
 Images=("$ImageFolder"*.jpg "$ImageFolder"*.png "$ImageFolder"*.jpeg)
@@ -17,7 +17,7 @@ if [ ${#Images[@]} -eq 0 ]; then
     exit 1
 fi
     RandomImage=${Images[RANDOM % ${#Images[@]}]}
-    echo -e "$RandomImage" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Active-Wallpaper.sh
+    echo -e "$RandomImage" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Active-Wallpaper.sh
     source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/pywal.sh
     source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Swww.sh
     sleep 7
