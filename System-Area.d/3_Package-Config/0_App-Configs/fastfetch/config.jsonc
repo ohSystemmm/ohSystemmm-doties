@@ -10,109 +10,88 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-    	"source": "~/ohSystemmm-doties/...",
+    	"source": "~/.config/fastfetch/Image.png",
     	"type": "kitty",
-      	"height": 20,
+      	"height": 15,
       	"padding": {
     		"top": 1
       	}
     },
     "display": {
-          "separator": " ➜  "
+        "separator": " "
     },
     "modules": [
-        "break",
-        "break",
-        "break",
-               {
+	"break",
+	"break",
+	{
             "type": "title",
-            "key": "HOST ",
-            "keycolor": "31"
+            "keyWidth": 10
+        },
+
+        {
+            "type": "custom",
+            "format": "--------------------------"
         },
         {
             "type": "os",
-            "key": " ├  ",
-            "keyColor": "31"  // = color1
+            "key": " ",
+            "format": "{2}",
+            "keyColor": "33"  // = color3
         },
-        {
-            "type": "kernel",
-            "key": " ├  ",
-            "keyColor": "31"
-        },
+
         {
             "type": "packages",
-            "format": "{} (pacman)",
-            "key": " ├ 󰏖 ",
-            "keyColor": "31"  
+            "format": "{} Packages",
+            "key": " ",
+            "keyColor": "33"  
         },
-        {
-            "type": "shell",
-            "key": " └  ",
-            "keyColor": "31" 
+                {
+            "type": "kernel",
+            "key": " ",
+            "format": "{2}",
+            "keyColor": "33"
+        },
+                {
+            "type": "uptime",
+            "key": " ",
+            "keyColor": "33"
         },
         "break",
         {
-            "type": "wm",
-            "key": "WM   ",
-            "keyColor": "32" 
-        },
-        {
-            "type": "wmtheme",
-            "key": " ├ 󰉼 ",
-            "keyColor": "32"
-        },
-        {
-            "type": "icons",
-            "key": " ├ 󰀻 ",
-            "keyColor": "32"
-        },
-        {
-            "type": "cursor",
-            "key": " ├  ",
-            "keyColor": "32" 
+            "type": "shell",
+            "key": " ",
+            "format": "{1}",
+            "keyColor": "33" 
         },
         {
             "type": "terminal",
-            "key": " └  ",
-            "keyColor": "32"
+            "key": " ",
+            "format": "{5}",
+            "keyColor": "33" 
         },
+        {
+            "type": "wm",
+            "key": " ",
+            "keyColor": "33"
+        },
+
         "break",
         {
             "type": "host",
-            "format": "{1} Type {2}",
-            "key": "PC   ",
+            "format": "{2}",
+            "key": " ",
             "keyColor": "33"
         },
         {
             "type": "cpu",
-            "format": "{1} ({3}) @ {7} GHz",
-            "key": " ├  ",
+            "format": "{1}",
+            "key": " ",
             "keyColor": "33"
         },
         {
             "type": "gpu",
             "format": "{1} {2}",            
-            "key": " ├ 󰢮 ",
-            "keyColor": "33"
-        },
-        {
-            "type": "memory",
-            "key": " ├  ",
-            "keyColor": "33"
-        },
-        {
-            "type": "swap",
-            "key": " ├ 󰓡 ",
-            "keyColor": "33"
-        },
-        {
-            "type": "disk",
-            "key": " ├ 󰋊 ",
-            "keyColor": "33"
-        },
-        {
-            "type": "monitor",
-            "key": " └  ",
+            "key": "󰢮 ",
             "keyColor": "33"
         },
         "break",
