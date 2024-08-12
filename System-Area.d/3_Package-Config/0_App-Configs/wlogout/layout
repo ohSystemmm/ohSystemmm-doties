@@ -1,36 +1,36 @@
 {
     "label" : "lock",
-    "action" : "$HOME/dotfiles/hypr/scripts/lock.sh",
+    "action" : "$HOME/.config/hypr/scripts/LockScreen.sh",
     "text" : "Lock",
     "keybind" : "l"
 }
 {
-    "label" : "hibernate",
-    "action" : "sleep 1; systemctl hibernate",
-    "text" : "Hibernate",
-    "keybind" : "h"
-}
-{
-    "label" : "logout",
-    "action" : "$HOME/dotfiles/hypr/scripts/exit.sh",
-    "text" : "Exit",
-    "keybind" : "e"
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "Reboot",
+    "keybind" : "r"
 }
 {
     "label" : "shutdown",
-    "action" : "$HOME/dotfiles/hypr/scripts/shutdown.sh",
+    "action" : "systemctl poweroff",
     "text" : "Shutdown",
     "keybind" : "s"
 }
 {
+    "label" : "logout",
+    "action" : "loginctl kill-session $XDG_SESSION_ID",
+    "text" : "Logout",
+    "keybind" : "e"
+}
+{
     "label" : "suspend",
-    "action" : "$HOME/dotfiles/hypr/scripts/suspend.sh",
+    "action" : "swaylock -f && systemctl suspend",
     "text" : "Suspend",
     "keybind" : "u"
 }
 {
-    "label" : "reboot",
-    "action" : "$HOME/dotfiles/hypr/scripts/reboot.sh",
-    "text" : "Reboot",
-    "keybind" : "r"
+    "label" : "hibernate",
+    "action" : "swaylock -f && systemctl hibernate",
+    "text" : "Hibernate",
+    "keybind" : "h"
 }

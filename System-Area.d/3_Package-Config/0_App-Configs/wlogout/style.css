@@ -1,94 +1,87 @@
-/*           _                         _    */    
-/* __      _| | ___   __ _  ___  _   _| |_  */  
-/* \ \ /\ / / |/ _ \ / _` |/ _ \| | | | __| */ 
-/*  \ V  V /| | (_) | (_| | (_) | |_| | |_  */  
-/*   \_/\_/ |_|\___/ \__, |\___/ \__,_|\__| */ 
-/*                   |___/                  */    
-/*                                          */
-/* by ohSystemmm <3 - 2024                  */                                 
+/* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
+/* pywal-wlogout */
 
-/* -----------------------------------------------------
- * Import Pywal colors 
- * ----------------------------------------------------- */
-@import '../../.cache/wal/colors-wlogout.css';
+/* Importing pywal colors */
 
-/* -----------------------------------------------------
- * General 
- * ----------------------------------------------------- */
-
-* {
-    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-	background-image: none;
-	transition: 20ms;
-	box-shadow: none;
-}
+@import '../../.cache/wal/colors-waybar.css';
 
 window {
-	background: url("../../.cache/blurred_wallpaper.png");
-	background-size: cover;
+    font-family: Fira Code Medium;
+    font-size: 16pt;
+    color: #cdd6f4; /* text */
+    background-color: rgba(30, 30, 46, 0.6);
 }
 
 button {
-	color: #FFFFFF;
-    font-size:20px;
-
     background-repeat: no-repeat;
-	background-position: center;
-	background-size: 25%;
-
-	border-style: solid;
-	background-color: rgba(12, 12, 12, 0.3);
-	border: 3px solid #FFFFFF;
-
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-position: center;
+    background-size: 20%;
+    background-color: rgba(200, 220, 255, 0);
+    animation: gradient_f 20s ease-in infinite;
+    border-radius: 80px; /* Increased border radius for a more rounded look */
 }
 
-button:focus,
-button:active,
+button:focus {
+    background-size: 25%;
+	border: 0px;
+
+}
+
 button:hover {
-    color: @color11;
-	background-color: rgba(12, 12, 12, 0.5);
-	border: 3px solid @color11;
+    background-color: @color2; 
+    color: #1e1e2e;
+    background-size: 50%;
+    margin: 30px;
+    border-radius: 80px; 
+    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    box-shadow: 0 0 20px @color7; 
+	
 }
 
-/* 
------------------------------------------------------ 
-Buttons
------------------------------------------------------ 
-*/
+/* Adjust the size of the icon or content inside the button */
+button span {
+    font-size: 1.2em; /* Increase the font size */
+}
+
 
 #lock {
-	margin: 10px;
-	border-radius: 20px;
-	background-image: image(url("icons/lock.png"));
+    background-image: image(url("./icons/lock.png"));
+}
+#lock:hover {
+    background-image: image(url("./icons/lock-hover.png"));
 }
 
 #logout {
-	margin: 10px;
-	border-radius: 20px;
-	background-image: image(url("icons/logout.png"));
+    background-image: image(url("./icons/logout.png"));
+}
+#logout:hover {
+    background-image: image(url("./icons/logout-hover.png"));
 }
 
 #suspend {
-	margin: 10px;
-	border-radius: 20px;
-	background-image: image(url("icons/suspend.png"));
+    background-image: image(url("./icons/sleep.png"));
 }
-
-#hibernate {
-	margin: 10px;
-	border-radius: 20px;
-	background-image: image(url("icons/hibernate.png"));
+#suspend:hover {
+    background-image: image(url("./icons/sleep-hover.png"));
 }
 
 #shutdown {
-	margin: 10px;
-	border-radius: 20px;
-	background-image: image(url("icons/shutdown.png"));
+    background-image: image(url("./icons/power.png"));
+}
+#shutdown:hover {
+    background-image: image(url("./icons/power-hover.png"));
 }
 
 #reboot {
-	margin: 10px;
-	border-radius: 20px;
-	background-image: image(url("icons/reboot.png"));
+    background-image: image(url("./icons/restart.png"));
+}
+#reboot:hover {
+    background-image: image(url("./icons/restart-hover.png"));
+}
+
+#hibernate {
+    background-image: image(url("./icons/hibernate.png"));
+}
+#hibernate:hover {
+    background-image: image(url("./icons/hibernate-hover.png"));
 }
