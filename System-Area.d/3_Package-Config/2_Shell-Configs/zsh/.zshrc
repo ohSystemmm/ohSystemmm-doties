@@ -6,7 +6,7 @@
 #
 # by ohSystemmm <3 - 2024
 
-sleep 0.2
+sleep 0.1
 fastfetch
 alias shortcuts='nvim ~/.zshrc'
 alias key='nvim ~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/0_Hypr-Configs/9_Keybindings/Keybindings.conf'
