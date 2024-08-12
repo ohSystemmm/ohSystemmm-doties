@@ -7,13 +7,13 @@ Lead Developer
 
 Contributors
     Y2kun      (GitHub)    – Code Optimizations, Ideas, and Reviewing, Bug fixing, Wallpaper-Engine
-    PhoenixFly (GitHub)    - Wifu stuff
     Testers    (Anonymous) – Testing and Feedback
 
 Special Thanks
-    ml4w-dotfiles (GitLab)
-    end4_dotfiles (GitHub)
-    NvChad-Nvim Configs (GitHub)
+    ml4w-dotfiles (GitLab) - Inspiration
+    end4_dotfiles (GitHub) - Inspiration
+    NvChad        (GitHub) - Neovim
+    PhoenixFly    (GitHub) - Wifu Stuff
 
 Acknowledgements:
 I would like to acknowledge the open-source community for their continuous support
