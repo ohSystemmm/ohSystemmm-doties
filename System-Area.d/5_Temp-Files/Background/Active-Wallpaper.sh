@@ -1,1 +1,1 @@
-/home/ohsystemmm/Images/Wallpapers/nanahoshi_1.jpg
+/home/ohsystemmm/Images/Wallpapers/CuteCat.png

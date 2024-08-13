@@ -1,15 +1,19 @@
-/* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
-/* pywal-wlogout */
-
-/* Importing pywal colors */
+/*      _         _                     */
+/*  ___| |_ _   _| | ___   ___ ___ ___  */
+/* / __| __| | | | |/ _ \ / __/ __/ __| */
+/* \__ \ |_| |_| | |  __/| (__\__ \__ \ */
+/* |___/\__|\__, |_|\___(_)___|___/___/ */
+/*          |___/                       */
+/*                                      */ 
+/* by ohSystemmm <3 - 2024              */
 
 @import '~/.cache/wal/colors-waybar.css';
 
 window {
     font-family: Fira Code Medium;
     font-size: 16pt;
-    color: #cdd6f4; /* text */
-    background-color: rgba(30, 30, 46, 0.6);
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 button {
