@@ -1,1 +1,1 @@
-/home/ohsystemmm/Images/Wallpapers/River.jpg
+/home/ohsystemmm/Images/Wallpapers/nanahoshi_1.jpg
