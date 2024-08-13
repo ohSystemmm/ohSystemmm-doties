@@ -122,6 +122,16 @@ InstallohSystemmm() {
     mozc
     obs-studio
     discord
+    qemu # VM Stuff 
+    virt-manager 
+    virt-viewer 
+    dnsmasq 
+    vde2 
+    bridge-utils 
+    openbsd-netcat
+    libvirt 
+    ebtables 
+    iptables # VM Stuff
   )
   paru -S --needed "${Packages[@]}" --noconfirm
 }
