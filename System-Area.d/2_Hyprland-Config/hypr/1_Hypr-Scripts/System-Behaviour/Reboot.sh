@@ -7,4 +7,4 @@
 # by ohSystemmm <3 - 2024
 
 sleep 0.5
-systemctl reboot --force
+systemctl reboot 

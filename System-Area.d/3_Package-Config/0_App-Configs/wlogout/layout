@@ -17,9 +17,9 @@
     "keybind" : "s"
 }
 {
-    "label" : "Exit",
-    "action" : "~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/1_Hypr-Scripts/System-Behaviour/Exit.sh",
-    "text" : "Exit",
+    "label" : "Logout",
+    "action" : "~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/1_Hypr-Scripts/System-Behaviour/Logout.sh",
+    "text" : "Logout",
     "keybind" : "e"
 }
 {
