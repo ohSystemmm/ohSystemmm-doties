@@ -1,36 +1,36 @@
 {
     "label" : "lock",
-    "action" : "$HOME/.config/hypr/scripts/LockScreen.sh",
+    "action" : "~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/1_Hypr-Scripts/System-Behaviour/Lock.sh",
     "text" : "Lock",
     "keybind" : "l"
 }
 {
     "label" : "reboot",
-    "action" : "systemctl reboot",
+    "action" : "~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/1_Hypr-Scripts/System-Behaviour/Reboot.sh",
     "text" : "Reboot",
     "keybind" : "r"
 }
 {
     "label" : "shutdown",
-    "action" : "systemctl poweroff",
+    "action" : "~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/1_Hypr-Scripts/System-Behaviour/Shutdown.sh",
     "text" : "Shutdown",
     "keybind" : "s"
 }
 {
     "label" : "logout",
-    "action" : "loginctl kill-session $XDG_SESSION_ID",
-    "text" : "Logout",
+    "action" : "~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/1_Hypr-Scripts/System-Behaviour/Exit.sh",
+    "text" : "Exit",
     "keybind" : "e"
 }
 {
     "label" : "suspend",
-    "action" : "swaylock -f && systemctl suspend",
+    "action" : "~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/1_Hypr-Scripts/System-Behaviour/Suspend.sh",
     "text" : "Suspend",
     "keybind" : "u"
 }
 {
     "label" : "hibernate",
-    "action" : "swaylock -f && systemctl hibernate",
+    "action" : "~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/1_Hypr-Scripts/System-Behaviour/Hibernate.sh",
     "text" : "Hibernate",
     "keybind" : "h"
 }
