@@ -1,35 +1,35 @@
 {
-    "label" : "lock",
+    "label" : "Lock",
     "action" : "~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/1_Hypr-Scripts/System-Behaviour/Lock.sh",
     "text" : "Lock",
     "keybind" : "l"
 }
 {
-    "label" : "reboot",
+    "label" : "Reboot",
     "action" : "~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/1_Hypr-Scripts/System-Behaviour/Reboot.sh",
     "text" : "Reboot",
     "keybind" : "r"
 }
 {
-    "label" : "shutdown",
+    "label" : "Shutdown",
     "action" : "~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/1_Hypr-Scripts/System-Behaviour/Shutdown.sh",
     "text" : "Shutdown",
     "keybind" : "s"
 }
 {
-    "label" : "logout",
+    "label" : "Exit",
     "action" : "~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/1_Hypr-Scripts/System-Behaviour/Exit.sh",
     "text" : "Exit",
     "keybind" : "e"
 }
 {
-    "label" : "suspend",
+    "label" : "Suspend",
     "action" : "~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/1_Hypr-Scripts/System-Behaviour/Suspend.sh",
     "text" : "Suspend",
     "keybind" : "u"
 }
 {
-    "label" : "hibernate",
+    "label" : "Hibernate",
     "action" : "~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/1_Hypr-Scripts/System-Behaviour/Hibernate.sh",
     "text" : "Hibernate",
     "keybind" : "h"
