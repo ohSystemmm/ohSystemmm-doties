@@ -1,1 +1,1 @@
-/home/ohsystemmm/Images/Wallpapers/wallhaven-6o3qx7.png
+/home/ohsystemmm/Images/Wallpapers/nordwall3.jpg

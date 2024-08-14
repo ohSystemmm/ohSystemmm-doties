@@ -9,7 +9,7 @@
 
 window {
   /*background-color: rgba(0, 0, 0, 0.3);*/
-  background-image: image(url("./Blurred/BlurredWP.png"));
+  background-image: url('../../ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Blurred/BlurredWP.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,7 +18,7 @@ window {
 button {
   font-size: 15pt;
   font-family: 'Cascadia Code';
-  color: rgba(255, 255, 255, 0.9);  
+  color: rgba(255, 255, 255, 0.9); 
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20%;

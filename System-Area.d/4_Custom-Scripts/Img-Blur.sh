@@ -12,8 +12,8 @@ InputFile=$(cat ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Active
 BaseName="${InputFile%.*}"
 Extension="${InputFile##*.}"
 
-OutputFile="${BaseName}-Blurred.${Extension}"
+OutputFile="${BaseName}.${Extension}"
 convert "$InputFile" -blur 0x8 "$OutputFile"
-rm -rf ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/wlogout/Blurred/*
-mv "$OutputFile" ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/wlogout/Blurred/BlurredWP.png
+rm -rf ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Blurred/*
+mv "$OutputFile" ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Blurred/BlurredWP.png
 echo "~/$(basename "$OutputFile")"
