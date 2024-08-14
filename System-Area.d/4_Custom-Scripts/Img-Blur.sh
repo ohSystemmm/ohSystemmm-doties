@@ -14,6 +14,6 @@ Extension="${InputFile##*.}"
 
 OutputFile="${BaseName}-Blurred.${Extension}"
 convert "$InputFile" -blur 0x8 "$OutputFile"
-rm -rf ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Blurred/*
-mv "$OutputFile" ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Blurred/
+rm -rf ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/wlogout/Blurred/*
+mv "$OutputFile" ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/wlogout/Blurred/BlurredWP.png
 echo "~/$(basename "$OutputFile")"

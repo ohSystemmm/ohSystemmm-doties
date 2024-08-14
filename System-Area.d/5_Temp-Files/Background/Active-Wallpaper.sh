@@ -1,1 +1,1 @@
-/home/ohsystemmm/Images/Wallpapers/alena-aenami-stardust-1k.png
+/home/ohsystemmm/Images/Wallpapers/wallhaven-6o3qx7.png

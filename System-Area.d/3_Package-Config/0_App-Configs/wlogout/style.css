@@ -8,7 +8,11 @@
 /*  by ohSystemmm <3 - 2024               */
 
 window {
-    background-color: rgba(0, 0, 0, 0.3);
+  /*background-color: rgba(0, 0, 0, 0.3);*/
+  background-image: image(url("./Blurred/BlurredWP.png"));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 } 
 
 button {
