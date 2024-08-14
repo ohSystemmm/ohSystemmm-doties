@@ -1,1 +1,1 @@
-/home/ohsystemmm/Images/Wallpapers/CuteCat.png
+/home/ohsystemmm/Images/Wallpapers/alena-aenami-stardust-1k.png
