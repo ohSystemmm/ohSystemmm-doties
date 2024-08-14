@@ -84,7 +84,6 @@ InstallOptional() {
     timeshift
     unzip
     zip
-    vim
     vlc
     wget
     imagemagick
@@ -94,7 +93,6 @@ InstallOptional() {
     parui
     wayland-screenshot
     imgcat 
-    emote
     gparted
   )
   paru -S --needed "${Packages[@]}" --noconfirm
