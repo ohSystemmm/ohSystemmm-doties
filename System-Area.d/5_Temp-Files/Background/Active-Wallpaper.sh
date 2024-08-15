@@ -1,1 +1,1 @@
-/home/ohsystemmm/Images/Wallpapers/lowpoly_street.png
+/home/ohsystemmm/Images/Wallpapers/Fantasy-Landscape.png
