@@ -1,1 +1,1 @@
-/home/ohsystemmm/Images/Wallpapers/nordwall3.jpg
+/home/ohsystemmm/Images/Wallpapers/lowpoly_street.png

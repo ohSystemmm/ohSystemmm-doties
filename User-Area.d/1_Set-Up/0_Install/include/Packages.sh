@@ -70,7 +70,7 @@ InstallRequired() {
     zsh-syntax-highlighting 
     autojump 
     zsh-autosuggestions
-    oh-my-zsh
+   # oh-my-zsh
     firefox-nightly-bin
     wezterm
   )
@@ -120,16 +120,16 @@ InstallohSystemmm() {
     mozc
     obs-studio
     discord
-    qemu # VM Stuff 
-    virt-manager 
-    virt-viewer 
-    dnsmasq 
-    vde2 
-    bridge-utils 
-    openbsd-netcat
-    libvirt 
-    ebtables 
-    iptables # VM Stuff
+#    qemu # VM Stuff 
+#    virt-manager 
+#    virt-viewer 
+#    dnsmasq 
+#    vde2 
+#    bridge-utils 
+#    openbsd-netcat
+#    libvirt 
+#    ebtables 
+#    iptables # VM Stuff
   )
   paru -S --needed "${Packages[@]}" --noconfirm
 }
