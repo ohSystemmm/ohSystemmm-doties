@@ -1,1 +1,1 @@
-/home/ohsystemmm/Images/Wallpapers/wallhaven-kx2vw1.jpg
+/home/ohsystemmm/Images/Wallpapers/cat_lofi_cafe.jpg

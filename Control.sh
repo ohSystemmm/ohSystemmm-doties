@@ -47,7 +47,7 @@ MainMenu=$(gum choose --cursor=" " \
   "Change Wallpaper Type" \
   "Set Wallpaper" \
   "Set Diashow Folder" \
-  "Set new Fastfetch" \
+  "Set new Waifu" \
   "Exit"\
 )
 
@@ -74,7 +74,7 @@ case $MainMenu in
     source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/Background/Sel-Diashow.sh
     exit 1
   ;; 
-  "Set new Fastfetch")
+  "Set new Waifu")
     source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/Fastfetch/Sel-Static.sh
   ;;
   "Exit")

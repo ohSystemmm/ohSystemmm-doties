@@ -22,7 +22,6 @@
     },
     "modules": [
 	"break",
-	"break",
 	{
             "type": "title",
             "keyWidth": 10
