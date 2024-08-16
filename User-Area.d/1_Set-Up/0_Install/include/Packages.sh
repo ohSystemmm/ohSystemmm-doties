@@ -120,6 +120,7 @@ InstallohSystemmm() {
     mozc
     obs-studio
     discord
+    superfile-bin
 #    qemu # VM Stuff 
 #    virt-manager 
 #    virt-viewer 
