@@ -14,6 +14,7 @@
   "lazy.nvim": { "branch": "main", "commit": "077102c5bfc578693f12377846d427f49bc50076" },
   "mason.nvim": { "branch": "main", "commit": "e2f7f9044ec30067bc11800a9e266664b88cda22" },
   "nvim-autopairs": { "branch": "master", "commit": "48ca9aaee733911424646cb1605f27bc01dedbe3" },
+  "nvim-cmp": { "branch": "main", "commit": "ae644feb7b67bf1ce4260c231d1d4300b19c6f30" },
   "nvim-colorizer.lua": { "branch": "master", "commit": "194ec600488f7c7229668d0e80bd197f3a2b84ff" },
   "nvim-lspconfig": { "branch": "master", "commit": "a89de2e049b5f89a0ee55029d5a31213bd4de6f8" },
   "nvim-tree.lua": { "branch": "master", "commit": "ad0b95dee55955817af635fa121f6e2486b10583" },

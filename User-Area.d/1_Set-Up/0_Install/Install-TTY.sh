@@ -102,9 +102,9 @@ NextSlide
 SlideHeader "Configuring pacman."
 echo -e "Configuring pacman: enabling multilib, setting maximum downloads to 10,"
 echo -e "enabling colors, and activating the easter egg.\n"
-cd ~/ohSystemmm-doties/System-Area.d/0_Global-Config
-sudo cp -f pacman.conf /etc/pacman.conf
-cd ~/ohSystemmm-doties/
+sudo cp -f ~/ohSystemmm-doties/System-Area.d/0_Global-Config/pacman.conf /etc/pacman.conf
+echo -e "\n"
+sudo pacman -Syyu
 echo -e "\n${BGreen}Configuration Complete.${Normal}"
 NextSlide
 
@@ -261,10 +261,74 @@ NextSlide
 SlideHeader "Setting up Hyprland."
 # Monitors
 # Input
-NextSlide
 
-# Linking Customized Packages
+NextSlide
 SlideHeader "Linking Customized Packages."
+path=~/ohSystemmm-doties/System-Area.d/3_Package-Config/
+if [ -L ~/.config/cava ]; then
+    rm ~/.config/cava
+fi
+ln -s "${path}0_App-Configs/cava/" ~/.config/cava
+
+if [ -L ~/.config/picom ]; then
+    rm ~/.config/picom
+fi
+ln -s "${path}0_App-Configs/picom/" ~/.config/picom
+
+if [ -L ~/.config/rofi ]; then
+    rm ~/.config/rofi
+fi
+ln -s "${path}0_App-Configs/rofi/" ~/.config/rofi
+
+if [ -L ~/.config/waybar ]; then
+    rm ~/.config/waybar
+fi
+ln -s "${path}0_App-Configs/waybar/" ~/.config/waybar
+
+if [ -L ~/.config/fastfetch ]; then
+    rm ~/.config/fastfetch
+fi
+ln -s "${path}0_App-Configs/fastfetch/" ~/.config/fastfetch
+
+if [ -L ~/.config/wlogout ]; then
+    rm ~/.config/wlogout
+fi
+ln -s "${path}0_App-Configs/wlogout/" ~/.config/wlogout
+
+if [ -L ~/.config/ags ]; then
+    rm ~/.config/ags
+fi
+ln -s "${path}0_App-Configs/ags/" ~/.config/ags
+
+if [ -L ~/.config/btop ]; then
+    rm ~/.config/btop
+fi
+ln -s "${path}0_App-Configs/btop/" ~/.config/btop
+
+if [ -L ~/.config/fish ]; then
+    rm ~/.config/fish
+fi
+ln -s "${path}2_Shell-Configs/fish/" ~/.config/fish
+
+if [ -L ~/.config/nvim ]; then
+    rm ~/.config/nvim
+fi
+ln -s "${path}1_Editor-Configs/nvim/" ~/.config/nvim
+
+if [ -L ~/.config/wezterm ]; then
+    rm ~/.config/wezterm
+fi
+ln -s "${path}3_Terminal-Configs/wezterm/" ~/.config/wezterm
+
+if [ -L ~/.config/kitty ]; then
+    rm ~/.config/kitty
+fi
+ln -s "${path}3_Terminal-Configs/kitty/" ~/.config/kitty
+
+if [ -L ~/.config/hypr ]; then
+    rm ~/.config/hypr
+fi
+ln -s ~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/ ~/.config/hypr
 NextSlide
 
 # Credits
