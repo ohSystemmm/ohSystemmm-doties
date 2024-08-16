@@ -1,1 +1,1 @@
-/home/ohsystemmm/Images/Wallpapers/cat_lofi_cafe.jpg
+/home/ohsystemmm/Images/Wallpapers/Fantasy-Landscape.png

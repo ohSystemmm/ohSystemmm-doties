@@ -5,10 +5,10 @@
 #ln -s ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/fastfetch/ ~/.config/
 #ln -s ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/wlogout/ ~/.config/
 #ln -s ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/ags/ ~/.config/
-ln -s ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/btop/ ~/.config/
+#ln -s ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/btop/ ~/.config/
 
 #ln -s ~/ohSystemmm-doties/System-Area.d/3_Package-Config/2_Shell-Configs/fish/ ~/.config/ 
-#ln -s ~/ohSystemmm-doties/System-Area.d/3_Package-Config/1_Editor-Configs/nvim/ ~/.config/ 
+ln -s ~/ohSystemmm-doties/System-Area.d/3_Package-Config/1_Editor-Configs/nvim/ ~/.config/ 
 #ln -s ~/ohSystemmm-doties/System-Area.d/3_Package-Config/3_Terminal-Configs/wezterm/ ~/.config/
 #ln -s ~/ohSystemmm-doties/System-Area.d/3_Package-Config/3_Terminal-Configs/kitty/ ~/.config/
 
