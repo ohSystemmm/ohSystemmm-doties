@@ -14,7 +14,10 @@
     	"type": "kitty",
       	"height": 15,
       	"padding": {
-    		"top": 1
+    		"top": 1,
+        "left": 1,
+        "right": 2,
+        "bottom": 1
       	}
     },
     "display": {
@@ -93,7 +96,6 @@
             "key": "󰢮 ",
             "keyColor": "33"
         },
-        "break",
         "break"
     ]
 }
