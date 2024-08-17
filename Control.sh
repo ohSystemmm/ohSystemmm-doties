@@ -49,6 +49,7 @@ MainMenu=$(gum choose --cursor=" " \
   "Set Diashow Folder" \
   "Set new Waifu" \
   "Set new Avatar" \
+  "Set new Grub Theme" \
   "Exit"\
 )
 
@@ -80,6 +81,9 @@ case $MainMenu in
   ;;
   "Set new Avatar")
     source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/Avatar/Sel-Avatar.sh
+  ;;
+  "Set new Grub Theme")
+    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/Grub/Sel-Grub.sh
   ;;
   "Exit")
     exit 1
