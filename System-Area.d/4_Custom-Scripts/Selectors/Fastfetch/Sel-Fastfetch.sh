@@ -1,8 +1,8 @@
-#  ____       _      ____  _        _   _            _
-# / ___|  ___| |    / ___|| |_ __ _| |_(_) ___   ___| |__
-# \___ \ / _ \ |____\___ \| __/ _` | __| |/ __| / __| '_ \
-#  ___) |  __/ |_____|__) | || (_| | |_| | (__ _\__ \ | | |
-# |____/ \___|_|    |____/ \__\__,_|\__|_|\___(_)___/_| |_|
+#  ____       _       _____         _    __      _       _           _     
+# / ___|  ___| |     |  ___|_ _ ___| |_ / _| ___| |_ ___| |__    ___| |__  
+# \___ \ / _ \ |_____| |_ / _` / __| __| |_ / _ \ __/ __| '_ \  / __| '_ \ 
+#  ___) |  __/ |_____|  _| (_| \__ \ |_|  _|  __/ || (__| | | |_\__ \ | | |
+# |____/ \___|_|     |_|  \__,_|___/\__|_|  \___|\__\___|_| |_(_)___/_| |_|  
 #
 # by ohSystemmm <3 - 2024
 
@@ -10,8 +10,8 @@ FastfetchDirectory=~/ohSystemmm-doties/User-Area.d/4_Fastfetch/
 Fastfetches=$(find "$FastfetchDirectory" -type f -iname "*.png" | sort)
 
 if [ -z "$Fastfetches" ]; then
-    notify-send "Warning!" "Empty Fastfetch folder"
-    exit 1
+  notify-send "Warning!" "Empty Fastfetch folder"
+  exit 1
 fi
 
 SelectedFastfetch=$(echo "$Fastfetches" | rofi -dmenu -p "Select new Fastfetch" -theme-str 'listview { lines: 10; }')

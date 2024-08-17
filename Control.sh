@@ -75,7 +75,7 @@ case $MainMenu in
     exit 1
   ;; 
   "Set new Waifu")
-    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/Fastfetch/Sel-Static.sh
+    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/Fastfetch/Sel-Fastfetch.sh
   ;;
   "Exit")
     exit 1
