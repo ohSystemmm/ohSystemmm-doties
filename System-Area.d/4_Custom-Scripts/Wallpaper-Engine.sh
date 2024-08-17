@@ -24,7 +24,7 @@ while true; do
       exit 1
     ;;
     "diashow")
-      source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Rand-Img.sh
+      source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/RandomImage.sh
       ;;
     *)
       notify-send -u critical -i dialog-error "Critical Warning!" "Unknown Wallpaper Type '$WallpaperType'"

@@ -339,9 +339,7 @@ NextSlide
 # Cleaning Cache, Garbage Collecting
 SlideHeader "Cleanup."
 echo -e "Clearing package manager caches."
-sudo pacman -Scc --noconfirm
-yay -Scc --noconfirm
-paru -Scc --noconfirm
+source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/CleanUp.sh
 echo -e "${BGreen}Cleanup Complete.${Normal}"
 NextSlide
 
