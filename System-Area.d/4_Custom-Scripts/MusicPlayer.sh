@@ -7,6 +7,7 @@
 # 
 # by ohSystemmm <3 - 2024
 
-Song=$(playerctl metadata --format '{{title}} by {{artist}}')
+Song=$(playerctl metadata --format '{{title}}')
+Artist=$(playerctl metadata --format '{{artist}}')
 
-echo "$Song" 
+echo " Currently playing '$Song' by '$Artist' " 
