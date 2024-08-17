@@ -7,6 +7,6 @@
 # 
 # by ohSystemmm <3 - 2024
 
-Song=$(playerctl metadata --format '{{title}}      {{artist}}')
+Song=$(playerctl metadata --format '{{title}} by {{artist}}')
 
 echo "$Song" 

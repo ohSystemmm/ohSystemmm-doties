@@ -30,7 +30,7 @@ else
     exit;
 fi
 
-paru -Syu
+paru -Syyu
 
 notify-send "Update complete"
 echo 
