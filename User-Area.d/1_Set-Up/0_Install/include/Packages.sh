@@ -6,8 +6,8 @@ InstallRequired() {
     brightnessctl
     btop
     cliphist
-    dolphin
     mako
+    thunar
     fastfetch
     fish
     git

@@ -48,6 +48,7 @@ MainMenu=$(gum choose --cursor=" " \
   "Set Wallpaper" \
   "Set Diashow Folder" \
   "Set new Waifu" \
+  "Set new Avatar" \
   "Exit"\
 )
 
@@ -76,6 +77,9 @@ case $MainMenu in
   ;; 
   "Set new Waifu")
     source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/Fastfetch/Sel-Fastfetch.sh
+  ;;
+  "Set new Avatar")
+    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/Avatar/Sel-Avatar.sh
   ;;
   "Exit")
     exit 1
