@@ -7,7 +7,10 @@
 # 
 # by ohSystemmm <3 - 2024
 
-Song=$(playerctl metadata --format '{{title}}')
-Artist=$(playerctl metadata --format '{{artist}}')
+Song=$(playerctl metadata --format '{{title}}' 2>/dev/null)
+Artist=$(playerctl metadata --format '{{artist}}' 2>/dev/null)
 
-echo " Currently playing '$Song' by '$Artist' " 
+if [[ -n "$Song" && -n "$Artist" ]]; then
+    echo " Currently playing '$Song' by '$Artist' "
+fi
+
