@@ -7,16 +7,16 @@
 # by ohSystemmm <3 - 2024
 
 Design=$(cat ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/General/Design.sh)
-RofiColorDir=~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/rofi/config-Colors
+RofiColorPath=~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/rofi/config-Colors/
 
-case $Design in
+case $Design in 
   "dark")
-    rm -rf ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/rofi/config-Colors/*
-    cp ~/.cache/wal/colors-rofi-dark.rasi "$RofiColorDir/Colors-Dark.rasi"
+    rm "$RofiColorPath*" 
+    cp ~/.cache/wal/colors-rofi-dark.rasi $RofiColorPath
   ;;
   "light")
-    rm -rf ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/rofi/config-Colors/*    
-    cp ~/.cache/wal/colors-rofi-light.rasi "$RofiColorDir/Colors-Light.rasi"
+    rm "$RofiColorPath*"
+    cp ~/.cache/wal/colors-rofi-light.rasi $RofiColorPath
   ;;
   *)
     notify-send "Warning!" "Unknown Design Type"
@@ -24,3 +24,4 @@ case $Design in
   ;;
 esac
 
+ls "$RofiColorPath"

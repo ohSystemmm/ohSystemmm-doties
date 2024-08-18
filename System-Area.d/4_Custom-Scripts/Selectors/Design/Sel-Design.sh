@@ -13,10 +13,10 @@ Choice=$(echo -e "$Design" | rofi -dmenu -i -p "Choose a Design")
 
 case $Choice in
   "Dark")
-    echo "Dark" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/General/Design.sh
+    echo "dark" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/General/Design.sh
   ;;
   "Light")
-    echo "Light" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/General/Design.sh
+    echo "light" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/General/Design.sh
   ;;
   *)
     echo "No valid option selected."
