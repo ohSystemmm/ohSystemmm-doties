@@ -7,16 +7,14 @@
 /*                                                                                */
 /* by ohSystemmm <3 - 2024                                                        */
 
-
-/*****----- Configuration -----*****/
 configuration {
 	modi:                       "drun";
-  show-icons:                 true;
-  display-drun:               " Applications";
+    show-icons:                 true;
+    display-drun:               " Applications";
 	drun-display-format:        "{name}";
 }
 
-@import "~/.cache/wal/colors-rofi-light.rasi"
+@import	 "config-Colors/Colors.rasi"
 
 /*****----- Main Window -----*****/
 window {
@@ -33,11 +31,11 @@ window {
     padding:                     0px;
     border:                      2px solid;
     border-radius:               20px;
-    border-color:                @background;
+    border-color:                @selected;
+    background-color:            @background;
     cursor:                      "default";
 }
 
-/*****----- Main Box -----*****/
 mainbox {
     enabled:                     true;
     spacing:                     20px;
@@ -50,7 +48,6 @@ mainbox {
     children:                    [ "inputbar", "listview" ];
 }
 
-/*****----- Inputbar -----*****/
 inputbar {
     enabled:                     true;
     spacing:                     0px;
@@ -89,7 +86,6 @@ entry {
     placeholder-color:           inherit;
 }
 
-/*****----- Listview -----*****/
 listview {
     enabled:                     true;
     columns:                     6;
@@ -119,7 +115,6 @@ scrollbar {
     background-color:            @background-alt;
 }
 
-/*****----- Elements -----*****/
 element {
     enabled:                     true;
     spacing:                     20px;
@@ -164,7 +159,6 @@ element-text selected {
     text-color:                  @selected-fg;
 }
 
-/*****----- Message -----*****/
 error-message {
     padding:                     20px;
     border:                      2px solid;
