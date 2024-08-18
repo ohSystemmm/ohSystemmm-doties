@@ -55,18 +55,8 @@ MainMenu=$(gum choose --cursor=" " \
 
 case $MainMenu in 
   "Change Wallpaper Type")
-    Type=$(gum choose --cursor=" " \
-      "Static" \
-      "Diashow")
-    case $Type in
-      "Static")
-        echo "static" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Wallpaper-Type.sh
-      ;;
-      "Diashow")
-        echo "diashow" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Wallpaper-Type.sh 
-        source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Wallpaper-Engine.sh &
-      ;;
-    esac
+    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/WpType/Sel-WpType.sh
+    exit 1
   ;;
   "Set Wallpaper")
     source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/Background/Sel-Wallpaper.sh
@@ -78,9 +68,11 @@ case $MainMenu in
   ;; 
   "Set new Waifu")
     source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/Fastfetch/Sel-Fastfetch.sh
+    exit 1
   ;;
   "Set new Avatar")
     source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/Avatar/Sel-Avatar.sh
+    exit 1
   ;;
   "Set new Grub Theme")
     source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/Grub/Sel-Grub.sh
