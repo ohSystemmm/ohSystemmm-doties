@@ -78,21 +78,21 @@ InstallRequired() {
 
 InstallOptional() {
   Packages=(
-    cava                               #
-    gparted                            #
-    imagemagick                        #
-    imgcat                             #
-    man-pages                          #
-    neovim                             #
-    paru                               #
-    parui                              #
-    timeshift                          #
-    tree                               #
-    unzip                              #
-    vlc                                #
-    wayland-screenshot                 #
-    wget                               #
-    zip                                #
+    cava                               # Console-based Audio Visualizer for Alsa
+    gparted                            # A Partition Magic clone, frontend to GNU Parted
+    imagemagick                        # An image viewing/manipulation program
+    imgcat                             # Output images as RGB ANSI graphics on the terminal
+    man-pages                          # Linux man pages
+    neovim                             # Fork of Vim aiming to improve user experience, plugins, and GUIs
+    paru                               # Feature packed AUR helper
+    parui                              # Simple TUI frontend for paru or yay
+    timeshift                          # A system restore utility for Linux
+    tree                               # A directory listing program displaying a depth indented list of files
+    unzip                              # For extracting and viewing files in .zip archives
+    vlc                                # Multi-platform MPEG, VCD/DVD, and DivX player
+    wayland-screenshot                 # A wayland screenshotting tool
+    wget                               # Network utility to retrieve files from the Web
+    zip                                # Compressor/archiver for creating and modifying zipfiles
   )
   paru -S --needed "${Packages[@]}" --noconfirm
 }
@@ -114,6 +114,7 @@ InstallohSystemmm() {
     mangal-bin                         #
     mozc                               #
     mov-cli                            #
+    mpv                                #
     obs-studio                         #
     openbsd-netcat                     # VM Stuff
     prismlauncher                      #
