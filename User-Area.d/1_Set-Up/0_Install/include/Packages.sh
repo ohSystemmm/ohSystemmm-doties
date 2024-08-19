@@ -99,41 +99,41 @@ InstallOptional() {
 
 InstallohSystemmm() {
   Packages=(
-    ani-cli                            #
-    armcord-bin                        #
-    blender                            # 
-    bridge-utils                       # VM Stuff
-    discord                            #
-    dnsmasq                            # VM Stuff
-    ebtables                           # VM Stuff
-    fcitx5                             #
-    fcitx5-configtool                  #
-    iptables                           # VM Stuff
-    krita                              #
-    libvirt                            # VM Stuff
-    mangal-bin                         #
-    mozc                               #
-    mov-cli                            #
-    mpv                                #
-    obs-studio                         #
-    openbsd-netcat                     # VM Stuff
-    prismlauncher                      #
-    qemu                               # VM Stuff
-    signal-desktop                     #
-    spotify                            #
-    steam                              #
-    superfile-bin                      #
-    syncplay                           #
-    tlp                                #
-    vde2                               # VM Stuff
-    virt-manager                       # VM Stuff
-    virt-viewer                        # VM Stuff
-    wezterm                            #
-    whatsapp-for-linux                 #
-    wine                               #
-    wps-office                         #
-    zathura                            #
-    zathura-pdf-mupdf                  #
+    ani-cli                            # A cli to browse and watch anime.
+    armcord-bin                        # Discord client for lower end and ARM devices.
+    blender                            # A fully integrated 3D graphics creation suite
+   #bridge-utils                       # Utilities for configuring the Linux ethernet bridge
+    discord                            # All-in-one voice and text chat for gamers
+   #dnsmasq                            # Lightweight, easy to configure DNS forwarder and DHCP server
+   #ebtables                           # Linux kernel packet control tool (using nft interface)
+    fcitx5                             # Next generation of fcitx
+    fcitx5-configtool                  # Configuration Tool for Fcitx5
+   #iptables                           # Linux kernel packet control tool (using legacy interface)
+    krita                              # Edit and paint images
+   #libvirt                            # API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)
+    mangal-bin                         # The most advanced cli manga downloader in the entire universe!
+    mozc                               # The Open Source edition of Google Japanese Input
+    mov-cli                            # Watch everything from your terminal.
+    mpv                                # a free, open source, and cross-platform media player
+    obs-studio                         # Free, open source software for live streaming and recording
+   #openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
+    prismlauncher                      # Minecraft launcher with ability to manage multiple instances.
+   #qemu                               # A basic QEMU setup for headless environments
+    signal-desktop                     # Signal Private Messenger for Linux
+    spotify                            # A proprietary music streaming service
+    steam                              # Valve's digital software delivery system
+    superfile-bin                      # Pretty fancy and modern file manager in terminal file manager
+    syncplay                           # Synchronize watching movies on mplayer2, vlc, mpv, and mpc-hc across many computers
+    tlp                                # Linux Advanced Power Management
+   #vde2                               # Virtual Distributed Ethernet for emulators like qemu
+   #virt-manager                       # Desktop user interface for managing virtual machines
+   #virt-viewer                        # A lightweight interface for interacting with the graphical display of virtualized guest OS.
+    wezterm                            # A GPU-accelerated cross-platform terminal emulator and multiplexer
+    whatsapp-for-linux                 # An unofficial WhatsApp desktop application for linux
+    wine                               # A compatibility layer for running Windows programs
+    wps-office                         # Kingsoft Office (WPS Office) - an office productivity suite
+    zathura                            # Minimalistic document viewer
+    zathura-pdf-mupdf                  # PDF support for Zathura (MuPDF backend) (Supports PDF, ePub, and OpenXPS)
   )
   paru -S --needed "${Packages[@]}" --noconfirm
 }
