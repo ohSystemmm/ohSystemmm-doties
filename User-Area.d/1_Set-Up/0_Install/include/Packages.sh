@@ -109,7 +109,6 @@ InstallohSystemmm() {
     steam
     ani-cli
     mov-cli
-    manga-cli-git
     armcord-bin
     spotify
     whatsapp-for-linux
@@ -121,6 +120,7 @@ InstallohSystemmm() {
     obs-studio
     discord
     superfile-bin
+    mangal-bin
 #    qemu # VM Stuff 
 #    virt-manager 
 #    virt-viewer 
