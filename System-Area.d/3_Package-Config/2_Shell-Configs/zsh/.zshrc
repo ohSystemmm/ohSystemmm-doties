@@ -19,14 +19,17 @@ alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias buildpkg='makepkg -si'
 alias graphics-card='lspci | grep -E "(VGA|3D)"'
 alias kernel='uname -r'
-alias img='wezterm imgcat'
+alias wimg='wezterm imgcat'
+alias kimg='kitty +kitten icat'
+alias zathura='doc'
+
 # alias suicide='sudo rm -rf /*'
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
-export ZSH=~/ohSystemmm-doties/System-Area.d/3_Package-Config/2_Shell-Configs/zsh/.oh-my-zsh
+export ZSH=~/.oh-my-zsh/
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
