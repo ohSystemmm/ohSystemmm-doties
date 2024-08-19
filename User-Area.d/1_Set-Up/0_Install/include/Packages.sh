@@ -1,136 +1,138 @@
 InstallRequired() {
   Packages=(
-    blueman
-    bluez
-    bluez-utils
-    brightnessctl
-    btop
-    cliphist
-    mako
-    thunar
-    fastfetch
-    fish
-    git
-    noto-fonts
-    pavucontrol
-    sddm
-    papirus-icon-theme
-    pipewire
-    pipewire-alsa
-    pipewire-jack
-    pipewire-pulse
-    python-click
-    python-gobject
-    python-pip
-    python-psutil
-    python-pywal
-    python-rich
-    rofi-wayland
-    ttf-cascadia-code
-    ttf-fira-code
-    ttf-fira-sans
-    ttf-firacode-nerd
-    ttf-hanazono
-    noto-fonts-emoji
-    xdg-desktop-portal
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-wlr
-    xdg-desktop-portal-hyprland
-    xdg-user-dirs
-    libpulse
-    network-manager-applet
-    networkmanager
-    nm-connection-editor
-    nwg-look
-    breeze-icons
-    gum
-    gtk4
-    gtk3
-    gst-plugin-pipewire
-    xarchiver
-    wireplumber
-    hyprland
-    slurp
-    tumbler
-    grim
-    libadwaita
-    chromium
-    fd
-    hypridle
-    hyprland
-    hyprlock
-    swww
-    hyprshade
-    waybar
-    wlogout
-    bibata-cursor-theme
-    waypaper
-    aylurs-gtk-shell
-    figlet
-    zsh-syntax-highlighting 
-    autojump 
-    zsh-autosuggestions
-   # oh-my-zsh
-    firefox-nightly-bin
-    wezterm
+    aylurs-gtk-shell                   #
+    autojump                           #
+    bibata-cursor-theme                #
+    blueman                            #
+    bluez                              #
+    bluez-utils                        #
+    brightnessctl                      #
+    breeze-icons                       #
+    btop                               #
+    chromium                           #
+    cliphist                           #
+    fd                                 #
+    figlet                             #
+    fastfetch                          #
+    firefox-nightly-bin                #
+    fish                               #
+    git                                #
+    grim                               #
+    gst-plugin-pipewire                #
+    gtk3                               #
+    gtk4                               #
+    gum                                #
+    hypridle                           #
+    hyprland                           #
+    hyprlock                           #
+    hyprshade                          #
+    kitty                              #
+    libadwaita                         #
+    libpulse                           #
+    mako                               #
+    network-manager-applet             #
+    networkmanager                     #
+    nm-connection-editor               #
+    noto-fonts                         #
+    noto-fonts-emoji                   #
+    nwg-look                           #
+   #oh-my-zsh                          #
+    papirus-icon-theme                 #
+    pavucontrol                        #
+    pipewire                           #
+    pipewire-alsa                      #
+    pipewire-jack                      #
+    pipewire-pulse                     #
+    python-click                       #
+    python-gobject                     #
+    python-pip                         #
+    python-psutil                      #
+    python-pywal                       #
+    python-rich                        #
+    rofi-wayland                       #
+    sddm                               #
+    slurp                              #
+    swww                               #
+    thunar                             #
+    ttf-cascadia-code                  #
+    ttf-fira-code                      #
+    ttf-fira-sans                      #
+    ttf-firacode-nerd                  #
+    ttf-hanazono                       #
+    tumbler                            #
+    waybar                             #
+    waypaper                           #
+    wlogout                            #
+    wireplumber                        #
+    xdg-desktop-portal                 #
+    xdg-desktop-portal-gtk             #
+    xdg-desktop-portal-hyprland        #
+    xdg-desktop-portal-wlr             #
+    xdg-user-dirs                      #
+    xarchiver                          #
+   #zsh-autosuggestions                #
+   #zsh-syntax-highlighting            #
   )
   paru -S --needed "${Packages[@]}" --noconfirm
 }
 
 InstallOptional() {
   Packages=(
-    man-pages
-    neovim
-    timeshift
-    unzip
-    zip
-    vlc
-    wget
-    imagemagick
-    tree
-    cava
-    paru
-    parui
-    wayland-screenshot
-    imgcat 
-    gparted
+    cava                               #
+    gparted                            #
+    imagemagick                        #
+    imgcat                             #
+    man-pages                          #
+    neovim                             #
+    paru                               #
+    parui                              #
+    timeshift                          #
+    tree                               #
+    unzip                              #
+    vlc                                #
+    wayland-screenshot                 #
+    wget                               #
+    zip                                #
   )
   paru -S --needed "${Packages[@]}" --noconfirm
 }
 
 InstallohSystemmm() {
   Packages=(
-    tlp
-    krita
-    prismlauncher
-    blender
-    wine
-    syncplay
-    steam
-    ani-cli
-    mov-cli
-    armcord-bin
-    spotify
-    whatsapp-for-linux
-    signal-desktop
-    wps-office
-    fcitx5
-    fcitx5-configtool
-    mozc
-    obs-studio
-    discord
-    superfile-bin
-    mangal-bin
-#    qemu # VM Stuff 
-#    virt-manager 
-#    virt-viewer 
-#    dnsmasq 
-#    vde2 
-#    bridge-utils 
-#    openbsd-netcat
-#    libvirt 
-#    ebtables 
-#    iptables # VM Stuff
+    ani-cli                            #
+    armcord-bin                        #
+    blender                            # 
+    bridge-utils                       # VM Stuff
+    discord                            #
+    dnsmasq                            # VM Stuff
+    ebtables                           # VM Stuff
+    fcitx5                             #
+    fcitx5-configtool                  #
+    iptables                           # VM Stuff
+    krita                              #
+    libvirt                            # VM Stuff
+    mangal-bin                         #
+    mozc                               #
+    mov-cli                            #
+    obs-studio                         #
+    openbsd-netcat                     # VM Stuff
+    prismlauncher                      #
+    qemu                               # VM Stuff
+    signal-desktop                     #
+    spotify                            #
+    steam                              #
+    superfile-bin                      #
+    syncplay                           #
+    tlp                                #
+    vde2                               # VM Stuff
+    virt-manager                       # VM Stuff
+    virt-viewer                        # VM Stuff
+    wezterm                            #
+    whatsapp-for-linux                 #
+    wine                               #
+    wps-office                         #
+    zathura                            #
+    zathura-pdf-mupdf                  #
   )
   paru -S --needed "${Packages[@]}" --noconfirm
 }
