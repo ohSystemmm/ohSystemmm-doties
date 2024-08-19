@@ -217,6 +217,8 @@ case $tlp in
     echo -e "\nConfiguring maximum battery capacity to 80%."
     sudo cp -f tlp.conf /etc/tlp.conf
     cd ~/ohSystemmm-doties/
+    sudo systemctl enable tlp.service
+    sudo systemctl start tlp.service
     echo -e "\n${BGreen}TLP Installed and Configured.${Normal}"
     ;;
 esac    
