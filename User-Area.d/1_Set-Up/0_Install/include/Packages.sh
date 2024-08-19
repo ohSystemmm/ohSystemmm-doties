@@ -1,75 +1,75 @@
 InstallRequired() {
   Packages=(
-    aylurs-gtk-shell                   #
-    autojump                           #
-    bibata-cursor-theme                #
-    blueman                            #
-    bluez                              #
-    bluez-utils                        #
-    brightnessctl                      #
-    breeze-icons                       #
-    btop                               #
-    chromium                           #
-    cliphist                           #
-    fd                                 #
-    figlet                             #
-    fastfetch                          #
-    firefox-nightly-bin                #
-    fish                               #
-    git                                #
-    grim                               #
-    gst-plugin-pipewire                #
-    gtk3                               #
-    gtk4                               #
-    gum                                #
-    hypridle                           #
-    hyprland                           #
-    hyprlock                           #
-    hyprshade                          #
-    kitty                              #
-    libadwaita                         #
-    libpulse                           #
-    mako                               #
-    network-manager-applet             #
-    networkmanager                     #
-    nm-connection-editor               #
-    noto-fonts                         #
-    noto-fonts-emoji                   #
-    nwg-look                           #
-   #oh-my-zsh                          #
-    papirus-icon-theme                 #
-    pavucontrol                        #
-    pipewire                           #
-    pipewire-alsa                      #
-    pipewire-jack                      #
-    pipewire-pulse                     #
-    python-click                       #
-    python-gobject                     #
-    python-pip                         #
-    python-psutil                      #
-    python-pywal                       #
-    python-rich                        #
-    rofi-wayland                       #
-    sddm                               #
-    slurp                              #
-    swww                               #
-    thunar                             #
-    ttf-cascadia-code                  #
-    ttf-fira-code                      #
-    ttf-fira-sans                      #
-    ttf-firacode-nerd                  #
-    ttf-hanazono                       #
-    tumbler                            #
-    waybar                             #
-    waypaper                           #
-    wlogout                            #
-    wireplumber                        #
-    xdg-desktop-portal                 #
-    xdg-desktop-portal-gtk             #
-    xdg-desktop-portal-hyprland        #
-    xdg-desktop-portal-wlr             #
-    xdg-user-dirs                      #
-    xarchiver                          #
+    aylurs-gtk-shell                   # Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
+    autojump                           # A faster way to navigate your filesystem from the command line
+    bibata-cursor-theme                # Material Based Cursor Theme
+    blueman                            # GTK+ Bluetooth Manager
+    bluez                              # Daemons for the bluetooth protocol stack
+    bluez-utils                        # Development and debugging utilities for the bluetooth protocol stack
+    brightnessctl                      # Lightweight brightness control tool
+    breeze-icon                        # Breeze icon theme
+    btop                               # A monitor of system resources, bpytop ported to C++
+    chromium                           # A web browser built for speed, simplicity, and security
+    cliphist                           # wayland clipboard manager
+    fd                                 # Simple, fast and user-friendly alternative to find
+    figlet                             # A program for making large letters out of ordinary text
+    fastfetch                          # Like Neofetch, but much faster because written in C
+    firefox-nightly-bin                # Fast, Private & Safe Web Browser from Mozilla — Nightly Build (en-US)
+    fish                               # Smart and user friendly shell intended mostly for interactive use
+    git                                # the fast distributed version control system
+    grim                               # Screenshot utility for Wayland
+    gst-plugin-pipewire                # Multimedia graph framework - pipewire plugin
+    gtk3                               # GObject-based multi-platform GUI toolkit
+    gtk4                               # GObject-based multi-platform GUI toolkit
+    gum                                # A tool for glamorous shell scripts
+    hypridle                           # hyprland’s idle daemon
+    hyprland                           # a highly customizable dynamic tiling Wayland compositor
+    hyprlock                           # hyprland’s GPU-accelerated screen locking utility
+    hyprshade                          # Hyprland shade configuration tool
+    kitty                              # A modern, hackable, featureful, OpenGL-based terminal emulator
+    libadwaita                         # Building blocks for modern adaptive GNOME applications
+    libpulse                           # A featureful, general-purpose sound server (client library)
+    mako                               # Lightweight notification daemon for Wayland
+    network-manager-applet             # Applet for managing network connections
+    networkmanager                     # Network connection manager and user applications
+    nm-connection-editor               # NetworkManager GUI connection editor and widgets
+    noto-fonts                         # Google Noto TTF fonts
+    noto-fonts-emoji                   # Google Noto emoji fonts
+    nwg-look                           # GTK3 settings editor adapted to work on wlroots-based compositors
+   #oh-my-zsh                          # 
+    papirus-icon-theme                 # Papirus icon theme
+    pavucontrol                        # PulseAudio Volume Control
+    pipewire                           # Low-latency audio/video router and processor
+    pipewire-alsa                      # Low-latency audio/video router and processor - ALSA configuration
+    pipewire-jack                      # Low-latency audio/video router and processor - JACK replacement
+    pipewire-pulse                     # Low-latency audio/video router and processor - PulseAudio replacement
+    python-click                       # Simple wrapper around optparse for powerful command line utilities
+    python-gobject                     # Python bindings for GLib/GObject/GIO/GTK
+    python-pip                         # The PyPA recommended tool for installing Python packages
+    python-psutil                      # A cross-platform process and system utilities module for Python
+    python-pywal                       # Generate and change colorschemes on the fly
+    python-rich                        # Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal
+    rofi-wayland                       # A window switcher, run dialog and dmenu replacement - fork with wayland support
+    sddm                               # QML based X11 and Wayland display manager
+    slurp                              # Select a region in a Wayland compositor
+    swww                               # A Solution to your Wayland Wallpaper Woes
+    thunar                             # Modern, fast and easy-to-use file manager for Xfce
+    ttf-cascadia-code                  # A monospaced font by Microsoft that includes programming ligatures
+    ttf-fira-code                      # Monospaced font with programming ligatures
+    ttf-fira-sans                      # Mozilla's sans-serif typeface designed for Firefox OS
+    ttf-firacode-nerd                  # Patched font Fira (Fura) Code from nerd fonts library
+    ttf-hanazono                       # A free Japanese kanji font, which contains about 78,685 characters (and 2 SPACEs) defined in ISO/IEC 10646 standard / the Unicode standard.
+    tumbler                            # Thumbnail service implementing the thumbnail management D-Bus specification
+    waybar                             # Highly customizable Wayland bar for Sway and Wlroots based compositors
+    waypaper                           # GUI wallpaper setter for Wayland and Xorg window managers. It works as a frontend for popular wallpaper backends like swaybg, swww, wallutils, hyprpaper and feh.
+    wlogout                            # Logout menu for wayland
+    wireplumber                        # Session / policy manager implementation for PipeWire
+    xdg-desktop-portal                 # Desktop integration portals for sandboxed apps
+    xdg-desktop-portal-gtk             # A backend implementation for xdg-desktop-portal using GTK
+    xdg-desktop-portal-hyprland        # xdg-desktop-portal backend for hyprland
+    xdg-desktop-portal-wlr             # xdg-desktop-portal backend for wlroots
+    xdg-user-dirs                      # Manage user directories like ~/Desktop and ~/Music
+    xarchiver                          # GTK+ frontend to various command line archivers
    #zsh-autosuggestions                #
    #zsh-syntax-highlighting            #
   )
