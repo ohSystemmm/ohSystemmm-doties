@@ -24,4 +24,4 @@ case $Choice in
   ;;
 esac
 
-# source = ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/RofiColors.sh
+source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/RofiColors.sh

@@ -12,11 +12,11 @@ RofiColorDir=~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/ro
 case $Design in
   "dark")
     rm -rf ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/rofi/config-Colors/*
-    cp ~/.cache/wal/colors-rofi-dark.rasi "$RofiColorDir/Colors-Dark.rasi"
+    cp ~/.cache/wal/colors-rofi-dark.rasi "$RofiColorDir/Colors.rasi"
   ;;
   "light")
     rm -rf ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/rofi/config-Colors/*    
-    cp ~/.cache/wal/colors-rofi-light.rasi "$RofiColorDir/Colors-Light.rasi"
+    cp ~/.cache/wal/colors-rofi-light.rasi "$RofiColorDir/Colors.rasi"
   ;;
   *)
     notify-send "Warning!" "Unknown Design Type"

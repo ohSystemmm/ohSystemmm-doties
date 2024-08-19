@@ -8,3 +8,4 @@
 # by ohSystemmm <3 - 2024
 
 wal -i $(cat ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Active-Wallpaper.sh) -q
+source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/RofiColors.sh
