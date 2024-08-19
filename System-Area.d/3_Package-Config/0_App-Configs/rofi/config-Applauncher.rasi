@@ -14,7 +14,7 @@ configuration {
 	drun-display-format:        "{name}";
 }
 
-@import	 "config-Colors/Colors.rasi"
+@import "config-Colors/Colors.rasi"
 
 /*****----- Main Window -----*****/
 window {

@@ -9,15 +9,19 @@
 
 WallpaperDirectory=~/Images/Wallpapers/ # Test
 Wallpapers=$(find "$WallpaperDirectory" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) | sort)
+
 if [ -z "$Wallpapers" ]; then
-    notify-send "Warning!" "Empty Wallpaperfolder"
+    notify-send "Warning!" "Empty Wallpaper folder"
     exit 1
 fi
-SelectedWallpaper=$(echo "$Wallpapers" | rofi -dmenu -p "Select new Wallpaper" -theme-str 'listview { lines: 10; }')
+
+SelectedWallpaper=$(echo "$Wallpapers" | rofi -dmenu -theme ~/.config/rofi/config-Wallpaper.rasi)
+
 if [ -n "$SelectedWallpaper" ]; then
    echo -e "$SelectedWallpaper" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Active-Wallpaper.sh
    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/pywal.sh
    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Swww.sh
    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/ImageBlur.sh
-    exit 1
+   exit 1
 fi
+

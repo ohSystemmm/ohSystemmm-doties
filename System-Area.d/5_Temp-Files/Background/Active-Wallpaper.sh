@@ -1,1 +1,1 @@
-/home/ohsystemmm/Images/Wallpapers/wp7161157-pc-4k-japan-anime-wallpapers.jpg
+/home/ohsystemmm/Images/Wallpapers/vkx6mqcgcqsa1.jpg
