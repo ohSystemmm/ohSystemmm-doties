@@ -14,7 +14,7 @@ configuration {
 	drun-display-format:        "{name}";
 }
 
-@import	 "config-Colors/Colors.rasi"
+@import	 "config-Colors/colors-rofi-dark.rasi"
 
 /*****----- Main Window -----*****/
 window {
@@ -31,7 +31,7 @@ window {
     padding:                     0px;
     border:                      2px solid;
     border-radius:               20px;
-    border-color:                @selected;
+    border-color:                @foreground;
     background-color:            @background;
     cursor:                      "default";
 }
@@ -43,8 +43,8 @@ mainbox {
     padding:                     0px;
     border:                      0px solid;
     border-radius:               0px 0px 0px 0px;
-    border-color:                @selected;
-    background-color:            transparent;
+    border-color:                @foreground;
+    background-color:            @transparent;
     children:                    [ "inputbar", "listview" ];
 }
 
@@ -55,8 +55,7 @@ inputbar {
     padding:                     0px;
     border:                      0px solid;
     border-radius:               100%;
-    border-color:                @selected;
-    background-color:            @background-alt;
+    background-color:            @urgent-background;
     text-color:                  @foreground;
     children:                    [ "prompt", "textbox-prompt-colon", "entry" ];
 }
@@ -65,13 +64,13 @@ prompt {
     enabled:                     true;
     padding:                     15px;
     border-radius:               100%;
-    background-color:            @selected;
-    text-color:                  @selected-fg;
+    background-color:            @foreground;
+    text-color:                  @background;
 }
 textbox-prompt-colon {
     enabled:                     true;
     expand:                      false;
-    str:                         "::";
+    str:                         "";
     padding:                     15px;
     background-color:            inherit;
     text-color:                  inherit;
@@ -103,16 +102,13 @@ listview {
     padding:                     0px;
     border:                      0px solid;
     border-radius:               0px;
-    border-color:                @selected;
-    background-color:            transparent;
+    border-color:                @foreground;
+    background-color:            @transparent;
     text-color:                  @foreground;
     cursor:                      "default";
 }
 scrollbar {
-    handle-width:                5px ;
-    handle-color:                @selected;
-    border-radius:               0px;
-    background-color:            @background-alt;
+    enabled:                     false;
 }
 
 element {
@@ -122,8 +118,8 @@ element {
     padding:                     0px;
     border:                      0px solid;
     border-radius:               0px;
-    border-color:                @selected;
-    background-color:            transparent;
+    border-color:                @foreground;
+    background-color:            @foreground;
     text-color:                  @foreground;
     orientation:                 vertical;
     cursor:                      pointer;
@@ -139,7 +135,7 @@ element selected.normal {
 element-icon {
     padding:                     30px;
     border-radius:               20px;
-    background-color:            @background-alt;
+    background-color:            @urgent-background;
     text-color:                  inherit;
     size:                        64px;
     cursor:                      inherit;
@@ -155,15 +151,15 @@ element-text {
 }
 element-text selected {
     border-radius:               100%;
-    background-color:            @selected;
-    text-color:                  @selected-fg;
+    background-color:            @foreground;
+    text-color:                  @background;
 }
 
 error-message {
     padding:                     20px;
     border:                      2px solid;
     border-radius:               20px;
-    border-color:                @selected;
+    border-color:                @foreground;
     background-color:            @background;
     text-color:                  @foreground;
 }
