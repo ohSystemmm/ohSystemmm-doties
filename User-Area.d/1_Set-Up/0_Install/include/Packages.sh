@@ -11,6 +11,7 @@ InstallRequired() {
     btop                               # A monitor of system resources, bpytop ported to C++
     chromium                           # A web browser built for speed, simplicity, and security
     cliphist                           # wayland clipboard manager
+    dunst                              # Customizable and lightweight notification-daemon
     fd                                 # Simple, fast and user-friendly alternative to find
     figlet                             # A program for making large letters out of ordinary text
     fastfetch                          # Like Neofetch, but much faster because written in C
@@ -29,7 +30,6 @@ InstallRequired() {
     kitty                              # A modern, hackable, featureful, OpenGL-based terminal emulator
     libadwaita                         # Building blocks for modern adaptive GNOME applications
     libpulse                           # A featureful, general-purpose sound server (client library)
-    mako                               # Lightweight notification daemon for Wayland
     network-manager-applet             # Applet for managing network connections
     networkmanager                     # Network connection manager and user applications
     nm-connection-editor               # NetworkManager GUI connection editor and widgets
