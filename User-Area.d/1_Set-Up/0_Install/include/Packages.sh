@@ -48,6 +48,9 @@ InstallRequired() {
     python-psutil                      # A cross-platform process and system utilities module for Python
     python-pywal                       # Generate and change colorschemes on the fly
     python-rich                        # Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal
+    qt5-graphicaleffects               # Graphical effects for use with Qt Quick 2
+    qt5-quickcontrols2                 # Next generation user interface controls based on Qt Quick
+    qt5-svg                            # Classes for displaying the contents of SVG files
     rofi-wayland                       # A window switcher, run dialog and dmenu replacement - fork with wayland support
     sddm                               # QML based X11 and Wayland display manager
     slurp                              # Select a region in a Wayland compositor

@@ -198,6 +198,9 @@ echo -e "Installing and enabling the Simple Desktop Display Manager (SDDM).\n"
 sudo pacman -S --needed sddm --noconfirm
 echo -e "\nEnabling SDDM service."
 sudo systemctl enable sddm.service
+paru -S sddm-theme-corners-git
+sudo touch /etc/sddm.conf
+sudo echo "[Theme]\nCurrent=corners" > /etc/sddm.conf
 echo -e "\n${BGreen}SDDM Installed and Enabled.${Normal}"
 NextSlide
 
