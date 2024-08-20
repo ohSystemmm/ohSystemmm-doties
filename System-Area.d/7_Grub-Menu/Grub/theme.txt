@@ -5,11 +5,11 @@ terminal-width: "100%"
 terminal-height: "100%"
 
 + boot_menu {
-    left = 60%
-    top = 30%
-    width = 55%
+    left = 65%
+    top = 37%
+    width = 40%
     height = 60%
-    item_spacing = 25
+    item_spacing = 20
     item_color = "#FFFFFF"
     item_font = "Norwester Regular 22"
     selected_item_font = "Dersu Uzala brush Regular 54"
