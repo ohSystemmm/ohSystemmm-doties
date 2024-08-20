@@ -267,70 +267,74 @@ SlideHeader "Setting up Hyprland."
 NextSlide
 SlideHeader "Linking Customized Packages."
 path=~/ohSystemmm-doties/System-Area.d/3_Package-Config/
-if [ -L ~/.config/cava ]; then
-    rm ~/.config/cava
+if [ -L ~/.config/cava/ ]; then
+    rm -rf ~/.config/cava/
 fi
-ln -s "${path}0_App-Configs/cava/" ~/.config/cava
+ln -s "${path}0_App-Configs/cava/" ~/.config/
 
-if [ -L ~/.config/picom ]; then
-    rm ~/.config/picom
+if [ -L ~/.config/picom/ ]; then
+    rm -rf ~/.config/picom/
 fi
-ln -s "${path}0_App-Configs/picom/" ~/.config/picom
+ln -s "${path}0_App-Configs/picom/" ~/.config/
 
-if [ -L ~/.config/rofi ]; then
-    rm ~/.config/rofi
+if [ -L ~/.config/rofi/ ]; then
+    rm -rf ~/.config/rofi/
 fi
-ln -s "${path}0_App-Configs/rofi/" ~/.config/rofi
+ln -s "${path}0_App-Configs/rofi/" ~/.config/
 
-if [ -L ~/.config/waybar ]; then
-    rm ~/.config/waybar
+if [ -L ~/.config/waybar/ ]; then
+    rm -rf ~/.config/waybar/
 fi
-ln -s "${path}0_App-Configs/waybar/" ~/.config/waybar
+ln -s "${path}0_App-Configs/waybar/" ~/.config/
 
-if [ -L ~/.config/fastfetch ]; then
-    rm ~/.config/fastfetch
+if [ -L ~/.config/fastfetch/ ]; then
+    rm -rf ~/.config/fastfetch/
 fi
-ln -s "${path}0_App-Configs/fastfetch/" ~/.config/fastfetch
+ln -s "${path}0_App-Configs/fastfetch/" ~/.config/
 
-if [ -L ~/.config/wlogout ]; then
-    rm ~/.config/wlogout
+if [ -L ~/.config/wlogout/ ]; then
+    rm -rf ~/.config/wlogout/
 fi
-ln -s "${path}0_App-Configs/wlogout/" ~/.config/wlogout
+ln -s "${path}0_App-Configs/wlogout/" ~/.config/
 
-if [ -L ~/.config/ags ]; then
-    rm ~/.config/ags
+if [ -L ~/.config/ags/ ]; then
+    rm -rf ~/.config/ags/
 fi
-ln -s "${path}0_App-Configs/ags/" ~/.config/ags
+ln -s "${path}0_App-Configs/ags/" ~/.config/
 
-if [ -L ~/.config/btop ]; then
-    rm ~/.config/btop
+if [ -L ~/.config/btop/ ]; then
+    rm -rf ~/.config/btop/
 fi
-ln -s "${path}0_App-Configs/btop/" ~/.config/btop
+ln -s "${path}0_App-Configs/btop/" ~/.config/
 
-if [ -L ~/.config/fish ]; then
-    rm ~/.config/fish
-fi
-ln -s "${path}2_Shell-Configs/fish/" ~/.config/fish
+if [ -L ~/.config/dunst/ ]; then
+    rm -rf ~/.config/dunst/ 
+fi  
+ln -s "${path}0_App-Configs/dunst/" ~/config/
 
-if [ -L ~/.config/nvim ]; then
-    rm ~/.config/nvim
+if [ -L ~/.config/fish/ ]; then
+    rm -rf ~/.config/fish/
 fi
-ln -s "${path}1_Editor-Configs/nvim/" ~/.config/nvim
+ln -s "${path}2_Shell-Configs/fish/" ~/.config/
 
-if [ -L ~/.config/wezterm ]; then
-    rm ~/.config/wezterm
+if [ -L ~/.config/nvim/ ]; then
+    rm -rf ~/.config/nvim/
 fi
-ln -s "${path}3_Terminal-Configs/wezterm/" ~/.config/wezterm
+ln -s "${path}1_Editor-Configs/nvim/" ~/.config/
 
-if [ -L ~/.config/kitty ]; then
-    rm ~/.config/kitty
+if [ -L ~/.config/wezterm/ ]; then
+    rm -rf ~/.config/wezterm/
 fi
-ln -s "${path}3_Terminal-Configs/kitty/" ~/.config/kitty
+ln -s "${path}3_Terminal-Configs/wezterm/" ~/.config/
 
-if [ -L ~/.config/hypr ]; then
-    rm ~/.config/hypr
+if [ -L ~/.config/kitty/ ]; then
+    rm -rf ~/.config/kitty/
 fi
-ln -s ~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/ ~/.config/hypr
+ln -s "${path}3_Terminal-Configs/kitty/" ~/.config/
+if [ -L ~/.config/hypr/ ]; then
+    rm -rf ~/.config/hypr/
+fi
+ln -s ~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/ ~/.config/
 NextSlide
 
 # Credits
