@@ -1,26 +1,46 @@
-const time = Variable('', {
-    poll: [1000, function() {
-        return Date().toString()
-    }],
-})
+import GLib from "gi://GLib"
 
-const Bar = (/** @type {number} */ monitor) => Widget.Window({
-    monitor,
-    name: `bar${monitor}`,
-    anchor: ['top', 'left', 'right'],
-    exclusivity: 'exclusive',
-    child: Widget.CenterBox({
-        start_widget: Widget.Label({
-            hpack: 'center',
-            label: 'Welcome to AGS! Test',
-        }),
-        end_widget: Widget.Label({
-            hpack: 'center',
-            label: time.bind(),
-        }),
-    }),
-})
+const main = "/tmp/ags/hyprpanel/main.js"
+const entry = `${App.configDir}/main.ts`
+const bundler = GLib.getenv("AGS_BUNDLER") || "bun"
 
-App.config({
-    windows: [Bar(0)],
-})
+const v = {
+    ags: pkg.version?.split(".").map(Number) || [],
+    expect: [1, 8, 1],
+}
+
+try {
+    switch (bundler) {
+        case "bun": await Utils.execAsync([
+            "bun", "build", entry,
+            "--outfile", main,
+            "--external", "resource://*",
+            "--external", "gi://*",
+            "--external", "file://*",
+        ]); break
+
+        case "esbuild": await Utils.execAsync([
+            "esbuild", "--bundle", entry,
+            "--format=esm",
+            `--outfile=${main}`,
+            "--external:resource://*",
+            "--external:gi://*",
+            "--external:file://*",
+        ]); break
+
+        default:
+            throw `"${bundler}" is not a valid bundler`
+    }
+
+    if (v.ags[1] < v.expect[1] || v.ags[2] < v.expect[2]) {
+        print(`HyprPanel needs atleast v${v.expect.join(".")} of AGS, yours is v${v.ags.join(".")}`)
+        App.quit()
+    }
+
+    await import(`file://${main}`)
+} catch (error) {
+    console.error(error)
+    App.quit()
+}
+
+export { }

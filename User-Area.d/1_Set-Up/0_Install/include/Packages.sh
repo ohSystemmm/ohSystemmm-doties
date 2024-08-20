@@ -9,6 +9,7 @@ InstallRequired() {
     brightnessctl                      # Lightweight brightness control tool
     breeze-icon                        # Breeze icon theme
     btop                               # A monitor of system resources, bpytop ported to C++
+    bun
     chromium                           # A web browser built for speed, simplicity, and security
     cliphist                           # wayland clipboard manager
     dunst                              # Customizable and lightweight notification-daemon
@@ -145,3 +146,5 @@ InstallGit() {
     zsh-syntax-highlighting            # Fish shell like syntax highlighting for Zsh
   )
 }
+
+gsound dart-sass gnome-bluetooth
