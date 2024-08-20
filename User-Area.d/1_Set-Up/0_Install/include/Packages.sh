@@ -106,7 +106,7 @@ InstallohSystemmm() {
     fcitx5                             # Next generation of fcitx
     fcitx5-configtool                  # Configuration Tool for Fcitx5
     ipscan                             # Angry IP Scanner (or simply ipscan) is an open-source and cross-platform network scanner.
-    # iptables                           # Linux kernel packet control tool (using legacy interface)
+  # iptables                           # Linux kernel packet control tool (using legacy interface)
     krita                              # Edit and paint images
   # libvirt                            # API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)
     mangal-bin                         # The most advanced cli manga downloader in the entire universe!

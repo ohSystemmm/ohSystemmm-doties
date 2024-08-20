@@ -10,10 +10,10 @@ terminal-height: "100%"
     width = 55%
     height = 60%
     item_spacing = 25
-    item_color = "#000000"
+    item_color = "#FFFFFF"
     item_font = "Norwester Regular 22"
     selected_item_font = "Dersu Uzala brush Regular 54"
-    selected_item_color = "#ffffff"
+    selected_item_color = "#FFFFFF"
     selected_item_pixmap_style = "select_*.png"
 }
 
@@ -21,12 +21,21 @@ terminal-height: "100%"
     id = "__timeout__"
     left = 40%
     top = 90%
-    width = 300
-    height = 20
-    font = "Norwester Regular 22"
-    color = "#ffffff"
+    width = 275
+    height = 30
+    font = "Norwester Regular 30"
+    color = "#FFFFFF"
     align = "center"
     text = "Few Seconds Away From Automatic Boot : %ds"
 }
 
-
++ label {
+    width = 40
+    height = 25
+    top = 100%     
+    left = 0%     
+    color = "#FFFFFF"
+    align = "left" 
+    text = "by ohSystemmm <3 - 2024"
+    font = "Norwester Regular 15"
+}
