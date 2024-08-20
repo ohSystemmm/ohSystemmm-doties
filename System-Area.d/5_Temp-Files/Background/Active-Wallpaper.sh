@@ -1,1 +1,1 @@
-/home/ohsystemmm/Images/Wallpapers/image.png
+/home/ohsystemmm/Images/Wallpapers/patterns.jpg
