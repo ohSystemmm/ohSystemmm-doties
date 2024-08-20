@@ -60,7 +60,6 @@ InstallRequired() {
     ttf-hanazono                       # A free Japanese kanji font, which contains about 78,685 characters.
     tumbler                            # Thumbnail service implementing the thumbnail management D-Bus specification
     waybar                             # Highly customizable Wayland bar for Sway and Wlroots based compositors
-    waypaper                           # GUI wallpaper setter for Wayland and Xorg window managers.
     wlogout                            # Logout menu for wayland
     wireplumber                        # Session / policy manager implementation for PipeWire
     xdg-desktop-portal                 # Desktop integration portals for sandboxed apps
