@@ -1,0 +1,164 @@
+/*  ____            _                             _  */
+/* |  _ \  ___  ___(_) __ _ _ __    _ __ __ _ ___(_) */
+/* | | | |/ _ \/ __| |/ _` | '_ \  | '__/ _` / __| | */
+/* | |_| |  __/\__ \ | (_| | | | |_| | | (_| \__ \ | */
+/* |____/ \___||___/_|\__, |_| |_(_)_|  \__,_|___/_| */
+/*                    |___/                          */
+/*                                                   */
+/* by ohSystemmm <3 - 2024                           */
+
+configuration {
+	modi:                       "drun";
+  show-icons:                 true;
+  display-drun:               " Wallpapers";
+	drun-display-format:        "{name}";
+  hover-select:               true;
+}
+
+@import "config-Colors/Colors.rasi"
+
+window {
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       1000px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      2px solid;
+    border-radius:               20px;
+    border-color:                @foreground;
+    background-color:            @background;
+    cursor:                      "default";
+}
+mainbox {
+    enabled:                     true;
+    spacing:                     20px;
+    margin:                      40px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @foreground;
+    background-color:            @transparent;
+    children:                    [ "inputbar", "listview" ];
+}
+inputbar {
+    enabled:                     true;
+    spacing:                     0px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               100%;
+    background-color:            @urgent-background;
+    text-color:                  @foreground;
+    children:                    [ "prompt", "textbox-prompt-colon", "entry" ];
+}
+prompt {
+    enabled:                     true;
+    padding:                     15px;
+    border-radius:               100%;
+    background-color:            @foreground;
+    text-color:                  @background;
+}
+textbox-prompt-colon {
+    enabled:                     true;
+    expand:                      false;
+    str:                         "";
+    padding:                     15px;
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+entry {
+    enabled:                     true;
+    padding:                     15px 0px;
+    background-color:            inherit;
+    text-color:                  inherit;
+    cursor:                      text;
+    placeholder:                 "Search...";
+    placeholder-color:           inherit;
+}
+listview {
+    enabled:                     true;
+    columns:                     5;
+    lines:                       3;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true; 
+    spacing:                     20px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @foreground;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      "default";
+}
+scrollbar {
+    enabled:                     false;
+}
+element {
+    enabled:                     true;
+    spacing:                     20px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @foreground;
+    background-color:            @foreground;
+    text-color:                  @foreground;
+    orientation:                 vertical;
+    cursor:                      pointer;
+}
+element normal.normal {
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+element selected.normal {
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+element-icon {
+    padding:                     30px;
+    border-radius:               20px;
+    background-color:            @urgent-background;
+    text-color:                  inherit;
+    size:                        64px;
+    cursor:                      inherit;
+}
+element-text {
+    padding:                     10px;
+    background-color:            transparent;
+    text-color:                  inherit;
+    highlight:                   inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+element-text selected {
+    border-radius:               100%;
+    background-color:            @foreground;
+    text-color:                  @background;
+}
+error-message {
+    padding:                     20px;
+    border:                      2px solid;
+    border-radius:               20px;
+    border-color:                @foreground;
+    background-color:            @background;
+    text-color:                  @foreground;
+}
+textbox {
+    background-color:            @background;
+    text-color:                  @foreground;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+    highlight:                   none;
+}

@@ -17,7 +17,7 @@ fi
 SelectedGrub=$(echo "$Grubs" | rofi -dmenu -p "Select new Grub" -theme-str 'listview { lines: 10; }')
 
 if [ -n "$SelectedGrub" ]; then
-  cp $SelectedGrub ~/ohSystemmm-doties/System-Area.d/7_Grub-Menu/Grub/Background.png
+  sudo cp $SelectedGrub ~/ohSystemmm-doties/System-Area.d/7_Grub-Menu/Grub/Background.png
   sudo cp -r ~/ohSystemmm-doties/System-Area.d/7_Grub-Menu/Grub/ /boot/grub/themes/ 
   sudo cp -f ~/ohSystemmm-doties/System-Area.d/0_Global-Config/grub /etc/default/grub
   sudo grub-mkconfig -o /boot/grub/grub.cfg
