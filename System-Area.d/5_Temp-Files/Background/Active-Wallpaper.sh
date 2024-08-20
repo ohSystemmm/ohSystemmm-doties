@@ -1,1 +1,1 @@
-/home/ohsystemmm/Images/Wallpapers/wallhaven-x8oq8z.jpg
+/home/ohsystemmm/Images/Wallpapers/GUNQWVW.png
