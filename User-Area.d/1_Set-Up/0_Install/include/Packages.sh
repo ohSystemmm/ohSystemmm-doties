@@ -9,18 +9,20 @@ InstallRequired() {
     brightnessctl                      # Lightweight brightness control tool
     breeze-icon                        # Breeze icon theme
     btop                               # A monitor of system resources, bpytop ported to C++
-    bun
+    bun                                # Bun is a fast JavaScript all-in-one toolkit.
     chromium                           # A web browser built for speed, simplicity, and security
     cliphist                           # wayland clipboard manager
-    dunst                              # Customizable and lightweight notification-daemon
+    dart-sass                          # Sass makes CSS fun again
     fd                                 # Simple, fast and user-friendly alternative to find
     figlet                             # A program for making large letters out of ordinary text
     fastfetch                          # Like Neofetch, but much faster because written in C
     firefox-nightly-bin                # Fast, Private & Safe Web Browser from Mozilla — Nightly Build (en-US)
     fish                               # Smart and user friendly shell intended mostly for interactive use
     git                                # the fast distributed version control system
+    gnome-bluetooth                    # GNOME Bluetooth Subsystem
     grim                               # Screenshot utility for Wayland
     gst-plugin-pipewire                # Multimedia graph framework - pipewire plugin
+    gsound                             # Small library for playing system sounds
     gtk3                               # GObject-based multi-platform GUI toolkit
     gtk4                               # GObject-based multi-platform GUI toolkit
     gum                                # A tool for glamorous shell scripts
@@ -63,7 +65,6 @@ InstallRequired() {
     ttf-firacode-nerd                  # Patched font Fira (Fura) Code from nerd fonts library
     ttf-hanazono                       # A free Japanese kanji font, which contains about 78,685 characters.
     tumbler                            # Thumbnail service implementing the thumbnail management D-Bus specification
-    waybar                             # Highly customizable Wayland bar for Sway and Wlroots based compositors
     wlogout                            # Logout menu for wayland
     wireplumber                        # Session / policy manager implementation for PipeWire
     xdg-desktop-portal                 # Desktop integration portals for sandboxed apps
@@ -144,7 +145,5 @@ InstallGit() {
     oh-my-zsh                          # A community-driven framework for managing your zsh configuration. 
     zsh-autosuggestions                # Fish-like autosuggestions for zsh  
     zsh-syntax-highlighting            # Fish shell like syntax highlighting for Zsh
-  )
 }
 
-gsound dart-sass gnome-bluetooth
