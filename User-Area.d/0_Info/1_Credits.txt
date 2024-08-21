@@ -10,9 +10,12 @@ Contributors
     Testers    (Anonymous) – Testing and Feedback
 
 Special Thanks
-    ml4w-dotfiles (GitLab) - Inspiration
-    end4_dotfiles (GitHub) - Inspiration
-    NvChad        (GitHub) - Neovim
+    Jas-SinghFSU  (GitHub) - HyprPanel
+    ml4w-dotfiles (GitHub) - Dotfiles Inspiration
+    JaKooLit      (GitHub) - Dotfiles Inspiration
+    end4_dotfiles (GitHub) - Dotfiles Inspiration
+    NvChad        (GitHub) - Neovim Config
+    anhsirk0      (GitHub) - Rofi Inspiration
     PhoenixFly    (GitHub) - Wifu Stuff
 
 Acknowledgements:

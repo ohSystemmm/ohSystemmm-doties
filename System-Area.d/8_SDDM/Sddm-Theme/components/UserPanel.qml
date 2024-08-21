@@ -274,7 +274,7 @@ Column {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 color: config.PopupActiveColor
-                text: "Incorrect username\nor password!"
+                text: "Incorrect Username\nor Password!"
             }
 
             enter: Transition {
