@@ -119,7 +119,7 @@ const Shortcuts = () => {
                                 },
                                 child: Widget.Label({
                                     class_name: "button-label txt-icon",
-                                    label: "󰒓",
+                                    label: "",
                                 }),
                             }),
                         ],
@@ -145,7 +145,7 @@ const Shortcuts = () => {
                                 on_primary_click: startOBS,
                                 child: Widget.Label({
                                     class_name: "button-label txt-icon",
-                                    label: "󰑋", // Replace with appropriate icon for OBS
+                                    label: "󰑋",
                                 }),
                             }),
                         ],
