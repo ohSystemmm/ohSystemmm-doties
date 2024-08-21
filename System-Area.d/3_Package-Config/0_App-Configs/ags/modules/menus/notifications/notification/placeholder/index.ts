@@ -19,7 +19,7 @@ const Placeholder = (notifs: Notifications) => {
                 Widget.Label({
                     vpack: "start",
                     class_name: "placehold-label dim message",
-                    label: "You're all caught up :)",
+                    label: "All caught up :]",
                 }),
             ],
         }),

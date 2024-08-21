@@ -308,6 +308,10 @@
       &.storage label {
         color: if($bar-menus-monochrome, $bar-menus-icons-active, $bar-menus-menu-dashboard-monitors-disk-icon);
       }
+      
+      &.homeStorage label{
+        color: if($bar-menus-monochrome, $bar-menus-icons-activem, $bar-menus-menu-dashboard-monitors-disk-icon);
+      }
 
       .stats-bar {
         levelbar * {
@@ -346,6 +350,10 @@
       &.storage .stats-bar block.filled {
         background: if($bar-menus-monochrome, $bar-menus-progressbar-foreground, $bar-menus-menu-dashboard-monitors-disk-bar);
       }
+
+      &.homeStorage .stats-bar block.filled {
+        background: if($bar-menus-monochrome, $bar-menus-progressbar-foreground, $bar-menus-menu-dashboard-monitors-disk-bar);
+      }
     }
 
     .stat-value {
@@ -365,6 +373,10 @@
       }
 
       &.storage {
+        color: if($bar-menus-monochrome, $bar-menus-label, $bar-menus-menu-dashboard-monitors-disk-label);
+      }
+      
+      &.homeStorage {
         color: if($bar-menus-monochrome, $bar-menus-label, $bar-menus-menu-dashboard-monitors-disk-label);
       }
     }

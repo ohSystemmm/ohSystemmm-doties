@@ -371,7 +371,7 @@ const Stats = () => {
                 vertical: true,
                 children: [
                     Widget.Box({
-                        class_name: "stat home-storage",
+                        class_name: "stat storage",
                         hexpand: true,
                         vpack: "center",
                         children: [
@@ -401,7 +401,7 @@ const Stats = () => {
                     }),
                     Widget.Label({
                         hpack: "end",
-                        class_name: "stat-value home-storage",
+                        class_name: "stat-value storage",
                         label: homeStorage.bind("value").as((v) => `${v.used}/${v.total} GB`),
                     }),
                 ],
