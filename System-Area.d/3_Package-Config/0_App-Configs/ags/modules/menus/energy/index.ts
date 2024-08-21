@@ -15,10 +15,7 @@ export default () => {
                 hpack: "fill",
                 hexpand: true,
                 class_name: "menu-items-container energy",
-                children: [
-                    Brightness(),
-                    EnergyProfiles(),
-                ],
+                children: [ Brightness(), EnergyProfiles()],
             }),
         }),
     });

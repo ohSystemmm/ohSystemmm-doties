@@ -19,7 +19,7 @@ export default () => {
             Widget.Box({
               class_name: "calendar-content-items",
               vertical: true,
-              children: [TimeWidget(), CalendarWidget(), WeatherWidget()],
+              children: [TimeWidget(), CalendarWidget()],
             }),
           ],
         }),

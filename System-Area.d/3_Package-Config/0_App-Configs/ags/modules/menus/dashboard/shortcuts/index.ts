@@ -4,18 +4,6 @@ import options from "options";
 const { left, right } = options.menus.dashboard.shortcuts;
 
 const Shortcuts = () => {
-    const isRecording = Variable(false, {
-        poll: [
-            1000,
-            `${App.configDir}/services/screen_record.sh status`,
-            (out) => {
-                if (out === "recording") {
-                    return true;
-                }
-                return false;
-            },
-        ],
-    });
     const handleClick = (action: any, tOut: number = 250) => {
         App.closeWindow("dashboardmenu");
 
@@ -28,44 +16,10 @@ const Shortcuts = () => {
         }, tOut);
     };
 
-    const recordingDropdown = Widget.Menu({
-        class_name: "dropdown recording",
-        hpack: "fill",
-        hexpand: true,
-        setup: (self) => {
-            self.hook(hyprland, () => {
-                const displays = hyprland.monitors.map((mon) => {
-                    return Widget.MenuItem({
-                        label: `Display ${mon.name}`,
-                        on_activate: () => {
-                            App.closeWindow("dashboardmenu");
-                            Utils.execAsync(
-                                `${App.configDir}/services/screen_record.sh start ${mon.name}`,
-                            ).catch((err) => console.error(err));
-                        },
-                    });
-                });
-
-                const apps = hyprland.clients.map((clt) => {
-                    return Widget.MenuItem({
-                        label: `${clt.class.charAt(0).toUpperCase() + clt.class.slice(1)} (Workspace ${clt.workspace.name})`,
-                        on_activate: () => {
-                            App.closeWindow("dashboardmenu");
-                            Utils.execAsync(
-                                `${App.configDir}/services/screen_record.sh start ${clt.focusHistoryID}`,
-                            ).catch((err) => console.error(err));
-                        },
-                    });
-                });
-
-                return (self.children = [
-                    ...displays,
-                    // Disabled since window recording isn't available on wayland
-                    // ...apps
-                ]);
-            });
-        },
-    });
+    const startOBS = () => {
+        App.closeWindow("dashboardmenu");
+        Utils.execAsync("obs").catch((err) => console.error(err));
+    };
 
     return Widget.Box({
         class_name: "shortcuts-container",
@@ -186,28 +140,12 @@ const Shortcuts = () => {
                                 }),
                             }),
                             Widget.Button({
-                                tooltip_text: "Record Screen",
-                                class_name: isRecording
-                                    .bind("value")
-                                    .as((v) => `dashboard-button record ${v ? "active" : ""}`),
-                                setup: (self) => {
-                                    self.hook(isRecording, () => {
-                                        self.toggleClassName("hover", true);
-                                        self.on_primary_click = (_, event) => {
-                                            if (isRecording.value === true) {
-                                                App.closeWindow("dashboardmenu");
-                                                return Utils.execAsync(
-                                                    `${App.configDir}/services/screen_record.sh stop`,
-                                                ).catch((err) => console.error(err));
-                                            } else {
-                                                recordingDropdown.popup_at_pointer(event);
-                                            }
-                                        };
-                                    });
-                                },
+                                tooltip_text: "Start OBS",
+                                class_name: "dashboard-button",
+                                on_primary_click: startOBS,
                                 child: Widget.Label({
                                     class_name: "button-label txt-icon",
-                                    label: "󰑊",
+                                    label: "󰑋", // Replace with appropriate icon for OBS
                                 }),
                             }),
                         ],
@@ -219,3 +157,4 @@ const Shortcuts = () => {
 };
 
 export { Shortcuts };
+

@@ -1,1 +1,1 @@
-/home/ohsystemmm/Images/Wallpapers/GUNQWVW.png
+/home/ohsystemmm/Images/Wallpapers/Fantasy-Landscape.png

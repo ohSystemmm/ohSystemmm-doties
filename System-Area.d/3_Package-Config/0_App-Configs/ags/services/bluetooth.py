@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import dbus
 import dbus.service
 import dbus.mainloop.glib
