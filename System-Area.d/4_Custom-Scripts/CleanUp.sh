@@ -6,6 +6,7 @@
 #                                     |_|           
 # by ohSystemmm <3 - 2024
 
+sudo pacman -Rns $(pacman -Qdtq) --noconfirm  
 sudo pacman -Scc --noconfirm
 yay -Scc --noconfirm
 paru -Scc --noconfirm
