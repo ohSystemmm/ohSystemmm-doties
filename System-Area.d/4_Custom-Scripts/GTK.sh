@@ -6,7 +6,7 @@
 # 
 # by ohSystemmm <3 - 2024
 
-Settings=~/.config/gtk-3.0/settings.ini
+Settings=~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/gtk-3.0/settings.ini
 
 if [ ! -f "$Settings" ]; then 
   exit 1 
@@ -31,7 +31,4 @@ gsettings set "$GnomeSchema" cursor-theme "$CursorTheme"
 gsettings set "$GnomeSchema" font-name "$FontName"
 gsettings set "$GnomeSchema" color-scheme "prefer-dark"
 
-if [ -f ~/.config/hypr/conf/cursor.conf ] ;then
-    echo "exec-once = hyprctl setcursor $CursorTheme $CursorSize" > ~/.config/hypr/conf/cursor.conf
-    hyprctl setcursor $CursorTheme $CursorSize
-fi
+hyprctl setcursor $CursorTheme $CursorSize
