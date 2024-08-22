@@ -7,7 +7,6 @@ InstallRequired() {
     bluez                              # Daemons for the bluetooth protocol stack
     bluez-utils                        # Development and debugging utilities for the bluetooth protocol stack
     brightnessctl                      # Lightweight brightness control tool
-    breeze-icon                        # Breeze icon theme
     btop                               # A monitor of system resources, bpytop ported to C++
     bun                                # Bun is a fast JavaScript all-in-one toolkit.
     chromium                           # A web browser built for speed, simplicity, and security
@@ -39,7 +38,6 @@ InstallRequired() {
     noto-fonts                         # Google Noto TTF fonts
     noto-fonts-emoji                   # Google Noto emoji fonts
     nwg-look                           # GTK3 settings editor adapted to work on wlroots-based compositors
-    papirus-icon-theme                 # Papirus icon theme
     pavucontrol                        # PulseAudio Volume Control
     pipewire                           # Low-latency audio/video router and processor
     pipewire-alsa                      # Low-latency audio/video router and processor - ALSA configuration
