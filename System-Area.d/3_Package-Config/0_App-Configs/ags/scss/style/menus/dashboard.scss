@@ -26,16 +26,15 @@
     margin-bottom: 0.65em;
 
     .profile-picture {
-      font-size: 7.5em;
+      font-size: 12.5em;
     }
-
+    
     .profile-name {
       font-size: 1.5em;
       color: if($bar-menus-monochrome, $bar-menus-label, $bar-menus-menu-dashboard-profile-name);
-      margin-top: 0.75em;
+      margin-top: 0.5em;
     }
   }
-
   .power-menu-container {
     margin-left: 0em;
     margin-bottom: 0.65em;

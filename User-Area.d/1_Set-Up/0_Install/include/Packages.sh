@@ -2,7 +2,7 @@ InstallRequired() {
   Packages=(
     aylurs-gtk-shell                   # Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
     autojump                           # A faster way to navigate your filesystem from the command line
-    bibata-cursor-theme                # Material Based Cursor Theme
+    bibata-extra-cursor-theme          # Material Based Cursor Theme: More Bibata!
     blueman                            # GTK+ Bluetooth Manager
     bluez                              # Daemons for the bluetooth protocol stack
     bluez-utils                        # Development and debugging utilities for the bluetooth protocol stack
