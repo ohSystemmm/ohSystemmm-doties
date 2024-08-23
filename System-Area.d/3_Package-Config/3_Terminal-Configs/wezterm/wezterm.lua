@@ -14,7 +14,7 @@ config.font_size = 15.0
 -- config.color_scheme = "Batman"
 config.enable_wayland = false
 config.hide_tab_bar_if_only_one_tab = true
--- config.window_background_image = wezterm.home_dir .. "/.config/wezterm/GreyScale.jpg"
+-- config.window_background_image = wezterm.home_dir .. "/.config/wezterm/Image.jpg"
 config.window_background_opacity = 0.5
 config.warn_about_missing_glyphs=false
 

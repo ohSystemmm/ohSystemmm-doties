@@ -134,7 +134,5 @@ source $ZSH/oh-my-zsh.sh
 # Set custom prompt
 #
 # Custom prompt
-PROMPT='🔰%F{12}ohSystemmm%f%F{white}@%f%F{13}%m%f %F{white}🌐 %F{cyan}%1~%f %F{white}➤ '
+PROMPT='🔰%F{12}%n%f%F{white}@%f%F{13}%m%f %F{white}🌐 %F{cyan}%1~%f %F{white}➤ '
 RPROMPT='⏳%F{blue}%*%f'
-
-
