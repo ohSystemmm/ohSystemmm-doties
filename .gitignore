@@ -23,3 +23,7 @@ User-Area.d/7_Grub/*
 
 # Temp Files
 System-Area.d/5_Temp-Files/*
+!System-Area.d/5_Temp-Files/Placeholder
+
+# Grub 
+System-Area.d/7_Grub-Menu/Grub/Background.png
