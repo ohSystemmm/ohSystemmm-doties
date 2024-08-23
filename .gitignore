@@ -1,27 +1,3 @@
 # Thunar Bookmarks
 bookmarks
 
-# Images
-2_Wallpapers/*
-!2_Wallpapers/Default.png 
-
-3_Diashows/Diashow_1/*
-!3_Diashows/Diashow_1/Default.png 
-
-4_Fastfetch/*
-!4_Fastfetch/Default.png
-
-5_Avatars/*
-!5_Avatars/Default.png
-
-6_Loginscreen/*
-!6_Loginscreen/Default.png 
-
-7_Bootloader/*
-!7_Bootloader/Default.png 
-
-wlogout/Blurred/*
-fastfetch/Image.png
-5_Temp-Files/*
-Grub/Background.png 
-Sddm-Theme/Backgrounds/Background.png

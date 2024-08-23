@@ -6,7 +6,7 @@
 #  
 # by ohSystemmm <3 - 2024
 
-GrubDirectory=~/ohSystemmm-doties/User-Area.d/7_Bootloader/
+GrubDirectory=~/ohSystemmm-doties/User-Area.d/7_Grub/
 Grubs=$(find "$GrubDirectory" -type f -iname "*.png" | sort)
 
 if [ -z "$Grubs" ]; then
