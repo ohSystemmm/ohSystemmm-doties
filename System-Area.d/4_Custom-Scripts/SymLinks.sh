@@ -7,3 +7,4 @@
 # 
 # by ohSystemmm <3 - 2024
 
+ln -s ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/btop/ ~/.config/ 
