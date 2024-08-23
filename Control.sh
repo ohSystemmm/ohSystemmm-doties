@@ -7,7 +7,7 @@
 # by ohSystemmm <3 - 2024
 
 # Source Colors
-source ~/ohSystemmm-doties/User-Area.d/1_Set-Up/0_Install/include/Colors.sh
+source ~/ohSystemmm-doties/User-Area.d/1_SetUp/0_Install/include/Colors.sh
 
 CheckPackages() {
   if ! command -v figlet >/dev/null 2>&1 || ! command -v gum >/dev/null 2>&1; then

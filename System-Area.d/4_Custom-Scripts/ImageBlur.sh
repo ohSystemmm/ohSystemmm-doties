@@ -10,8 +10,11 @@
 BlurPasses=5
 BlurSize=5
 
-InputFile=$(cat ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Active-Wallpaper.sh)
-rm -rf ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Blurred/*
-OutputFile=~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Blurred/BlurredWP.png
+InputFile=$(cat ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/ActiveWallpaper.sh)
+BlurredDirectory=~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Blurred/
+OutputFile="${BlurredDirectory}BlurredWP.png"
+
+mkdir -p "$BlurredDirectory"
+rm -rf "${BlurredDirectory}*"
 
 magick convert "$InputFile" -blur 0x$((BlurSize * BlurPasses)) "$OutputFile"

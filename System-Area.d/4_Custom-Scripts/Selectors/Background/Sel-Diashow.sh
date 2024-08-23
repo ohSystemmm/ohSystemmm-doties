@@ -6,18 +6,21 @@
 # 
 # by ohSystemmm <3 - 2024
 
-DiashowDirectory=~/Images/ # Test
+DiashowDirectory=~/ohSystemmm-doties/User-Area.d/3_Diashow/Diashow_1/
 Diashows=$(find "$DiashowDirectory" -type d | sort)
 
 if [ -z "$Diashows" ]; then
-  notify-send "Warning!" "Empty Diashowfolder"
-  exit 1 
+    notify-send "Warning!" "Empty Diashow folder"
+    exit 1
 fi
 
 SelectedDiashow=$(echo "$Diashows" | rofi -dmenu -p "Select new Diashow" -theme-str 'listview { lines: 10; }')
+ScriptPath=~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/DiashowFolder.sh
+
 if [ -n "$SelectedDiashow" ]; then
-  echo -e "$SelectedDiashow" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Diashow-Folder.sh
+    mkdir -p "$(dirname "$ScriptPath")"
+    echo -e "$SelectedDiashow" > "$ScriptPath"
+    chmod +x "$ScriptPath"
 else
-    echo "canceled" >&2
     exit 1
 fi

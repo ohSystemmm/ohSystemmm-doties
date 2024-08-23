@@ -6,7 +6,7 @@
 # 
 # by ohSystemmm - 2024
 
-AvatarDirectory=~/ohSystemmm-doties/User-Area.d/5_Avatars/ 
+AvatarDirectory=~/ohSystemmm-doties/User-Area.d/5_Avatar/  
 Avatars=$(find "$AvatarDirectory" -type f -iname "*.png" | sort)
 
 if [ -z "$Avatars" ]; then
@@ -20,6 +20,6 @@ if [ -n "$SelectedAvatar" ]; then
   if [ -f ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Avatar/Avatar.png ]; then
     rm -f ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Avatar/*
   fi
-  
-  cp "$SelectedAvatar" ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Avatar/Avatar.png
+
+  mkdir -p ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Avatar && cp "$SelectedAvatar" ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Avatar/Avatar.png
 fi

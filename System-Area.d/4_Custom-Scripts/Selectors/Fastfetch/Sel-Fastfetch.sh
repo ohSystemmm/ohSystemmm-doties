@@ -7,6 +7,9 @@
 # by ohSystemmm <3 - 2024
 
 FastfetchDirectory=~/ohSystemmm-doties/User-Area.d/4_Fastfetch/
+FastfetchConfigPath=~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/fastfetch/Image.png
+FastfetchCachePath=~/.cache/fastfetch/
+
 Fastfetches=$(find "$FastfetchDirectory" -type f -iname "*.png" | sort)
 
 if [ -z "$Fastfetches" ]; then
@@ -17,12 +20,14 @@ fi
 SelectedFastfetch=$(echo "$Fastfetches" | rofi -dmenu -p "Select new Fastfetch" -theme-str 'listview { lines: 10; }')
 
 if [ -n "$SelectedFastfetch" ]; then
-  if [ -f ~/.config/fastfetch/Image.png ]; then
-    rm ~/.config/fastfetch/Image.png
+  if [ -f "$FastfetchConfigPath" ]; then
+    rm "$FastfetchConfigPath"
   fi
 
-  cp "$SelectedFastfetch" ~/.config/fastfetch/Image.png
-  rm -rf ~/.cache/fastfetch/
+  cp "$SelectedFastfetch" "$FastfetchConfigPath"
+
+  rm -rf "$FastfetchCachePath"
 else
   exit 1
 fi
+

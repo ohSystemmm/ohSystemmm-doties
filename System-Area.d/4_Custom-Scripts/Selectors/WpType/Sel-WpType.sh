@@ -8,19 +8,24 @@
 # by ohSystemmm <3 - 2024
 
 WpType="Static\nDiashow"
+WallpaperTypePath=~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/WallpaperType.sh
 
 Choice=$(echo -e "$WpType" | rofi -dmenu -i -p "Choose a Wallpaper Type")
 
+mkdir -p "$(dirname "$WallpaperTypePath")"
+
 case $Choice in
   "Static")
-    echo "static" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Wallpaper-Type.sh
+    echo "static" > "$WallpaperTypePath"
   ;;
   "Diashow")
-    echo "diashow" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Wallpaper-Type.sh
-    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Wallpaper-Engine.sh &
+    echo "diashow" > "$WallpaperTypePath"
+    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/WallpaperEngine.sh &
   ;;
   *)
     echo "No valid option selected."
     exit 1
   ;;
 esac
+
+chmod +x "$WallpaperTypePath"

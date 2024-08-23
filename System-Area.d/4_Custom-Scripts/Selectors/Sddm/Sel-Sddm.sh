@@ -6,4 +6,14 @@
 # 
 # by ohSystemmm <3 - 2024
 
+SddmDirectory=~/ohSystemmm-doties/User-Area.d/6_Sddm/
+Sddms=$(find "$SddmDirectory" -type f -iname "*.png" | sort)
+
+if [ -z "$Sddms" ]; then
+  notify-send "Warning!" "Empty Sddm folder"
+  exit 1
+fi
+
+SelectedSddm=$(echo "$Sddms" | rofi -dmenu -p "Select new Loginimage" -theme-str 'listview { lines: 10; }')
+
 

@@ -6,7 +6,7 @@
 # 
 # by ohSystemmm <3 - 2024
 
-Wallpaper=$(cat ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Active-Wallpaper.sh)
+Wallpaper=$(cat ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/ActiveWallpaper.sh)
 swww img "$Wallpaper" \
     --transition-bezier .43,1.19,1,1 \
     --transition-fps=60 \

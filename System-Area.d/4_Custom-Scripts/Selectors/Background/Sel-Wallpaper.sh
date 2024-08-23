@@ -7,20 +7,27 @@
 # 
 # by ohSystemmm <3 - 2024
 
-WallpaperDirectory=~/Images/Wallpapers/ # Test
-Wallpapers=$(find "$WallpaperDirectory" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) | sort)
+WallpaperDirectory=~/ohSystemmm-doties/User-Area.d/2_Wallpaper/
+Wallpapers=$(find "$WallpaperDirectory" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) -print0 | sort -z)
 
 if [ -z "$Wallpapers" ]; then
     notify-send "Warning!" "Empty Wallpaper folder"
     exit 1
 fi
+
 SelectedWallpaper=$(echo "$Wallpapers" | rofi -dmenu -p "Select new Wallpaper" -theme-str 'listview { lines: 10; }')
 
 if [ -n "$SelectedWallpaper" ]; then
-   echo -e "$SelectedWallpaper" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Active-Wallpaper.sh
-   source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/pywal.sh
-   source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Swww.sh
-   source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/ImageBlur.sh
-   exit 1
+    mkdir -p ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/
+
+    ScriptPath=~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/ActiveWallpaper.sh
+    echo -e "$SelectedWallpaper" > "$ScriptPath"
+    chmod +x "$ScriptPath"
+
+    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/pywal.sh
+    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Swww.sh
+    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/ImageBlur.sh
+
+    exit 1
 fi
 

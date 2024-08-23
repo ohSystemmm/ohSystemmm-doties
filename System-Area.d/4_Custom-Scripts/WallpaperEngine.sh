@@ -7,15 +7,17 @@
 #
 # by ohSystemmm <3 - 2024 
 
-WallpaperTypeDirectory=~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/Wallpaper-Type.sh
-Default_WallpaperType="static"
+WallpaperTypeDirectory=~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/WallpaperType.sh
+DefaultWallpaperType="static"
+
 if [ ! -e "$WallpaperTypeDirectory" ]; then
+    mkdir -p "$(dirname "$WallpaperTypeDirectory")"
     touch "$WallpaperTypeDirectory" && chmod +x "$WallpaperTypeDirectory"
-    echo -e "${Default_WallpaperType}" > "$WallpaperTypeDirectory"
+    echo -e "${DefaultWallpaperType}" > "$WallpaperTypeDirectory"
 fi
     
 while true; do
-  WallpaperType=$(tail -n 1 "$WallpaperTypeDirectory")
+  WallpaperType=$(cat "$WallpaperTypeDirectory")
   case $WallpaperType in
     "static")
       exit 1
@@ -24,7 +26,7 @@ while true; do
       source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/RandomImage.sh
       ;;
     *)
-      notify-send -u critical -i dialog-error "Critical Warning!" "Unknown Wallpaper Type '$WallpaperType'"
+      notify-send "Warning!" "Unknown Wallpaper Type '$WallpaperType'"
     ;;
   esac
 done
