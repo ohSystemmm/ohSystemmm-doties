@@ -142,6 +142,7 @@ InstallGit() {
   Packages=(
     oh-my-zsh                          # A community-driven framework for managing your zsh configuration. 
     zsh-autosuggestions                # Fish-like autosuggestions for zsh  
-    zsh-syntax-highlighting            # Fish shell like syntax highlighting for Zsh
+    zsh-syntax-highlighting            # Fish shell like syntax highlighting for Zsh#
+  )
 }
 

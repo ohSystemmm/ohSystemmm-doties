@@ -9,7 +9,7 @@
 source include/Assets.sh
 source include/Colors.sh
 source include/Packages.sh
-cd /
+
 clear
 echo -e "\n${BYellow}Updating System before starting.${Normal}\n"
 sudo pacman -Syyu --noconfirm
@@ -66,6 +66,7 @@ NextSlide
 # Moving Folder to Home
 SlideHeader "Folder Location."
 gum spin --spinner meter --title "Locating Folder..." --show-output -- sleep 1
+cd /
 DotiesPath="/$(fd --type d ohSystemmm-doties)"
 echo -e "Dotfiles detected."
 Destination="$HOME"
@@ -84,18 +85,13 @@ else
   echo -e "\n${BRed}Error: Dotfile Folder Not Found.$Normal"
   exit 1
 fi
+cd 
 NextSlide
 
 # License
 SlideHeader "License."
 cat ~/ohSystemmm-doties/User-Area.d/0_Info/0_License.txt
 echo -e "$BYellow\nBy proceeding, you accept the license agreement.$Normal"
-NextSlide
-
-# Terms of Service
-SlideHeader "Terms of Service."
-cat ~/ohSystemmm-doties/User-Area.d/0_Info/2_Terms-of-Service.txt
-echo -e "$BYellow\nBy proceeding, you accept the Terms of Service.$Normal"
 NextSlide
 
 # Setting up pacman
@@ -174,19 +170,16 @@ case $choice in
   "bash")
     echo -e "Setting default shell to bash."
     chsh -s /usr/bin/bash
-    cp -f ~/ohSystemmm-doties/System-Area.d/3_Package-Config/2_Shell-Configs/bash/* ~
     echo -e "\n${BGreen}Default Shell Set.${Normal}"
     ;;
   "fish")
     echo -e "Setting default shell to fish."
     chsh -s /usr/bin/fish
-    cp -f ~/ohSystemmm-doties/System-Area.d/3_Package-Config/2_Shell-Configs/fish/* ~/.config/fish/config/fish/   
     echo -e "\n${BGreen}Default Shell Set.${Normal}"
     ;;
   "zsh")
     echo -e "Setting default shell to zsh."
     chsh -s /usr/bin/zsh
-    cp -f ~/ohSystemmm-doties/System-Area.d/3_Package-Config/2_Shell-Configs/zsh/* ~
     echo -e "\n${BGreen}Default Shell Set.${Normal}"
     ;;      
 esac    
@@ -198,7 +191,6 @@ echo -e "Installing and enabling the Simple Desktop Display Manager (SDDM).\n"
 sudo pacman -S --needed sddm --noconfirm
 echo -e "\nEnabling SDDM service."
 sudo systemctl enable sddm.service
-paru -S sddm-theme-corners-git
 sudo touch /etc/sddm.conf
 sudo echo "[Theme]\nCurrent=corners" > /etc/sddm.conf
 echo -e "\n${BGreen}SDDM Installed and Enabled.${Normal}"
@@ -269,75 +261,7 @@ SlideHeader "Setting up Hyprland."
 
 NextSlide
 SlideHeader "Linking Customized Packages."
-path=~/ohSystemmm-doties/System-Area.d/3_Package-Config/
-if [ -L ~/.config/cava/ ]; then
-    rm -rf ~/.config/cava/
-fi
-ln -s "${path}0_App-Configs/cava/" ~/.config/
-
-if [ -L ~/.config/picom/ ]; then
-    rm -rf ~/.config/picom/
-fi
-ln -s "${path}0_App-Configs/picom/" ~/.config/
-
-if [ -L ~/.config/rofi/ ]; then
-    rm -rf ~/.config/rofi/
-fi
-ln -s "${path}0_App-Configs/rofi/" ~/.config/
-
-if [ -L ~/.config/waybar/ ]; then
-    rm -rf ~/.config/waybar/
-fi
-ln -s "${path}0_App-Configs/waybar/" ~/.config/
-
-if [ -L ~/.config/fastfetch/ ]; then
-    rm -rf ~/.config/fastfetch/
-fi
-ln -s "${path}0_App-Configs/fastfetch/" ~/.config/
-
-if [ -L ~/.config/wlogout/ ]; then
-    rm -rf ~/.config/wlogout/
-fi
-ln -s "${path}0_App-Configs/wlogout/" ~/.config/
-
-if [ -L ~/.config/ags/ ]; then
-    rm -rf ~/.config/ags/
-fi
-ln -s "${path}0_App-Configs/ags/" ~/.config/
-
-if [ -L ~/.config/btop/ ]; then
-    rm -rf ~/.config/btop/
-fi
-ln -s "${path}0_App-Configs/btop/" ~/.config/
-
-if [ -L ~/.config/dunst/ ]; then
-    rm -rf ~/.config/dunst/ 
-fi  
-ln -s "${path}0_App-Configs/dunst/" ~/config/
-
-if [ -L ~/.config/fish/ ]; then
-    rm -rf ~/.config/fish/
-fi
-ln -s "${path}2_Shell-Configs/fish/" ~/.config/
-
-if [ -L ~/.config/nvim/ ]; then
-    rm -rf ~/.config/nvim/
-fi
-ln -s "${path}1_Editor-Configs/nvim/" ~/.config/
-
-if [ -L ~/.config/wezterm/ ]; then
-    rm -rf ~/.config/wezterm/
-fi
-ln -s "${path}3_Terminal-Configs/wezterm/" ~/.config/
-
-if [ -L ~/.config/kitty/ ]; then
-    rm -rf ~/.config/kitty/
-fi
-ln -s "${path}3_Terminal-Configs/kitty/" ~/.config/
-if [ -L ~/.config/hypr/ ]; then
-    rm -rf ~/.config/hypr/
-fi
-ln -s ~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/ ~/.config/
+source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/SymLinks.sh
 NextSlide
 
 # Credits
