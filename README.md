@@ -5,6 +5,9 @@
 
 </div>
 
+> [!WARNING]
+> - Still under development; it won’t work until the upcoming release.
+> - Upcoming Release 1st of September 2024
 
 <!-- Badgets -->
 <div align="center"> 
