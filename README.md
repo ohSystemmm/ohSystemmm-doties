@@ -49,9 +49,8 @@
 
 <!-- Screenhots -->
 <div align="center">
-  <h2>Screenshots (Defaults)</h2>
+  <h2>Screenshot (Defaults)</h2>
 </div>
-
 
 #### Home Screen
 ![](Action-Area.d/Screenshots/Home.png)
@@ -113,5 +112,8 @@ $ ./Uninstall.sh
 
 <div align="center">
   <h2>Thank You</h2>
+
+[Credits & Thank](Action-Area.d/Information/Credits.md)
+
 </div>
 

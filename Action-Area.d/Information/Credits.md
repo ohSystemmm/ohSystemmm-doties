@@ -1,21 +1,32 @@
 # Credits & Contributors
 
-### Lead Developer
-- **ohSystemmm** (GitHub)
+<br>
 
-### Contributors
-- **Y2kun**        | (GitHub)    | Code Optimizations, Ideas, and Reviewing, Bug Fixing, Wallpaper-Engine
-- **bbynabokov**   | (Discord)   | Testing and Feedback
+### Lead Developer
+- **ohSystemmm** [GitHub](https://github.com/ohSystemmm)
+
+<br>
+
+###  Contributors
+- **Y2kun**        | [GitHub](https://github.com/Y2kun)    | Code Optimizations, Ideas, and Reviewing, Bug Fixing, Wallpaper-Engine
+- **bbynabokov**   | [Discord](https://discordapp.com/users/1251309749253701787)   | Testing and Feedback
 - **Testers**      | (Anonymous) | Testing and Feedback
 
+<br>
+
 ### Special Thanks
-- **Jas-SinghFSU**  | (GitHub)   | HyprPanel
-- **ml4w-dotfiles** | (GitHub)   | Dotfiles Inspiration
-- **JaKooLit**      | (GitHub)   | Dotfiles Inspiration
-- **end4_dotfiles** | (GitHub)   | Dotfiles Inspiration
-- **NvChad**        | (GitHub)   | Neovim Config
-- **anhsirk0**      | (GitHub)   | Rofi Inspiration
-- **PhoenixFly**    | (GitHub)   | Wifu Stuff
+
+|      Username        | Link                                                 | Project              |
+|----------------------|------------------------------------------------------|----------------------|
+| **Jas-SinghFSU**     | [GitHub](https://github.com/Jas-SinghFSU/HyprPanel)  | HyprPanel            |
+| **ml4w-dotfiles**    | [GitHub](https://github.com/mylinuxforwork/dotfiles) | Dotfiles Inspiration |
+| **JaKooLit**         | [GitHub](https://github.com/JaKooLit/Hyprland-Dots)  | Dotfiles Inspiration |
+| **end4_dotfiles**    | [GitHub](https://github.com/end-4/dots-hyprland)     | Dotfiles Inspiration |
+| **NvChad**           | [GitHub](https://github.com/NvChad/NvChad)           | Neovim Config        |
+| **anhsirk0**         | [GitHub](https://github.com/anhsirk0/rofi-config)    | Rofi Inspiration     |
+| **PhoenixFly**       | [GitHub](https://github.com/Fly1337)                 | Wifu Stuff           |
+
+<br>
 
 ### Acknowledgements
 I would like to acknowledge the open-source community for their continuous support and contributions to various projects that have helped shape this project.
