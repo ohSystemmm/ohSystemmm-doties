@@ -8,9 +8,12 @@
 <br>
 
 ###  Contributors
-- **Y2kun**        | [GitHub](https://github.com/Y2kun)    | Code Optimizations, Ideas, and Reviewing, Bug Fixing, Wallpaper-Engine
-- **bbynabokov**   | [Discord](https://discordapp.com/users/1251309749253701787)   | Testing and Feedback
-- **Testers**      | (Anonymous) | Testing and Feedback
+
+| Username       | Link                                                        | Work                                                      |
+|----------------|-------------------------------------------------------------|-----------------------------------------------------------|
+| **Y2kun**      | [GitHub](https://github.com/Y2kun)                          | Code Optimizations Ideas, and Reviewing<br>Bug Fixing<br>Wallpaper-Engine |
+| **bbynabokov** | [Discord](https://discordapp.com/users/1251309749253701787) | Testing and Feedback                                    |
+| **Testers**    | (Anonymous)                                                 | Testing and Feedback                                    |
 
 <br>
 
