@@ -6,7 +6,7 @@
 # 
 # by ohSystemmm <3 - 2024
 
-SddmDirectory=~/ohSystemmm-doties/User-Area.d/6_Sddm/
+SddmDirectory=~/ohSystemmm-doties/User-Area.d/4_Sddm/
 Sddms=$(find "$SddmDirectory" -type f -iname "*.png" | sort)
 
 if [ -z "$Sddms" ]; then

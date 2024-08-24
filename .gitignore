@@ -2,24 +2,24 @@
 bookmarks
 
 # Images
-User-Area.d/2_Wallpaper/*
-!User-Area.d/2_Wallpaper/Default.png 
+User-Area.d/0_Wallpaper/*
+!User-Area.d/0_Wallpaper/Default.png 
 
-User-Area.d/3_Diashow/*
-!User-Area.d/3_Diashow/Diashow_1/Default.png
-!User-Area.d/3_Diashow/Diashow_1/Default2.png
+User-Area.d/1_Diashow/*
+!User-Area.d/1_Diashow/Diashow_1/Default.png
+!User-Area.d/1_Diashow/Diashow_1/Default2.png
 
-User-Area.d/4_Fastfetch/*
-!User-Area.d/4_Fastfetch/Default.png
+User-Area.d/2_Fastfetch/*
+!User-Area.d/2_Fastfetch/Default.png
 
-User-Area.d/5_Avatar/*
-!User-Area.d/5_Avatar/Default.png
+User-Area.d/3_Avatar/*
+!User-Area.d/3_Avatar/Default.png
 
-User-Area.d/6_Sddm/*
-!User-Area.d/6_Sddm/Default.png 
+User-Area.d/4_Sddm/*
+!User-Area.d/4_Sddm/Default.png 
 
-User-Area.d/7_Grub/*
-!User-Area.d/7_Grub/Default.png 
+User-Area.d/6_Grub/*
+!User-Area.d/6_Grub/Default.png 
 
 # Temp Files
 System-Area.d/5_Temp-Files/*

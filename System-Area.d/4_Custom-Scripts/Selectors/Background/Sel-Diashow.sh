@@ -6,7 +6,7 @@
 # 
 # by ohSystemmm <3 - 2024
 
-DiashowDirectory=~/ohSystemmm-doties/User-Area.d/3_Diashow/Diashow_1/
+DiashowDirectory=~/ohSystemmm-doties/User-Area.d/1_Diashow/Diashow_1/
 Diashows=$(find "$DiashowDirectory" -type d | sort)
 
 if [ -z "$Diashows" ]; then

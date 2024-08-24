@@ -7,7 +7,7 @@
 # 
 # by ohSystemmm <3 - 2024
 
-WallpaperDirectory=~/ohSystemmm-doties/User-Area.d/2_Wallpaper/
+WallpaperDirectory=~/ohSystemmm-doties/User-Area.d/0_Wallpaper/
 Wallpapers=$(find "$WallpaperDirectory" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) -print0 | sort -z | tr '\0' '\n')
 
 if [ -z "$Wallpapers" ]; then

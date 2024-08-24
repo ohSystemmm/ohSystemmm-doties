@@ -6,7 +6,7 @@
 # 
 # by ohSystemmm - 2024
 
-AvatarDirectory=~/ohSystemmm-doties/User-Area.d/5_Avatar/  
+AvatarDirectory=~/ohSystemmm-doties/User-Area.d/3_Avatar/  
 Avatars=$(find "$AvatarDirectory" -type f -iname "*.png" | sort)
 
 if [ -z "$Avatars" ]; then

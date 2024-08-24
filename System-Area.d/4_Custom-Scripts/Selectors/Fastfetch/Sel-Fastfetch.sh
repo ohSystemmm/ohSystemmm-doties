@@ -6,7 +6,7 @@
 #
 # by ohSystemmm <3 - 2024
 
-FastfetchDirectory=~/ohSystemmm-doties/User-Area.d/4_Fastfetch/
+FastfetchDirectory=~/ohSystemmm-doties/User-Area.d/2_Fastfetch/
 FastfetchConfigPath=~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/fastfetch/Image.png
 FastfetchCachePath=~/.cache/fastfetch/
 
