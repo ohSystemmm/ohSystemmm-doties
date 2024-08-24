@@ -15,6 +15,7 @@ echo -e "\n${BYellow}Updating System before starting.${Normal}\n"
 sudo pacman -Syyu --noconfirm
 sudo pacman -S --needed figlet gum fd --noconfirm
 
+
 # Pre-Warning
 SlideHeader "Warning!"
 echo -e "Please ensure you back up your configurations and important files as some"
