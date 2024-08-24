@@ -29,19 +29,32 @@
 </div>
 
 <details>
-  <summary>Features</summary>
+  <summary>Information</summary>
+<br>
+The ohSystemmm-doties dotfiles are crafted to provide a seamless and intuitive user experience from the moment you start. Pre-configured for quick setup, they offer a variety of customization options to fit your individual preferences. Their straightforward usability and adaptability make them an ideal choice for those looking to optimize their setup while retaining the ability to make personalized adjustments. Should you encounter any issues or bugs, don't hesitate to reach out for assistance. You can find my contact information on my GitHub profile.
+<br>
 </details>
 
 <details>
   <summary>Requirements</summary>
+<br>
+The dotfiles are compatible with virtually any low-end device capable of running Hyprland. The primary requirement is an Arch Linux installation; while a fresh installation is preferred, it is not strictly necessary. A stable network connection is recommended, and you should also allocate some time for the installation process. The ohSystemmm-doties will automatically install the necessary packages required for the dotfiles to function properly. 
+<br>
 </details>
 
 <details>
   <summary>Wiki</summary>
+<br>
+Not yet implemented, but expected to be included in version 2.2.5.
+<br>
 </details>
 
 <details>
   <summary>Help & Issues</summary>
+<br>
+If you encounter any issues with the dotfiles and believe it to be related to the dotfiles themselves, please feel free to reach out or open an issue. 
+You can find my contact information on my GitHub profile.
+<br>
 </details>
 
 <p align = "center"><img src = "https://api.sefinek.net/api/v2/moecounter/@ohSystemmm?length=10&theme=default" </p>
