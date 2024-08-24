@@ -1,13 +1,3 @@
-<!-- Header -->
-<div align="center">
-
-# **ohSystemmm-doties**
-
-</div>
-
-> [!WARNING]
-> - Still under development; it won’t work until the upcoming release.
-> - Upcoming Release 1st of September 2024
 
 <!-- Badgets -->
 <div align="center"> 
@@ -18,6 +8,19 @@
 ![Issues Badge](https://img.shields.io/badge/issues-skill-green?style=for-the-badge&color=B4BEFE&logo=github&logoColor=D9E0EE&labelColor=242438)
 
 </div>
+
+<!-- Header -->
+<div align="center">
+
+# **ohSystemmm-doties**
+
+</div>
+
+
+> [!WARNING]
+> - Still under development; it won’t work until the upcoming release.
+> - Upcoming Release 1st of September 2024
+
 
 
 <!-- Overview -->
