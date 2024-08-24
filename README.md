@@ -1,21 +1,71 @@
-# ohSystemmm-doties
+<!-- Header -->
+<div align="center">
 
-<div align="center"> 
-
-![](https://img.shields.io/github/last-commit/ohSystemmm/ohSystemmm-doties?&style=for-the-badge&color=FFB1C8&logoColor=D9E0EE&labelColor=292324)
-![](https://img.shields.io/github/stars/ohSystemmm/ohSystemmm-doties?style=for-the-badge&logo=andela&color=FFB686&logoColor=D9E0EE&labelColor=292324)
-[![](https://img.shields.io/github/repo-size/ohSystemmm/ohSystemmm-doties?color=CAC992&label=SIZE&logo=googledrive&style=for-the-badge&logoColor=D9E0EE&labelColor=292324)](https://github.com/ohSystemmm/ohSystemmm-doties)
-![](https://img.shields.io/badge/issues-skill-green?style=for-the-badge&color=CCE8E9&logoColor=D9E0EE&labelColor=292324) 
-</a>
+# **ohSystemmm-doties**
 
 </div>
 
-Work in Progres
+
+<!-- Badgets -->
+<div align="center"> 
+
+![GitHub Last Commit](https://img.shields.io/github/last-commit/ohSystemmm/ohSystemmm-doties?style=for-the-badge&color=B4BEFE&logo=github&logoColor=D9E0EE&labelColor=242438&label=Last%20Commit)
+![GitHub Stars](https://img.shields.io/github/stars/ohSystemmm/ohSystemmm-doties?style=for-the-badge&logo=github&color=B4BEFE&logoColor=D9E0EE&labelColor=242438)
+[![GitHub Repo Size](https://img.shields.io/github/repo-size/ohSystemmm/ohSystemmm-doties?color=B4BEFE&label=SIZE&logo=googledrive&style=for-the-badge&logoColor=D9E0EE&labelColor=242438)](https://github.com/ohSystemmm/ohSystemmm-doties)
+![Issues Badge](https://img.shields.io/badge/issues-skill-green?style=for-the-badge&color=B4BEFE&logo=github&logoColor=D9E0EE&labelColor=242438)
+
+</div>
 
 
-Notes
+<!-- Overview -->
+<div align="center">
+  <h2>Overview</h2>
+</div>
 
-Everything needs to get generated during the installation
-Grub, Fastfetch, Rofi colors
+<details>
+  <summary>Features</summary>
+</details>
+<details>
+  <summary>Wiki</summary>
+</details>
+
+<details>
+  <summary>Help & Issues</summary>
+</details>
 
 <p align = "center"><img src = "https://api.sefinek.net/api/v2/moecounter/@ohSystemmm?length=10&theme=default" </p>
+
+
+<!-- Screenhots -->
+<div align="center">
+  <h2>Screenshots</h2>
+</div>
+
+<!-- Management -->
+<div align="center">
+  <h2>Management</h2>
+</div>
+
+<details>
+  <summary>Installation</summary>
+```
+git clone https://ohSystemmm/ohSystemmm-doties.git
+cd ohSystemmm-doties/Action-Area.d/
+./Install.sh
+```
+
+</details>
+<details>
+  <summary>Updating</summary>
+</details>
+
+<details>
+  <summary>Removing</summary>
+</details>
+
+
+
+<div align="center">
+  <h2>Thank You</h2>
+</div>
+

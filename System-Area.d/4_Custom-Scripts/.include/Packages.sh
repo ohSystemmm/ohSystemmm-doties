@@ -119,6 +119,7 @@ InstallohSystemmm() {
     obs-studio                         # Free, open source software for live streaming and recording
   # openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
     prismlauncher                      # Minecraft launcher with ability to manage multiple instances.
+    pythong-grip                       # Preview GitHub Markdown files like Readme locally before committing them
   # qemu                               # A basic QEMU setup for headless environments
     signal-desktop                     # Signal Private Messenger for Linux
     spotify                            # A proprietary music streaming service
