@@ -57,6 +57,7 @@ You can find my contact information on my GitHub profile.
 <br>
 </details>
 
+<br>
 <p align = "center"><img src = "https://api.sefinek.net/api/v2/moecounter/@ohSystemmm?length=10&theme=default" </p>
 
 
@@ -74,7 +75,7 @@ You can find my contact information on my GitHub profile.
 #### Wlogout
 ![](Action-Area.d/Screenshots/Wlogout.png)
 
-#### Rofi
+#### Rofi-Wayland
 ![](Action-Area.d/Screenshots/RofiDark.png)
 ![](Action-Area.d/Screenshots/RofiLight.png)
 
