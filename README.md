@@ -25,6 +25,11 @@
 <details>
   <summary>Features</summary>
 </details>
+
+<details>
+  <summary>Requirements</summary>
+</details>
+
 <details>
   <summary>Wiki</summary>
 </details>
@@ -49,20 +54,36 @@
 <details>
   <summary>Installation</summary>
 
-
-```
-git clone https://ohSystemmm/ohSystemmm-doties.git
-cd ohSystemmm-doties/Action-Area.d/
-./Install.sh
+Be sure to back up your own configurations, as they may be overwritten. It's recommended to install these dotfiles on a fresh Arch installation without a desktop environment, though they should also work on an existing setup. The included Install script will provide guidance and instructions throughout the installation process.
+```bash
+$ git clone https://ohSystemmm/ohSystemmm-doties.git
+$ cd ohSystemmm-doties/Action-Area.d/
+$ ./Install.sh
 ```
 
 </details>
+
+
 <details>
   <summary>Updating</summary>
+
+To update the dotfiles, simply run the Update script, and it will handle everything automatically.
+```bash
+$ cd ohSystemmm-doties/Action-Area.d/
+$ ./Update.sh
+```
+
 </details>
 
 <details>
-  <summary>Removing</summary>
+  <summary>Uninstall</summary>
+
+To uninstall, simply execute the Uninstall script. This will delete all ohSystemmm configurations, including grubtheme and sddm, and also remove any dotfiles from your system.
+```bash
+$ cd ohSystemmm-doties/Action-Area.d/
+$ ./Uninstall.sh
+```
+
 </details>
 
 
