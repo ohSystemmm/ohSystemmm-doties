@@ -13,7 +13,7 @@ SlideHeader() {
   figlet -w 200 "$Header"
   echo -e -n "\033[0m"
   
-  echo -e "\033[0;36mohSystemmm-doties\033[0m"
+  echo -e "\033[0;36m\nohSystemmm-doties\033[0m"
   echo -e "\033[0;34mby ohSystemmm <3 - 2024\033[0m\n\n"
 }
 

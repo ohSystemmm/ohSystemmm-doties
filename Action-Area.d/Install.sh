@@ -67,3 +67,41 @@ source assets/MoveFolder.sh
 NextSlide
 
 
+# License
+SlideHeader "License"
+cat ~/ohSystemmm-doties/Action-Area.d/Information/LICENSE
+echo -e "$BYellow\nBy proceeding, you accept the license agreement.$Normal"
+NextSlide
+
+
+# Setting up pacman
+SlideHeader "pacman"
+echo -e "Configuring pacman.\n"
+sudo cp -f ~/ohSystemmm-doties/System-Area.d/0_Global-Config/pacman.conf /etc/pacman.conf
+sudo pacman -Syyu
+echo -e "\n${BGreen}Done.${Normal}"
+NextSlide
+
+
+# Setting up yay
+SlideHeader "yay"
+echo -e "Downloading and installing the AUR package manager 'yay'.\n"
+git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --noconfirm && cd .. && rm -rf yay/
+echo -e "\n${BGreen}Installation Complete.${Normal}"
+NextSlide
+
+
+# Setting up paru
+SlideHeader "paru"
+echo -e "Installing the package manager 'paru'.\n"
+yay -S --needed paru parui --noconfirm
+echo -e "\n${BGreen}Installation Complete.${Normal}"
+NextSlide
+
+
+# Installing Required Packages
+SlideHeader "Required Packages"
+echo -e "Installing all necessary packages. This may take some time.\n"
+gum spin --spinner dot --title "Installing Required Packages..." --show-output -- sleep 1.5
+InstallRequired
+NextSlide

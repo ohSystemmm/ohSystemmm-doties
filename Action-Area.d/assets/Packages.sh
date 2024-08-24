@@ -8,7 +8,6 @@ InstallRequired() {
     bluez-utils                        # Development and debugging utilities for the bluetooth protocol stack
     brightnessctl                      # Lightweight brightness control tool
     btop                               # A monitor of system resources, bpytop ported to C++
-    bun                                # Bun is a fast JavaScript all-in-one toolkit.
     chromium                           # A web browser built for speed, simplicity, and security
     cliphist                           # wayland clipboard manager
     dart-sass                          # Sass makes CSS fun again
@@ -43,6 +42,7 @@ InstallRequired() {
     pipewire-alsa                      # Low-latency audio/video router and processor - ALSA configuration
     pipewire-jack                      # Low-latency audio/video router and processor - JACK replacement
     pipewire-pulse                     # Low-latency audio/video router and processor - PulseAudio replacement
+    python                             # Python high-level programming language
     python-click                       # Simple wrapper around optparse for powerful command line utilities
     python-gobject                     # Python bindings for GLib/GObject/GIO/GTK
     python-pip                         # The PyPA recommended tool for installing Python packages
@@ -73,6 +73,7 @@ InstallRequired() {
     xarchiver                          # GTK+ frontend to various command line archivers
   )
   paru -S --needed "${Packages[@]}" --noconfirm
+  curl -fsSL https://bun.sh/install | bash && sudo ln -s $HOME/.bun/bin/bun /usr/local/bin/bun
 }
 
 InstallOptional() {
