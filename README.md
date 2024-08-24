@@ -49,8 +49,25 @@
 
 <!-- Screenhots -->
 <div align="center">
-  <h2>Screenshots</h2>
+  <h2>Screenshots (Defaults)</h2>
 </div>
+
+
+#### Home Screen
+![](Action-Area.d/Screenshots/Home.png)
+
+#### Hyprlock
+![](Action-Area.d/Screenshots/Hyprlock.png)
+
+#### Wlogout
+![](Action-Area.d/Screenshots/Wlogout.png)
+
+#### Rofi
+##### Dark
+![](Action-Area.d/Screenshots/RofiDark.png)
+
+##### Light
+![](Action-Area.d/Screenshots/RofiLight.png)
 
 <!-- Management -->
 <div align="center">
