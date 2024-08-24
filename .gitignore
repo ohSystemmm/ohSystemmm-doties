@@ -6,8 +6,8 @@ User-Area.d/0_Wallpaper/*
 !User-Area.d/0_Wallpaper/Default.png 
 
 User-Area.d/1_Diashow/*
-!User-Area.d/1_Diashow/Diashow_1/Default.png
-!User-Area.d/1_Diashow/Diashow_1/Default2.png
+!User-Area.d/1_Diashow/Diashow_1/
+#!User-Area.d/1_Diashow/Diashow_1/Default2.png
 
 User-Area.d/2_Fastfetch/*
 !User-Area.d/2_Fastfetch/Default.png
