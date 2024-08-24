@@ -63,10 +63,7 @@
 ![](Action-Area.d/Screenshots/Wlogout.png)
 
 #### Rofi
-##### Dark
 ![](Action-Area.d/Screenshots/RofiDark.png)
-
-##### Light
 ![](Action-Area.d/Screenshots/RofiLight.png)
 
 <!-- Management -->
