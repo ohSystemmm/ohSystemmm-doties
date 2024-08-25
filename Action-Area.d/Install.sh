@@ -176,3 +176,8 @@ NextSlide
 COMMENT
 
 
+# Bootloader
+SlideHeader "Bootloader"
+gum spin --spinner meter --title "Checking Bootloader..." --show-output -- sleep 1.5
+source assets/Bootloader.sh
+NextSlide
