@@ -18,8 +18,8 @@ User-Area.d/3_Avatar/*
 User-Area.d/4_Sddm/*
 !User-Area.d/4_Sddm/Default.png 
 
-User-Area.d/6_Grub/*
-!User-Area.d/6_Grub/Default.png 
+User-Area.d/5_Grub/*
+!User-Area.d/5_Grub/Default.png 
 
 # Temp Files
 System-Area.d/5_Temp-Files/*
