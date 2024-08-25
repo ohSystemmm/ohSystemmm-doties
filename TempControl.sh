@@ -42,7 +42,6 @@ Header() {
 CheckPackages
 Header "Control Center"
 echo -e ""
-echo -e ""
 MainMenu=$(gum choose --cursor=" " \
   "Change Wallpaper Type" \
   "Set Wallpaper" \
