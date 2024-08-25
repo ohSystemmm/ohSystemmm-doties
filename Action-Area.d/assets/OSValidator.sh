@@ -20,7 +20,7 @@ else
 fi
 
 if command -v pacman &>/dev/null; then
-  echo "The pacman package manager is present."
+  echo "The pacman package manager was found."
   if pacman -Q archlinux-keyring &>/dev/null; then
     echo "Arch Linux Keyring found."
   else
@@ -31,3 +31,4 @@ else
   echo "This system is not running Arch Linux (pacman not found)."
   exit 1
 fi
+
