@@ -173,11 +173,16 @@ SlideHeader "TLP"
 echo -e "You can choose to skip or install TLP for laptop power management.\n"
 source assets/SetTLP.sh
 NextSlide
-COMMENT
 
 
 # Bootloader
 SlideHeader "Bootloader"
 gum spin --spinner meter --title "Checking Bootloader..." --show-output -- sleep 1.5
 source assets/Bootloader.sh
+NextSlide
+COMMENT
+
+
+# Linking Apps 
+SlideHeader "Symlinking"
 NextSlide
