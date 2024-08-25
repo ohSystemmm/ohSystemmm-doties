@@ -10,7 +10,7 @@ source assets/Colors.sh
 source assets/Assets.sh
 source assets/Packages.sh
 
-
+: <<'COMMENT'
 # Updating and installing the necessary packages
 clear
 echo -e "\n${BYellow}Updating System before starting.${Normal}\n"
@@ -69,7 +69,7 @@ NextSlide
 
 # License
 SlideHeader "License"
-cat ~/ohSystemmm-doties/Action-Area.d/Information/LICENSE
+(cat Information/LICENSE)
 echo -e "$BYellow\nBy proceeding, you accept the license agreement.$Normal"
 NextSlide
 
@@ -105,3 +105,74 @@ echo -e "Installing all necessary packages. This may take some time.\n"
 gum spin --spinner dot --title "Installing Required Packages..." --show-output -- sleep 1.5
 InstallRequired
 NextSlide
+
+
+# Installing Optional Packages
+SlideHeader "Optional Packages"
+echo -e "Installing selected optional packages which enhance user experience. These"
+echo -e "are not required by the system but are recommended. The ohSystemmm packages"
+echo -e "include development tools and utilities that help set up a complete desktop.\n"
+Packages=$(gum choose --no-limit "Skip" "Optional" "ohSystemmm")
+for Packages in $Packages; do
+  case $Packages in
+    "Skip")
+      echo "Skipping."
+      break
+    ;;
+    "Optional")
+      echo "Installing optional packages..."
+      InstallOptional
+    ;;
+    "ohSystemmm")
+      echo "Installing ohSystemmm packages..."
+      InstallohSystemmm
+    ;;
+  esac
+done
+NextSlide
+
+
+# Changing Default Shell
+SlideHeader "Default Shell"
+echo -e "Select your preferred shell. Bash is the default and basic; Fish offers"
+echo -e "user-friendly autocompletion; Zsh is recommended for advanced users.\n"
+Shell=$(gum choose --cursor="> " --cursor-prefix="* " "bash" "fish" "zsh")
+case $Shell in
+  "bash")
+    echo -e "Setting default shell to bash."
+    chsh -s /usr/bin/bash
+    echo -e "\n${BGreen}New default Shell Set.${Normal}"
+  ;;
+  "fish")
+    echo -e "Setting default shell to fish."
+    chsh -s /usr/bin/fish
+    echo -e "\n${BGreen}New default Shell Set.${Normal}"
+  ;;
+  "zsh")
+    echo -e "Setting default shell to zsh."
+    chsh -s /usr/bin/zsh
+    echo -e "\n${BGreen}New default Shell Set.${Normal}"
+  ;;      
+esac    
+NextSlide
+
+
+# Installing & Enabling SDDM
+SlideHeader "SDDM"
+echo -e "Installing and enabling the Simple Desktop Display Manager (SDDM).\n"
+sudo pacman -S --needed sddm --noconfirm
+echo -e "\nEnabling SDDM Service."
+sudo systemctl enable sddm.service
+source ../System-Area.d/4_Custom-Scripts/SyncSddm.sh
+echo -e "\n${BGreen}SDDM Installed and Enabled.${Normal}"
+NextSlide
+
+
+# Installing & Enabling TLP
+SlideHeader "TLP"
+echo -e "You can choose to skip or install TLP for laptop power management.\n"
+source assets/SetTLP.sh
+NextSlide
+COMMENT
+
+
