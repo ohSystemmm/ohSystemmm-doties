@@ -61,7 +61,6 @@ InstallRequired() {
     ttf-fira-code                      # Monospaced font with programming ligatures
     ttf-fira-sans                      # Mozilla's sans-serif typeface designed for Firefox OS
     ttf-firacode-nerd                  # Patched font Fira (Fura) Code from nerd fonts library
-    ttf-google-fonts-git               # TrueType fonts from the Google Fonts project (git version)
     ttf-hanazono                       # A free Japanese kanji font, which contains about 78,685 characters.
     tumbler                            # Thumbnail service implementing the thumbnail management D-Bus specification
     wlogout                            # Logout menu for wayland
@@ -105,6 +104,7 @@ InstallohSystemmm() {
     blender                            # A fully integrated 3D graphics creation suite
   # bridge-utils                       # Utilities for configuring the Linux ethernet bridge
     clion                              # Cross-platform IDE for C and C++ from JetBrains.
+    clion-jre                          # Cross-platform IDE for C and C++ from JetBrains.
     discord                            # All-in-one voice and text chat for gamers
   # dnsmasq                            # Lightweight, easy to configure DNS forwarder and DHCP server
   # ebtables                           # Linux kernel packet control tool (using nft interface)
@@ -112,7 +112,8 @@ InstallohSystemmm() {
     fcitx5-configtool                  # Configuration Tool for Fcitx5
     gwenview                           # A fast and easy to use image viewer
     ipscan                             # Angry IP Scanner (or simply ipscan) is an open-source and cross-platform network scanner.
-    intellij-idea-ultimate-edition     # An intelligent IDE for Java, Groovy and other programming languages with advanced refactoring features intensely focused on developer productivity. 
+    intellij-idea-ultimate-edition     # An intelligent IDE for Java, Groovy and other programming languages with advanced refactoring features intensely focused on developer productivity.
+    intellij-idea-ultimate-edition-jre # An intelligent IDE for Java, Groovy and other programming languages with advanced refactoring features intensely focused on developer productivity.
   # iptables                           # Linux kernel packet control tool (using legacy interface)
     krita                              # Edit and paint images
   # libvirt                            # API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)

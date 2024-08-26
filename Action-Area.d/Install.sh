@@ -180,6 +180,7 @@ SlideHeader "Bootloader"
 gum spin --spinner meter --title "Checking Bootloader..." --show-output -- sleep 1.5
 source assets/Bootloader.sh
 NextSlide
+COMMENT
 
 
 # Linking Apps 
@@ -187,5 +188,4 @@ SlideHeader "Symlinking"
 echo -e "Ensure to remove any existing files and folders in ~/.config/ before successfully creating symlinks.\n"
 source ../System-Area.d/4_Custom-Scripts/SymLinks.sh
 NextSlide
-COMMENT
 
