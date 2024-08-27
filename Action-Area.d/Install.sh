@@ -10,7 +10,7 @@ source assets/Colors.sh
 source assets/Assets.sh
 source assets/Packages.sh
 
-: <<'COMMENT'
+
 # Updating and installing the necessary packages
 clear
 echo -e "\n${BYellow}Updating System before starting.${Normal}\n"
@@ -26,7 +26,7 @@ echo -e "may be overwritten or deleted. The ohSystemmm-doties team is not respon
 echo -e "for any data loss. It is recommended to run this script on a fresh Arch Linux"
 echo -e "installation without any desktop environment installed. Carefully read the   "
 echo -e "introductions to understand the processes being executed. If something fails,"
-echo -e "check the installation log at 'path/to/log.txt'. Please remain at your device"
+echo -e "check the installation log at 'Not Avilable'. Please remain at your device   "
 echo -e "until the installation is complete and ensure a stable internet connection.  "
 echo -e "\nLet's get started."
 NextSlide
@@ -69,7 +69,9 @@ NextSlide
 
 # License
 SlideHeader "License"
-(cat Information/LICENSE)
+echo -e -n "Make sure to read the License"
+sleep 5
+gum pager < Information/LICENSE
 echo -e "$BYellow\nBy proceeding, you accept the license agreement.$Normal"
 NextSlide
 
@@ -180,7 +182,6 @@ SlideHeader "Bootloader"
 gum spin --spinner meter --title "Checking Bootloader..." --show-output -- sleep 1.5
 source assets/Bootloader.sh
 NextSlide
-COMMENT
 
 
 # Linking Apps 
@@ -189,3 +190,27 @@ echo -e "Ensure to remove any existing files and folders in ~/.config/ before su
 source ../System-Area.d/4_Custom-Scripts/SymLinks.sh
 NextSlide
 
+
+# Credits
+SlideHeader "Credits."
+cat Information/Credits
+NextSlide
+
+
+# CleanUp
+SlideHeader "CleanUp"
+source ../System-Area.d/4_Custom-Scripts/CleanUp.sh
+echo -e "\n${BGreen}Cleanup Complete.${Normal}"
+NextSlide
+
+
+# Rebooting
+SlideHeader "Installation Complete!"
+echo -e "The installation process is complete! You may now reboot your system.\n"
+if gum confirm "Reboot" --affirmative "Confirm" --negative "Exit"; then
+  echo -e "Rebooting the system!"
+  reboot
+else
+  echo -e "${BGreen}Installation finished.${Normal}\n"
+  exit 1
+fi
