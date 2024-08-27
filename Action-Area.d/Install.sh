@@ -194,7 +194,7 @@ echo -e "Ensure to remove any existing files and folders in ~/.config/ before su
 source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/SymLinks.sh
 NextSlide
 
-
+:<<COMMENT
 # Generating
 SlideHeader "Generating Stuff"
 echo -e "dark" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/General/Design.sh
@@ -211,7 +211,7 @@ cp ~/ohSystemmm-doties/User-Area.d/2_Fastfetch/Default.png ~/ohSystemmm-doties/S
 mkdir -p ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Avatar/Avatar.png
 cp ~/ohSystemmm-doties/User-Area.d/3_Avatar/Default.png ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Avatar/Avatar.png
 NextSlide
-
+COMMENT
 
 # Credits
 SlideHeader "Credits."
