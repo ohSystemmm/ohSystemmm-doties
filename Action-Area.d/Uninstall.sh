@@ -23,6 +23,8 @@ if gum confirm "Are you sure to Uninstall?" --affirmative "Confirm" --negative "
   sudo rm -rf ~/ohSystemmm-doties/
   cd ~/.config/
   sudo rm -rf ags btop cava fastfetch gtk-3.0 hypr kitty nvim picom rofi superfile wezterm wlogout
+  cd ~/.cache/ 
+  sudo rm -rf ags fastfetch hyprland nvim swww wal
   echo "Done."
   reboot
 else
