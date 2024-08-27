@@ -20,7 +20,9 @@ if gum confirm "Are you sure to Uninstall?" --affirmative "Confirm" --negative "
   sudo rm -rf /etc/sddm.conf
   sudo rm -rf /usr/share/sddm/themes/Sddm-Theme/
   echo -e "\nRemoving Dotfiles."
-  sudo rm -rf ~/ohSystemmm-doties/ 
+  sudo rm -rf ~/ohSystemmm-doties/
+  cd ~/.config/
+  sudo rm -rf ags btop cava fastfetch gtk-3.0 hypr kitty nvim picom rofi superfile wezterm wlogout
   echo "Done."
   reboot
 else

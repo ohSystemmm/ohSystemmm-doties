@@ -71,8 +71,8 @@ NextSlide
 SlideHeader "License"
 echo -e -n "Make sure to read the License"
 sleep 5
-gum pager < Information/LICENSE
-echo -e "$BYellow\nBy proceeding, you accept the license agreement.$Normal"
+gum pager < ~/ohSystemmm-doties/Action-Area.d/Information/LICENSE
+echo -e "\n\n${BYellow}By proceeding, you accept the license agreement.${Normal}"
 NextSlide
 
 
@@ -138,8 +138,12 @@ NextSlide
 SlideHeader "Default Shell"
 echo -e "Select your preferred shell. Bash is the default and basic; Fish offers"
 echo -e "user-friendly autocompletion; Zsh is recommended for advanced users.\n"
-Shell=$(gum choose --cursor="> " --cursor-prefix="* " "bash" "fish" "zsh")
+Shell=$(gum choose --cursor="> " --cursor-prefix="* " "Skip" "bash" "fish" "zsh")
 case $Shell in
+  "Skip")
+    echo -e "Skipping..."
+    break
+  ;;
   "bash")
     echo -e "Setting default shell to bash."
     chsh -s /usr/bin/bash
@@ -165,7 +169,7 @@ echo -e "Installing and enabling the Simple Desktop Display Manager (SDDM).\n"
 sudo pacman -S --needed sddm --noconfirm
 echo -e "\nEnabling SDDM Service."
 sudo systemctl enable sddm.service
-source ../System-Area.d/4_Custom-Scripts/SyncSddm.sh
+source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/SyncSddm.sh
 echo -e "\n${BGreen}SDDM Installed and Enabled.${Normal}"
 NextSlide
 
@@ -173,33 +177,51 @@ NextSlide
 # Installing & Enabling TLP
 SlideHeader "TLP"
 echo -e "You can choose to skip or install TLP for laptop power management.\n"
-source assets/SetTLP.sh
+source ~/ohSystemmm-doties/Action-Area.d/assets/SetTLP.sh
 NextSlide
 
 
 # Bootloader
 SlideHeader "Bootloader"
 gum spin --spinner meter --title "Checking Bootloader..." --show-output -- sleep 1.5
-source assets/Bootloader.sh
+source ~/ohSystemmm-doties/Action-Area.d/assets/Bootloader.sh
 NextSlide
 
 
 # Linking Apps 
 SlideHeader "Symlinking"
 echo -e "Ensure to remove any existing files and folders in ~/.config/ before successfully creating symlinks.\n"
-source ../System-Area.d/4_Custom-Scripts/SymLinks.sh
+source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/SymLinks.sh
+NextSlide
+
+
+# Generating
+SlideHeader "Generating Stuff"
+echo -e "dark" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/General/Design.sh
+touch ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/WallpaperType.sh && chmod +x ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/WallpaperType.sh
+echo -e "static" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/WallpaperType.sh
+touch ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/ActiveWallpaper.sh && chmod +x ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/ActiveWallpaper.sh
+echo -e "~/ohSystemmm-doties/User-Area.d/0_Wallpaper/Default.png" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/ActiveWallpaper.sh
+swww-daemon&
+source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/WallpaperEngine.sh
+source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/pywal.sh
+source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Swww.sh
+source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/ImageBlur.sh
+cp ~/ohSystemmm-doties/User-Area.d/2_Fastfetch/Default.png ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/fastfetch/Image.png
+mkdir -p ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Avatar/Avatar.png
+cp ~/ohSystemmm-doties/User-Area.d/3_Avatar/Default.png ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Avatar/Avatar.png
 NextSlide
 
 
 # Credits
 SlideHeader "Credits."
-cat Information/Credits
+cat ~/ohSystemmm-doties/Action-Area.d/Information/Credits
 NextSlide
 
 
 # CleanUp
 SlideHeader "CleanUp"
-source ../System-Area.d/4_Custom-Scripts/CleanUp.sh
+source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/CleanUp.sh
 echo -e "\n${BGreen}Cleanup Complete.${Normal}"
 NextSlide
 
