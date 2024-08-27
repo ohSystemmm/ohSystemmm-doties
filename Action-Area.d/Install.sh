@@ -70,7 +70,7 @@ NextSlide
 # License
 SlideHeader "License"
 echo -e -n "Make sure to read the License"
-sleep 5
+sleep 3
 gum pager < ~/ohSystemmm-doties/Action-Area.d/Information/LICENSE
 echo -e "\n\n${BYellow}By proceeding, you accept the license agreement.${Normal}"
 NextSlide
@@ -194,6 +194,7 @@ echo -e "Ensure to remove any existing files and folders in ~/.config/ before su
 source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/SymLinks.sh
 NextSlide
 
+
 :<<COMMENT
 # Generating
 SlideHeader "Generating Stuff"
@@ -212,6 +213,7 @@ mkdir -p ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Avatar/Avatar.png
 cp ~/ohSystemmm-doties/User-Area.d/3_Avatar/Default.png ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Avatar/Avatar.png
 NextSlide
 COMMENT
+
 
 # Credits
 SlideHeader "Credits."
