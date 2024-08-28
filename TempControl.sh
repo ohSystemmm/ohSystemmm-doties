@@ -43,13 +43,13 @@ CheckPackages
 Header "Control Center"
 echo -e ""
 MainMenu=$(gum choose --cursor=" " \
+  "Set new Design" \
   "Change Wallpaper Type" \
   "Set Wallpaper" \
   "Set Diashow Folder" \
   "Set new Waifu" \
   "Set new Avatar" \
   "Set new Grub Theme" \
-  "Set new Design" \
   "Exit"\
 )
 

@@ -195,26 +195,6 @@ source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/SymLinks.sh
 NextSlide
 
 
-:<<COMMENT
-# Generating
-SlideHeader "Generating Stuff"
-echo -e "dark" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/General/Design.sh
-touch ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/WallpaperType.sh && chmod +x ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/WallpaperType.sh
-echo -e "static" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/WallpaperType.sh
-touch ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/ActiveWallpaper.sh && chmod +x ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/ActiveWallpaper.sh
-echo -e "~/ohSystemmm-doties/User-Area.d/0_Wallpaper/Default.png" > ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Background/ActiveWallpaper.sh
-swww-daemon&
-source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/WallpaperEngine.sh
-source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/pywal.sh
-source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Swww.sh
-source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/ImageBlur.sh
-cp ~/ohSystemmm-doties/User-Area.d/2_Fastfetch/Default.png ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/fastfetch/Image.png
-mkdir -p ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Avatar/Avatar.png
-cp ~/ohSystemmm-doties/User-Area.d/3_Avatar/Default.png ~/ohSystemmm-doties/System-Area.d/5_Temp-Files/Avatar/Avatar.png
-NextSlide
-COMMENT
-
-
 # Credits
 SlideHeader "Credits."
 cat ~/ohSystemmm-doties/Action-Area.d/Information/Credits
