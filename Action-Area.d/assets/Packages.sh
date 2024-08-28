@@ -1,7 +1,6 @@
 InstallRequired() {
   Packages=(
     aylurs-gtk-shell                   # Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
-    autojump                           # A faster way to navigate your filesystem from the command line
     bibata-extra-cursor-theme          # Material Based Cursor Theme: More Bibata!
     blueman                            # GTK+ Bluetooth Manager
     bluez                              # Daemons for the bluetooth protocol stack
@@ -9,7 +8,6 @@ InstallRequired() {
     brightnessctl                      # Lightweight brightness control tool
     btop                               # A monitor of system resources, bpytop ported to C++
     chromium                           # A web browser built for speed, simplicity, and security
-    cliphist                           # wayland clipboard manager
     dart-sass                          # Sass makes CSS fun again
     fd                                 # Simple, fast and user-friendly alternative to find
     figlet                             # A program for making large letters out of ordinary text
@@ -70,7 +68,6 @@ InstallRequired() {
     xdg-desktop-portal-hyprland        # xdg-desktop-portal backend for hyprland
     xdg-desktop-portal-wlr             # xdg-desktop-portal backend for wlroots
     xdg-user-dirs                      # Manage user directories like ~/Desktop and ~/Music
-    xarchiver                          # GTK+ frontend to various command line archivers
   )
   paru -S --needed "${Packages[@]}" --noconfirm
   curl -fsSL https://bun.sh/install | bash && sudo ln -s $HOME/.bun/bin/bun /usr/local/bin/bun
@@ -82,7 +79,6 @@ InstallOptional() {
     gparted                            # A Partition Magic clone, frontend to GNU Parted
     imagemagick                        # An image viewing/manipulation program
     imgcat                             # Output images as RGB ANSI graphics on the terminal
-    man-pages                          # Linux man pages
     neovim                             # Fork of Vim aiming to improve user experience, plugins, and GUIs
     paru                               # Feature packed AUR helper
     parui                              # Simple TUI frontend for paru or yay
@@ -101,11 +97,9 @@ InstallohSystemmm() {
   Packages=(
     ani-cli                            # A cli to browse and watch anime.
     armcord-bin                        # Discord client for lower end and ARM devices.
-    blender                            # A fully integrated 3D graphics creation suite
   # bridge-utils                       # Utilities for configuring the Linux ethernet bridge
     clion                              # Cross-platform IDE for C and C++ from JetBrains.
     clion-jre                          # Cross-platform IDE for C and C++ from JetBrains.
-    discord                            # All-in-one voice and text chat for gamers
   # dnsmasq                            # Lightweight, easy to configure DNS forwarder and DHCP server
   # ebtables                           # Linux kernel packet control tool (using nft interface)
     fcitx5                             # Next generation of fcitx
@@ -119,17 +113,14 @@ InstallohSystemmm() {
   # libvirt                            # API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)
     mangal-bin                         # The most advanced cli manga downloader in the entire universe!
     mozc                               # The Open Source edition of Google Japanese Input
-    mov-cli                            # Watch everything from your terminal.
     mpv                                # a free, open source, and cross-platform media player
     obs-studio                         # Free, open source software for live streaming and recording
   # openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
     pycharm-professional               # Python IDE for Professional Developers. Professional Edition
-    prismlauncher                      # Minecraft launcher with ability to manage multiple instances.
     python-grip                        # Preview GitHub Markdown files like Readme locally before committing them
   # qemu                               # A basic QEMU setup for headless environments
     signal-desktop                     # Signal Private Messenger for Linux
     spotify                            # A proprietary music streaming service
-    steam                              # Valve's digital software delivery system
     superfile-bin                      # Pretty fancy and modern file manager in terminal file manager
     syncplay                           # Synchronize watching movies on mplayer2, vlc, mpv, and mpc-hc across many computers
     tlp                                # Linux Advanced Power Management
