@@ -8,8 +8,8 @@
 # by ohSystemmm <3 - 2024
 
 clear
-sleep 0.5
 fastfetch
+cat ~/.cache/wal/sequences&
 
 function fish_prompt
     set_color purple
@@ -25,18 +25,9 @@ end
 
 set fish_greeting
 
-export -x EDITOR (cat ~/ohSystemmm-doties/Settings.d/Editor.sh)
-
-# Shortcuts
-alias shortcuts='$EDITOR ~/.config/fish/config.fish'
-alias keybindings='$EDITOR ~/ohSystemmm-doties/Hyprland-config.d/hypr/Hypr-conf.d/9_Keybindings/Keybindings.conf'
-
 # Aliases
-alias hx='helix'
 alias ff='fastfetch'
 alias kernel='uname -r'
-alias img='wezterm imgcat'
-alias shutdown='systemctl poweroff --now'
 alias grub_update='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
 # Fun

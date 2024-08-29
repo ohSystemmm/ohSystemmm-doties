@@ -157,6 +157,7 @@ case $Shell in
   "zsh")
     echo -e "Setting default shell to zsh."
     chsh -s /usr/bin/zsh
+    InstallZsh
     echo -e "\n${BGreen}New default Shell Set.${Normal}"
   ;;      
 esac    

@@ -48,3 +48,6 @@ ln -s ~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/ ~/.config/
 
 # zsh -------------------------------------------------------------------------------------------
 ln -s ~/ohSystemmm-doties/System-Area.d/3_Package-Config/2_Shell-Configs/zsh/.zshrc ~/.zshrc
+
+# fish ------------------------------------------------------------------------------------------
+ln -s ~/ohSystemmm-doties/System-Area.d/3_Package-Config/2_Shell-Configs/fish/ ~/.config/

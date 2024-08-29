@@ -137,10 +137,19 @@ InstallohSystemmm() {
   paru -S --needed "${Packages[@]}" --noconfirm
 }
 
-InstallGit() {
+InstallZsh() {
   Packages=(
-    oh-my-zsh                          # A community-driven framework for managing your zsh configuration. 
-    zsh-autosuggestions                # Fish-like autosuggestions for zsh  
-    zsh-syntax-highlighting            # Fish shell like syntax highlighting for Zsh
+    "https://github.com/ohmyzsh/ohmyzsh"                          # A community-driven framework for managing your zsh configuration. 
+    "https://github.com/zsh-users/zsh-autosuggestions"            # Fish-like autosuggestions for zsh  
+    "https://github.com/zsh-users/zsh-syntax-highlighting"        # Fish shell like syntax highlighting for Zsh
   )
+
+  ZSH_CUSTOM="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"
+  cd ~
+  git clone ${Packages[0]} ~/.oh-my-zsh                 # Clone oh-my-zsh
+  git clone ${Packages[1]} $ZSH_CUSTOM/plugins/zsh-autosuggestions  # Clone zsh-autosuggestions
+  git clone ${Packages[2]} $ZSH_CUSTOM/plugins/zsh-syntax-highlighting  # Clone zsh-syntax-highlighting
+  echo "source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
+  echo "source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+  source ~/.zshrc
 }
