@@ -21,9 +21,8 @@ alias graphics-card='lspci | grep -E "(VGA|3D)"'
 alias kernel='uname -r'
 alias wimg='wezterm imgcat'
 alias kimg='kitty +kitten icat'
-alias zathura='doc'
-
-# alias suicide='sudo rm -rf /*'
+alias pdf='zathura'
+alias markdown='grim'
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
@@ -134,5 +133,14 @@ source $ZSH/oh-my-zsh.sh
 # Set custom prompt
 #
 # Custom prompt
-PROMPT='🔰%F{12}%n%f%F{white}@%f%F{13}%m%f %F{white}🌐 %F{cyan}%1~%f %F{white}➤ '
+PROMPT='🔰%F{12}ohSystemmm%f%F{white}@%f%F{13}%m%f %F{white}🌐 %F{cyan}%1~%f %F{white}➤ '
 RPROMPT='⏳%F{blue}%*%f'
+
+
+
+# bun completions
+[ -s "/home/ohsystemmm/.bun/_bun" ] && source "/home/ohsystemmm/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
