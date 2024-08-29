@@ -94,7 +94,7 @@ $ git clone https://ohSystemmm/ohSystemmm-doties.git
 $ cd ohSystemmm-doties/Action-Area.d/
 $ ./Install.sh
 ```
-
+After successfully installing, be sure to explore the ~/ohSystemmm-doties/Control.sh file. Run it to set your wallpaper, system design, and more.
 </details>
 
 
