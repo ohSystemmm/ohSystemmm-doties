@@ -16,4 +16,13 @@ fi
 
 SelectedSddm=$(echo "$Sddms" | rofi -dmenu -p "Select new Loginimage" -theme-str 'listview { lines: 10; }')
 
+if [ -n "$SelectedSddm" ]; then
+  if [ -f ~/ohSystemmm-doties/System-Area.d/8_SDDM/Sddm-Theme/Backgrounds/Background.png ]; then
+    rm -rf ~/ohSystemmm-doties/System-Area.d/8_SDDM/Sddm-Theme/Backgrounds/*
+  fi 
+
+  cp $SelectedSddm ~/ohSystemmm-doties/System-Area.d/8_SDDM/Sddm-Theme/Backgrounds/Background.png
+
+  source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/SyncSddm.sh
+fi
 

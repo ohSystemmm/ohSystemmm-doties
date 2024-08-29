@@ -50,6 +50,7 @@ MainMenu=$(gum choose --cursor=" " \
   "Set new Waifu" \
   "Set new Avatar" \
   "Set new Grub Theme" \
+  "Set new Sddm Theme" \
   "Exit"\
 )
 
@@ -79,6 +80,9 @@ case $MainMenu in
   ;;
   "Set new Design")
     source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/Design/Sel-Design.sh
+  ;;
+  "Set new Sddm Theme")
+    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/Sddm/Sel-Sddm.sh
   ;;
   "Exit")
     exit 1
