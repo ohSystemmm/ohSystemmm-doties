@@ -129,6 +129,7 @@ InstallohSystemmm() {
   # vde2                               # Virtual Distributed Ethernet for emulators like qemu
   # virt-manager                       # Desktop user interface for managing virtual machines
   # virt-viewer                        # A lightweight interface for interacting with the graphical display of virtualized guest OS.
+    vscodium-bin                       # Binary releases of VS Code without MS branding/telemetry/licensing.
     wezterm                            # A GPU-accelerated cross-platform terminal emulator and multiplexer
     whatsapp-for-linux                 # An unofficial WhatsApp desktop application for linux
     wine                               # A compatibility layer for running Windows programs
