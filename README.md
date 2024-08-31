@@ -18,8 +18,8 @@
 
 
 > [!WARNING]
-> - Still under development; it won’t work until the upcoming release.
-> - Upcoming Release 1st of September 2024
+> - Development will continue in several Days/Weeks
+> - 1st stable version should work perfectly
 
 
 
