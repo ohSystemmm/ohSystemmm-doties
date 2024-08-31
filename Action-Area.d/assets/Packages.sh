@@ -104,6 +104,8 @@ InstallohSystemmm() {
   # ebtables                           # Linux kernel packet control tool (using nft interface)
     fcitx5                             # Next generation of fcitx
     fcitx5-configtool                  # Configuration Tool for Fcitx5
+    goland                             # Capable and Ergonomic Go IDE
+    goland-jre                         # JBR (JetBrains Runtime) for Goland - a patched JRE
     gwenview                           # A fast and easy to use image viewer
     ipscan                             # Angry IP Scanner (or simply ipscan) is an open-source and cross-platform network scanner.
     intellij-idea-ultimate-edition     # An intelligent IDE for Java, Groovy and other programming languages with advanced refactoring features intensely focused on developer productivity.
