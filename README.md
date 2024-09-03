@@ -21,6 +21,7 @@
 > - Development will continue in several Days/Weeks
 > - 1st stable version should work perfectly
 > - Do not run the Installation script twice - Symlinks are Corny
+> - Keybind Cheat-Sheet are in 'Action-Area/Information/Keybind' located
 
 
 
