@@ -61,6 +61,7 @@ InstallRequired() {
     ttf-firacode-nerd                  # Patched font Fira (Fura) Code from nerd fonts library
     ttf-hanazono                       # A free Japanese kanji font, which contains about 78,685 characters.
     tumbler                            # Thumbnail service implementing the thumbnail management D-Bus specification
+    unzip                              # For extracting and viewing files in .zip archives
     wlogout                            # Logout menu for wayland
     wireplumber                        # Session / policy manager implementation for PipeWire
     xdg-desktop-portal                 # Desktop integration portals for sandboxed apps
@@ -68,6 +69,7 @@ InstallRequired() {
     xdg-desktop-portal-hyprland        # xdg-desktop-portal backend for hyprland
     xdg-desktop-portal-wlr             # xdg-desktop-portal backend for wlroots
     xdg-user-dirs                      # Manage user directories like ~/Desktop and ~/Music
+    zip                                # Compressor/archiver for creating and modifying zipfiles
   )
   paru -S --needed "${Packages[@]}" --noconfirm
   curl -fsSL https://bun.sh/install | bash && sudo ln -s $HOME/.bun/bin/bun /usr/local/bin/bun
@@ -84,11 +86,9 @@ InstallOptional() {
     parui                              # Simple TUI frontend for paru or yay
     timeshift                          # A system restore utility for Linux
     tree                               # A directory listing program displaying a depth indented list of files
-    unzip                              # For extracting and viewing files in .zip archives
     vlc                                # Multi-platform MPEG, VCD/DVD, and DivX player
     wayland-screenshot                 # A wayland screenshotting tool
     wget                               # Network utility to retrieve files from the Web
-    zip                                # Compressor/archiver for creating and modifying zipfiles
   )
   paru -S --needed "${Packages[@]}" --noconfirm
 }
