@@ -92,7 +92,7 @@ You can find my contact information on my GitHub profile.
 ### Installation
 Be sure to back up your own configurations, as they may be overwritten. It's recommended to install these dotfiles on a fresh Arch installation without a desktop environment, though they should also work on an existing setup. The included Install script will provide guidance and instructions throughout the installation process. Also, make sure to run the script in a bare TTY. (Ctrl + Alt + F3/F4/...)
 ```bash
-$ git clone https://ohSystemmm/ohSystemmm-doties.git
+$ git clone https://github.com/ohSystemmm/ohSystemmm-doties.git
 $ cd ohSystemmm-doties/Action-Area.d/
 $ ./Install.sh
 ```
