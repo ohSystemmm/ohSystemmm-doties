@@ -29,6 +29,7 @@ InstallRequired() {
     kitty                              # A modern, hackable, featureful, OpenGL-based terminal emulator
     libadwaita                         # Building blocks for modern adaptive GNOME applications
     libpulse                           # A featureful, general-purpose sound server (client library)
+    libgtop                            # Library for collecting system monitoring data
     network-manager-applet             # Applet for managing network connections
     networkmanager                     # Network connection manager and user applications
     nm-connection-editor               # NetworkManager GUI connection editor and widgets

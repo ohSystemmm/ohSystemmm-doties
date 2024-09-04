@@ -193,6 +193,9 @@ NextSlide
 SlideHeader "Symlinking"
 echo -e "Ensure to remove any existing files and folders in ~/.config/ before successfully creating symlinks.\n"
 source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/SymLinks.sh
+cd ~/.config/rofi/ 
+mkdir config-Colors/
+cd
 NextSlide
 
 
