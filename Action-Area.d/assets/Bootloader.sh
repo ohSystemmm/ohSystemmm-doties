@@ -28,9 +28,9 @@ else
   bootloader="not_grub"
 fi
 if [ "$bootloader" = "grub" ]; then
-  cp ../User-Area.d/5_Grub/Default.png ../System-Area.d/7_Grub-Menu/Grub/Background.png
-  sudo cp -r ../System-Area.d/7_Grub-Menu/Grub/ /boot/grub/themes/ 
-  sudo cp -f ../System-Area.d/0_Global-Config/grub /etc/default/grub
+  cp ~/ohSystemmm-doties/User-Area.d/5_Grub/Default.png ~/ohSystemmm-doties/System-Area.d/7_Grub-Menu/Grub/Background.png
+  sudo cp -r ~/ohSystemmm-doties/System-Area.d/7_Grub-Menu/Grub/ /boot/grub/themes/ 
+  sudo cp -f ~/ohSystemmm-doties/System-Area.d/0_Global-Config/grub /etc/default/grub
   sudo grub-mkconfig -o /boot/grub/grub.cfg
 else
   echo -e "\nGrub not found - Skipping."
