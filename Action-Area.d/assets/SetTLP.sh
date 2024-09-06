@@ -16,7 +16,7 @@ case $TLP in
     echo -e "Installing TLP for power management.\n"
     sudo pacman -S --needed tlp --noconfirm
     echo -e "\nConfiguring maximum battery capacity to 80%."
-    sudo cp -f ../System-Area.d/0_Global-Config/tlp.conf /etc/tlp.conf
+    sudo cp -f ~/ohSystemmm-doties/System-Area.d/0_Global-Config/tlp.conf /etc/tlp.conf
     sudo systemctl enable tlp.service
     sudo systemctl start tlp.service
     echo -e "\n${BGreen}TLP Installed and Configured.${Normal}"
