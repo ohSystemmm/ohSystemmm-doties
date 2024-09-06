@@ -15,7 +15,7 @@ InstallRequired() {
     firefox-nightly-bin                # Fast, Private & Safe Web Browser from Mozilla — Nightly Build (en-US)
     fish                               # Smart and user friendly shell intended mostly for interactive use
     git                                # the fast distributed version control system
-    gnome-bluetooth                    # GNOME Bluetooth Subsystem
+    gnome-bluetooth-3.0                # GNOME Bluetooth Subsystem
     grim                               # Screenshot utility for Wayland
     gst-plugin-pipewire                # Multimedia graph framework - pipewire plugin
     gsound                             # Small library for playing system sounds
@@ -63,6 +63,7 @@ InstallRequired() {
     ttf-hanazono                       # A free Japanese kanji font, which contains about 78,685 characters.
     tumbler                            # Thumbnail service implementing the thumbnail management D-Bus specification
     unzip                              # For extracting and viewing files in .zip archives
+    wl-clipboard                       # Command-line copy/paste utilities for Wayland
     wlogout                            # Logout menu for wayland
     wireplumber                        # Session / policy manager implementation for PipeWire
     xdg-desktop-portal                 # Desktop integration portals for sandboxed apps
