@@ -104,8 +104,8 @@ InstallohSystemmm() {
     clion-jre                          # Cross-platform IDE for C and C++ from JetBrains.
   # dnsmasq                            # Lightweight, easy to configure DNS forwarder and DHCP server
   # ebtables                           # Linux kernel packet control tool (using nft interface)
-    fcitx5                             # Next generation of fcitx
-    fcitx5-configtool                  # Configuration Tool for Fcitx5
+  # fcitx5                             # Next generation of fcitx
+  # fcitx5-configtool                  # Configuration Tool for Fcitx5
     goland                             # Capable and Ergonomic Go IDE
     goland-jre                         # JBR (JetBrains Runtime) for Goland - a patched JRE
     gwenview                           # A fast and easy to use image viewer
@@ -116,7 +116,7 @@ InstallohSystemmm() {
     krita                              # Edit and paint images
   # libvirt                            # API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)
     mangal-bin                         # The most advanced cli manga downloader in the entire universe!
-    mozc                               # The Open Source edition of Google Japanese Input
+  # mozc                               # The Open Source edition of Google Japanese Input
     mpv                                # a free, open source, and cross-platform media player
     obs-studio                         # Free, open source software for live streaming and recording
   # openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
