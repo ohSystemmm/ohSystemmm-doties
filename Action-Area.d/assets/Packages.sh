@@ -118,6 +118,7 @@ InstallohSystemmm() {
     mangal-bin                         # The most advanced cli manga downloader in the entire universe!
   # mozc                               # The Open Source edition of Google Japanese Input
     mpv                                # a free, open source, and cross-platform media player
+    nasm                               # 80x86 assembler designed for portability and modularity
     obs-studio                         # Free, open source software for live streaming and recording
   # openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
     pycharm-professional               # Python IDE for Professional Developers. Professional Edition
