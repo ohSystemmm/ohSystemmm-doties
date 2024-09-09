@@ -6,7 +6,6 @@
 #
 # by ohSystemmm <3 - 2024
 
-# Source Colors
 source ~/ohSystemmm-doties/Action-Area.d/assets/Colors.sh
 
 CheckPackages() {
