@@ -22,7 +22,6 @@ InstallRequired() {
     gtk3                               # GObject-based multi-platform GUI toolkit
     gtk4                               # GObject-based multi-platform GUI toolkit
     gum                                # A tool for glamorous shell scripts
-    hypridle                           # hyprland’s idle daemon
     hyprland                           # a highly customizable dynamic tiling Wayland compositor
     hyprlock                           # hyprland’s GPU-accelerated screen locking utility
     hyprshade                          # Hyprland shade configuration tool
@@ -112,6 +111,7 @@ InstallohSystemmm() {
     ipscan                             # Angry IP Scanner (or simply ipscan) is an open-source and cross-platform network scanner.
     intellij-idea-ultimate-edition     # An intelligent IDE for Java, Groovy and other programming languages with advanced refactoring features intensely focused on developer productivity.
     intellij-idea-ultimate-edition-jre # An intelligent IDE for Java, Groovy and other programming languages with advanced refactoring features intensely focused on developer productivity.
+    javafx-scenebuilder                # Scene Builder is an open source tool that allows for drag and drop design of JavaFX user interfaces.
   # iptables                           # Linux kernel packet control tool (using legacy interface)
     krita                              # Edit and paint images
   # libvirt                            # API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)
