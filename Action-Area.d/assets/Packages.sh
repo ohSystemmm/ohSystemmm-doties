@@ -128,6 +128,7 @@ InstallohSystemmm() {
     spotify                            # A proprietary music streaming service
     superfile-bin                      # Pretty fancy and modern file manager in terminal file manager
     syncplay                           # Synchronize watching movies on mplayer2, vlc, mpv, and mpc-hc across many computers
+    teams-for-linux-bin                # Unofficial Microsoft Teams for Linux client (binary version)
     tlp                                # Linux Advanced Power Management
   # vde2                               # Virtual Distributed Ethernet for emulators like qemu
   # virt-manager                       # Desktop user interface for managing virtual machines
