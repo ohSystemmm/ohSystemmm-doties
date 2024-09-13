@@ -41,6 +41,7 @@ Header() {
 CheckPackages
 Header "Control Center"
 echo -e ""
+
 MainMenu=$(gum choose --cursor=" " \
   "Set new Design" \
   "Change Wallpaper Type" \
@@ -87,4 +88,3 @@ case $MainMenu in
     exit 1
   ;;
 esac
-
