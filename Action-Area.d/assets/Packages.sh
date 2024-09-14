@@ -124,6 +124,7 @@ InstallohSystemmm() {
     pycharm-professional               # Python IDE for Professional Developers. Professional Edition
     python-grip                        # Preview GitHub Markdown files like Readme locally before committing them
   # qemu                               # A basic QEMU setup for headless environments
+    rider                              # A cross-platform .NET IDE by JetBrains.
     signal-desktop                     # Signal Private Messenger for Linux
     spotify                            # A proprietary music streaming service
     superfile-bin                      # Pretty fancy and modern file manager in terminal file manager
