@@ -40,6 +40,7 @@ InstallRequired() {
     pipewire-alsa                      # Low-latency audio/video router and processor - ALSA configuration
     pipewire-jack                      # Low-latency audio/video router and processor - JACK replacement
     pipewire-pulse                     # Low-latency audio/video router and processor - PulseAudio replacement
+    playerctl                          # mpris media player controller and lib for spotify, vlc and others.
     python                             # Python high-level programming language
     python-click                       # Simple wrapper around optparse for powerful command line utilities
     python-gobject                     # Python bindings for GLib/GObject/GIO/GTK
