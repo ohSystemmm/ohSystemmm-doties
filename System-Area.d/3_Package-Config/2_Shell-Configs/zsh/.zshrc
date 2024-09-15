@@ -36,7 +36,7 @@ source $ZSH/oh-my-zsh.sh
 (cat ~/.cache/wal/sequences &)
 
 # Custom prompt
-PROMPT='🔰%F{yellow}%n@%m %F{white}🌐 %F{green}%1~ %F{white}➤ %f'
+PROMPT='🔰%F{blue}%n%F{white}@%F{pink}%m %F{white}🌐 %F{green}%1~ %F{white}➤ %f'
 RPROMPT='⏳%F{blue}%*%f'
 
 # bun completions
