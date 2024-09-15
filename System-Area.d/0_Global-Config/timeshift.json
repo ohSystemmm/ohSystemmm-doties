@@ -1,5 +1,5 @@
 {
-  "backup_device_uuid" : "c161d3d4-c1ea-4c44-a047-d710b9c89290",
+  "backup_device_uuid" : "ab00b831-46d7-4dc3-abd0-42ced44d1dc9",
   "parent_device_uuid" : "",
   "do_first_run" : "false",
   "btrfs_mode" : "false",
@@ -16,8 +16,8 @@
   "count_daily" : "5",
   "count_hourly" : "6",
   "count_boot" : "5",
-  "snapshot_size" : "36303094565",
-  "snapshot_count" : "36735",
+  "snapshot_size" : "72336034373",
+  "snapshot_count" : "135349",
   "date_format" : "%Y-%m-%d %H:%M:%S",
   "exclude" : [
     "+ /home/ohsystemmm/**",
