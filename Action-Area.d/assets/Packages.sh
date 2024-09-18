@@ -124,6 +124,7 @@ InstallohSystemmm() {
     nasm                               # 80x86 assembler designed for portability and modularity
     obs-studio                         # Free, open source software for live streaming and recording
   # openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
+    protonvpn-cli-community            # A Community Linux CLI for ProtonVPN
     pycharm-professional               # Python IDE for Professional Developers. Professional Edition
     python-grip                        # Preview GitHub Markdown files like Readme locally before committing them
   # qemu                               # A basic QEMU setup for headless environments

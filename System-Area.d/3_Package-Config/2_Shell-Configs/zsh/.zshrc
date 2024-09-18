@@ -23,6 +23,7 @@ alias wimg='wezterm imgcat'
 alias kimg='kitty +kitten icat'
 alias pdf='zathura'
 alias markdown='grim'
+alias nya='echo "Meoww :3"'
 
 # Path to your Oh My Zsh installation.
 export ZSH=~/.oh-my-zsh/
