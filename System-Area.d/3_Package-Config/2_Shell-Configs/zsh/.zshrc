@@ -25,6 +25,10 @@ alias pdf='zathura'
 alias markdown='grim'
 alias nya='echo "Meoww :3"'
 
+# Proton VPN
+alias Start_VPN='sudo protonvpn c -f'
+alias Stop_VPN='sudo protonvpn d'
+
 # Path to your Oh My Zsh installation.
 export ZSH=~/.oh-my-zsh/
 

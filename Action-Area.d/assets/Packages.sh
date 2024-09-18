@@ -122,6 +122,7 @@ InstallohSystemmm() {
   # mozc                               # The Open Source edition of Google Japanese Input
     mpv                                # a free, open source, and cross-platform media player
     nasm                               # 80x86 assembler designed for portability and modularity
+    ncdu                               # Disk usage analyzer with an ncurses interface
     obs-studio                         # Free, open source software for live streaming and recording
   # openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
     protonvpn-cli-community            # A Community Linux CLI for ProtonVPN
@@ -130,6 +131,7 @@ InstallohSystemmm() {
   # qemu                               # A basic QEMU setup for headless environments
     rider                              # A cross-platform .NET IDE by JetBrains.
     signal-desktop                     # Signal Private Messenger for Linux
+    speedtest-cli                      # Command line interface for testing internet bandwidth using speedtest.net
     spotify                            # A proprietary music streaming service
     superfile-bin                      # Pretty fancy and modern file manager in terminal file manager
     syncplay                           # Synchronize watching movies on mplayer2, vlc, mpv, and mpc-hc across many computers
