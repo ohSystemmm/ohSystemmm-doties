@@ -106,6 +106,7 @@ InstallohSystemmm() {
   # ebtables                           # Linux kernel packet control tool (using nft interface)
   # fcitx5                             # Next generation of fcitx
   # fcitx5-configtool                  # Configuration Tool for Fcitx5
+    gitui                              # Blazing fast terminal-ui for git written in Rust
     goland                             # Capable and Ergonomic Go IDE
     goland-jre                         # JBR (JetBrains Runtime) for Goland - a patched JRE
     gwenview                           # A fast and easy to use image viewer
@@ -116,6 +117,7 @@ InstallohSystemmm() {
   # iptables                           # Linux kernel packet control tool (using legacy interface)
     krita                              # Edit and paint images
   # libvirt                            # API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)
+    lutris                             # Open Gaming Platform
     mangal-bin                         # The most advanced cli manga downloader in the entire universe!
   # mozc                               # The Open Source edition of Google Japanese Input
     mpv                                # a free, open source, and cross-platform media player
