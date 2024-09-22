@@ -15,7 +15,7 @@ case $TLP in
   "Laptop")
     echo -e "Installing TLP for power management.\n"
     sudo pacman -S --needed tlp --noconfirm
-    echo -e "\nConfiguring maximum battery capacity to 80%."
+    echo -e "\nConfiguring maximum battery capacity to 90%."
     sudo cp -f ~/ohSystemmm-doties/System-Area.d/0_Global-Config/tlp.conf /etc/tlp.conf
     sudo systemctl enable tlp.service
     sudo systemctl start tlp.service
