@@ -10,4 +10,5 @@ sudo pacman -Rns $(pacman -Qdtq) --noconfirm
 sudo pacman -Scc --noconfirm
 yay -Scc --noconfirm
 paru -Scc --noconfirm
-
+rm -rf ~/.cache/yay 
+rm -rf ~/.cache/paru
