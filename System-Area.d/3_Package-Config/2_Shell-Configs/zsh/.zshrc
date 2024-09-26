@@ -40,15 +40,9 @@ source $ZSH/oh-my-zsh.sh
 # Load Pywal-Colors
 (cat ~/.cache/wal/sequences &)
 
-autoload -Uz vcs_info
-precmd() { vcs_info }
-
+# Custom prompt
 PROMPT='🔰%F{green}%n%F{white}@%F{cyan}%m %F{white}🌐 %F{green}%1~ %F{white}➤ %f'
-RPROMPT='%F{cyan}${vcs_info_msg_0_}%f ⏳%F{blue}%*%f'
-
-zstyle ':vcs_info:*' enable git
-zstyle ':vcs_info:git:*' formats '%F{yellow}[%b]%f'   
-zstyle ':vcs_info:*' actionformats '%F{yellow}[%b|%a]%f'  
+RPROMPT='⏳%F{blue}%*%f'
 
 # bun completions
 [ -s "/home/ohsystemmm/.bun/_bun" ] && source "/home/ohsystemmm/.bun/_bun"

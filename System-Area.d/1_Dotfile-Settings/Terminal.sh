@@ -6,4 +6,4 @@
 #
 # by ohSystemmm <3 - 2024
 
-kitty
+wezterm
