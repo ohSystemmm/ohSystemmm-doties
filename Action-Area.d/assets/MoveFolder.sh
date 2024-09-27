@@ -8,7 +8,6 @@
 
 cd /
 DotiesPath="/$(fd --type d ohSystemmm-doties)"
-
 echo -e "Dotfiles detected."
 
 Destination="$HOME"
