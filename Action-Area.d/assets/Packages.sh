@@ -126,6 +126,7 @@ InstallohSystemmm() {
     ncdu                               # Disk usage analyzer with an ncurses interface
     obs-studio                         # Free, open source software for live streaming and recording
   # openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
+    prismlauncher                      # Minecraft launcher with ability to manage multiple instances
     protonvpn-cli-community            # A Community Linux CLI for ProtonVPN
     pycharm-professional               # Python IDE for Professional Developers. Professional Edition
     python-grip                        # Preview GitHub Markdown files like Readme locally before committing them
