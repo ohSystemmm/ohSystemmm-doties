@@ -27,6 +27,16 @@ System-Area.d/5_Temp-Files/*
 
 # Grub 
 System-Area.d/7_Grub-Menu/Grub/Background.png
-
 System-Area.d/3_Package-Config/0_App-Configs/fastfetch/Image.png
 System-Area.d/3_Package-Config/0_App-Configs/rofi/config-Colors/Colors.rasi
+
+# PrismLauncher
+System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/accounts.json
+System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/assets/*
+System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/cache/*
+System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/instances/*
+System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/libraries/*
+System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/logs/*
+System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/meta/*
+System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/metacache
+System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/translations/*

@@ -66,3 +66,7 @@ ln -s ~/ohSystemmm-doties/System-Area.d/3_Package-Config/2_Shell-Configs/zsh/.zs
 # fish ------------------------------------------------------------------------------------------
 rm -rf ~/.config/fish/
 ln -s ~/ohSystemmm-doties/System-Area.d/3_Package-Config/2_Shell-Configs/fish/ ~/.config/
+
+# PrismLauncher ----------------------------------------------------------------------------------
+rm -rf ~/.local/share/PrismLauncher/ 
+ln -s ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/ ~/.local/share/PrismLauncher  
