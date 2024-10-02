@@ -23,7 +23,7 @@ alias wimg='wezterm imgcat'
 alias kimg='kitty +kitten icat'
 alias pdf='zathura'
 alias markdown='grim'
-alias nya='echo "Meowww :3"'
+alias nya='clear && echo "Meowww :3"'
 
 # Proton VPN
 alias Start_VPN='sudo protonvpn c -f'

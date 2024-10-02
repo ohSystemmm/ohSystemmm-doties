@@ -127,7 +127,7 @@ InstallohSystemmm() {
     obs-studio                         # Free, open source software for live streaming and recording
   # openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
     prismlauncher                      # Minecraft launcher with ability to manage multiple instances
-    protonvpn-cli-community            # A Community Linux CLI for ProtonVPN
+    protonvpn-cli-community-git        # A Community Linux CLI for ProtonVPN
     pycharm-professional               # Python IDE for Professional Developers. Professional Edition
     python-grip                        # Preview GitHub Markdown files like Readme locally before committing them
   # qemu                               # A basic QEMU setup for headless environments
