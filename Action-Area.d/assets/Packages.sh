@@ -124,6 +124,7 @@ InstallohSystemmm() {
     mpv                                # a free, open source, and cross-platform media player
     nasm                               # 80x86 assembler designed for portability and modularity
     ncdu                               # Disk usage analyzer with an ncurses interface
+    obsidian                           # A powerful knowledge base that works on top of a local folder of plain text Markdown files
     obs-studio                         # Free, open source software for live streaming and recording
   # openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
     prismlauncher                      # Minecraft launcher with ability to manage multiple instances
