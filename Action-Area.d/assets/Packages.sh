@@ -166,8 +166,8 @@ InstallZsh() {
 
   ZSH_CUSTOM="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"
   cd ~
-  git clone ${Packages[0]} ~/.oh-my-zsh                 # Clone oh-my-zsh
-  git clone ${Packages[1]} $ZSH_CUSTOM/plugins/zsh-autosuggestions  # Clone zsh-autosuggestions
+  git clone ${Packages[0]} ~/.oh-my-zsh                                 # Clone oh-my-zsh
+  git clone ${Packages[1]} $ZSH_CUSTOM/plugins/zsh-autosuggestions      # Clone zsh-autosuggestions
   git clone ${Packages[2]} $ZSH_CUSTOM/plugins/zsh-syntax-highlighting  # Clone zsh-syntax-highlighting
   echo "source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
   echo "source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
