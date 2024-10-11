@@ -97,6 +97,7 @@ InstallOptional() {
 
 InstallohSystemmm() {
   Packages=(
+    an-anime-game-launcher-bin         # A Launcher for a specific anime game with auto-patching, discord rpc and time tracking
     ani-cli                            # A cli to browse and watch anime.
     armcord-bin                        # Discord client for lower end and ARM devices.
   # bridge-utils                       # Utilities for configuring the Linux ethernet bridge
@@ -117,7 +118,6 @@ InstallohSystemmm() {
   # iptables                           # Linux kernel packet control tool (using legacy interface)
     krita                              # Edit and paint images
   # libvirt                            # API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)
-    lutris                             # Open Gaming Platform
     magic-wormhole                     # Securely transfer data between computers
     mangal-bin                         # The most advanced cli manga downloader in the entire universe!
   # mozc                               # The Open Source edition of Google Japanese Input
@@ -140,6 +140,7 @@ InstallohSystemmm() {
     superfile-bin                      # Pretty fancy and modern file manager in terminal file manager
     syncplay                           # Synchronize watching movies on mplayer2, vlc, mpv, and mpc-hc across many computers
     teams-for-linux-bin                # Unofficial Microsoft Teams for Linux client (binary version)
+    the-honkers-railway-launcher-bin   # A launcher for a specific anime game with auto-patching, discord rpc and time tracking
     tlp                                # Linux Advanced Power Management
   # vde2                               # Virtual Distributed Ethernet for emulators like qemu
   # virt-manager                       # Desktop user interface for managing virtual machines
