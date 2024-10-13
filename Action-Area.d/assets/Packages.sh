@@ -96,14 +96,15 @@ InstallOptional() {
 }
 
 InstallohSystemmm() {
+    lutris                             # Open Gaming Platform
   Packages=(
     an-anime-game-launcher-bin         # A Launcher for a specific anime game with auto-patching, discord rpc and time tracking
     ani-cli                            # A cli to browse and watch anime.
     armcord-bin                        # Discord client for lower end and ARM devices.
-  # bridge-utils                       # Utilities for configuring the Linux ethernet bridge
+    bridge-utils                       # Utilities for configuring the Linux ethernet bridge
     clion                              # Cross-platform IDE for C and C++ from JetBrains.
     clion-jre                          # Cross-platform IDE for C and C++ from JetBrains.
-  # dnsmasq                            # Lightweight, easy to configure DNS forwarder and DHCP server
+    dnsmasq                            # Lightweight, easy to configure DNS forwarder and DHCP server
   # ebtables                           # Linux kernel packet control tool (using nft interface)
   # fcitx5                             # Next generation of fcitx
   # fcitx5-configtool                  # Configuration Tool for Fcitx5
@@ -117,7 +118,7 @@ InstallohSystemmm() {
     javafx-scenebuilder                # Scene Builder is an open source tool that allows for drag and drop design of JavaFX user interfaces.
   # iptables                           # Linux kernel packet control tool (using legacy interface)
     krita                              # Edit and paint images
-  # libvirt                            # API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)
+    libvirt                            # API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)
     magic-wormhole                     # Securely transfer data between computers
     mangal-bin                         # The most advanced cli manga downloader in the entire universe!
   # mozc                               # The Open Source edition of Google Japanese Input
@@ -126,12 +127,12 @@ InstallohSystemmm() {
     ncdu                               # Disk usage analyzer with an ncurses interface
     obsidian                           # A powerful knowledge base that works on top of a local folder of plain text Markdown files
     obs-studio                         # Free, open source software for live streaming and recording
-  # openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
+    openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
     prismlauncher                      # Minecraft launcher with ability to manage multiple instances
     protonvpn-cli-community-git        # A Community Linux CLI for ProtonVPN
     pycharm-professional               # Python IDE for Professional Developers. Professional Edition
     python-grip                        # Preview GitHub Markdown files like Readme locally before committing them
-  # qemu                               # A basic QEMU setup for headless environments
+    qemu                               # A basic QEMU setup for headless environments
     rider                              # A cross-platform .NET IDE by JetBrains.
     signal-desktop                     # Signal Private Messenger for Linux
     speedtest-cli                      # Command line interface for testing internet bandwidth using speedtest.net
@@ -142,9 +143,9 @@ InstallohSystemmm() {
     teams-for-linux-bin                # Unofficial Microsoft Teams for Linux client (binary version)
     the-honkers-railway-launcher-bin   # A launcher for a specific anime game with auto-patching, discord rpc and time tracking
     tlp                                # Linux Advanced Power Management
-  # vde2                               # Virtual Distributed Ethernet for emulators like qemu
-  # virt-manager                       # Desktop user interface for managing virtual machines
-  # virt-viewer                        # A lightweight interface for interacting with the graphical display of virtualized guest OS.
+    vde2                               # Virtual Distributed Ethernet for emulators like qemu
+    virt-manager                       # Desktop user interface for managing virtual machines
+    virt-viewer                        # A lightweight interface for interacting with the graphical display of virtualized guest OS.
     vscodium-bin                       # Binary releases of VS Code without MS branding/telemetry/licensing.
   # waydroid                           # A container-based approach to boot a full Android system on a regular Linux system
   # waydroid-image-gapps               # A container-based approach to boot a full Android system on a regular Linux system (Android image, GAPPS).
