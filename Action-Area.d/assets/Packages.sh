@@ -101,6 +101,7 @@ InstallohSystemmm() {
     an-anime-game-launcher-bin         # A Launcher for a specific anime game with auto-patching, discord rpc and time tracking
     ani-cli                            # A cli to browse and watch anime.
     armcord-bin                        # Discord client for lower end and ARM devices.
+    blender                            # A fully integrated 3D graphics creation suite
     bridge-utils                       # Utilities for configuring the Linux ethernet bridge
     clion                              # Cross-platform IDE for C and C++ from JetBrains.
     clion-jre                          # Cross-platform IDE for C and C++ from JetBrains.
