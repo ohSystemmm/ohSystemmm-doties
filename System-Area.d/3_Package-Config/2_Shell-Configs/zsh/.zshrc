@@ -25,6 +25,9 @@ alias pdf='zathura'
 alias markdown='grim'
 alias nya='clear && echo "Meowww :3"'
 
+alias Con-SAP-Up='sudo wg-quick up SAP'
+alias Con-SAP-Down='sudo wg-quick down SAP'
+
 # Proton VPN
 alias Start_VPN='sudo protonvpn c -f'
 alias Stop_VPN='sudo protonvpn d'

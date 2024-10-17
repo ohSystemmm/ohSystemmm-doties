@@ -98,7 +98,7 @@ InstallOptional() {
 InstallohSystemmm() {
     lutris                             # Open Gaming Platform
   Packages=(
-    an-anime-game-launcher-bin         # A Launcher for a specific anime game with auto-patching, discord rpc and time tracking
+  # an-anime-game-launcher-bin         # A Launcher for a specific anime game with auto-patching, discord rpc and time tracking
     ani-cli                            # A cli to browse and watch anime.
     armcord-bin                        # Discord client for lower end and ARM devices.
     blender                            # A fully integrated 3D graphics creation suite
