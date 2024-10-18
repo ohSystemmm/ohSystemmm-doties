@@ -16,14 +16,11 @@
 
 </div>
 
-
 > [!WARNING]
 > - Development will continue in several Days/Weeks
 > - 1st stable version should work perfectly
 > - Do not run the Installation script twice - Symlinks are Corny
 > - Keybind Cheat-Sheet are in 'Action-Area/Information/Keybind' located
-
-
 
 <!-- Overview -->
 <div align="center">
@@ -62,7 +59,6 @@ You can find my contact information on my GitHub profile.
 <br>
 <p align = "center"><img src = "https://api.sefinek.net/api/v2/moecounter/@ohSystemmm?length=10&theme=default" </p>
 
-
 <!-- Screenhots -->
 <div align="center">
   <h2>Screenshot (Defaults)</h2>
@@ -99,7 +95,6 @@ $ ./Install.sh
 After successfully installing, be sure to explore the ~/ohSystemmm-doties/Control.sh file. Run it to set your wallpaper, system design, and more.
 </details>
 
-
 <details>  
 <summary>Updating </summary>
 
@@ -123,8 +118,6 @@ $ ./Uninstall.sh
 ```
 
 </details>
-
-
 
 <div align="center">
   <h2>Thank You</h2>
