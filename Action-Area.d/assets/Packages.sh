@@ -86,6 +86,7 @@ InstallOptional() {
     neovim                             # Fork of Vim aiming to improve user experience, plugins, and GUIs
     paru                               # Feature packed AUR helper
     parui                              # Simple TUI frontend for paru or yay
+    smartmontools                      # Control and monitor S.M.A.R.T. enabled ATA and SCSI Hard Drives
     timeshift                          # A system restore utility for Linux
     tree                               # A directory listing program displaying a depth indented list of files
     vlc                                # Multi-platform MPEG, VCD/DVD, and DivX player
@@ -97,6 +98,7 @@ InstallOptional() {
 
 InstallohSystemmm() {
   Packages=(
+    argouml-bin                        # UML 1.4 modeller
   # an-anime-game-launcher-bin         # A Launcher for a specific anime game with auto-patching, discord rpc and time tracking
     ani-cli                            # A cli to browse and watch anime.
     armcord-bin                        # Discord client for lower end and ARM devices.
