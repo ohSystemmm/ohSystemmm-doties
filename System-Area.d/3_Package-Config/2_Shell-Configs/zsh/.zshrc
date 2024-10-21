@@ -41,7 +41,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # Load Pywal-Colors
-(cat ~/.cache/wal/sequences &)
+(cat ~/.cache/wal/sequences&)
 
 # Custom prompt
 PROMPT='🔰%F{green}%n%F{white}@%F{cyan}%m %F{white}🌐 %F{green}%1~ %F{white}➤ %f'
