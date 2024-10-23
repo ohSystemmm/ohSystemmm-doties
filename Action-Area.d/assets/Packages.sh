@@ -121,6 +121,7 @@ InstallohSystemmm() {
   # iptables                           # Linux kernel packet control tool (using legacy interface)
     krita                              # Edit and paint images
     libvirt                            # API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)
+    libwebp                            # WebP library and conversion tools
     lutris                             # Open Gaming Platform
     magic-wormhole                     # Securely transfer data between computers
     mangal-bin                         # The most advanced cli manga downloader in the entire universe!
@@ -136,6 +137,7 @@ InstallohSystemmm() {
     protonvpn-cli-community-git        # A Community Linux CLI for ProtonVPN
     pycharm-professional               # Python IDE for Professional Developers. Professional Edition
     python-grip                        # Preview GitHub Markdown files like Readme locally before committing them
+    p7zip                              # Command-line file archiver with high compression ratio
     qemu                               # A basic QEMU setup for headless environments
     rider                              # A cross-platform .NET IDE by JetBrains.
     signal-desktop                     # Signal Private Messenger for Linux
