@@ -23,7 +23,7 @@ alias wimg='wezterm imgcat'
 alias kimg='kitty +kitten icat'
 alias pdf='zathura'
 alias markdown='grim'
-alias nya='clear && echo "Meowww :3"'
+alias nya='clear && figlet "Meowww :3"'
 
 alias Con-SAP-Up='sudo wg-quick up SAP'
 alias Con-SAP-Down='sudo wg-quick down SAP'
