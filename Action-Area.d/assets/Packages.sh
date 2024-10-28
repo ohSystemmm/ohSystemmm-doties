@@ -160,7 +160,6 @@ InstallohSystemmm() {
   # waydroid                           # A container-based approach to boot a full Android system on a regular Linux system
   # waydroid-image-gapps               # A container-based approach to boot a full Android system on a regular Linux system (Android image, GAPPS).
     wezterm                            # A GPU-accelerated cross-platform terminal emulator and multiplexer
-    whatsapp-for-linux                 # An unofficial WhatsApp desktop application for linux
     wine                               # A compatibility layer for running Windows programs
     wps-office                         # Kingsoft Office (WPS Office) - an office productivity suite
     zathura                            # Minimalistic document viewer
