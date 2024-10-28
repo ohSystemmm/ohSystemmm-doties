@@ -72,6 +72,7 @@ InstallRequired() {
     xdg-desktop-portal-wlr             # xdg-desktop-portal backend for wlroots
     xdg-user-dirs                      # Manage user directories like ~/Desktop and ~/Music
     zip                                # Compressor/archiver for creating and modifying zipfiles
+    zsh                                # A very advanced and programmable command interpreter (shell) for UNIX
   )
   paru -S --needed "${Packages[@]}" --noconfirm
   curl -fsSL https://bun.sh/install | bash && sudo ln -s $HOME/.bun/bin/bun /usr/local/bin/bun
@@ -81,6 +82,7 @@ InstallOptional() {
   Packages=(
     cava                               # Console-based Audio Visualizer for Alsa
     gparted                            # A Partition Magic clone, frontend to GNU Parted
+    hyprpicker                         # A wlroots-compatible Wayland color picker that does not suck
     imagemagick                        # An image viewing/manipulation program
     imgcat                             # Output images as RGB ANSI graphics on the terminal
     neovim                             # Fork of Vim aiming to improve user experience, plugins, and GUIs
@@ -99,6 +101,7 @@ InstallOptional() {
 InstallohSystemmm() {
   Packages=(
     argouml-bin                        # UML 1.4 modeller
+    asusctl                            # A control daemon, CLI tools, and a collection of crates for interacting with ASUS ROG laptops
   # an-anime-game-launcher-bin         # A Launcher for a specific anime game with auto-patching, discord rpc and time tracking
     ani-cli                            # A cli to browse and watch anime.
     armcord-bin                        # Discord client for lower end and ARM devices.
