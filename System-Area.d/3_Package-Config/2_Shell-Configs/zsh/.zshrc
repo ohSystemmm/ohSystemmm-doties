@@ -54,3 +54,9 @@ RPROMPT='⏳%F{blue}%*%f'
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+
+export PATH=$PATH:/home/ohsystemmm/.spicetify
+export SPOTIPY_CLIENT_ID='15668b97e709435bab856e6e248fc753'
+export SPOTIPY_CLIENT_SECRET='84c8cbfd131e4cc5a79c7a705308cac5'
+export SPOTIPY_REDIRECT_URI='http://localhost:8881/callback'
+

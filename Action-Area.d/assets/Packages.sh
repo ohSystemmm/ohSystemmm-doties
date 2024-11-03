@@ -162,6 +162,7 @@ InstallohSystemmm() {
     wezterm                            # A GPU-accelerated cross-platform terminal emulator and multiplexer
     wine                               # A compatibility layer for running Windows programs
     wps-office                         # Kingsoft Office (WPS Office) - an office productivity suite
+    ytmdl                              # Download songs from YouTube with metadata from iTunes, Spotify, LastFM, etc
     zathura                            # Minimalistic document viewer
     zathura-pdf-mupdf                  # PDF support for Zathura (MuPDF backend) (Supports PDF, ePub, and OpenXPS)
   )
