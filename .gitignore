@@ -16,7 +16,7 @@ User-Area.d/3_Avatar/*
 !User-Area.d/3_Avatar/Default.png
 
 User-Area.d/4_Sddm/*
-!User-Area.d/4_Sddm/Default.png 
+!User-Area.d/4_Sddm/Default.png
 
 User-Area.d/5_Grub/*
 !User-Area.d/5_Grub/Default.png 
@@ -24,6 +24,7 @@ User-Area.d/5_Grub/*
 # Temp Files
 System-Area.d/5_Temp-Files/*
 !System-Area.d/5_Temp-Files/Placeholder
+System-Area.d/8_SDDM/Sddm-Theme/Backgrounds/Background.png
 
 # Grub 
 System-Area.d/7_Grub-Menu/Grub/Background.png
@@ -40,3 +41,4 @@ System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/logs/*
 System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/meta/*
 System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/metacache
 System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/translations/*
+System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/icons/*
