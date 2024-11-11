@@ -82,6 +82,7 @@ InstallOptional() {
   Packages=(
     cava                               # Console-based Audio Visualizer for Alsa
     gparted                            # A Partition Magic clone, frontend to GNU Parted
+    hyfetch                            # Neofetch with LGBTQ+ pride flags!
     hyprpicker                         # A wlroots-compatible Wayland color picker that does not suck
     imagemagick                        # An image viewing/manipulation program
     imgcat                             # Output images as RGB ANSI graphics on the terminal
