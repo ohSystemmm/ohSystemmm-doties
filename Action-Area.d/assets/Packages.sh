@@ -102,18 +102,20 @@ InstallOptional() {
 InstallohSystemmm() {
   Packages=(
     argouml-bin                        # UML 1.4 modeller
-    asusctl-git                        # A control daemon, CLI tools, and a collection of crates for interacting with ASUS ROG laptops
+  # asusctl-git                        # A control daemon, CLI tools, and a collection of crates for interacting with ASUS ROG laptops
   # an-anime-game-launcher-bin         # A Launcher for a specific anime game with auto-patching, discord rpc and time tracking
     ani-cli                            # A cli to browse and watch anime.
-    armcord-bin                        # Discord client for lower end and ARM devices.
+    legcord                            # Discord client for lower end and ARM devices.
     blender                            # A fully integrated 3D graphics creation suite
     bridge-utils                       # Utilities for configuring the Linux ethernet bridge
     clion                              # Cross-platform IDE for C and C++ from JetBrains.
     clion-jre                          # Cross-platform IDE for C and C++ from JetBrains.
+    datagrip                           # Smart SQL Editor and Advanced Database Client Packed Together for Optimum Productivity
+    datagrip-jre                       # JBR (JetBrains Runtime) for DataGrip - a patched JRE
     dnsmasq                            # Lightweight, easy to configure DNS forwarder and DHCP server
-  # ebtables                           # Linux kernel packet control tool (using nft interface)
   # fcitx5                             # Next generation of fcitx
   # fcitx5-configtool                  # Configuration Tool for Fcitx5
+    geogebra-6-bin                     # Dynamic mathematics software with interactive graphics, algebra and spreadsheet
     gitui                              # Blazing fast terminal-ui for git written in Rust
     goland                             # Capable and Ergonomic Go IDE
     goland-jre                         # JBR (JetBrains Runtime) for Goland - a patched JRE
@@ -122,7 +124,7 @@ InstallohSystemmm() {
     intellij-idea-ultimate-edition     # An intelligent IDE for Java, Groovy and other programming languages with advanced refactoring features intensely focused on developer productivity.
     intellij-idea-ultimate-edition-jre # An intelligent IDE for Java, Groovy and other programming languages with advanced refactoring features intensely focused on developer productivity.
     javafx-scenebuilder                # Scene Builder is an open source tool that allows for drag and drop design of JavaFX user interfaces.
-  # iptables                           # Linux kernel packet control tool (using legacy interface)
+    jdk21-openjdk                      # OpenJDK Java 21 development kit
     krita                              # Edit and paint images
     libvirt                            # API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)
     libwebp                            # WebP library and conversion tools
@@ -137,6 +139,7 @@ InstallohSystemmm() {
     obsidian                           # A powerful knowledge base that works on top of a local folder of plain text Markdown files
     obs-studio                         # Free, open source software for live streaming and recording
     openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
+    osu-lazer-bin                      # The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew.
     prismlauncher                      # Minecraft launcher with ability to manage multiple instances
     protonvpn-cli-community-git        # A Community Linux CLI for ProtonVPN
     pycharm-professional               # Python IDE for Professional Developers. Professional Edition
@@ -144,10 +147,10 @@ InstallohSystemmm() {
     p7zip                              # Command-line file archiver with high compression ratio
     qemu                               # A basic QEMU setup for headless environments
     rider                              # A cross-platform .NET IDE by JetBrains.
-    rog-control-center                 # App to control asusctl
+  # rog-control-center                 # App to control asusctl
     signal-desktop                     # Signal Private Messenger for Linux
     speedtest-cli                      # Command line interface for testing internet bandwidth using speedtest.net
-    spotify                            # A proprietary music streaming service
+    spotube                            # Open source Spotify client that doesn't require Premium nor uses Electron!
     steam                              # Valve's digital software delivery system
     superfile-bin                      # Pretty fancy and modern file manager in terminal file manager
     syncplay                           # Synchronize watching movies on mplayer2, vlc, mpv, and mpc-hc across many computers
@@ -163,6 +166,7 @@ InstallohSystemmm() {
     wezterm                            # A GPU-accelerated cross-platform terminal emulator and multiplexer
     wine                               # A compatibility layer for running Windows programs
     wps-office                         # Kingsoft Office (WPS Office) - an office productivity suite
+    xampp                              # A stand-alone LAMPP distribution
     ytmdl                              # Download songs from YouTube with metadata from iTunes, Spotify, LastFM, etc
     zathura                            # Minimalistic document viewer
     zathura-pdf-mupdf                  # PDF support for Zathura (MuPDF backend) (Supports PDF, ePub, and OpenXPS)
