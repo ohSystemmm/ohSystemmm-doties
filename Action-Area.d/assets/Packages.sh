@@ -1,6 +1,6 @@
 InstallRequired() {
   Packages=(
-    aylurs-gtk-shell                   # Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
+    agsv1                              # Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
     bibata-extra-cursor-theme          # Material Based Cursor Theme: More Bibata!
     blueman                            # GTK+ Bluetooth Manager
     bluez                              # Daemons for the bluetooth protocol stack
