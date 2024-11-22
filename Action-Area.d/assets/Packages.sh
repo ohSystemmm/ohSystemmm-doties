@@ -131,7 +131,6 @@ InstallohSystemmm() {
     lutris                             # Open Gaming Platform
     magic-wormhole                     # Securely transfer data between computers
     mangal-bin                         # The most advanced cli manga downloader in the entire universe!
-    mapscii                            # Map+Ascii -> MapSCII! Console Map Viewer.
   # mozc                               # The Open Source edition of Google Japanese Input
     mpv                                # a free, open source, and cross-platform media player
     nasm                               # 80x86 assembler designed for portability and modularity
