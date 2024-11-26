@@ -117,6 +117,7 @@ InstallohSystemmm() {
   # fcitx5-configtool                  # Configuration Tool for Fcitx5
     geogebra-6-bin                     # Dynamic mathematics software with interactive graphics, algebra and spreadsheet
     gitui                              # Blazing fast terminal-ui for git written in Rust
+    gnome-keyring                      # Stores passwords and encryption keys
     goland                             # Capable and Ergonomic Go IDE
     goland-jre                         # JBR (JetBrains Runtime) for Goland - a patched JRE
     gwenview                           # A fast and easy to use image viewer
