@@ -102,7 +102,7 @@ InstallOptional() {
 InstallohSystemmm() {
   Packages=(
     argouml-bin                        # UML 1.4 modeller
-  # asusctl-git                        # A control daemon, CLI tools, and a collection of crates for interacting with ASUS ROG laptops
+    asusctl-git                        # A control daemon, CLI tools, and a collection of crates for interacting with ASUS ROG laptops
   # an-anime-game-launcher-bin         # A Launcher for a specific anime game with auto-patching, discord rpc and time tracking
     ani-cli                            # A cli to browse and watch anime.
     legcord                            # Discord client for lower end and ARM devices.
@@ -147,7 +147,7 @@ InstallohSystemmm() {
     p7zip                              # Command-line file archiver with high compression ratio
     qemu                               # A basic QEMU setup for headless environments
     rider                              # A cross-platform .NET IDE by JetBrains.
-  # rog-control-center                 # App to control asusctl
+    rog-control-center                 # App to control asusctl
     signal-desktop                     # Signal Private Messenger for Linux
     speedtest-cli                      # Command line interface for testing internet bandwidth using speedtest.net
     spotube                            # Open source Spotify client that doesn't require Premium nor uses Electron!
