@@ -113,8 +113,8 @@ InstallohSystemmm() {
     datagrip                           # Smart SQL Editor and Advanced Database Client Packed Together for Optimum Productivity
     datagrip-jre                       # JBR (JetBrains Runtime) for DataGrip - a patched JRE
     dnsmasq                            # Lightweight, easy to configure DNS forwarder and DHCP server
-  # fcitx5                             # Next generation of fcitx
-  # fcitx5-configtool                  # Configuration Tool for Fcitx5
+    fcitx5                             # Next generation of fcitx
+    fcitx5-configtool                  # Configuration Tool for Fcitx5
     geogebra-6-bin                     # Dynamic mathematics software with interactive graphics, algebra and spreadsheet
     gitui                              # Blazing fast terminal-ui for git written in Rust
     gnome-keyring                      # Stores passwords and encryption keys
@@ -132,7 +132,7 @@ InstallohSystemmm() {
     lutris                             # Open Gaming Platform
     magic-wormhole                     # Securely transfer data between computers
     mangal-bin                         # The most advanced cli manga downloader in the entire universe!
-  # mozc                               # The Open Source edition of Google Japanese Input
+    fcitx5-mozc                        # The Open Source edition of Google Japanese Input
     mpv                                # a free, open source, and cross-platform media player
     nasm                               # 80x86 assembler designed for portability and modularity
     ncdu                               # Disk usage analyzer with an ncurses interface
