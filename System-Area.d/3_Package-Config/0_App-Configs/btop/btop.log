@@ -39,3 +39,7 @@
 
 2024/12/10 (19:22:43) | ===> btop++ v.1.4.0
 2024/12/10 (19:22:43) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+
+2024/12/30 (11:54:35) | ===> btop++ v.1.4.0
+2024/12/30 (11:54:35) | ERROR: No tty detected!
+btop++ needs an interactive shell to run.

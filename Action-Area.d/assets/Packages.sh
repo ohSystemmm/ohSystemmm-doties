@@ -103,7 +103,7 @@ InstallohSystemmm() {
   Packages=(
     argouml-bin                        # UML 1.4 modeller
     asusctl-git                        # A control daemon, CLI tools, and a collection of crates for interacting with ASUS ROG laptops
-  # an-anime-game-launcher-bin         # A Launcher for a specific anime game with auto-patching, discord rpc and time tracking
+    an-anime-game-launcher-bin         # A Launcher for a specific anime game with auto-patching, discord rpc and time tracking
     ani-cli                            # A cli to browse and watch anime.
     legcord                            # Discord client for lower end and ARM devices.
     blender                            # A fully integrated 3D graphics creation suite
@@ -164,6 +164,7 @@ InstallohSystemmm() {
   # waydroid                           # A container-based approach to boot a full Android system on a regular Linux system
   # waydroid-image-gapps               # A container-based approach to boot a full Android system on a regular Linux system (Android image, GAPPS).
     wezterm                            # A GPU-accelerated cross-platform terminal emulator and multiplexer
+    whatsapp-for-linux                 # An unofficial WhatsApp desktop application for linux
     wine                               # A compatibility layer for running Windows programs
     wps-office                         # Kingsoft Office (WPS Office) - an office productivity suite
     xampp                              # A stand-alone LAMPP distribution
