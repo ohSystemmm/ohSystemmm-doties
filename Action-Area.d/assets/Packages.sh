@@ -135,6 +135,7 @@ InstallohSystemmm() {
     mpv                                # a free, open source, and cross-platform media player
     nasm                               # 80x86 assembler designed for portability and modularity
     ncdu                               # Disk usage analyzer with an ncurses interface
+    nvflash                            # A tool to update the the firmware of Nvidia display adapters.
     obsidian                           # A powerful knowledge base that works on top of a local folder of plain text Markdown files
     obs-studio                         # Free, open source software for live streaming and recording
     openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
@@ -160,6 +161,7 @@ InstallohSystemmm() {
     virt-manager                       # Desktop user interface for managing virtual machines
     virt-viewer                        # A lightweight interface for interacting with the graphical display of virtualized guest OS.
     vscodium-bin                       # Binary releases of VS Code without MS branding/telemetry/licensing.
+    vulkan-tools                       # Vulkan Utilities and Tools
   # waydroid                           # A container-based approach to boot a full Android system on a regular Linux system
   # waydroid-image-gapps               # A container-based approach to boot a full Android system on a regular Linux system (Android image, GAPPS).
     wezterm                            # A GPU-accelerated cross-platform terminal emulator and multiplexer
