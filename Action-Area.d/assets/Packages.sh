@@ -22,6 +22,7 @@ InstallRequired() {
     gtk3                               # GObject-based multi-platform GUI toolkit
     gtk4                               # GObject-based multi-platform GUI toolkit
     gum                                # A tool for glamorous shell scripts
+    gvfs                               # Virtual filesystem implementation for GIO
     hyprland                           # a highly customizable dynamic tiling Wayland compositor
     hyprlock                           # hyprland’s GPU-accelerated screen locking utility
     hyprshade                          # Hyprland shade configuration tool
