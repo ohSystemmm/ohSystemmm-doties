@@ -26,6 +26,7 @@ alias markdown='grim'
 alias nya='clear && figlet "Meowww :3"'
 alias 更新='paru'
 alias アニメ='ani-cli'
+alias volume='alsamixer -c 2'
 
 alias Con-SAP-Up='sudo wg-quick up SAP'
 alias Con-SAP-Down='sudo wg-quick down SAP'
@@ -61,4 +62,6 @@ export PATH=$PATH:/home/ohsystemmm/.spicetify
 export SPOTIPY_CLIENT_ID='15668b97e709435bab856e6e248fc753'
 export SPOTIPY_CLIENT_SECRET='84c8cbfd131e4cc5a79c7a705308cac5'
 export SPOTIPY_REDIRECT_URI='http://localhost:8881/callback'
+export XDG_RUNTIME_DIR=/run/user/$(id -u)
+export DBUS_SESSION_BUS_ADDRESS=unix:path=$XDG_RUNTIME_DIR/bus
 
