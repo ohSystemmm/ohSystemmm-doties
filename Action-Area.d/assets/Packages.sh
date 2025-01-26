@@ -75,7 +75,7 @@ InstallRequired() {
     zip                                # Compressor/archiver for creating and modifying zipfiles
     zsh                                # A very advanced and programmable command interpreter (shell) for UNIX
   )
-  paru -S --needed "${Packages[@]}" --noconfirm
+  paru -S --overwrite '*' "${Packages[@]}"
   curl -fsSL https://bun.sh/install | bash && sudo ln -s $HOME/.bun/bin/bun /usr/local/bin/bun
 }
 
@@ -97,7 +97,7 @@ InstallOptional() {
     wayland-screenshot                 # A wayland screenshotting tool
     wget                               # Network utility to retrieve files from the Web
   )
-  paru -S --needed "${Packages[@]}" --noconfirm
+  paru -S --overwrite '*' "${Packages[@]}"
 }
 
 InstallohSystemmm() {
@@ -174,7 +174,7 @@ InstallohSystemmm() {
     zathura                            # Minimalistic document viewer
     zathura-pdf-mupdf                  # PDF support for Zathura (MuPDF backend) (Supports PDF, ePub, and OpenXPS)
   )
-  paru -S --needed "${Packages[@]}" --noconfirm
+  paru -S --overwrite '*' "${Packages[@]}" 
 }
 
 InstallZsh() {
