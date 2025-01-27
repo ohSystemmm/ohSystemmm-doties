@@ -157,7 +157,7 @@ InstallohSystemmm() {
     syncplay                           # Synchronize watching movies on mplayer2, vlc, mpv, and mpc-hc across many computers
     teams-for-linux-bin                # Unofficial Microsoft Teams for Linux client (binary version)
     the-honkers-railway-launcher-bin   # A launcher for a specific anime game with auto-patching, discord rpc and time tracking
-    tlp                                # Linux Advanced Power Management
+  # tlp                                # Linux Advanced Power Management
     vde2                               # Virtual Distributed Ethernet for emulators like qemu
     virt-manager                       # Desktop user interface for managing virtual machines
     virt-viewer                        # A lightweight interface for interacting with the graphical display of virtualized guest OS.

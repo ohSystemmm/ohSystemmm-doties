@@ -177,10 +177,10 @@ NextSlide
 
 
 # Installing & Enabling TLP
-SlideHeader "TLP"
-echo -e "You can choose to skip or install TLP for laptop power management.\n"
-source ~/ohSystemmm-doties/Action-Area.d/assets/SetTLP.sh
-NextSlide
+# SlideHeader "TLP"
+# echo -e "You can choose to skip or install TLP for laptop power management.\n"
+# source ~/ohSystemmm-doties/Action-Area.d/assets/SetTLP.sh
+# NextSlide
 
 
 # Bootloader
