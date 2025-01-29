@@ -65,6 +65,7 @@ InstallRequired() {
     tumbler                            # Thumbnail service implementing the thumbnail management D-Bus specification
     unzip                              # For extracting and viewing files in .zip archives
     wl-clipboard                       # Command-line copy/paste utilities for Wayland
+    wlsunset                           # Day/night gamma adjustments for Wayland compositors
     wlogout                            # Logout menu for wayland
     wireplumber                        # Session / policy manager implementation for PipeWire
     xdg-desktop-portal                 # Desktop integration portals for sandboxed apps
