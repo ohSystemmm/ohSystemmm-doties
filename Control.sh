@@ -51,6 +51,7 @@ MainMenu=$(gum choose --cursor=" " \
   "Set new Avatar" \
   "Set new Grub Theme" \
   "Set new Sddm Theme" \
+  "Set Blue Light Filter" \
   "Exit"\
 )
 
@@ -83,6 +84,9 @@ case $MainMenu in
   ;;
   "Set new Sddm Theme")
     source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/Sddm/Sel-Sddm.sh
+  ;;
+  "Set Blue Light Filter")
+    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/BlueLightFilter/BlueLightFilter.sh 
   ;;
   "Exit")
     exit 1
