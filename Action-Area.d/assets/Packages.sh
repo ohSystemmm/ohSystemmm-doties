@@ -92,6 +92,7 @@ InstallOptional() {
     paru                               # Feature packed AUR helper
     parui                              # Simple TUI frontend for paru or yay
     smartmontools                      # Control and monitor S.M.A.R.T. enabled ATA and SCSI Hard Drives
+    thunderbird                        # Standalone mail and news reader from mozilla.org
     timeshift                          # A system restore utility for Linux
     tree                               # A directory listing program displaying a depth indented list of files
     vlc                                # Multi-platform MPEG, VCD/DVD, and DivX player
@@ -128,6 +129,7 @@ InstallohSystemmm() {
     javafx-scenebuilder                # Scene Builder is an open source tool that allows for drag and drop design of JavaFX user interfaces.
     jdk21-openjdk                      # OpenJDK Java 21 development kit
     krita                              # Edit and paint images
+    libtiff5                           # Library for manipulation of TIFF images
     libvirt                            # API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)
     libwebp                            # WebP library and conversion tools
     lutris                             # Open Gaming Platform
@@ -163,12 +165,14 @@ InstallohSystemmm() {
     virt-manager                       # Desktop user interface for managing virtual machines
     virt-viewer                        # A lightweight interface for interacting with the graphical display of virtualized guest OS.
     vscodium-bin                       # Binary releases of VS Code without MS branding/telemetry/licensing.
+    vivaldi                            # An advanced browser made with the power user in mind.
     vulkan-tools                       # Vulkan Utilities and Tools
   # waydroid                           # A container-based approach to boot a full Android system on a regular Linux system
   # waydroid-image-gapps               # A container-based approach to boot a full Android system on a regular Linux system (Android image, GAPPS).
     wezterm                            # A GPU-accelerated cross-platform terminal emulator and multiplexer
     whatsapp-for-linux                 # An unofficial WhatsApp desktop application for linux
     wine                               # A compatibility layer for running Windows programs
+    wtfutil-bin                        # Personal information dashboard for your terminal
     wps-office                         # Kingsoft Office (WPS Office) - an office productivity suite
     xampp                              # A stand-alone LAMPP distribution
     ytmdl                              # Download songs from YouTube with metadata from iTunes, Spotify, LastFM, etc

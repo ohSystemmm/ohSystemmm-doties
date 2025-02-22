@@ -27,6 +27,7 @@ alias nya='clear && figlet "Meowww :3"'
 alias 更新='paru'
 alias アニメ='ani-cli'
 alias volume='alsamixer -c 2'
+alias hist='nvim .zsh_history'
 
 alias Con-SAP-Up='sudo wg-quick up SAP'
 alias Con-SAP-Down='sudo wg-quick down SAP'
