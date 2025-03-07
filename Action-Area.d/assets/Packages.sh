@@ -7,7 +7,6 @@ InstallRequired() {
     bluez-utils                        # Development and debugging utilities for the bluetooth protocol stack
     brightnessctl                      # Lightweight brightness control tool
     btop                               # A monitor of system resources, bpytop ported to C++
-    chromium                           # A web browser built for speed, simplicity, and security
     dart-sass                          # Sass makes CSS fun again
     fd                                 # Simple, fast and user-friendly alternative to find
     figlet                             # A program for making large letters out of ordinary text
