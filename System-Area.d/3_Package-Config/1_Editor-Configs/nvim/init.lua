@@ -5,11 +5,11 @@
 local ok, catppuccin = pcall(require, "catppuccin")
 if not ok then return end
 catppuccin.setup({
-  flavour = "latte",
+  flavour = "frappe",
   transparent_background = true,
 })
 -- vim.cmd [[colorscheme catppuccin]]
-vim.cmd [[colorscheme carbonfox]]
+vim.cmd [[colorscheme catppuccin]]
 
 vim.cmd([[
 augroup user_colors
