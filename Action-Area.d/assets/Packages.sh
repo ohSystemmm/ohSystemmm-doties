@@ -89,7 +89,7 @@ InstallOptional() {
     imagemagick                        # An image viewing/manipulation program
     imgcat                             # Output images as RGB ANSI graphics on the terminal
     neovim-nightly                     # Fork of Vim aiming to improve user experience, plugins, and GUIs
-    nvim-packer-git 		       # A use-package inspired plugin manager for Neovim.
+    nvim-packer-git 		           # A use-package inspired plugin manager for Neovim.
     paru                               # Feature packed AUR helper
     parui                              # Simple TUI frontend for paru or yay
     smartmontools                      # Control and monitor S.M.A.R.T. enabled ATA and SCSI Hard Drives
@@ -106,9 +106,9 @@ InstallOptional() {
 InstallohSystemmm() {
   Packages=(
     argouml-bin                        # UML 1.4 modeller
-    asusctl-git                        # A control daemon, CLI tools, and a collection of crates for interacting with ASUS ROG laptops
-    an-anime-game-launcher-bin         # A Launcher for a specific anime game with auto-patching, discord rpc and time tracking
+    # an-anime-game-launcher-bin         # A Launcher for a specific anime game with auto-patching, discord rpc and time tracking
     ani-cli                            # A cli to browse and watch anime.
+    anydesk-bin                        # The Fast Remote Desktop Application
     blender                            # A fully integrated 3D graphics creation suite
     bridge-utils                       # Utilities for configuring the Linux ethernet bridge
     clion                              # Cross-platform IDE for C and C++ from JetBrains.
@@ -121,6 +121,7 @@ InstallohSystemmm() {
     geogebra-6-bin                     # Dynamic mathematics software with interactive graphics, algebra and spreadsheet
     gitui                              # Blazing fast terminal-ui for git written in Rust
     gnome-keyring                      # Stores passwords and encryption keys
+    go                                 # Core compiler tools for the Go programming language
     goland                             # Capable and Ergonomic Go IDE
     goland-jre                         # JBR (JetBrains Runtime) for Goland - a patched JRE
     gwenview                           # A fast and easy to use image viewer
@@ -146,37 +147,39 @@ InstallohSystemmm() {
     openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
     osu-lazer-bin                      # The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew.
     prismlauncher                      # Minecraft launcher with ability to manage multiple instances
+    proton-vpn-gtk-app                 # ProtonVPN GTK app, Maintained by Community
     protonvpn-cli-community-git        # A Community Linux CLI for ProtonVPN
     pycharm-professional               # Python IDE for Professional Developers. Professional Edition
     python-grip                        # Preview GitHub Markdown files like Readme locally before committing them
     p7zip                              # Command-line file archiver with high compression ratio
     qemu                               # A basic QEMU setup for headless environments
     rider                              # A cross-platform .NET IDE by JetBrains.
-    rog-control-center                 # App to control asusctl
+    # rog-control-center                 # App to control asusctl
     signal-desktop                     # Signal Private Messenger for Linux
     speedtest-cli                      # Command line interface for testing internet bandwidth using speedtest.net
-    spotube                            # Open source Spotify client that doesn't require Premium nor uses Electron!
+    # spotube                            # Open source Spotify client that doesn't require Premium nor uses Electron!
     steam                              # Valve's digital software delivery system
     superfile-bin                      # Pretty fancy and modern file manager in terminal file manager
     syncplay                           # Synchronize watching movies on mplayer2, vlc, mpv, and mpc-hc across many computers
     teams-for-linux-bin                # Unofficial Microsoft Teams for Linux client (binary version)
-    the-honkers-railway-launcher-bin   # A launcher for a specific anime game with auto-patching, discord rpc and time tracking
-    tlp                                # Linux Advanced Power Management
+    # the-honkers-railway-launcher-bin   # A launcher for a specific anime game with auto-patching, discord rpc and time tracking
     vde2                               # Virtual Distributed Ethernet for emulators like qemu
     virt-manager                       # Desktop user interface for managing virtual machines
     virt-viewer                        # A lightweight interface for interacting with the graphical display of virtualized guest OS.
     vscodium-bin                       # Binary releases of VS Code without MS branding/telemetry/licensing.
     vivaldi                            # An advanced browser made with the power user in mind.
     vulkan-tools                       # Vulkan Utilities and Tools
-  # waydroid                           # A container-based approach to boot a full Android system on a regular Linux system
-  # waydroid-image-gapps               # A container-based approach to boot a full Android system on a regular Linux system (Android image, GAPPS).
+    # waydroid                           # A container-based approach to boot a full Android system on a regular Linux system
+    # waydroid-image-gapps               # A container-based approach to boot a full Android system on a regular Linux system (Android image, GAPPS).
     wezterm                            # A GPU-accelerated cross-platform terminal emulator and multiplexer
     whatsapp-for-linux                 # An unofficial WhatsApp desktop application for linux
     wine                               # A compatibility layer for running Windows programs
+    winetricks                         # Script to install various redistributable runtime libraries in Wine.
     wtfutil-bin                        # Personal information dashboard for your terminal
     wps-office                         # Kingsoft Office (WPS Office) - an office productivity suite
     xampp                              # A stand-alone LAMPP distribution
     ytmdl                              # Download songs from YouTube with metadata from iTunes, Spotify, LastFM, etc
+    youtube-dl-gui-bin                 # A cross-platform GUI for youtube-dl made in Electron and node.js (binary release)
     zathura                            # Minimalistic document viewer
     zathura-pdf-mupdf                  # PDF support for Zathura (MuPDF backend) (Supports PDF, ePub, and OpenXPS)
   )
