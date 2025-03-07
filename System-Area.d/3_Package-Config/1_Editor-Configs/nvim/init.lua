@@ -1,37 +1,27 @@
-vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
-vim.g.mapleader = " "
+-- Check out https://github.com/nvim-lua/kickstart.nvim !
 
--- bootstrap lazy and all plugins
-local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
+-- Aesthetic
+-- pcall catches errors if the plugin doesn't load
+local ok, catppuccin = pcall(require, "catppuccin")
+if not ok then return end
+catppuccin.setup({
+  flavour = "latte",
+  transparent_background = true,
+})
+-- vim.cmd [[colorscheme catppuccin]]
+vim.cmd [[colorscheme carbonfox]]
 
-if not vim.uv.fs_stat(lazypath) then
-  local repo = "https://github.com/folke/lazy.nvim.git"
-  vim.fn.system { "git", "clone", "--filter=blob:none", repo, "--branch=stable", lazypath }
-end
+vim.cmd([[
+augroup user_colors
+  autocmd!
+  autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
+augroup END
+]])
 
-vim.opt.rtp:prepend(lazypath)
-
-local lazy_config = require "configs.lazy"
-
--- load plugins
-require("lazy").setup({
-  {
-    "NvChad/NvChad",
-    lazy = false,
-    branch = "v2.5",
-    import = "nvchad.plugins",
-  },
-
-  { import = "plugins" },
-}, lazy_config)
-
--- load theme
-dofile(vim.g.base46_cache .. "defaults")
-dofile(vim.g.base46_cache .. "statusline")
-
-require "options"
-require "nvchad.autocmds"
-
-vim.schedule(function()
-  require "mappings"
-end)
+require('me.options')
+require('me.globals')
+require('me.lualine')
+require('me.keymap')
+require('me.lsp')
+require('me.telescope')
+require 'colorizer'.setup()

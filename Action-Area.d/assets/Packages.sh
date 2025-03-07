@@ -88,7 +88,8 @@ InstallOptional() {
     hyprpicker                         # A wlroots-compatible Wayland color picker that does not suck
     imagemagick                        # An image viewing/manipulation program
     imgcat                             # Output images as RGB ANSI graphics on the terminal
-    neovim                             # Fork of Vim aiming to improve user experience, plugins, and GUIs
+    neovim-nightly                     # Fork of Vim aiming to improve user experience, plugins, and GUIs
+    nvim-packer-git 		       # A use-package inspired plugin manager for Neovim.
     paru                               # Feature packed AUR helper
     parui                              # Simple TUI frontend for paru or yay
     smartmontools                      # Control and monitor S.M.A.R.T. enabled ATA and SCSI Hard Drives

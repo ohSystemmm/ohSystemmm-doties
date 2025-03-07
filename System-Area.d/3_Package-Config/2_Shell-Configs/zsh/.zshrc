@@ -65,4 +65,4 @@ export SPOTIPY_CLIENT_SECRET='84c8cbfd131e4cc5a79c7a705308cac5'
 export SPOTIPY_REDIRECT_URI='http://localhost:8881/callback'
 export XDG_RUNTIME_DIR=/run/user/$(id -u)
 export DBUS_SESSION_BUS_ADDRESS=unix:path=$XDG_RUNTIME_DIR/bus
-
+export PATH=/usr/bin/bash:$PATH
