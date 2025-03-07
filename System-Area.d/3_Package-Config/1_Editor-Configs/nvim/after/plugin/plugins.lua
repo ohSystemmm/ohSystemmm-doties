@@ -18,7 +18,7 @@ return require('packer').startup(function(use)
   use "EdenEast/nightfox.nvim"
   use "tjdevries/colorbuddy.nvim"
 
-  -- Preview colours
+  -- Preview colors
   use 'norcalli/nvim-colorizer.lua'
 
   --Treesitter
@@ -63,9 +63,15 @@ return require('packer').startup(function(use)
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
   -- commands to run to start our LSPs
-  use 'neovim/nvim-lspconfig'
   use 'williamboman/mason-lspconfig.nvim'
   use 'williamboman/mason.nvim'
+
+  use {
+    'neovim/nvim-lspconfig',
+    config = function()
+      require("lspconfig").gopls.setup {}
+    end
+  }
 
   -- LSP Saga
   use({
@@ -118,6 +124,46 @@ return require('packer').startup(function(use)
 
   --devicons
   use 'kyazdani42/nvim-web-devicons'
+
+  --dashboard
+  use {
+    'nvimdev/dashboard-nvim',
+    event = 'VimEnter',
+    config = function()
+      require('dashboard').setup {
+        theme = 'doom',
+        config = {
+          header = {
+            '',
+            '',
+            '      ╔═╗   ╔═════╗         ╔═╗                              ╔═╗     ╔═╗            ',
+            '      ║ ║   ║ ╔═╗ ║       ╔═╝ ╚═╗                            ║ ║   ╔═╝ ╚═╗          ',
+            '╔═════╣ ╚═══╣ ╚═══╦═╗ ╔═╦═╩═╗ ╔═╬═══╦═╗ ╔═╦═╗ ╔═╦═╗ ╔═╗  ╔═══╝ ╠═══╩═╗ ╔═╬═╦═══╦═══╗',
+            '║ ╔═╗ ║ ╔═╗ ╠═══╗ ║ ║ ║ ║ ══╣ ║ ║ ══╣ ╚═╝ ║ ╚═╝ ║ ╚═╝ ╠══╣ ╔═╗ ║ ╔═╗ ║ ║ ╠═╣ ══╣ ══╣',
+            '║ ╚═╝ ║ ║ ║ ║ ╚═╝ ║ ╚═╝ ╠══ ║ ╚═╣ ══╣ ║ ║ ║ ║ ║ ║ ║ ║ ╠══╣ ╚═╝ ║ ╚═╝ ║ ╚═╣ ║ ══╬══ ║',
+            '╚═════╩═╝ ╚═╩═════╩═╗ ╔═╩═══╩═══╩═══╩═╩═╩═╩═╩═╩═╩═╩═╩═╝  ╚═════╩═════╩═══╩═╩═══╩═══╝',
+            '                  ╔═╝ ║                                                             ',
+            '                  ╚═══╝                                     by ohSystemmm <3 - 2025 ',
+            '',
+            ''
+          },
+          center = {
+            { icon = '[N] ', desc = 'New File',       action = 'enew',                 shortcut = 'SPC n', 'SPC N' },
+            { icon = '[B] ', desc = 'Browse Files',   action = 'Telescope find_files', shortcut = 'SPC b', 'SPC B' },
+            { icon = '[R] ', desc = 'Recent Files',   action = 'Telescope oldfiles',   shortcut = 'SPC r', 'SPC R' },
+            { icon = '[U] ', desc = 'Update Plugins', action = 'PackerSync',           shortcut = 'SPC u', 'SPC U' },
+            { icon = '[Q] ', desc = 'Quit',           action = 'qa',                   shortcut = 'SPC q', 'SPC Q' },
+          },
+          footer = {
+            '',
+            'How do I exit Neovim? ',
+            'You don’t. <3'
+          },
+        },
+      }
+    end,
+    requires = { 'nvim-tree/nvim-web-devicons' }
+  }
 
   --fullstack dev
   use 'pangloss/vim-javascript'    --JS support
