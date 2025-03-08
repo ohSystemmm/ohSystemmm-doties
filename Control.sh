@@ -52,6 +52,7 @@ MainMenu=$(gum choose --cursor=" " \
   "Set new Grub Theme" \
   "Set new Sddm Theme" \
   "Set Blue Light Filter" \
+  "Clean Up" \
   "Exit"\
 )
 
@@ -88,7 +89,7 @@ case $MainMenu in
   "Set Blue Light Filter")
     source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/BlueLightFilter/BlueLightFilter.sh 
   ;;
-  "Exit")
-    exit 1
-  ;;
+  "Clean Up")
+    source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/CleanUp.sh
+  ;;  
 esac
