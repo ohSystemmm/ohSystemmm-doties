@@ -115,6 +115,9 @@ InstallohSystemmm() {
     datagrip                           # Smart SQL Editor and Advanced Database Client Packed Together for Optimum Productivity
     datagrip-jre                       # JBR (JetBrains Runtime) for DataGrip - a patched JRE
     dnsmasq                            # Lightweight, easy to configure DNS forwarder and DHCP server
+    docker                             # Pack, ship and run any application as a lightweight container
+    docker-buildx                      # Docker CLI plugin for extended build capabilities with BuildKit
+    docker-compose                     # Fast, isolated development environments using Docker
     fcitx5                             # Next generation of fcitx
     fcitx5-configtool                  # Configuration Tool for Fcitx5
     geogebra-6-bin                     # Dynamic mathematics software with interactive graphics, algebra and spreadsheet
