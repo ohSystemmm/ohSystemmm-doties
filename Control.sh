@@ -52,8 +52,7 @@ MainMenu=$(gum choose --cursor=" " \
   "Set new Grub Theme" \
   "Set new Sddm Theme" \
   "Set Blue Light Filter" \
-  "Clean Up" \
-  "Exit"\
+  "Clean Up"
 )
 
 case $MainMenu in 
