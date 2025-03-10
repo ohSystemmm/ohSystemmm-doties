@@ -16,4 +16,4 @@ done
 
 grim -g "$(slurp)" "$SAVE_DIR/Screenshot_$n.png"
 
-notify-send "Screenshot Saved" "Saved as Screenshot_$n.png in $SAVE_DIR"
+notify-send "Screenshot Saved!" "Saved in ~/Screenshots/Screenshot_$n.pn"
