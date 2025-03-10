@@ -43,3 +43,6 @@ System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/metacache
 System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/translations/*
 System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/icons/*
 System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/java/*
+
+# Obsidian
+.obsidian

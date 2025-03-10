@@ -96,7 +96,6 @@ InstallOptional() {
     timeshift                          # A system restore utility for Linux
     tree                               # A directory listing program displaying a depth indented list of files
     vlc                                # Multi-platform MPEG, VCD/DVD, and DivX player
-    wayland-screenshot                 # A wayland screenshotting tool
     wget                               # Network utility to retrieve files from the Web
   )
   paru -S --overwrite '*' "${Packages[@]}"
