@@ -120,7 +120,7 @@ InstallohSystemmm() {
     fcitx5                             # Next generation of fcitx
     fcitx5-configtool                  # Configuration Tool for Fcitx5
     geogebra-6-bin                     # Dynamic mathematics software with interactive graphics, algebra and spreadsheet
-    gitui                              # Blazing fast terminal-ui for git written in Rust
+    # gitui                              # Blazing fast terminal-ui for git written in Rust
     gnome-keyring                      # Stores passwords and encryption keys
     go                                 # Core compiler tools for the Go programming language
     goland                             # Capable and Ergonomic Go IDE
@@ -135,7 +135,7 @@ InstallohSystemmm() {
     libtiff5                           # Library for manipulation of TIFF images
     libvirt                            # API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)
     libwebp                            # WebP library and conversion tools
-    lutris                             # Open Gaming Platform
+    # lutris                             # Open Gaming Platform
     magic-wormhole                     # Securely transfer data between computers
     mangal-bin                         # The most advanced cli manga downloader in the entire universe!
     fcitx5-mozc                        # The Open Source edition of Google Japanese Input
