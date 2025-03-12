@@ -135,6 +135,7 @@ InstallohSystemmm() {
     libtiff5                           # Library for manipulation of TIFF images
     libvirt                            # API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)
     libwebp                            # WebP library and conversion tools
+    libfaketime                        # Report fake dates and times to programs without having to change the system-wide time.
     # lutris                             # Open Gaming Platform
     magic-wormhole                     # Securely transfer data between computers
     mangal-bin                         # The most advanced cli manga downloader in the entire universe!
