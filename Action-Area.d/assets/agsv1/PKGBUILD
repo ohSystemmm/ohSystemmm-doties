@@ -29,7 +29,7 @@ optdepends=('gnome-bluetooth-3.0: required for bluetooth service'
             'upower: required for battery service')
 backup=('etc/pam.d/ags')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/Aylur/ags/archive/refs/tags/v${pkgver}.tar.gz"
-        "git+https://gitlab.gnome.org/GNOME/libgnome-volume-control")
+        "git+https://github.com/GNOME/libgnome-volume-control")
 sha256sums=('962f99dcf202eef30e978d1daedc7cdf213e07a3b52413c1fb7b54abc7bd08e6'
             SKIP)
 
