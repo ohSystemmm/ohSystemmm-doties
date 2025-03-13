@@ -20,41 +20,41 @@ sleep 2
 
 
 # Pre-Warning
-# SlideHeader "Warning"
-# echo -e "Please ensure you back up your configurations and important files as some    "
-# echo -e "may be overwritten or deleted. The ohSystemmm-doties team is not responsible "
-# echo -e "for any data loss. It is recommended to run this script on a fresh Arch Linux"
-# echo -e "installation without any desktop environment installed. Carefully read the   "
-# echo -e "introductions to understand the processes being executed. If something fails,"
-# echo -e "check the installation log at 'Not Avilable'. Please remain at your device   "
-# echo -e "until the installation is complete and ensure a stable internet connection.  "
-# echo -e "\nLet's get started."
-# NextSlide
+SlideHeader "Warning"
+echo -e "Please ensure you back up your configurations and important files as some    "
+echo -e "may be overwritten or deleted. The ohSystemmm-doties team is not responsible "
+echo -e "for any data loss. It is recommended to run this script on a fresh Arch Linux"
+echo -e "installation without any desktop environment installed. Carefully read the   "
+echo -e "introductions to understand the processes being executed. If something fails,"
+echo -e "check the installation log at 'Not Avilable'. Please remain at your device   "
+echo -e "until the installation is complete and ensure a stable internet connection.  "
+echo -e "\nLet's get started."
+NextSlide
 
 
 # Welcoming
-# SlideHeader "Welcome"
-# echo -e "Welcome to ohSystemmm-doties. Thank you for selecting our setup. The           "
-# echo -e "installation process will commence following this slide. Should you            "
-# echo -e "encounter any issues during the setup, please attempt to abort and restart     "
-# echo -e "the installation, as this often resolves common problems.                      "
-# echo -e ""                                                                              
-# echo -e "If the issue persists and appears to be related to the dotfiles, please feel   "
-# echo -e "free to reach out for assistance. You can contact me via my GitHub profile     "
-# echo -e "at ${Blue}https://github.com/ohSystemmm${Normal}. We appreciate your choice of "
-# echo -e "ohSystemmm-doties and are committed to ensuring a smooth and efficient setup   "
-# echo -e "process."
-# NextSlide
+SlideHeader "Welcome"
+echo -e "Welcome to ohSystemmm-doties. Thank you for selecting our setup. The           "
+echo -e "installation process will commence following this slide. Should you            "
+echo -e "encounter any issues during the setup, please attempt to abort and restart     "
+echo -e "the installation, as this often resolves common problems.                      "
+echo -e ""                                                                              
+echo -e "If the issue persists and appears to be related to the dotfiles, please feel   "
+echo -e "free to reach out for assistance. You can contact me via my GitHub profile     "
+echo -e "at ${Blue}https://github.com/ohSystemmm${Normal}. We appreciate your choice of "
+echo -e "ohSystemmm-doties and are committed to ensuring a smooth and efficient setup   "
+echo -e "process."
+NextSlide
 
 
 # Verifying OS Compatibility
-#SlideHeader "Validating OS"
-#echo -e "Checking compatibility: "
-#echo -e "The ohSystemmm-doties are designed specifically for Arch Linux & Hyprland"
-#echo -e "and do not support any forks or derivatives of Arch Linux.\n"
-#gum spin --spinner dot --title "Checking OS..." --show-output -- sleep 1.5
-#source assets/OSValidator.sh
-#NextSlide
+SlideHeader "Validating OS"
+echo -e "Checking compatibility: "
+echo -e "The ohSystemmm-doties are designed specifically for Arch Linux & Hyprland"
+echo -e "and do not support any forks or derivatives of Arch Linux.\n"
+gum spin --spinner dot --title "Checking OS..." --show-output -- sleep 1.5
+source assets/OSValidator.sh
+NextSlide
 
 
 # Moving Folder to $HOME
@@ -68,12 +68,12 @@ NextSlide
 
 
 # License
-# SlideHeader "License"
-# echo -e -n "Make sure to read the License"
-# sleep 3
-# gum pager < ~/ohSystemmm-doties/Action-Area.d/Information/LICENSE
-# echo -e "\n\n${BYellow}By proceeding, you accept the license agreement.${Normal}"
-# NextSlide
+SlideHeader "License"
+echo -e -n "Make sure to read the License"
+sleep 3
+gum pager < ~/ohSystemmm-doties/Action-Area.d/Information/LICENSE
+echo -e "\n\n${BYellow}By proceeding, you accept the license agreement.${Normal}"
+NextSlide
 
 
 # Setting up pacman
@@ -194,9 +194,9 @@ NextSlide
 
 
 # Credits
-# SlideHeader "Credits."
-# cat ~/ohSystemmm-doties/Action-Area.d/Information/Credits
-# NextSlide
+SlideHeader "Credits."
+cat ~/ohSystemmm-doties/Action-Area.d/Information/Credits
+NextSlide
 
 
 # CleanUp

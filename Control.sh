@@ -47,7 +47,7 @@ MainMenu=$(gum choose --cursor=" " \
   "Change Wallpaper Type" \
   "Set Wallpaper" \
   "Set Diashow Folder" \
-  "Set new Waifu" \
+  "Set new Fastfetch" \
   "Set new Avatar" \
   "Set new Grub Theme" \
   "Set new Sddm Theme" \
