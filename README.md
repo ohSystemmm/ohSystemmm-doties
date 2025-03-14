@@ -56,7 +56,7 @@ You can find my contact information on my GitHub profile.
 ![](Action-Area.d/Screenshots/Wlogout.png)
 
 ### Rofi-Wayland
-![](Action-Area/Screenshots/Rofi-Wayland.png)
+![](Action-Area.d/Screenshots/Rofi-Wayland.png)
 
 <div align="center">
   <h2>Management</h2>
