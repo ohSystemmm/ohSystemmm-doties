@@ -119,6 +119,7 @@ InstallohSystemmm() {
     docker-compose                     # Fast, isolated development environments using Docker
     fcitx5                             # Next generation of fcitx
     fcitx5-configtool                  # Configuration Tool for Fcitx5
+    filezilla                          # Fast and reliable FTP, FTPS and SFTP client
     geogebra-6-bin                     # Dynamic mathematics software with interactive graphics, algebra and spreadsheet
     # gitui                              # Blazing fast terminal-ui for git written in Rust
     gnome-keyring                      # Stores passwords and encryption keys
