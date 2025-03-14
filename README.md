@@ -45,17 +45,19 @@ You can find my contact information on my GitHub profile.
 <div align="center">
   <h2>Screenshots</h2>
 </div>
+
 ### Home Screen
-![[Action-Area.d/Screenshots/Home.png]]
+![](Action-Area.d/Screenshots/Home.png)
 
 ### Hyprlock
-![[Action-Area.d/Screenshots/Hyprlock.png]]
+![](Action-Area.d/Screenshots/Hyprlock.png)
 
 ### Wlogout
-![[Action-Area.d/Screenshots/Wlogout.png]]
+![](Action-Area.d/Screenshots/Wlogout.png)
 
 ### Rofi-Wayland
-![[Rofi-Wayland.png]]
+![](Action-Area/Screenshots/Rofi-Wayland.png)
+
 <div align="center">
   <h2>Management</h2>
 </div>
