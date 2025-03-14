@@ -12,6 +12,7 @@ SlideHeader "Uninstall"
 
 if gum confirm "Are you sure to Uninstall?" --affirmative "Confirm" --negative "Exit"; then
   echo -e "Starting ..."
+  sleep 2
   echo -e "\nRemoving Bootassets."
   sudo cp -f ../System-Area.d/6_Defaults/grub /etc/default/grub
   sudo rm -rf /boot/grub/themes/Grub/ 

@@ -19,7 +19,7 @@
 <details>
   <summary>Information</summary>
 <br>
-The ohSystemmm-doties dotfiles are crafted to provide a seamless and intuitive user experience from the moment you start. Pre-configured for quick setup, they offer a variety of customization options to fit your individual preferences. Their straightforward usability and adaptability make them an ideal choice for those looking to optimize their setup while retaining the ability to make personalized adjustments. Should you encounter any issues or bugs, don't hesitate to reach out for assistance. You can find my contact information on my GitHub profile.
+The ohSystemmm-doties dotfiles are made to provide a seamless and intuitive user experience from the moment you start. Pre-configured for quick setup, they offer a variety of customization options to fit your individual preferences. Their straightforward usability and adaptability make them an ideal choice for those looking to optimize their setup while retaining the ability to make personalized adjustments. Should you encounter any issues or bugs, don't hesitate to reach out for assistance. You can find my contact information on my GitHub profile.
 <br>
 </details>
 <details>
@@ -31,7 +31,7 @@ The dotfiles are compatible with virtually any low-end device capable of running
 <details>
   <summary>Wiki</summary>
 <br>
-Not yet implemented, but expected to be included in version 2.2.5.
+Not yet implemented, but expected to be included soon.
 <br>
 </details>
 <details>

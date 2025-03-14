@@ -128,6 +128,7 @@ InstallohSystemmm() {
     goland-jre                         # JBR (JetBrains Runtime) for Goland - a patched JRE
     gwenview                           # A fast and easy to use image viewer
     ipscan                             # Angry IP Scanner (or simply ipscan) is an open-source and cross-platform network scanner.
+    inkscape                           # Professional vector graphics editor
     intellij-idea-ultimate-edition     # An intelligent IDE for Java, Groovy and other programming languages with advanced refactoring features intensely focused on developer productivity.
     intellij-idea-ultimate-edition-jre # An intelligent IDE for Java, Groovy and other programming languages with advanced refactoring features intensely focused on developer productivity.
     javafx-scenebuilder                # Scene Builder is an open source tool that allows for drag and drop design of JavaFX user interfaces.

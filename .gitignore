@@ -46,3 +46,13 @@ System-Area.d/3_Package-Config/0_App-Configs/PrismLauncher/java/*
 
 # Obsidian
 .obsidian
+
+# AGS build
+Action-Area.d/assets/agsv1/*
+!Action-Area/assets/agsv1/.SRC
+!Action-Area/assets/agsv1/PKGBUILD
+
+# btop
+!System-Area.d/3_Package-Config/0_App-Configs/btop/*
+!System-Area.d/3_Package-Config/0_App-Configs/btop/btop.conf
+!System-Area.d/3_Package-Config/0_App-Configs/btop/themes
