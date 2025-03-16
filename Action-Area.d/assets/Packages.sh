@@ -103,6 +103,7 @@ InstallOptional() {
 
 InstallohSystemmm() {
   Packages=(
+    android-tools                      # android-tools
     argouml-bin                        # UML 1.4 modeller
     # an-anime-game-launcher-bin         # A Launcher for a specific anime game with auto-patching, discord rpc and time tracking
     ani-cli                            # A cli to browse and watch anime.

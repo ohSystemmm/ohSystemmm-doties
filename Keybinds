@@ -8,11 +8,7 @@
 by ohSystemmm <3 - 2024
 
 
-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
-|                                                                              |
-#  Welcome to the RTFM of ohSystemmm! Big L if you can't remember Keybinds xD  #
-|                                                                              |
-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+Welcome to the RTFM (Read The Fucking Manual) of ohSystemmm! Big L if you can't remember Keybinds xD
 
 
 
@@ -21,10 +17,10 @@ APPLICATIONS
 Keybind           Action          Explained                    Defaults
 ------------------------------------------------------------------------------------
 SUPER + 'O'  -->  Terminal     |  Opens Terminal Emulator   |  'kitty' 
-SUPER + 'B'  -->  Browser      |  Opens Browser             |  'firefox-nightly'
-SUPER + 'S'  -->  Screenshot   |  Opens Screenshotting Tool |  'wayland-screenshot' 
-SUPER + 'M'  -->  Musicplayer  |  Opens Musicplayer         |  'spotify'
-SUPER + 'A'  -->  Messeger     |  Opens Messeger            |  'armcord'
+SUPER + 'B'  -->  Browser      |  Opens Browser             |  'vivaldi'
+SUPER + 'S'  -->  Screenshot   |  Opens Screenshotting Tool |  'grim screenshot script' 
+SUPER + 'M'  -->  Musicplayer  |  Opens Musicplayer         |  'spotube'
+SUPER + 'A'  -->  Messeger     |  Opens Messeger            |  'whatsapp'
 SUPER + 'E'  -->  Filemanager  |  Opens Filemanager         |  'thunar'
 ------------------------------------------------------------------------------------
 
