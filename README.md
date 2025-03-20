@@ -5,6 +5,7 @@
 <p align="center">  
   <img src="https://img.shields.io/github/last-commit/ohSystemmm/ohSystemmm-doties?style=for-the-badge&color=B4BEFE&logo=github&logoColor=D9E0EE&labelColor=242438&label=Last%20Commit">
   <img src="https://img.shields.io/github/stars/ohSystemmm/ohSystemmm-doties?style=for-the-badge&logo=github&color=B4BEFE&logoColor=D9E0EE&labelColor=242438">
+  <a href="https://github.com/ohSystemmm/ohSystemmm-doties">
     <img src="https://img.shields.io/github/repo-size/ohSystemmm/ohSystemmm-doties?color=B4BEFE&label=SIZE&logo=googledrive&style=for-the-badge&logoColor=D9E0EE&labelColor=242438">
   </a>
   <img src="https://img.shields.io/badge/issues-skill-green?style=for-the-badge&color=B4BEFE&logo=github&logoColor=D9E0EE&labelColor=242438">
