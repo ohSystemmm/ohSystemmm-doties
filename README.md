@@ -1,7 +1,3 @@
-<div align="center">
-	<img src="Action-Area.d/Screenshots/asset_readme.png">
-</div>
-
 <p align="center">  
   <img src="https://img.shields.io/github/last-commit/ohSystemmm/ohSystemmm-doties?style=for-the-badge&color=B4BEFE&logo=github&logoColor=D9E0EE&labelColor=242438&label=Last%20Commit">
   <img src="https://img.shields.io/github/stars/ohSystemmm/ohSystemmm-doties?style=for-the-badge&logo=github&color=B4BEFE&logoColor=D9E0EE&labelColor=242438">
@@ -10,6 +6,10 @@
   </a>
   <img src="https://img.shields.io/badge/issues-skill-green?style=for-the-badge&color=B4BEFE&logo=github&logoColor=D9E0EE&labelColor=242438">
 </p>
+<div align="center">
+	<img src="Action-Area.d/Screenshots/asset_readme.png">
+</div>
+
 
 > [!WARNING]
 > - Being actively developed by [ohSystemmm](https://github.com/ohSystemmm) 
