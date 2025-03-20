@@ -1,6 +1,8 @@
-![[asset_keybinding.png]]
+<div align='center'>
+	<img src='Action-Area.d/Screenshots/asset_keybinding.png'>
+</div>
 
-Welcome to the RTFM (Read The Fucking Manual) of ohSystemmm! Big L if you can't remember Keybinds xD
+**Welcome to the RTFM (Read The Fucking Manual) of ohSystemmm! Big L if you can't remember Keybinds xD**
 
 ## APPLICATIONS
 
@@ -36,7 +38,7 @@ Welcome to the RTFM (Read The Fucking Manual) of ohSystemmm! Big L if you can't 
 
 ## WORKSPACES
 
-### Switch Workspaces
+##### Switch Workspaces
 
 | Keybind        | Action       | Explained                       |
 |---------------|-------------|---------------------------------|
@@ -51,7 +53,7 @@ Welcome to the RTFM (Read The Fucking Manual) of ohSystemmm! Big L if you can't 
 | SUPER + '9'  | Workspace 9  | Moves you to Workspace 9       |
 | SUPER + '0'  | Workspace 10 | Moves you to Workspace 10      |
 
-### Move Active Window to Workspace
+##### Move Active Window to Workspace
 
 | Keybind              | Action               | Explained                                 |
 |----------------------|---------------------|-----------------------------------------|
