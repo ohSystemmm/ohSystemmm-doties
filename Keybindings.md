@@ -1,8 +1,8 @@
 <div align='center'>
 	<img src='Action-Area.d/Screenshots/asset_keybinding.png'>
+	<p>Welcome to the RTFM (Read The Fucking Manual) of ohSystemmm!</p> 
+	<p>Big L if you can't remember Keybinds xD</p>
 </div>
-
-**Welcome to the RTFM (Read The Fucking Manual) of ohSystemmm! Big L if you can't remember Keybinds xD**
 
 ## APPLICATIONS
 
@@ -67,4 +67,3 @@
 | SUPER + SHIFT + '8' | MoveToWorkspace 8   | Moves an active window to Workspace 8   |
 | SUPER + SHIFT + '9' | MoveToWorkspace 9   | Moves an active window to Workspace 9   |
 | SUPER + SHIFT + '0' | MoveToWorkspace 10  | Moves an active window to Workspace 10  |
-
