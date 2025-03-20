@@ -151,6 +151,7 @@ InstallohSystemmm() {
     obs-studio                         # Free, open source software for live streaming and recording
     openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
     osu-lazer-bin                      # The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew.
+    pdfarranger                        # Helps merge or split PDF documents and rotate, crop and rearrange pages
     prismlauncher                      # Minecraft launcher with ability to manage multiple instances
     proton-vpn-gtk-app                 # ProtonVPN GTK app, Maintained by Community
     protonvpn-cli-community-git        # A Community Linux CLI for ProtonVPN

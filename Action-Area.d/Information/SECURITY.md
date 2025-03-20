@@ -1,6 +1,7 @@
-
-# Security Policy  
-
+<div align="center">
+	<img src="Action-Area.d/Screenshots/asset_security.png">
+</div>
+ 
 ## Supported Versions  
 
 Below is the list of project versions currently receiving security updates:  
