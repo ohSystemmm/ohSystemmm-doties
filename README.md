@@ -102,11 +102,14 @@ $ ./Uninstall.sh
 Thank you for choosing ohSystemmm-doties! If you have any suggestions, whether for improvements or constructive criticism/feedback, I’d be happy to join the discussion or respond via email.  
 
 Also, don’t forget to check out how to contribute, our security standards, and much more. The links are below.
+<br>
+<div align="center">
+  <p><a href="Action-Area.d/Information/Credits.md">Credits</a></p>
+  <p><a href="Action-Area.d/Information/CODE_OF_CONDUCT.md">Code of Conduct</a></p>
+  <p><a href="Action-Area.d/Information/SECURITY.md">Security</a></p>
+  <p><a href="Action-Area.d/Information/Keybindings.md">Keybind Wiki</a></p>
+  <p><a href="Action-Area.d/Information/LICENSE">License</a></p>
+  <p><a href="Action-Area.d/Information/bug_report.md">Bug Reporting</a></p>
+  <p><a href="Action-Area.d/Information/feature_request.md">Feature Requests</a></p>
 
-- [Credits](Action-Area.d/Information/Credits.md) 
-- [Code of Conduct](Action-Area.d/Information/CODE_OF_CONDUCT.md)
-- [Security](Action-Area.d/Information/SECURITY.md)
-- [Keybind Wiki](Action-Area.d/Information/Keybindings.md)
-- [License](Action-Area.d/Information/LICENSE)
-- [Bug Reporting](Action-Area.d/Information/bug_report.md)
-- [Feature Requests](Action-Area.d/Information/feature_request.md)
+</div>
