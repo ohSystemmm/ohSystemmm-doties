@@ -1,3 +1,4 @@
+
 <p align="center">  
   <img src="https://img.shields.io/github/last-commit/ohSystemmm/ohSystemmm-doties?style=for-the-badge&color=B4BEFE&logo=github&logoColor=D9E0EE&labelColor=242438&label=Last%20Commit">
   <img src="https://img.shields.io/github/stars/ohSystemmm/ohSystemmm-doties?style=for-the-badge&logo=github&color=B4BEFE&logoColor=D9E0EE&labelColor=242438">
@@ -104,12 +105,11 @@ Thank you for choosing ohSystemmm-doties! If you have any suggestions, whether f
 Also, don’t forget to check out how to contribute, our security standards, and much more. The links are below.
 <br>
 <div align="center">
-  <p><a href="Action-Area.d/Information/Credits.md">Credits</a></p>
-  <p><a href="Action-Area.d/Information/CODE_OF_CONDUCT.md">Code of Conduct</a></p>
-  <p><a href="Action-Area.d/Information/SECURITY.md">Security</a></p>
-  <p><a href="Action-Area.d/Information/Keybindings.md">Keybind Wiki</a></p>
-  <p><a href="Action-Area.d/Information/LICENSE">License</a></p>
+  <p><a href="Credits.md">Credits</a></p>
+  <p><a href="CODE_OF_CONDUCT.md">Code of Conduct</a></p>
+  <p><a href="SECURITY.md">Security</a></p>
+  <p><a href="Keybindings.md">Keybind Wiki</a></p>
+  <p><a href="LICENSE">License</a></p>
   <p><a href="Action-Area.d/Information/bug_report.md">Bug Reporting</a></p>
   <p><a href="Action-Area.d/Information/feature_request.md">Feature Requests</a></p>
-
 </div>

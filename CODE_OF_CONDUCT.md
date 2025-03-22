@@ -2,7 +2,6 @@
 <div align="center">
 	<img src="Action-Area.d/Screenshots/asset_code-of-conduct.png">
 </div>
-# Contributor Covenant Code of Conduct
 
 ## Our Pledge
 
