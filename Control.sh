@@ -68,7 +68,7 @@ case $MainMenu in
     source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/Background/Sel-Diashow.sh
     exit 1
   ;; 
-  "Set new Waifu")
+  "Set new Fastfetch")
     source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/Selectors/Fastfetch/Sel-Fastfetch.sh
     exit 1
   ;;
@@ -90,5 +90,6 @@ case $MainMenu in
   ;;
   "Clean Up")
     source ~/ohSystemmm-doties/System-Area.d/4_Custom-Scripts/CleanUp.sh
+    exit 1
   ;;  
 esac

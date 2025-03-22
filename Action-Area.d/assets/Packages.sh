@@ -86,7 +86,8 @@ InstallOptional() {
     hyfetch                            # Neofetch with LGBTQ+ pride flags!
     hyprpicker                         # A wlroots-compatible Wayland color picker that does not suck
     imagemagick                        # An image viewing/manipulation program
-    imgcat                             # Output images as RGB ANSI graphics on the terminal
+    imgcat                             # Output images as RGB ANSI graphics on the termin
+    masterpdf-free                     # A complete solution for creation and editing PDF files - Free version without watermark
     neovim-nightly                     # Fork of Vim aiming to improve user experience, plugins, and GUIs
     nvim-packer-git 		           # A use-package inspired plugin manager for Neovim.
     paru                               # Feature packed AUR helper
@@ -151,7 +152,6 @@ InstallohSystemmm() {
     obs-studio                         # Free, open source software for live streaming and recording
     openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
     osu-lazer-bin                      # The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew.
-    pdfarranger                        # Helps merge or split PDF documents and rotate, crop and rearrange pages
     prismlauncher                      # Minecraft launcher with ability to manage multiple instances
     proton-vpn-gtk-app                 # ProtonVPN GTK app, Maintained by Community
     protonvpn-cli-community-git        # A Community Linux CLI for ProtonVPN
