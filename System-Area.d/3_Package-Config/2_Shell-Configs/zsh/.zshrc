@@ -6,8 +6,13 @@
 #
 # by ohSystemmm <3 - 2024
 
+# Delay to prevent race conditions
 sleep 0.1
+
+# Fastfetch for system info
 fastfetch
+
+# Aliases
 alias shortcuts='nvim ~/.zshrc'
 alias key='nvim ~/ohSystemmm-doties/System-Area.d/2_Hyprland-Config/hypr/0_Hypr-Configs/9_Keybindings/Keybindings.conf'
 alias Arch='echo I use Arch BTW.'
@@ -29,40 +34,89 @@ alias アニメ='ani-cli'
 alias volume='alsamixer -c 2'
 alias hist='nvim .zsh_history'
 
+# VPN
 alias Con-SAP-Up='sudo wg-quick up SAP'
 alias Con-SAP-Down='sudo wg-quick down SAP'
-
-# Proton VPN
 alias Start_VPN='sudo protonvpn c -f'
 alias Stop_VPN='sudo protonvpn d'
 
-# Path to your Oh My Zsh installation.
-export ZSH=~/.oh-my-zsh/
-
-# plugins
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
-
-source $ZSH/oh-my-zsh.sh
-
-# Load Pywal-Colors
+# Load Pywal colors
 (cat ~/.cache/wal/sequences&)
 
-# Custom prompt
-PROMPT='🔰%F{green}%n%F{white}@%F{cyan}%m %F{white}🌐 %F{green}%1~ %F{white}➤ %f'
-RPROMPT='⏳%F{blue}%*%f'
 
 # bun completions
-[ -s "/home/ohsystemmm/.bun/_bun" ] && source "/home/ohsystemmm/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+# Zinit Setup
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
-export PATH=$PATH:/home/ohsystemmm/.spicetify
-export SPOTIPY_CLIENT_ID='15668b97e709435bab856e6e248fc753'
-export SPOTIPY_CLIENT_SECRET='84c8cbfd131e4cc5a79c7a705308cac5'
-export SPOTIPY_REDIRECT_URI='http://localhost:8881/callback'
-export XDG_RUNTIME_DIR=/run/user/$(id -u)
-export DBUS_SESSION_BUS_ADDRESS=unix:path=$XDG_RUNTIME_DIR/bus
-export PATH=/usr/bin/bash:$PATH
+if [ ! -d "$ZINIT_HOME" ]; then
+   mkdir -p "$(dirname $ZINIT_HOME)"
+   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
+source "${ZINIT_HOME}/zinit.zsh"
+
+# Zsh Plugins
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
+
+# Oh My Zsh Snippets
+zinit snippet OMZP::git
+zinit snippet OMZP::sudo
+zinit snippet OMZP::archlinux
+zinit snippet OMZP::aws
+zinit snippet OMZP::kubectl
+zinit snippet OMZP::kubectx
+zinit snippet OMZP::command-not-found
+
+# History
+HISTSIZE=1000000
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory sharehistory hist_ignore_space hist_ignore_all_dups hist_save_no_dups hist_ignore_dups hist_find_no_dups
+
+# Keybindings
+bindkey -e
+bindkey '^p' history-search-backward
+bindkey '^n' history-search-forward
+bindkey '^[w' kill-region
+
+# Completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+
+# Aliases
+alias ls='ls --color'
+alias vim='nvim'
+alias c='clear'
+
+# Shell Integrations
+eval "$(fzf --zsh)"
+eval "$(zoxide init --cmd cd zsh)"
+
+# Define theme path
+POSH_THEME_DIR="$HOME/.poshthemes"
+POSH_THEME="$POSH_THEME_DIR/M365Princess.omp.json"
+
+# Ensure the theme directory exists
+mkdir -p "$POSH_THEME_DIR"
+
+# Check if the theme file exists, if not, download it
+if [ ! -f "$POSH_THEME" ]; then
+    echo "Downloading Oh My Posh Catppuccin Mocha theme..."
+    curl -o "$POSH_THEME" https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/M365Princess.omp.json
+fi 
+
+# Apply the theme
+eval "$(oh-my-posh init zsh --config "$POSH_THEME")"
+
