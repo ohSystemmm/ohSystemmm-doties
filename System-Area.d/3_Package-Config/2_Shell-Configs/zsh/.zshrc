@@ -6,10 +6,7 @@
 #
 # by ohSystemmm <3 - 2024
 
-# Delay to prevent race conditions
-sleep 0.1
 
-# Fastfetch for system info
 fastfetch
 
 # Aliases
@@ -34,20 +31,11 @@ alias アニメ='ani-cli'
 alias volume='alsamixer -c 2'
 alias hist='nvim .zsh_history'
 
-# VPN
-alias Con-SAP-Up='sudo wg-quick up SAP'
-alias Con-SAP-Down='sudo wg-quick down SAP'
-alias Start_VPN='sudo protonvpn c -f'
-alias Stop_VPN='sudo protonvpn d'
-
 # Load Pywal colors
 (cat ~/.cache/wal/sequences&)
 
-
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
-
-# bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
@@ -82,12 +70,6 @@ SAVEHIST=$HISTSIZE
 HISTDUP=erase
 setopt appendhistory sharehistory hist_ignore_space hist_ignore_all_dups hist_save_no_dups hist_ignore_dups hist_find_no_dups
 
-# Keybindings
-bindkey -e
-bindkey '^p' history-search-backward
-bindkey '^n' history-search-forward
-bindkey '^[w' kill-region
-
 # Completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
@@ -97,26 +79,30 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 alias ls='ls --color'
-alias vim='nvim'
 alias c='clear'
 
 # Shell Integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-# Define theme path
+# POSH_THEME_FILE="M365Princess.omp.json"
+POSH_THEME_FILE="hunk.omp.json"
+# POSH_THEME_FILE="dracula.omp.json"
+# POSH_THEME_FILE="easy-term.omp.json"
+# POSH_THEME_FILE="velvet.omp.json"
+# POSH_THEME_FILE="catppuccin.omp.json"
+
 POSH_THEME_DIR="$HOME/.poshthemes"
-POSH_THEME="$POSH_THEME_DIR/M365Princess.omp.json"
+POSH_THEME="$POSH_THEME_DIR/$POSH_THEME_FILE"
 
 # Ensure the theme directory exists
 mkdir -p "$POSH_THEME_DIR"
 
 # Check if the theme file exists, if not, download it
 if [ ! -f "$POSH_THEME" ]; then
-    echo "Downloading Oh My Posh Catppuccin Mocha theme..."
-    curl -o "$POSH_THEME" https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/M365Princess.omp.json
+    echo "Downloading Oh My Posh $POSH_THEME_FILE theme..."
+    curl -o "$POSH_THEME" https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/$POSH_THEME_FILE
 fi 
 
 # Apply the theme
 eval "$(oh-my-posh init zsh --config "$POSH_THEME")"
-
