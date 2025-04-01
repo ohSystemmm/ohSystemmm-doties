@@ -6,6 +6,8 @@
 # 
 # by ohSystemmm <3 - 2024
 
+sleep 2
+
 Settings=~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/gtk-3.0/settings.ini
 
 if [ ! -f "$Settings" ]; then 
