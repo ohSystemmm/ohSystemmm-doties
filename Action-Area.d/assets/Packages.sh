@@ -192,3 +192,17 @@ InstallohSystemmm() {
   )
   paru -S --overwrite '*' "${Packages[@]}" 
 }
+
+Required() {}
+ZSH() {}
+Fish() {}
+Office() {}
+Coding() {}
+Games() {}
+Virtualization() {}
+Multimedia() {}
+NetworkingAndRemoteAccess() {}
+CustomizationAndTheming() {}
+FileManagementAndSystemTools() {}
+SecurityAndPrivacy() {}
+CLIUtilsAndMisc() {}
