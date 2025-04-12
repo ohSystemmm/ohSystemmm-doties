@@ -12,7 +12,6 @@ InstallRequired() {
     figlet                             # A program for making large letters out of ordinary text
     fastfetch                          # Like Neofetch, but much faster because written in C
     firefox-nightly-bin                # Fast, Private & Safe Web Browser from Mozilla — Nightly Build (en-US)
-    fish                               # Smart and user friendly shell intended mostly for interactive use
     git                                # the fast distributed version control system
     gnome-bluetooth-3.0                # GNOME Bluetooth Subsystem
     grim                               # Screenshot utility for Wayland
@@ -73,7 +72,6 @@ InstallRequired() {
     xdg-desktop-portal-wlr             # xdg-desktop-portal backend for wlroots
     xdg-user-dirs                      # Manage user directories like ~/Desktop and ~/Music
     zip                                # Compressor/archiver for creating and modifying zipfiles
-    zsh                                # A very advanced and programmable command interpreter (shell) for UNIX
   )
   paru -S --overwrite '*' "${Packages[@]}"
   curl -fsSL https://bun.sh/install | bash && sudo ln -s $HOME/.bun/bin/bun /usr/local/bin/bun
@@ -90,7 +88,6 @@ InstallOptional() {
     masterpdf-free                     # A complete solution for creation and editing PDF files - Free version without watermark
     neovim-nightly                     # Fork of Vim aiming to improve user experience, plugins, and GUIs
     nvim-packer-git 		           # A use-package inspired plugin manager for Neovim.
-    oh-my-posh                         # A prompt theme engine for any shell.
     paru                               # Feature packed AUR helper
     parui                              # Simple TUI frontend for paru or yay
     smartmontools                      # Control and monitor S.M.A.R.T. enabled ATA and SCSI Hard Drives
@@ -107,19 +104,15 @@ InstallohSystemmm() {
   Packages=(
     android-tools                      # android-tools
     argouml-bin                        # UML 1.4 modeller
-    # an-anime-game-launcher-bin         # A Launcher for a specific anime game with auto-patching, discord rpc and time tracking
     ani-cli                            # A cli to browse and watch anime.
     anydesk-bin                        # The Fast Remote Desktop Application
     blender                            # A fully integrated 3D graphics creation suite
     bridge-utils                       # Utilities for configuring the Linux ethernet bridge
-    clion                              # Cross-platform IDE for C and C++ from JetBrains.
-    clion-jre                          # Cross-platform IDE for C and C++ from JetBrains.
+    # clion                              # Cross-platform IDE for C and C++ from JetBrains.
+    # clion-jre                          # Cross-platform IDE for C and C++ from JetBrains.
     datagrip                           # Smart SQL Editor and Advanced Database Client Packed Together for Optimum Productivity
     datagrip-jre                       # JBR (JetBrains Runtime) for DataGrip - a patched JRE
     dnsmasq                            # Lightweight, easy to configure DNS forwarder and DHCP server
-    docker                             # Pack, ship and run any application as a lightweight container
-    docker-buildx                      # Docker CLI plugin for extended build capabilities with BuildKit
-    docker-compose                     # Fast, isolated development environments using Docker
     fcitx5                             # Next generation of fcitx
     fcitx5-configtool                  # Configuration Tool for Fcitx5
     filezilla                          # Fast and reliable FTP, FTPS and SFTP client
@@ -127,8 +120,8 @@ InstallohSystemmm() {
     # gitui                              # Blazing fast terminal-ui for git written in Rust
     gnome-keyring                      # Stores passwords and encryption keys
     go                                 # Core compiler tools for the Go programming language
-    goland                             # Capable and Ergonomic Go IDE
-    goland-jre                         # JBR (JetBrains Runtime) for Goland - a patched JRE
+    # goland                             # Capable and Ergonomic Go IDE
+    # goland-jre                         # JBR (JetBrains Runtime) for Goland - a patched JRE
     gwenview                           # A fast and easy to use image viewer
     ipscan                             # Angry IP Scanner (or simply ipscan) is an open-source and cross-platform network scanner.
     inkscape                           # Professional vector graphics editor
@@ -141,7 +134,6 @@ InstallohSystemmm() {
     libvirt                            # API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)
     libwebp                            # WebP library and conversion tools
     libfaketime                        # Report fake dates and times to programs without having to change the system-wide time.
-    # lutris                             # Open Gaming Platform
     magic-wormhole                     # Securely transfer data between computers
     mangal-bin                         # The most advanced cli manga downloader in the entire universe!
     fcitx5-mozc                        # The Open Source edition of Google Japanese Input
@@ -152,11 +144,9 @@ InstallohSystemmm() {
     obsidian                           # A powerful knowledge base that works on top of a local folder of plain text Markdown files
     obs-studio                         # Free, open source software for live streaming and recording
     openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
-    osu-lazer-bin                      # The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew.
-    prismlauncher                      # Minecraft launcher with ability to manage multiple instances
     proton-vpn-gtk-app                 # ProtonVPN GTK app, Maintained by Community
     protonvpn-cli-community-git        # A Community Linux CLI for ProtonVPN
-    pycharm-professional               # Python IDE for Professional Developers. Professional Edition
+    # pycharm-professional               # Python IDE for Professional Developers. Professional Edition
     python-grip                        # Preview GitHub Markdown files like Readme locally before committing them
     p7zip                              # Command-line file archiver with high compression ratio
     qemu                               # A basic QEMU setup for headless environments
@@ -165,19 +155,13 @@ InstallohSystemmm() {
     signal-desktop                     # Signal Private Messenger for Linux
     speedtest-cli                      # Command line interface for testing internet bandwidth using speedtest.net
     # spotube                            # Open source Spotify client that doesn't require Premium nor uses Electron!
-    steam                              # Valve's digital software delivery system
     superfile-bin                      # Pretty fancy and modern file manager in terminal file manager
     syncplay                           # Synchronize watching movies on mplayer2, vlc, mpv, and mpc-hc across many computers
     teams-for-linux-bin                # Unofficial Microsoft Teams for Linux client (binary version)
-    # the-honkers-railway-launcher-bin   # A launcher for a specific anime game with auto-patching, discord rpc and time tracking
-    vde2                               # Virtual Distributed Ethernet for emulators like qemu
-    virt-manager                       # Desktop user interface for managing virtual machines
-    virt-viewer                        # A lightweight interface for interacting with the graphical display of virtualized guest OS.
-    vscodium-bin                       # Binary releases of VS Code without MS branding/telemetry/licensing.
+    visual-studio-code-bin             # Visual Studio Code (vscode): Editor for building and debugging modern web and cloud applications (official binary version)
     vivaldi                            # An advanced browser made with the power user in mind.
+    vivaldi-snapshot                   # An advanced browser made with the power user in mind. Snapshot
     vulkan-tools                       # Vulkan Utilities and Tools
-    # waydroid                           # A container-based approach to boot a full Android system on a regular Linux system
-    # waydroid-image-gapps               # A container-based approach to boot a full Android system on a regular Linux system (Android image, GAPPS).
     wezterm                            # A GPU-accelerated cross-platform terminal emulator and multiplexer
     whatsapp-for-linux                 # An unofficial WhatsApp desktop application for linux
     wine                               # A compatibility layer for running Windows programs
@@ -187,22 +171,70 @@ InstallohSystemmm() {
     xampp                              # A stand-alone LAMPP distribution
     ytmdl                              # Download songs from YouTube with metadata from iTunes, Spotify, LastFM, etc
     youtube-dl-gui-bin                 # A cross-platform GUI for youtube-dl made in Electron and node.js (binary release)
-    zathura                            # Minimalistic document viewer
-    zathura-pdf-mupdf                  # PDF support for Zathura (MuPDF backend) (Supports PDF, ePub, and OpenXPS)
   )
   paru -S --overwrite '*' "${Packages[@]}" 
 }
 
 Required() {}
-ZSH() {}
-Fish() {}
-Office() {}
+
+ZSH() {
+  oh-my-posh                              # A prompt theme engine for any shell.
+  zsh                                     # A very advanced and programmable command interpreter (shell) for UNIX
+
+  install "${Packages[@]}"
+}
+
+Fish() {
+  fish                                    # Smart and user friendly shell intended mostly for interactive use
+  
+  install "${Packages[@]}"
+}
+
+Office() {
+  zathura                                 # Minimalistic document viewer
+  zathura-pdf-mupdf                       # PDF support for Zathura (MuPDF backend) (Supports PDF, ePub, and OpenXPS)
+  
+  install "${Packages[@]}"
+}
+
 Coding() {}
-Games() {}
-Virtualization() {}
+
+Games() {
+  # an-anime-game-launcher-bin              # A Launcher for a specific anime game with auto-patching, discord rpc and time tracking
+  # lutris                                # Open Gaming Platform
+  osu-lazer-bin                           # The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew.
+  prismlauncher                           # Minecraft launcher with ability to manage multiple instances
+  steam                                   # Valve's digital software delivery system
+  the-honkers-railway-launcher-bin        # A launcher for a specific anime game with auto-patching, discord rpc and time tracking
+  
+  install "${Packages[@]}"
+}
+
+Virtualization() {
+  docker                                  # Pack, ship and run any application as a lightweight container
+  docker-buildx                           # Docker CLI plugin for extended build capabilities with BuildKit
+  docker-compose                          # Fast, isolated development environments using Docker
+  vde2                                    # Virtual Distributed Ethernet for emulators like qemu
+  virt-manager                            # Desktop user interface for managing virtual machines
+  virt-viewer                             # A lightweight interface for interacting with the graphical display of virtualized guest OS.
+  # waydroid                                # A container-based approach to boot a full Android system on a regular Linux system
+  # waydroid-image-gapps                    # A container-based approach to boot a full Android system on a regular Linux system (Android image, GAPPS).
+
+  install "${Packages[@]}"
+}
+
 Multimedia() {}
+
 NetworkingAndRemoteAccess() {}
+
 CustomizationAndTheming() {}
+
 FileManagementAndSystemTools() {}
+
 SecurityAndPrivacy() {}
+
 CLIUtilsAndMisc() {}
+
+install() {
+  paru -S --overwrite '*' "$@"
+}

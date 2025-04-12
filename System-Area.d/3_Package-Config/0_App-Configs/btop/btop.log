@@ -86,3 +86,23 @@
 2025/04/01 (08:02:41) | INFO: Running on /dev/pts/1
 2025/04/01 (08:02:41) | INFO: Failed to load librocm_smi64.so, AMD GPUs will not be detected: librocm_smi64.so.6: cannot open shared object file: No such file or directory
 2025/04/01 (08:02:47) | INFO: Quitting! Runtime: 00:00:06
+
+2025/04/02 (11:40:22) | ===> btop++ v.1.4.0
+2025/04/02 (11:40:22) | INFO: Logger set to INFO
+2025/04/02 (11:40:22) | INFO: Running on /dev/pts/0
+2025/04/02 (11:40:22) | INFO: Failed to load librocm_smi64.so, AMD GPUs will not be detected: librocm_smi64.so.6: cannot open shared object file: No such file or directory
+
+2025/04/07 (14:54:17) | ===> btop++ v.1.4.0
+2025/04/07 (14:54:17) | INFO: Logger set to INFO
+2025/04/07 (14:54:17) | INFO: Running on /dev/pts/0
+2025/04/07 (14:54:18) | INFO: Failed to load librocm_smi64.so, AMD GPUs will not be detected: librocm_smi64.so.6: cannot open shared object file: No such file or directory
+
+2025/04/07 (21:41:25) | ===> btop++ v.1.4.0
+2025/04/07 (21:41:25) | INFO: Logger set to INFO
+2025/04/07 (21:41:25) | INFO: Running on /dev/pts/0
+2025/04/07 (21:41:25) | INFO: Failed to load librocm_smi64.so, AMD GPUs will not be detected: librocm_smi64.so.6: cannot open shared object file: No such file or directory
+
+2025/04/09 (09:22:01) | ===> btop++ v.1.4.0
+2025/04/09 (09:22:01) | INFO: Logger set to INFO
+2025/04/09 (09:22:01) | INFO: Running on /dev/pts/0
+2025/04/09 (09:22:01) | INFO: Failed to load librocm_smi64.so, AMD GPUs will not be detected: librocm_smi64.so.6: cannot open shared object file: No such file or directory
