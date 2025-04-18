@@ -6,6 +6,8 @@
 #
 # by ohSystemmm <3 - 2024
 
+# This Script will be replaced soon
+
 source ~/ohSystemmm-doties/Action-Area.d/assets/Colors.sh
 
 CheckPackages() {
