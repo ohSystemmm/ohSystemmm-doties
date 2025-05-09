@@ -14,6 +14,9 @@ while [[ -f "$SAVE_DIR/Screenshot_$n.png" ]]; do
     ((n++))
 done
 
-grim -g "$(slurp)" "$SAVE_DIR/Screenshot_$n.png"
+filename="$SAVE_DIR/Screenshot_$n.png"
+grim -g "$(slurp)" "$filename"
 
-notify-send "Screenshot Saved!" "Saved in ~/Screenshots/Screenshot_$n.pn"
+cat "$filename" | wl-copy -t image/png
+
+notify-send "Screenshot Saved and Copied!" "Saved in $filename"
