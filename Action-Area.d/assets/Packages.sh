@@ -158,6 +158,9 @@ InstallohSystemmm() {
     superfile-bin                      # Pretty fancy and modern file manager in terminal file manager
     syncplay                           # Synchronize watching movies on mplayer2, vlc, mpv, and mpc-hc across many computers
     teams-for-linux-bin                # Unofficial Microsoft Teams for Linux client (binary version)
+    texlive-basic                      # TeX Live - Essential programs and files
+    texlive-latexextra                 # TeX Live - LaTeX additional packages
+    texstudio-dark-git                 # Integrated writing environment for creating LaTeX documents. Dark version.
     visual-studio-code-bin             # Visual Studio Code (vscode): Editor for building and debugging modern web and cloud applications (official binary version)
     vivaldi                            # An advanced browser made with the power user in mind.
     vivaldi-snapshot                   # An advanced browser made with the power user in mind. Snapshot
