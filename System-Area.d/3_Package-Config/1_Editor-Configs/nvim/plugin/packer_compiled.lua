@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["HexEditor.nvim"] = {
+    loaded = true,
+    path = "/home/ohsystemmm/.local/share/nvim/site/pack/packer/start/HexEditor.nvim",
+    url = "https://github.com/ArcaneSpecs/HexEditor.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/home/ohsystemmm/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -110,7 +115,7 @@ _G.packer_plugins = {
     url = "https://github.com/tjdevries/colorbuddy.nvim"
   },
   ["dashboard-nvim"] = {
-    config = { "\27LJ\2\n�\15\0\0\6\0\16\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0034\4\6\0005\5\a\0>\5\1\0045\5\b\0>\5\2\0045\5\t\0>\5\3\0045\5\n\0>\5\4\0045\5\v\0>\5\5\4=\4\f\0035\4\r\0=\4\14\3=\3\15\2B\0\2\1K\0\1\0\vconfig\vfooter\1\4\0\0\5\27How do I exit Neovim? \20You don’t. <3\vcenter\1\2\4\0\nSPC Q\rshortcut\nSPC q\tdesc\tQuit\vaction\aqa\ticon\t[Q] \1\2\4\0\nSPC U\rshortcut\nSPC u\tdesc\19Update Plugins\vaction\15PackerSync\ticon\t[U] \1\2\4\0\nSPC R\rshortcut\nSPC r\tdesc\17Recent Files\vaction\23Telescope oldfiles\ticon\t[R] \1\2\4\0\nSPC B\rshortcut\nSPC b\tdesc\17Browse Files\vaction\25Telescope find_files\ticon\t[B] \1\2\4\0\nSPC N\rshortcut\nSPC n\tdesc\rNew File\vaction\tenew\ticon\t[N] \vheader\1\0\3\vcenter\0\vheader\0\vfooter\0\1\r\0\0\5\5\127      ╔═╗   ╔═════╗         ╔═╗                              ╔═╗     ╔═╗            �\1      ║ ║   ║ ╔═╗ ║       ╔═╝ ╚═╗                            ║ ║   ╔═╝ ╚═╗          �\1╔═════╣ ╚═══╣ ╚═══╦═╗ ╔═╦═╩═╗ ╔═╬═══╦═╗ ╔═╦═╗ ╔═╦═╗ ╔═╗  ╔═══╝ ╠═══╩═╗ ╔═╬═╦═══╦═══╗�\1║ ╔═╗ ║ ╔═╗ ╠═══╗ ║ ║ ║ ║ ══╣ ║ ║ ══╣ ╚═╝ ║ ╚═╝ ║ ╚═╝ ╠══╣ ╔═╗ ║ ╔═╗ ║ ║ ╠═╣ ══╣ ══╣�\1║ ╚═╝ ║ ║ ║ ║ ╚═╝ ║ ╚═╝ ╠══ ║ ╚═╣ ══╣ ║ ║ ║ ║ ║ ║ ║ ║ ╠══╣ ╚═╝ ║ ╚═╝ ║ ╚═╣ ║ ══╬══ ║�\1╚═════╩═╝ ╚═╩═════╩═╗ ╔═╩═══╩═══╩═══╩═╩═╩═╩═╩═╩═╩═╩═╩═╝  ╚═════╩═════╩═══╩═╩═══╩═══╝a                  ╔═╝ ║                                                             c                  ╚═══╝                                     by ohSystemmm <3 - 2025 \5\5\1\0\2\vconfig\0\ntheme\tdoom\nsetup\14dashboard\frequire\0" },
+    config = { "\27LJ\2\n�\15\0\0\6\0\16\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0034\4\6\0005\5\a\0>\5\1\0045\5\b\0>\5\2\0045\5\t\0>\5\3\0045\5\n\0>\5\4\0045\5\v\0>\5\5\4=\4\f\0035\4\r\0=\4\14\3=\3\15\2B\0\2\1K\0\1\0\vconfig\vfooter\1\4\0\0\5\27How do I exit Neovim? \20You don’t. <3\vcenter\1\2\4\0\nSPC Q\vaction\aqa\rshortcut\nSPC q\ticon\t[Q] \tdesc\tQuit\1\2\4\0\nSPC U\vaction\15PackerSync\rshortcut\nSPC u\ticon\t[U] \tdesc\19Update Plugins\1\2\4\0\nSPC R\vaction\23Telescope oldfiles\rshortcut\nSPC r\ticon\t[R] \tdesc\17Recent Files\1\2\4\0\nSPC B\vaction\25Telescope find_files\rshortcut\nSPC b\ticon\t[B] \tdesc\17Browse Files\1\2\4\0\nSPC N\vaction\tenew\rshortcut\nSPC n\ticon\t[N] \tdesc\rNew File\vheader\1\0\3\vfooter\0\vheader\0\vcenter\0\1\r\0\0\5\5\127      ╔═╗   ╔═════╗         ╔═╗                              ╔═╗     ╔═╗            �\1      ║ ║   ║ ╔═╗ ║       ╔═╝ ╚═╗                            ║ ║   ╔═╝ ╚═╗          �\1╔═════╣ ╚═══╣ ╚═══╦═╗ ╔═╦═╩═╗ ╔═╬═══╦═╗ ╔═╦═╗ ╔═╦═╗ ╔═╗  ╔═══╝ ╠═══╩═╗ ╔═╬═╦═══╦═══╗�\1║ ╔═╗ ║ ╔═╗ ╠═══╗ ║ ║ ║ ║ ══╣ ║ ║ ══╣ ╚═╝ ║ ╚═╝ ║ ╚═╝ ╠══╣ ╔═╗ ║ ╔═╗ ║ ║ ╠═╣ ══╣ ══╣�\1║ ╚═╝ ║ ║ ║ ║ ╚═╝ ║ ╚═╝ ╠══ ║ ╚═╣ ══╣ ║ ║ ║ ║ ║ ║ ║ ║ ╠══╣ ╚═╝ ║ ╚═╝ ║ ╚═╣ ║ ══╬══ ║�\1╚═════╩═╝ ╚═╩═════╩═╗ ╔═╩═══╩═══╩═══╩═╩═╩═╩═╩═╩═╩═╩═╩═╝  ╚═════╩═════╩═══╩═╩═══╩═══╝a                  ╔═╝ ║                                                             c                  ╚═══╝                                     by ohSystemmm <3 - 2025 \5\5\1\0\2\ntheme\tdoom\vconfig\0\nsetup\14dashboard\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -319,6 +324,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: lspsaga.nvim
+time([[Config for lspsaga.nvim]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\flspsaga\frequire\0", "config", "lspsaga.nvim")
+time([[Config for lspsaga.nvim]], false)
 -- Config for: hop.nvim
 time([[Config for hop.nvim]], true)
 try_loadstring("\27LJ\2\nT\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\tkeys\27etovxpqdgfblzhckisuran\nsetup\bhop\frequire\0", "config", "hop.nvim")
@@ -331,10 +340,6 @@ time([[Config for mind.nvim]], false)
 time([[Config for nvim-lspconfig]], true)
 try_loadstring("\27LJ\2\nE\0\0\3\0\4\0\b6\0\0\0'\2\1\0B\0\2\0029\0\2\0009\0\3\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ngopls\14lspconfig\frequire\0", "config", "nvim-lspconfig")
 time([[Config for nvim-lspconfig]], false)
--- Config for: lspsaga.nvim
-time([[Config for lspsaga.nvim]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\flspsaga\frequire\0", "config", "lspsaga.nvim")
-time([[Config for lspsaga.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads

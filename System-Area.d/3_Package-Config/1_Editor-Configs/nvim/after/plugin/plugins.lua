@@ -13,6 +13,9 @@ vim.cmd([[
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
+  use 'williamboman/mason-lspconfig.nvim'
+  use 'williamboman/mason.nvim'
+
   -- Theme
   use { 'catppuccin/nvim', as = 'catppuccin' }
   use "EdenEast/nightfox.nvim"
@@ -63,8 +66,6 @@ return require('packer').startup(function(use)
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
   -- commands to run to start our LSPs
-  use 'williamboman/mason-lspconfig.nvim'
-  use 'williamboman/mason.nvim'
 
   use {
     'neovim/nvim-lspconfig',
@@ -108,6 +109,9 @@ return require('packer').startup(function(use)
   use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
+
+  --Hex Editing
+  use 'ArcaneSpecs/HexEditor.nvim'
 
   --Telescope
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }

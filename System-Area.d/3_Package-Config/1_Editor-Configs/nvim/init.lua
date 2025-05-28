@@ -25,3 +25,5 @@ require('me.keymap')
 require('me.lsp')
 require('me.telescope')
 require 'colorizer'.setup()
+
+require 'HexEditor'.setup()
