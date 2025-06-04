@@ -144,6 +144,7 @@ InstallohSystemmm() {
     obsidian                           # A powerful knowledge base that works on top of a local folder of plain text Markdown files
     obs-studio                         # Free, open source software for live streaming and recording
     openbsd-netcat                     # TCP/IP swiss army knife. OpenBSD variant.
+    prismlauncher                      # Minecraft launcher with ability to manage multiple instances
     proton-vpn-gtk-app                 # ProtonVPN GTK app, Maintained by Community
     protonvpn-cli-community-git        # A Community Linux CLI for ProtonVPN
     # pycharm-professional               # Python IDE for Professional Developers. Professional Edition
@@ -154,6 +155,7 @@ InstallohSystemmm() {
     # rog-control-center                 # App to control asusctl
     signal-desktop                     # Signal Private Messenger for Linux
     speedtest-cli                      # Command line interface for testing internet bandwidth using speedtest.net
+    steam                              # Valve's digital software delivery system
     # spotube                            # Open source Spotify client that doesn't require Premium nor uses Electron!
     superfile-bin                      # Pretty fancy and modern file manager in terminal file manager
     syncplay                           # Synchronize watching movies on mplayer2, vlc, mpv, and mpc-hc across many computers
