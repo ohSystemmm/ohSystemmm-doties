@@ -106,7 +106,6 @@ SlideHeader "Required Packages"
 echo -e "Installing all necessary packages. This may take some time.\n"
 gum spin --spinner dot --title "Installing Required Packages..." --show-output -- sleep 1.5
 InstallRequired
-source assets/DowngradeAgs.sh
 NextSlide
 
 

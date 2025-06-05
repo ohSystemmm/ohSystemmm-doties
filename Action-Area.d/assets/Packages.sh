@@ -1,6 +1,6 @@
 InstallRequired() {
   Packages=(
-    aylurs-gtk-shell                   # Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
+    aylurs-gtk-shell-git               # Aylurs's Gtk Shell (AGS), An eww inspired gtk widget system.
     bibata-extra-cursor-theme          # Material Based Cursor Theme: More Bibata!
     blueman                            # GTK+ Bluetooth Manager
     bluez                              # Daemons for the bluetooth protocol stack
@@ -15,34 +15,44 @@ InstallRequired() {
     git                                # the fast distributed version control system
     gnome-bluetooth-3.0                # GNOME Bluetooth Subsystem
     grim                               # Screenshot utility for Wayland
+    grimblast-git                      # A helper for screenshots within Hyprland.
     gst-plugin-pipewire                # Multimedia graph framework - pipewire plugin
     gsound                             # Small library for playing system sounds
     gtk3                               # GObject-based multi-platform GUI toolkit
     gtk4                               # GObject-based multi-platform GUI toolkit
+    gtksourceview3                     # Text widget with syntax highlighting for GNOME
     gum                                # A tool for glamorous shell scripts
     gvfs                               # Virtual filesystem implementation for GIO
     hyprland                           # a highly customizable dynamic tiling Wayland compositor
     hyprlock                           # hyprland’s GPU-accelerated screen locking utility
     hyprshade                          # Hyprland shade configuration tool
+    hyprsunset-git                     # An application to enable a blue-light filter on Hyprland
+    hyprpanel                          # A Bar/Panel for Hyprland with extensive customizability
+    hyprpicker                         # A wlroots-compatible Wayland color picker that does not suck
     kitty                              # A modern, hackable, featureful, OpenGL-based terminal emulator
     libadwaita                         # Building blocks for modern adaptive GNOME applications
     libpulse                           # A featureful, general-purpose sound server (client library)
     libgtop                            # Library for collecting system monitoring data
+    libsoup3                           # HTTP client/server library for GNOME
+    matugen-bin                        # A material you color generation tool with templates
     network-manager-applet             # Applet for managing network connections
     networkmanager                     # Network connection manager and user applications
     nm-connection-editor               # NetworkManager GUI connection editor and widgets
     noto-fonts                         # Google Noto TTF fonts
     noto-fonts-emoji                   # Google Noto emoji fonts
     nwg-look                           # GTK3 settings editor adapted to work on wlroots-based compositors
+    pacman-contrib                     # Contributed scripts and tools for pacman systems
     pavucontrol                        # PulseAudio Volume Control
     pipewire                           # Low-latency audio/video router and processor
     pipewire-alsa                      # Low-latency audio/video router and processor - ALSA configuration
     pipewire-jack                      # Low-latency audio/video router and processor - JACK replacement
     pipewire-pulse                     # Low-latency audio/video router and processor - PulseAudio replacement
     playerctl                          # mpris media player controller and lib for spotify, vlc and others.
+    power-profiles-daemon              # Makes power profiles handling available over D-Bus
     python                             # Python high-level programming language
     python-click                       # Simple wrapper around optparse for powerful command line utilities
     python-gobject                     # Python bindings for GLib/GObject/GIO/GTK
+    python-gpustat                     # A simple command-line utility for querying and monitoring GPU status
     python-pip                         # The PyPA recommended tool for installing Python packages
     python-psutil                      # A cross-platform process and system utilities module for Python
     python-pywal                       # Generate and change colorschemes on the fly
@@ -62,6 +72,8 @@ InstallRequired() {
     ttf-hanazono                       # A free Japanese kanji font, which contains about 78,685 characters.
     tumbler                            # Thumbnail service implementing the thumbnail management D-Bus specification
     unzip                              # For extracting and viewing files in .zip archives
+    upower                             # Abstraction for enumerating power devices, listening to device events and querying history and statistics
+    wf-recorder-git                    # A video recorder for wlroots-based compositors like sway or wayfire
     wl-clipboard                       # Command-line copy/paste utilities for Wayland
     wlsunset                           # Day/night gamma adjustments for Wayland compositors
     wlogout                            # Logout menu for wayland
@@ -82,7 +94,6 @@ InstallOptional() {
     cava                               # Console-based Audio Visualizer for Alsa
     gparted                            # A Partition Magic clone, frontend to GNU Parted
     hyfetch                            # Neofetch with LGBTQ+ pride flags!
-    hyprpicker                         # A wlroots-compatible Wayland color picker that does not suck
     imagemagick                        # An image viewing/manipulation program
     imgcat                             # Output images as RGB ANSI graphics on the termin
     masterpdf-free                     # A complete solution for creation and editing PDF files - Free version without watermark

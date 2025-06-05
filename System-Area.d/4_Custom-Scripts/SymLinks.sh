@@ -7,10 +7,6 @@
 # 
 # by ohSystemmm <3 - 2024
 
-# ags -------------------------------------------------------------------------------------------
-rm -rf ~/.config/ags/
-ln -s ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/ags/  ~/.config/
-
 # btop ------------------------------------------------------------------------------------------
 rm -rf ~/.config/btop/
 ln -s ~/ohSystemmm-doties/System-Area.d/3_Package-Config/0_App-Configs/btop/ ~/.config/ 
