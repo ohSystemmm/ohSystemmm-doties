@@ -106,3 +106,5 @@ fi
 
 # Apply the theme
 eval "$(oh-my-posh init zsh --config "$POSH_THEME")"
+
+export XDG_RUNTIME_DIR=/run/user/$UID
