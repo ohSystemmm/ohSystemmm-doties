@@ -31,6 +31,9 @@ alias アニメ='ani-cli'
 alias volume='alsamixer -c 2'
 alias hist='nvim .zsh_history'
 
+# Fast Project Directing
+alias pro='cd ~/HolyMoly/003_Work/Projects/Melodex/'
+
 # Load Pywal colors
 (cat ~/.cache/wal/sequences&)
 
