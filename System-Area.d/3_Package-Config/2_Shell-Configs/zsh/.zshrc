@@ -29,6 +29,7 @@ alias nya='clear && figlet "Meowww :3"'
 alias 更新='paru'
 alias アニメ='ani-cli'
 alias volume='alsamixer -c 2'
+alias music='cd /home/ohsystemmm/HolyMoly/008_Music/Best_Songs_Ever-ohSystemmm'
 alias hist='nvim .zsh_history'
 
 # Fast Project Directing
