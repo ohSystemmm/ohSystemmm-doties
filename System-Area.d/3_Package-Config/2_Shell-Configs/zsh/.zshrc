@@ -33,7 +33,7 @@ alias music='cd /home/ohsystemmm/HolyMoly/008_Music/Best_Songs_Ever-ohSystemmm'
 alias hist='nvim .zsh_history'
 
 # Fast Project Directing
-alias work='cd ~/HolyMoly/003_Work/Projects/'
+alias work='cd ~/HolyMoly/003_Work/Projects/melodex-git'
 
 # Load Pywal colors
 (cat ~/.cache/wal/sequences&)
