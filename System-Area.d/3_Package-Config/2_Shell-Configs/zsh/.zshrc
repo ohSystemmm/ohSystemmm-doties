@@ -29,8 +29,9 @@ alias nya='clear && figlet "Meowww :3"'
 alias 更新='paru'
 alias アニメ='ani-cli'
 alias volume='alsamixer -c 2'
-alias music='cd /home/ohsystemmm/HolyMoly/008_Music/Best_Songs_Ever-ohSystemmm'
+alias music='cd ~/HolyMoly/008_Music/Best_Songs_Ever-ohSystemmm'
 alias hist='nvim .zsh_history'
+alias VM='sh ~/HolyMoly/003_Work/School/Quick-Tools/Workspace/VM-Launcher.sh'
 
 # Fast Project Directing
 alias work='cd ~/HolyMoly/003_Work/Projects/melodex-git'
