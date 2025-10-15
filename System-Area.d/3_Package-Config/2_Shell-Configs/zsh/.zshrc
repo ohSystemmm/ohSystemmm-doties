@@ -34,7 +34,7 @@ alias hist='nvim .zsh_history'
 alias VM='sh ~/HolyMoly/003_Work/School/Quick-Tools/Workspace/VM-Launcher.sh'
 
 # Fast Project Directing
-alias work='cd ~/HolyMoly/003_Work/Projects/melodex-git'
+alias work='cd ~/HolyMoly/003_Work/Projects/noctune'
 
 # Load Pywal colors
 (cat ~/.cache/wal/sequences&)
