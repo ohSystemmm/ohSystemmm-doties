@@ -37,7 +37,7 @@ alias VM='sh ~/HolyMoly/003_Work/School/Quick-Tools/Workspace/VM-Launcher.sh'
 alias work='cd ~/HolyMoly/003_Work/Projects/noctune'
 
 # Load Pywal colors
-(cat ~/.cache/wal/sequences&)
+# (cat ~/.cache/wal/sequences&)
 
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
