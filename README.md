@@ -13,7 +13,7 @@
 <br>
 
 > [!WARNING]
-> - Being actively developed by [ohSystemmm](https://github.com/ohSystemmm) 
+> - Development paused [ohSystemmm](https://github.com/ohSystemmm) 
 > - Do not run the Installation script twice - it might break your configuration
 
 <div align="center"><h2>Overview</h2></div>
